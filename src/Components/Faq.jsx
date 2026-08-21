@@ -480,7 +480,7 @@ const Faq = () => {
       id: 5,
       text: "Can my spouse or children come with me as a dependent?",
       answer:
-        "Depending on the visa pathway and your circumstances, eligible family members may be able to accompany you or join you as dependants. Our team can assess your situation and explain the available options.",
+        "Depending on the visa pathway and your circumstance. Our team can assess your situation and explain the available options.",
     },
 
     {

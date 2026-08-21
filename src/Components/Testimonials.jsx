@@ -31,13 +31,13 @@ const testimonials = [
     id: 5,
     name: "Prince Modi",
     visa: "SC500 - Australia student dependent visa",
-    text: "I am extremely grateful to the entire team at Growmore Global Visa for their exceptional support and guidance throughout my visa process. A special thanks to Rubina Ma’am for her outstanding assistance, patience, and continuous support at every stage of the process. Ami Ma’am and Hiya Ma’am were also very professional, responsive, and helpful.The team’s honest advice, clear communication, and dedication made the entire visa process smooth and stress-free.I highly recommend Growmore Global Visa to anyone looking for trustworthy and reliable visa consultation services.",
+    text: "I am extremely grateful to the entire team at Growmore Global Visa for their exceptional support and guidance throughout my visa process. A special thanks to Rubina Ma’am for her outstanding assistance support at every stage of the process. Ami Ma’am and Hiya Ma’am were also very professional, responsive, and helpful.I highly recommend Growmore Global Visa to anyone looking for trustworthy consultation services.",
   },
   {
     id: 6,
     name: "Chirag Modi",
     visa: "Dubai student Visa",
-    text:"I have had an wonderful experience with Growmore Global Visa. Especially Mr. Dev and team they were very helpful and informative throughout the process. And also kept me updated throughout the process and guided through each and every step, and I was fully aware where my process was heading and what will be next step. All in all it was a very smooth and easy process. Will definitely recommend Growmore Global visa to others as well who are looking for smooth and hazzel-free process.Once again Thank you Growmore Global visa and team.",
+    text:"I have had an wonderful experience with Growmore Global Visa. Especially Mr. Dev and team they were very helpful and informative throughout the process. And also kept me updated throughout the process and guided through each and every step. Will definitely recommend Growmore Global visa to others as well who are looking for smooth and hazzel-free process.Once again Thank you Growmore Global visa and team.",
   },
   {
     id: 7,
