@@ -609,7 +609,7 @@ const Testimonials = () => {
                 w-[45px]
                 h-[28px]
                 object-contain
-                rotate-[-180deg]
+                rotate-[-180]
 
                 sm:right-[-12px]
                 sm:w-[50px]
