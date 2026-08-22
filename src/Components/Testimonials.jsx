@@ -20,7 +20,7 @@ const testimonials = [
     name: "Shristi Timilsena",
     visa: "SC500- Australia Student Visa",
     text: "We are delighted that my husband’s student dependent visa was successfully granted with the help of Growmore Global Visa. Throughout the entire process, the team demonstrated professionalism, expertise, and unwavering support. TThanks to their expertise, the process was smooth and stress-free. We highly recommend Growmore Global Visa to anyone seeking reliable and efficient visa assistance.",
- },
+  },
   {
     id: 4,
     name: "Mansi Pandya",
@@ -37,7 +37,7 @@ const testimonials = [
     id: 6,
     name: "Chirag Modi",
     visa: "Dubai student Visa",
-    text:"I have had an wonderful experience with Growmore Global Visa. Especially Mr. Dev and team they were very helpful and informative throughout the process. And also kept me updated throughout the process and guided through each and every step. Will definitely recommend Growmore Global visa to others as well who are looking for smooth and hazzel-free process.Once again Thank you Growmore Global visa and team.",
+    text: "I have had an wonderful experience with Growmore Global Visa. Especially Mr. Dev and team they were very helpful and informative throughout the process. And also kept me updated throughout the process and guided through each and every step. Will definitely recommend Growmore Global visa to others as well who are looking for smooth and hazzel-free process.Once again Thank you Growmore Global visa and team.",
   },
   {
     id: 7,
@@ -75,8 +75,6 @@ const Testimonials = () => {
       const nextSlide = slideIndex + 1;
 
       setSlideIndex(nextSlide);
-
-      // Select first testimonial of next group
       setActiveTestimonial(nextSlide * 3);
     }
   };
@@ -86,8 +84,6 @@ const Testimonials = () => {
       const previousSlide = slideIndex - 1;
 
       setSlideIndex(previousSlide);
-
-      // Select first testimonial of previous group
       setActiveTestimonial(previousSlide * 3);
     }
   };
@@ -116,212 +112,7 @@ const Testimonials = () => {
         "
       >
         {/* =====================================================
-            LEFT SIDE
-        ====================================================== */}
-
-        <div
-          className="
-            relative
-            pt-[35px]
-            mx-auto
-            w-full
-            xl:absolute
-            xl:top-[34px]
-            xl:left-[54px]
-            xl:pt-0
-            xl:mx-0
-            xl:w-auto
-          "
-        >
-          {/* Client */}
-          <div className="flex items-center gap-[10px] xl:ml-12 mb-2 sm:mb-2">
-            <span
-              className="
-                text-[28px]
-                sm:text-[36px]
-                md:text-[40px]
-                lg:text-[40px]
-                leading-tight
-                text-[#338292]
-              "
-            >
-              Client
-            </span>
-          </div>
-
-          {/* Testimonials */}
-          <div className="mt-[12px] sm:mt-[-8px] md:mt-[-10px] xl:ml-12 xl:mt-[-14px]">
-            <span
-              className="
-                text-[32px]
-                sm:text-[40px]
-                md:text-[45px]
-                lg:text-[60px]
-                leading-tight
-                font-semibold
-                text-[#8DC8AB]
-              "
-            >
-              Testimonials
-            </span>
-          </div>
-
-          {/* =====================================================
-              TESTIMONIAL CARD
-          ====================================================== */}
-
-          <div
-            className="
-              relative
-              w-full
-              max-w-[510px]
-              min-h-[330px]
-              h-auto
-              mt-[25px]
-              mx-auto
-              rounded-[30px]
-              bg-[linear-gradient(90deg,#C3FFC5,#D5F3FF)]
-              pt-[45px]
-              px-[30px]
-              pb-[85px]
-
-              sm:px-[40px]
-
-              xl:w-[510px]
-              xl:h-[330px]
-              xl:mt-[20px]
-              xl:ml-[90px]
-              xl:mx-0
-            "
-          >
-            {/* Opening Quote */}
-            <img
-              src={one}
-              alt="Opening quote"
-              className="
-                absolute
-                top-[3px]
-                left-[-12px]
-                w-[45px]
-                h-[28px]
-                object-contain
-
-                sm:left-[-18px]
-                sm:w-[50px]
-                sm:h-[30px]
-
-                md:left-[-22px]
-                md:w-[55px]
-                md:h-[32px]
-
-                xl:left-[-25px]
-                xl:w-[57px]
-                xl:h-[34px]
-              "
-            />
-
-            {/* Testimonial */}
-            <p
-              className="
-                mt-[5px]
-                text-center
-                text-[13px]
-                leading-[140%]
-                text-[#338292]
-                italic
-
-                sm:text-[14px]
-                sm:leading-[135%]
-
-                md:text-[15px]
-                md:leading-[135%]
-
-                xl:text-[18px]
-                xl:leading-[120%]
-              "
-            >
-              {testimonials[activeTestimonial].text}
-            </p>
-
-            {/* Client Details */}
-            <div
-              className="
-                absolute
-                bottom-[20px]
-                left-0
-                w-full
-                px-4
-                text-center
-
-                sm:bottom-[22px]
-
-                xl:bottom-[25px]
-              "
-            >
-              <p
-                className="
-                  text-[15px]
-                  font-semibold
-                  text-[#338292]
-
-                  sm:text-[17px]
-
-                  md:text-[18px]
-
-                  xl:text-[20px]
-                "
-              >
-                {testimonials[activeTestimonial].name}
-              </p>
-
-              <p
-                className="
-                  text-[11px]
-                  font-semibold
-                  text-[#338292]
-
-                  sm:text-[12px]
-
-                  md:text-[14px]
-
-                  xl:text-[16px]
-                "
-              >
-                {testimonials[activeTestimonial].visa}
-              </p>
-            </div>
-
-            {/* Closing Quote */}
-            <img
-              src={one1}
-              alt="Closing quote"
-              className="
-                absolute
-                bottom-[2px]
-                right-[-12px]
-                w-[45px]
-                h-[28px]
-                object-contain
-                rotate-[-180]
-
-                sm:right-[-18px]
-                sm:w-[50px]
-                sm:h-[30px]
-
-                md:right-[-22px]
-                md:w-[55px]
-                md:h-[32px]
-
-                xl:right-[-25px]
-                xl:w-[57px]
-                xl:h-[34px]
-              "
-            />
-          </div>
-        </div>
-
-        {/* =====================================================
-            RIGHT SIDE
+            LEFT SIDE - CLIENT LIST
         ====================================================== */}
 
         <div
@@ -334,27 +125,71 @@ const Testimonials = () => {
             md:mt-[40px]
 
             xl:absolute
-            xl:top-[125px]
-            xl:left-[780px]
+            xl:top-[55px]
+            xl:left-[98px]
             xl:w-[430px]
-            xl:h-[337px]
+            xl:h-[430px]
             xl:mt-0
             xl:pb-0
           "
         >
-          {/* Heading */}
+          {/* =====================================================
+              CLIENT TESTIMONIALS HEADING
+          ====================================================== */}
+
+          <div
+            className="
+              flex
+              items-center
+              gap-[10px]
+              mb-[25px]
+              xl:ml-0
+              xl:mt-0
+            "
+          >
+            <span
+              className="
+                text-[28px]
+                sm:text-[36px]
+                md:text-[40px]
+                lg:text-[40px]
+                leading-tight
+                text-[#338292]
+              "
+            >
+              Client
+            </span>
+
+            <span
+              className="
+                text-[32px]
+                sm:text-[40px]
+                md:text-[45px]
+                lg:text-[60px]
+                leading-tight
+                font-semibold
+                text-[#8DC8AB]
+                mt-[-5px]
+              "
+            >
+              Testimonials
+            </span>
+          </div>
+
+          {/* =====================================================
+              SECTION HEADING
+          ====================================================== */}
+
           <div className="mb-[10px] sm:mb-[18px]">
             <p
               className="
                 text-[18px]
                 sm:text-[21px]
                 md:text-[23px]
-                lg:text-center
+                lg:text-[23px]
                 xl:text-[25px]
-                xl:text-left
-                font-semibold
-                md:text-center
                 leading-tight
+                font-semibold
                 text-[#338292]
               "
             >
@@ -367,12 +202,10 @@ const Testimonials = () => {
                 text-[18px]
                 sm:text-[21px]
                 md:text-[23px]
-                md:text-center
-                lg:text-center
+                lg:text-[23px]
                 xl:text-[25px]
-                xl:text-left
-                font-semibold
                 leading-tight
+                font-semibold
                 text-[#009966]
               "
             >
@@ -415,9 +248,6 @@ const Testimonials = () => {
                       max-w-[300px]
                       h-[62px]
                       sm:h-[65px]
-                      lg:ml-80
-                      md:ml-50
-                      xl:ml-0
                       xl:h-[68px]
                       rounded-[8px]
                       border
@@ -528,12 +358,6 @@ const Testimonials = () => {
                 gap-[10px]
                 mt-[18px]
                 ml-0
-
-                sm:ml-[120px]
-
-                md:ml-[280px]
-                lg:ml-[395px]
-                xl:ml-[72px]
               "
             >
               {/* Previous */}
@@ -577,6 +401,7 @@ const Testimonials = () => {
                         h-[8px]
                         rounded-full
                         transition-all
+
                         ${
                           slideIndex === index
                             ? "bg-[#338292] w-[16px]"
@@ -614,6 +439,191 @@ const Testimonials = () => {
                 →
               </button>
             </div>
+          </div>
+        </div>
+
+        {/* =====================================================
+            RIGHT SIDE - TESTIMONIAL CARD
+        ====================================================== */}
+
+        <div
+          className="
+            relative
+            pt-[35px]
+            mx-auto
+            w-full
+
+            xl:absolute
+            xl:top-[110px]
+            xl:left-[700px]
+            xl:pt-0
+            xl:mx-0
+            xl:w-auto
+          "
+        >
+          {/* =====================================================
+              TESTIMONIAL CARD
+          ====================================================== */}
+
+          <div
+            className="
+              relative
+              w-full
+              max-w-[510px]
+              min-h-[330px]
+              h-auto
+              mt-[25px]
+              mx-auto
+              rounded-[30px]
+              bg-[linear-gradient(90deg,#C3FFC5,#D5F3FF)]
+              pt-[45px]
+              px-[30px]
+              pb-[85px]
+
+              sm:px-[40px]
+
+              xl:w-[510px]
+              xl:h-[330px]
+              xl:mt-[20px]
+              xl:ml-0
+              xl:mx-0
+            "
+          >
+            {/* =====================================================
+                OPENING QUOTE
+            ====================================================== */}
+
+            <img
+              src={one}
+              alt="Opening quote"
+              className="
+                absolute
+                top-[3px]
+                left-[-10px]
+                w-[45px]
+                h-[28px]
+                object-contain
+
+                sm:left-[-12px]
+                sm:w-[50px]
+                sm:h-[30px]
+
+                md:left-[-15px]
+                md:w-[50px]
+                md:h-[30px]
+
+                xl:left-[-10px]
+                xl:w-[50px]
+                xl:h-[30px]
+              "
+            />
+
+            {/* =====================================================
+                TESTIMONIAL TEXT
+            ====================================================== */}
+
+            <p
+              className="
+                mt-[5px]
+                text-center
+                text-[13px]
+                leading-[140%]
+                text-[#338292]
+                italic
+
+                sm:text-[14px]
+                sm:leading-[135%]
+
+                md:text-[15px]
+                md:leading-[135%]
+
+                xl:text-[18px]
+                xl:leading-[120%]
+              "
+            >
+              {testimonials[activeTestimonial].text}
+            </p>
+
+            {/* =====================================================
+                CLIENT DETAILS
+            ====================================================== */}
+
+            <div
+              className="
+                absolute
+                bottom-[20px]
+                left-0
+                w-full
+                px-4
+                text-center
+
+                sm:bottom-[22px]
+
+                xl:bottom-[25px]
+              "
+            >
+              <p
+                className="
+                  text-[15px]
+                  font-semibold
+                  text-[#338292]
+
+                  sm:text-[17px]
+
+                  md:text-[18px]
+
+                  xl:text-[20px]
+                "
+              >
+                {testimonials[activeTestimonial].name}
+              </p>
+
+              <p
+                className="
+                  text-[11px]
+                  font-semibold
+                  text-[#338292]
+
+                  sm:text-[12px]
+
+                  md:text-[14px]
+
+                  xl:text-[16px]
+                "
+              >
+                {testimonials[activeTestimonial].visa}
+              </p>
+            </div>
+
+            {/* =====================================================
+                CLOSING QUOTE
+            ====================================================== */}
+
+            <img
+              src={one1}
+              alt="Closing quote"
+              className="
+                absolute
+                bottom-[2px]
+                right-[-10px]
+                w-[45px]
+                h-[28px]
+                object-contain
+                rotate-[-180deg]
+
+                sm:right-[-12px]
+                sm:w-[50px]
+                sm:h-[30px]
+
+                md:right-[-15px]
+                md:w-[50px]
+                md:h-[30px]
+
+                xl:right-[-10px]
+                xl:w-[50px]
+                xl:h-[30px]
+              "
+            />
           </div>
         </div>
       </div>

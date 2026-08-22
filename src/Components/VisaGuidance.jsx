@@ -201,14 +201,11 @@ const VisaGuidance = () => {
               "
             >
               Interactive <span className="font-bold text-[24px] text-[#12648E]">Live</span>
-              <br />
               <span className="font-bold text-[24px] text-[#12648E]">
-                Sessions
+                Sessions{" "}
               </span> with{" "}
-              <span className="font-bold text-teal-600 text-[24px]">Krunal Nayak</span>
-              <br />
+              <span className="font-bold text-teal-600 text-[24px]">Krunal Nayak{" "}</span>
               Explore essential immigration and
-              <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
               visa information
             </p>
