@@ -5,6 +5,7 @@ import one from "../assets/one.png";
 import team1 from "../assets/team1.png";
 import team2 from "../assets/team2.png";
 import team3 from "../assets/team3.png";
+import QualityCommitment from "../Components/QualityCommitment";
 
 const AboutUs = () => {
   const teams = [
@@ -158,13 +159,8 @@ const AboutUs = () => {
               lg:text-[20px]
             "
           >
-            Growmore Global Visa is a team of immigration and overseas education
-            professionals helping students, professionals, individuals, and
-            families explore opportunities to study, work, travel, or settle
-            abroad. Growmore Global Visa is a team of immigration and overseas
-            education professionals helping students, professionals,
-            individuals, and families explore opportunities to study, work,
-            travel, or settle abroad.
+            Every international journey begins with a reason - a dream to study,
+            a career to build, a family to reunite, or a new chapter to begin.
           </p>
 
           {/* Paragraph 2 */}
@@ -182,84 +178,98 @@ const AboutUs = () => {
               lg:text-[20px]
             "
           >
-            Growmore Global Visa is a team of immigration and overseas education
-            professionals helping students, professionals, individuals, and
-            families explore opportunities to study, work, travel, or settle
-            abroad. Growmore Global Visa is a team of immigration and overseas
-            education professionals helping students, professionals,
-            individuals, and families explore opportunities to study, work,
-            travel, or settle abroad.
+            Growmore Global Visa is here to help turn that reason into a
+            well-planned journey. We support students, professionals,
+            individuals, and families with personalised immigration and overseas
+            education guidance for study, work, visitor, dependent, and
+            migration pathways.
+          </p>
+
+          <p
+            className="
+              mx-auto
+              w-full
+              max-w-[1065px]
+              text-justify
+              text-[16px]
+              leading-[1.6]
+              text-cyan-700
+              sm:text-[17px]
+              md:text-[18px]
+              lg:text-[20px]
+            "
+          >
+            Our approach is simple: understand your goals, explain your options
+            clearly, and guide you at every step. Because for us, you are not
+            just another application - you are a journey we are proud to be part
+            of.
           </p>
         </div>
       </section>
 
       {/* =====================================================
-          WHAT SETS US APART SECTION
-      ====================================================== */}
+        WHAT SETS US APART SECTION
+    ====================================================== */}
       <section className="w-full bg-white">
         <div
           className="
-            mx-auto
-            flex
-            w-full
-            max-w-[1440px]
-            flex-col
-            px-5
-            py-10
-            sm:px-8
-            sm:py-12
-            md:px-12
-            md:py-14
-            lg:flex-row
-            lg:items-center
-            lg:px-[54px]
-            lg:py-[32px]
-            xl:pl-[80px]
-            xl:pr-[54px]
-          "
+      mx-auto
+      flex
+      w-full
+      max-w-[1440px]
+      flex-col
+      px-5
+      py-10
+      sm:px-8
+      sm:py-12
+      md:px-12
+      md:py-14
+      lg:flex-row
+      lg:items-center
+      lg:px-[54px]
+      lg:py-[32px]
+      xl:pl-[80px]
+      xl:pr-[54px]
+    "
         >
           {/* LEFT CONTENT */}
           <div
             className="
-              w-full
-              lg:w-[48%]
-              lg:pr-[40px]
-              xl:pr-[55px]
-            "
+        w-full
+        lg:w-[48%]
+        lg:pr-[40px]
+        xl:pr-[55px]
+      "
           >
             {/* Heading */}
             <div>
               <p
                 className="
-                  m-0
-                  text-[28px]
-                  font-normal
-                  leading-[1.15]
-                  text-[#26839A]
-                  sm:text-[32px]
-                  lg:text-[34px]
-                "
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                }}
+            m-0
+            text-[28px]
+            font-normal
+            leading-[1.15]
+            text-[#26839A]
+            sm:text-[32px]
+            md:text-[34px]
+            lg:text-[34px]
+          "
               >
                 What Sets
               </p>
 
               <h2
                 className="
-                  m-0
-                  mt-[4px]
-                  text-[40px]
-                  font-semibold
-                  leading-[1.05]
-                  text-[#669980]
-                  sm:text-[46px]
-                  lg:text-[50px]
-                "
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                }}
+            m-0
+            mt-[4px]
+            text-[40px]
+            font-semibold
+            leading-[1.05]
+            text-[#669980]
+            sm:text-[46px]
+            md:text-[48px]
+            lg:text-[50px]
+          "
               >
                 Us Apart
               </h2>
@@ -268,14 +278,17 @@ const AboutUs = () => {
             {/* Sub Heading */}
             <h3
               className="
-                mt-8
-                text-[17px]
-                font-semibold
-                leading-[1.3]
-                text-[#52BFF1]
-                sm:text-[18px]
-                lg:text-[19px]
-              "
+          mt-6
+          text-[16px]
+          font-semibold
+          leading-[1.3]
+          text-[#52BFF1]
+          sm:mt-7
+          sm:text-[18px]
+          md:mt-8
+          md:text-[18px]
+          lg:text-[19px]
+        "
               style={{
                 fontFamily: "Poppins, sans-serif",
               }}
@@ -286,16 +299,17 @@ const AboutUs = () => {
             {/* Description */}
             <div
               className="
-                mt-4
-                max-w-[510px]
-                text-justify
-                text-[13px]
-                leading-[1.5]
-                text-[#263B50]
-                sm:text-[14px]
-                md:text-[15px]
-                lg:text-[16px]
-              "
+          mt-4
+          w-full
+          max-w-[510px]
+          text-justify
+          text-[13px]
+          leading-[1.5]
+          text-[#263B50]
+          sm:text-[14px]
+          md:text-[15px]
+          lg:text-[16px]
+        "
               style={{
                 fontFamily: "Poppins, sans-serif",
               }}
@@ -318,44 +332,47 @@ const AboutUs = () => {
           {/* RIGHT IMAGE */}
           <div
             className="
-              mt-8
-              flex
-              w-full
-              justify-center
-              lg:mt-0
-              lg:w-[52%]
-              lg:justify-start
-            "
+        mt-8
+        flex
+        w-full
+        justify-center
+        sm:mt-10
+        md:mt-10
+        lg:mt-0
+        lg:w-[52%]
+        lg:justify-start
+      "
           >
             <div
               className="
-                w-full
-                max-w-[660px]
-                overflow-hidden
-                rounded-[20px]
-                lg:ml-[-20px]
-                xl:ml-[-30px]
-              "
+          w-full
+          max-w-[660px]
+          overflow-hidden
+          rounded-[20px]
+          sm:rounded-[22px]
+          lg:ml-[-20px]
+          xl:ml-[-30px]
+        "
             >
               <img
                 src={aboutImage}
                 alt="Growmore Global Visa consultation"
                 className="
-                  block
-                  h-[220px]
-                  w-full
-                  object-cover
-                  object-center
-                  sm:h-[280px]
-                  md:h-[320px]
-                  lg:h-[380px]
-                "
+            block
+            h-[220px]
+            w-full
+            object-cover
+            object-center
+            sm:h-[280px]
+            md:h-[320px]
+            lg:h-[380px]
+          "
               />
             </div>
           </div>
         </div>
       </section>
-
+     <QualityCommitment/>
       {/* =====================================================
     LED BY EXPERTISE AND EXCELLENCE
 ===================================================== */}
@@ -393,6 +410,7 @@ const AboutUs = () => {
           <div
             className="
         w-full
+        md:max-w-[700px]
         xl:w-[40%]
       "
           >
@@ -409,9 +427,6 @@ const AboutUs = () => {
             md:text-[34px]
             xl:text-[38px]
           "
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                }}
               >
                 Led By Expertise And
               </p>
@@ -428,9 +443,6 @@ const AboutUs = () => {
             md:text-[50px]
             xl:text-[54px]
           "
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                }}
               >
                 Excellence
               </h2>
@@ -439,7 +451,8 @@ const AboutUs = () => {
             {/* Description */}
             <div
               className="
-          mt-8
+          mt-7
+          w-full
           max-w-[420px]
           text-justify
           text-[13px]
@@ -481,6 +494,7 @@ const AboutUs = () => {
         justify-center
         sm:justify-center
         md:justify-start
+        lg:justify-center
         xl:mt-0
         xl:w-[28%]
         xl:justify-left
@@ -520,6 +534,9 @@ const AboutUs = () => {
             className="
         mt-10
         w-full
+        sm:mt-12
+        md:mt-14
+        lg:max-w-[500px]
         xl:mt-0
         xl:w-[28%]
       "
@@ -613,6 +630,9 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* =====================================================
+    TEAM SECTION
+===================================================== */}
       <section
         className="
     relative
@@ -625,9 +645,11 @@ const AboutUs = () => {
     sm:py-14
     md:px-12
     md:py-16
+    lg:px-10
     xl:px-0
     xl:py-[125px]
-    h-[620px]
+    h-auto
+    xl:h-[620px]
   "
       >
         <div
@@ -643,35 +665,85 @@ const AboutUs = () => {
     "
         >
           <div className="w-full">
-            <div className="w-[1216px] h-[462px] top-[79px] left-[111px] gap-[90px]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 xl:ml-12">
+            <div
+              className="
+          w-full
+          h-auto
+          xl:w-[1216px]
+          xl:h-[462px]
+          xl:top-[79px]
+          xl:left-[111px]
+          xl:gap-[90px]
+        "
+            >
+              <div
+                className="
+            grid
+            grid-cols-1
+            gap-6
+            sm:grid-cols-2
+            sm:gap-7
+            md:grid-cols-2
+            md:gap-8
+            lg:grid-cols-3
+            lg:gap-6
+            xl:gap-10
+            xl:ml-12
+          "
+              >
                 {teams.slice(0, 3).map((member, index) => (
-                  <div key={index} className="relative w-[346px] h-[462px] overflow-hidden rounded-3xl shadow-sm border-1 border-slate-200">
+                  <div
+                    key={index}
+                    className="
+                relative
+                mx-auto
+                w-full
+                max-w-[346px]
+                h-[400px]
+                overflow-hidden
+                rounded-3xl
+                border
+                border-slate-200
+                shadow-sm
+                sm:h-[430px]
+                md:h-[440px]
+                lg:h-[462px]
+                xl:w-[346px]
+                xl:h-[462px]
+              "
+                  >
                     <img
                       src={member.img}
                       alt={member.name}
-                      className="w-full h-[398px] object-cover"
+                      className="
+                  w-full
+                  h-full
+                  object-cover
+                "
                     />
 
                     <div
                       className="
-      absolute
-      bottom-0
-      left-0
-      w-full
-      h-[143px]
-      p-5
-      flex
-      flex-col
-      justify-end
-      bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#000000_57.21%,#000000_100%)]
-    "
+                  absolute
+                  bottom-0
+                  left-0
+                  w-full
+                  h-[130px]
+                  p-5
+                  flex
+                  flex-col
+                  justify-end
+                  bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#000000_57.21%,#000000_100%)]
+                  sm:h-[140px]
+                  lg:h-[143px]
+                  xl:h-[143px]
+                "
                     >
-                      <h3 className="text-white font-semibold text-md">
+                      <h3 className="text-md font-semibold text-white">
                         {member.name}
                       </h3>
 
-                      <p className="text-white/80 text-sm mt-1">
+                      <p className="mt-1 text-sm text-white/80">
                         {member.role}
                       </p>
                     </div>
