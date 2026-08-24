@@ -11,6 +11,7 @@ import heroImage from "../assets/hero-image.png";
 
 import "react-phone-number-input/style.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Link } from "react-router-dom";
 
 /* =========================================================
    CUSTOM COUNTRY SELECT
@@ -355,6 +356,7 @@ const Hero = () => {
 
               {/* Know More */}
               <div className="flex justify-center lg:justify-start">
+                <Link to="/who-we-are">
                 <button
                   type="button"
                   className="
@@ -382,7 +384,7 @@ const Hero = () => {
                 >
                   Know More
                   <ArrowRight size={20} />
-                </button>
+                </button></Link>
               </div>
             </div>
 

@@ -91,9 +91,9 @@ const AboutUs = () => {
               lg:text-[18px]
             "
           >
-            <span className="text-sky-500">Home &gt; </span>
+            <span className="text-sky-500 lg:ml-10 xl:ml-0">Home &gt; </span>
 
-            <span className="text-cyan-800">About Us</span>
+            <span className="text-cyan-800">Who We Are</span>
           </p>
 
           {/* Banner Heading */}
@@ -110,9 +110,10 @@ const AboutUs = () => {
               md:text-[52px]
               lg:mt-20
               lg:text-[60px]
+              lg:ml-10 xl:ml-0
             "
           >
-            About Us
+            Who We Are
           </h1>
         </div>
       </section>
@@ -140,6 +141,8 @@ const AboutUs = () => {
             flex
             w-full
             max-w-[1150px]
+            xl:max-w-[1150px]
+            lg:max-w-[950px]
             flex-col
             gap-6
           "
@@ -388,6 +391,8 @@ const AboutUs = () => {
     sm:py-14
     md:px-12
     md:py-16
+    lg:px-0
+    lg:py-[45px]
     xl:px-0
     xl:py-[55px]
   "
@@ -398,6 +403,9 @@ const AboutUs = () => {
       flex
       w-full
       max-w-[1256px]
+      lg:flex-row
+      lg:items-center
+      lg:justify-between
       flex-col
       xl:flex-row
       xl:items-center
@@ -411,6 +419,7 @@ const AboutUs = () => {
             className="
         w-full
         md:max-w-[700px]
+        lg:w-[40%]
         xl:w-[40%]
       "
           >
@@ -425,6 +434,8 @@ const AboutUs = () => {
             text-[#26839A]
             sm:text-[31px]
             md:text-[34px]
+            lg:text-[36px]
+            lg:ml-10
             xl:text-[38px]
           "
               >
@@ -441,6 +452,7 @@ const AboutUs = () => {
             text-[#669980]
             sm:text-[46px]
             md:text-[50px]
+            lg:ml-10
             xl:text-[54px]
           "
               >
@@ -460,6 +472,9 @@ const AboutUs = () => {
           sm:mt-9
           sm:text-[14px]
           md:text-[15px]
+          lg:mt-6
+          lg:text-[15px]
+          lg:ml-10
           xl:mt-8
           xl:text-[16px]
         "
@@ -494,7 +509,9 @@ const AboutUs = () => {
         justify-center
         sm:justify-center
         md:justify-start
-        lg:justify-center
+        lg:mt-0
+        lg:w-[20%]
+        lg:justify-left
         xl:mt-0
         xl:w-[28%]
         xl:justify-left
@@ -536,7 +553,9 @@ const AboutUs = () => {
         w-full
         sm:mt-12
         md:mt-14
-        lg:max-w-[500px]
+        lg:w-[25%]
+        lg:justify-center
+        lg:mt-[-40px]
         xl:mt-0
         xl:w-[28%]
       "
@@ -576,6 +595,7 @@ const AboutUs = () => {
             text-[#0084A1]
             sm:text-[31px]
             md:text-[34px]
+            lg:mr-10
             xl:mt-0
             xl:text-[32px]
           "
