@@ -1,7 +1,3 @@
-
-// =====================================================
-// BENEFIT IMAGES
-// =====================================================
 import globalCareer from "../assets/image 6.png";
 import settlement from "../assets/image 7.png";
 import income from "../assets/image 8.png";
@@ -109,9 +105,9 @@ const BenefitCard = ({ benefit }) => {
             leading-[1.2]
             text-[#0097C7]
 
-            sm:text-[13px]
+            sm:text-[18px]
 
-            md:text-[13px]
+            md:text-[18px]
 
             lg:text-[15px]
 
@@ -125,14 +121,14 @@ const BenefitCard = ({ benefit }) => {
           className="
             m-0
             mt-2
-            text-[10px]
+            text-[18px]
             font-normal
             leading-[1.45]
             text-[#8AA3B8]
 
-            sm:text-[11px]
+            sm:text-[18px]
 
-            md:text-[11px]
+            md:text-[18px]
 
             lg:text-[14px]
 
