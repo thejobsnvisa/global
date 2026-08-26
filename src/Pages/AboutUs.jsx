@@ -669,7 +669,7 @@ const AboutUs = () => {
     xl:px-0
     xl:py-[125px]
     h-auto
-    xl:h-[620px]
+    xl:h-[760px]
   "
       >
         <div

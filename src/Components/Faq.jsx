@@ -525,9 +525,9 @@ const Faq = () => {
 
         md:min-h-[1000px]
 
-        lg:min-h-[900px]
+        lg:min-h-[1000px]
 
-        xl:h-[850px]
+        xl:h-[980px]
         xl:min-h-0
       "
     >

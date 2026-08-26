@@ -14,7 +14,7 @@ import card from "../assets/mara-card.png";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full overflow-hidden bg-[#0a3f44] shrink-0 pt-12 md:pt-16  xl:bg-transparent">
+    <footer className="relative w-full -mt-[200px] overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16  xl:bg-transparent">
       <div className="relative w-full min-h-0">
         
         {/* Background Curve (Desktop only 1280px+) */}
