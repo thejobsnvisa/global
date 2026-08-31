@@ -65,63 +65,55 @@ const bottomRowFeatures = [
 // Flip Card Component
 const FlipCard = ({ icon, title, description, bgColor, textColor }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleFlip = () => {
-    if (!isAnimating) {
-      setIsFlipped((prev) => !prev);
-      setIsAnimating(true);
-    }
-  };
 
   return (
     <div
-      className="h-[204px] w-full cursor-pointer [perspective:1000px]"
-      onClick={handleFlip}
+  className="h-[204px] w-full cursor-pointer [perspective:1000px]"
+  onMouseEnter={() => setIsFlipped(true)}
+  onMouseLeave={() => setIsFlipped(false)}
+>
+  <motion.div
+    className="relative h-full w-full rounded-[20px] transition-all [transform-style:preserve-3d]"
+    initial={false}
+    animate={{ rotateY: isFlipped ? 180 : 0 }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}
+  >
+    {/* FRONT SIDE */}
+    <div
+      className={`absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-[20px] p-6 text-center shadow-sm [backface-visibility:hidden] ${bgColor}`}
     >
-      <motion.div
-        className="relative h-full w-full rounded-[20px] transition-all [transform-style:preserve-3d]"
-        initial={false}
-        animate={{ rotateY: isFlipped ? 180 : 0 }}
-        transition={{ duration: 0.6, animationDirection: "normal" }}
-        onAnimationComplete={() => setIsAnimating(false)}
-      >
-        {/* FRONT SIDE */}
-        <div
-          className={`absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-[20px] p-6 text-center shadow-sm [backface-visibility:hidden] ${bgColor}`}
-        >
-          <div className="mb-4 flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-xl p-[8px]">
-            <img
-              src={icon}
-              alt={title}
-              className="h-full w-full object-contain"
-            />
-          </div>
-          <h3 className={`text-[18px] font-semibold leading-snug ${textColor}`}>
-            {title}
-          </h3>
-        </div>
-
-        {/* BACK SIDE */}
-        <div
-          className={`absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-[20px] p-6 text-center shadow-md [backface-visibility:hidden] [transform:rotateY(180deg)] ${bgColor}`}
-        >
-           <div className="mb-4 flex h-[56px] w-[56px] bg-white shrink-0 items-center justify-center rounded-xl p-[8px] shadow-md">
-            <img
-              src={icon}
-              alt={title}
-              className="h-full w-full object-contain"
-            />
-          </div>
-          <h3 className={`mb-2 text-[16px] font-bold ${textColor}`}>
-            {title}
-          </h3>
-          <p className="text-[13px] leading-relaxed text-slate-600">
-            {description}
-          </p>
-        </div>
-      </motion.div>
+      <div className="mb-4 flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-xl p-[8px]">
+        <img
+          src={icon}
+          alt={title}
+          className="h-full w-full object-contain"
+        />
+      </div>
+      <h3 className={`text-[18px] font-semibold leading-snug ${textColor}`}>
+        {title}
+      </h3>
     </div>
+
+    {/* BACK SIDE */}
+    <div
+      className={`absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-[20px] p-6 text-center shadow-md [backface-visibility:hidden] [transform:rotateY(180deg)] ${bgColor}`}
+    >
+      <div className="mb-2 flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-xl bg-white p-[8px] shadow-md">
+        <img
+          src={icon}
+          alt={title}
+          className="h-full w-full object-contain"
+        />
+      </div>
+      <h3 className={`mb-1 text-[16px] font-bold ${textColor}`}>
+        {title}
+      </h3>
+      <p className="text-[13px] leading-relaxed text-slate-600">
+        {description}
+      </p>
+    </div>
+  </motion.div>
+</div>
   );
 };
 
@@ -143,14 +135,14 @@ const Visa = () => {
         {/* Cards Grid */}
         <div className="flex flex-col gap-6">
           {/* Top Row: Offset Right on Desktop */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:ml-auto lg:w-[88%] lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-1 lg:ml-auto lg:w-[88%] lg:grid-cols-3">
             {topRowFeatures.map((item, index) => (
               <FlipCard key={index} {...item} />
             ))}
           </div>
 
           {/* Bottom Row: Offset Left on Desktop */}
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mr-auto lg:w-[88%] lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-1 lg:mr-auto lg:w-[88%] lg:grid-cols-3">
             {bottomRowFeatures.map((item, index) => (
               <FlipCard key={index} {...item} />
             ))}
