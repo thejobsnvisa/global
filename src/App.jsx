@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar.jsx'
 import Home from './Pages/Home'
 import AboutUs from './Pages/AboutUs.jsx'
 import Work from './Pages/Work.jsx'
+import Migration from './Pages/Migration.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element = {<Home/>} />
         <Route path='/who-we-are' element={<AboutUs/>}/>
         <Route path='/services/work-visa' element={<Work/>}/>
+        <Route path='/services/migration-visa' element={<Migration/>}/>
       </Routes>
     </Router>
     <Footer />
