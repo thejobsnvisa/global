@@ -426,9 +426,9 @@ const Dependent = () => {
           overflow-hidden
           bg-white
           xl:h-[850px]
-          lg:h-[900px]
-          md:h-[1250px]
-          h-[1150px]
+          lg:h-[1000px]
+          md:h-[1350px]
+          h-[1250px]
           py-10
           sm:py-12
           md:py-14
