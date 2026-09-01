@@ -44,7 +44,7 @@ const Visitor = () => {
       </section>
 
       {/* ================= CONTENT SECTION ================= */}
-      <section className="w-full bg-emerald-50 py-12 md:py-16 lg:py-20 h-[990px] md:h-[850px] lg:h-[780px] xl:h-[650px]">
+      <section className="w-full bg-cyan-50 py-12 md:py-16 lg:py-20 h-[990px] md:h-[850px] lg:h-[780px] xl:h-[650px]">
         <div className="mx-auto flex max-w-[1064px] flex-col items-center gap-6 px-5 text-center text-cyan-700 sm:px-8">
           <p className="text-[16px] leading-relaxed sm:text-[18px] md:text-[20px]">
             A visitor visa or tourist visa is a type of legal document issued by
