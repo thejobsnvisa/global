@@ -18,7 +18,7 @@ const GlobalVisa = () => {
 
         md:px-10
         md:py-14
-
+        h-[1150px]
         lg:px-12
         lg:py-16
 

@@ -668,7 +668,9 @@ const AboutUs = () => {
     lg:px-10
     xl:px-0
     xl:py-[125px]
-    h-auto
+    h-[1520px]
+    md:h-[1200px]
+    lg:h-[760px]
     xl:h-[760px]
   "
       >

@@ -5,7 +5,7 @@ import b1 from "../assets/b1.svg";
 /* ============================================================
    REUSABLE FAQ CARD
 ============================================================ */
-const FaqCard = ({ faq, size = "desktop", isFlipped, onToggle }) => {
+const FaqCard = ({ faq, size = "desktop", isFlipped, onToggle, onHoverStart, onHoverEnd }) => {
   const sizeClasses = {
    
     desktop: {
@@ -52,6 +52,8 @@ const FaqCard = ({ faq, size = "desktop", isFlipped, onToggle }) => {
   return (
     <div
       onClick={onToggle}
+      onMouseEnter={onHoverStart}
+      onMouseLeave={onHoverEnd}
       className={`
         ${currentSize.wrapper}
         relative
@@ -521,11 +523,11 @@ const Faq = () => {
         w-full
         bg-white
 
-        min-h-[1000px]
+        h-[1730px]
 
-        md:min-h-[1000px]
+        md:h-[1350px]
 
-        lg:min-h-[1000px]
+        lg:h-[1000px]
 
         xl:h-[980px]
         xl:min-h-0
@@ -651,6 +653,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[0].id]}
             onToggle={() => toggleFlip(faqCards[0].id)}
+            onHoverStart={() => toggleFlip(faqCards[0].id)}
+            onHoverEnd={() => toggleFlip(faqCards[0].id)}
           />
 
           {/* CARD 2 */}
@@ -659,6 +663,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[1].id]}
             onToggle={() => toggleFlip(faqCards[1].id)}
+            onHoverStart={() => toggleFlip(faqCards[1].id)}
+            onHoverEnd={() => toggleFlip(faqCards[1].id)}
           />
 
           {/* CARD 3 */}
@@ -667,6 +673,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[2].id]}
             onToggle={() => toggleFlip(faqCards[2].id)}
+            onHoverStart={() => toggleFlip(faqCards[2].id)}
+            onHoverEnd={() => toggleFlip(faqCards[2].id)}
           />
 
           {/* CARD 4 */}
@@ -675,6 +683,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[3].id]}
             onToggle={() => toggleFlip(faqCards[3].id)}
+            onHoverStart={() => toggleFlip(faqCards[3].id)}
+            onHoverEnd={() => toggleFlip(faqCards[3].id)}
           />
 
           {/* CARD 5 */}
@@ -683,6 +693,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[4].id]}
             onToggle={() => toggleFlip(faqCards[4].id)}
+            onHoverStart={() => toggleFlip(faqCards[4].id)}
+            onHoverEnd={() => toggleFlip(faqCards[4].id)}
           />
 
           {/* CENTER CTA */}
@@ -694,6 +706,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[5].id]}
             onToggle={() => toggleFlip(faqCards[5].id)}
+             onHoverStart={() => toggleFlip(faqCards[5].id)}
+            onHoverEnd={() => toggleFlip(faqCards[5].id)}
           />
 
           {/* CARD 7 */}
@@ -702,6 +716,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[6].id]}
             onToggle={() => toggleFlip(faqCards[6].id)}
+            onHoverStart={() => toggleFlip(faqCards[6].id)}
+            onHoverEnd={() => toggleFlip(faqCards[6].id)}
           />
 
           {/* CARD 8 */}
@@ -710,6 +726,8 @@ const Faq = () => {
             size="desktop"
             isFlipped={!!flippedCards[faqCards[7].id]}
             onToggle={() => toggleFlip(faqCards[7].id)}
+            onHoverStart={() => toggleFlip(faqCards[7].id)}
+            onHoverEnd={() => toggleFlip(faqCards[7].id)}
           />
         </div>
 

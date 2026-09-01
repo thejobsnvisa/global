@@ -7,6 +7,7 @@ import AboutUs from './Pages/AboutUs.jsx'
 import Work from './Pages/Work.jsx'
 import Migration from './Pages/Migration.jsx'
 import Dependent from './Pages/Dependent.jsx'
+import Visitor from './Pages/Visitor.jsx'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/services/work-visa' element={<Work/>}/>
         <Route path='/services/migration-visa' element={<Migration/>}/>
         <Route path='/services/dependent-visa' element={<Dependent/>}/>
+        <Route path='/services/visitor-visa' element={<Visitor/>}/>
       </Routes>
     </Router>
     <Footer />
