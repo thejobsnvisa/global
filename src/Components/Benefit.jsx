@@ -100,18 +100,18 @@ const BenefitCard = ({ benefit }) => {
         <h3
           className="
             m-0
-            text-[12px]
+            text-[16px]
             font-bold
             leading-[1.2]
             text-[#0097C7]
 
             sm:text-[18px]
-
-            md:text-[18px]
+            md:mt-2
+            md:text-[16px]
 
             lg:text-[15px]
 
-            xl:text-[15px]
+            xl:text-[18px]
           "
         >
           {benefit.title}
@@ -128,9 +128,9 @@ const BenefitCard = ({ benefit }) => {
 
             sm:text-[18px]
 
-            md:text-[18px]
+            md:text-[14px]
 
-            lg:text-[14px]
+            lg:text-[15px]
 
             xl:text-[15px]
           "
