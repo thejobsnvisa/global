@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Play } from "lucide-react";
 
-const API_KEY = "AIzaSyBn9yZp9fg0z8NqlQCwwpjUfliS2lgQ930";
-const CHANNEL_ID = "UCpIUc7eHOK0TkHU96EznCLA";
+const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+const CHANNEL_ID = import.meta.env.VITE_YOUTUBE_CHANNEL_ID;
 
 const VisaGuidance = () => {
   const [videos, setVideos] = useState([]);
