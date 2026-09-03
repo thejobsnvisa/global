@@ -2,9 +2,15 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   const origin = req.headers.origin;
+  const allowedOrigins = new Set([
+    "http://localhost:5173",
+    "https://global-murex.vercel.app",
+  ]);
 
   /* ========= CORS ========= */
-  res.setHeader("Access-Control-Allow-Origin", origin || "*");
+  if (origin && allowedOrigins.has(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Vary", "Origin");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");

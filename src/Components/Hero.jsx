@@ -172,13 +172,10 @@ const Hero = () => {
         recaptchaToken: captchaToken,
       };
 
-      // 3. POST request to the backend API endpoint. In development the
-      // frontend and backend commonly run on different ports, so allow the
-      // backend origin to be configured without hard-coding it here.
-      // Default to the deployed production origin when no env var is provided.
-      const apiBaseUrl = (
-        import.meta.env.VITE_API_BASE_URL || "https://global-murex.vercel.app"
-      ).replace(/\/$/, "");
+      // 3. Use the same origin by default to avoid CORS errors. Configure
+      // VITE_API_BASE_URL only when the API is hosted separately (for example,
+      // during local development).
+      const apiBaseUrl = "https://global-murex.vercel.app"
       const response = await fetch(`${apiBaseUrl}/api/lead`, {
         method: "POST",
         headers: {
