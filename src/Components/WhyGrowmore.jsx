@@ -201,17 +201,19 @@ const WhyGrowmore = () => {
                 md:text-[16px]
               "
             >
-              <p className="m-0 text-justify">
-                Growmore Global Visa offers professional advice and complete
-                assistance for every immigration goal, including study, work,
-                travel, or settling overseas.
+              <p className="mt-2 m-0 text-justify">
+                Your dream of going abroad is more than a visa - it’s a step
+                towards a new future, new opportunities, and a world of
+                possibilities.
               </p>
 
               <p className="m-0 mt-2 text-justify">
-                From planning your move to securing your visa, our experienced
-                team ensures a smooth, simple and trustworthy immigration
-                journey across multiple countries.
+                At Growmore Global Visa, we bring together expert guidance,
+                personalised solutions, and complete visa support to help you
+                move forward with confidence - whether you’re planning to study,
+                work, travel, or settle overseas.
               </p>
+
             </div>
           </div>
 

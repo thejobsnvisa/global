@@ -193,10 +193,10 @@ const WorkVisa = () => {
               fontFamily: "Poppins, sans-serif",
             }}
           >
-            The exact requirements for a work visa mainly depend on the visa
-            type and the specific country’s immigration regulations. However,
-            there are certain general requirements that most applicants must
-            meet when applying for a work visa.
+            Your global career starts with the right visa. While requirements
+            differ by country and visa pathway, meeting the essential
+            eligibility criteria can put you one step closer to working and
+            building your future abroad.
           </p>
 
           {/* =================================================
@@ -227,8 +227,8 @@ const WorkVisa = () => {
                 <strong className="font-semibold text-[#43556B]">
                   Valid Passport
                 </strong>{" "}
-                – A passport with sufficient validity beyond the intended
-                period of stay.
+                – A passport with sufficient validity beyond the intended period
+                of stay.
               </p>
             </div>
 
@@ -253,8 +253,7 @@ const WorkVisa = () => {
                 <strong className="font-semibold text-[#43556B]">
                   Job Offer or Employer Sponsorship
                 </strong>{" "}
-                – Required for employer-sponsored work visas in many
-                countries.
+                – Required for employer-sponsored work visas in many countries.
               </p>
             </div>
 

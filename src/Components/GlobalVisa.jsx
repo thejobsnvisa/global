@@ -63,7 +63,7 @@ const GlobalVisa = () => {
           xl:text-left
           xl:text-[40px]
           xl:leading-normal
-          xl:ml-108
+          xl:ml-120
         "
       >
         Why Trust Growmore Global Visa
@@ -100,7 +100,7 @@ const GlobalVisa = () => {
           xl:text-left
           xl:text-[60px]
           xl:leading-normal
-          xl:ml-132
+          xl:ml-145
         "
       >
         For Work Visa?
@@ -138,7 +138,7 @@ const GlobalVisa = () => {
           lg:rounded-[32px]
           lg:p-9
 
-          xl:w-[865px]
+          xl:w-[965px]
           xl:h-[430px]
           xl:min-h-0
           xl:max-w-none
@@ -184,9 +184,9 @@ const GlobalVisa = () => {
               xl:leading-normal
             "
           >
-            Expert Guidance You Can Trust : Get trusted guidance from our
-            registered MARA agent that meets professional and legal immigration
-            standards worldwide for a work visa.
+            Expert Guidance You Can Trust : Get professional visa guidance from
+            our registered MARA agent, with support aligned with Australian
+            immigration standards and professional requirements.
           </li>
 
           {/* ================= ITEM 2 ================= */}
@@ -212,9 +212,9 @@ const GlobalVisa = () => {
               xl:leading-normal
             "
           >
-            Global Work Visa Knowledge: We provide expert support for work
-            visas across top destinations, including Australia, Canada, the UK,
-            the USA, New Zealand, and more.
+            Global Work Visa Knowledge: Planning to work in Australia, Canada,
+            the UK, USA, New Zealand, or beyond? Our team helps you explore the
+            right work visa pathway for your career goals.
           </li>
 
           {/* ================= ITEM 3 ================= */}
@@ -240,9 +240,9 @@ const GlobalVisa = () => {
               xl:leading-normal
             "
           >
-            Complete Visa Assistance: Starting from initial profile assessment
-            to document verification, application submission, and follow-ups,
-            we guide you at every stage in your work visa journey.
+            From Profile to Visa : From your initial profile assessment and
+            document preparation to application submission and follow-ups, we
+            stay with you throughout the journey.
           </li>
 
           {/* ================= ITEM 4 ================= */}
@@ -268,8 +268,9 @@ const GlobalVisa = () => {
               xl:leading-normal
             "
           >
-            Employer-Sponsored Visa Support: We also help with employer-sponsored
-            visas and make sure all sponsorship rules are met.
+            Employer-Sponsored Visa Support: Have an employer ready to sponsor
+            you? We help you understand the sponsorship process and ensure your
+            application meets the relevant requirements.
           </li>
 
           {/* ================= ITEM 5 ================= */}
@@ -295,9 +296,10 @@ const GlobalVisa = () => {
               xl:leading-normal
             "
           >
-            Error-Free Applications: Our team ensures that every submission
-            aligns with immigration laws to avoid errors or delays in your work
-            visa application.
+            Get It Right the First Time:Small mistakes can create unnecessary
+            delays. Our team carefully reviews your application and
+            documentation to help ensure everything is accurate, complete, and
+            immigration ready.
           </li>
         </ul>
       </div>

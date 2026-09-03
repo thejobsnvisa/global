@@ -164,9 +164,10 @@ const Hero = () => {
         email: formData.email,
         phone: fullPhoneNumber,
         visaType: formData.inquiry || "General Inquiry",
-        message: `[Destination Country: ${formData.country || "Not Specified"}] ${
-          formData.comments
-        }`.trim(),
+        message:
+          `[Destination Country: ${formData.country || "Not Specified"}] ${
+            formData.comments
+          }`.trim(),
         captchaToken,
         source: "Website Hero Form",
       };
@@ -175,7 +176,7 @@ const Hero = () => {
       const response = await fetch(`${apiBaseUrl}/api/lead`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json", 
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(payload),
       });
@@ -190,14 +191,14 @@ const Hero = () => {
           result = JSON.parse(responseText);
         } catch {
           throw new Error(
-            "The server returned an invalid response. Please try again later."
+            "The server returned an invalid response. Please try again later.",
           );
         }
       }
 
       if (response.ok && result.success) {
         toast.success(
-          result.message || "Thank you! Our team will contact you shortly."
+          result.message || "Thank you! Our team will contact you shortly.",
         );
 
         // Reset form & captcha on success
@@ -206,14 +207,15 @@ const Hero = () => {
           recaptchaRef.current.reset();
         }
       } else {
-        const errorMsg = result.message || result.error || `Server error: ${response.status}`;
+        const errorMsg =
+          result.message || result.error || `Server error: ${response.status}`;
         throw new Error(errorMsg);
       }
     } catch (err) {
       console.error("Form Submission Error:", err);
       toast.error(
         err.message ||
-          "An error occurred while submitting your request. Please try again later."
+          "An error occurred while submitting your request. Please try again later.",
       );
     } finally {
       setIsSubmitting(false);
@@ -324,9 +326,9 @@ const Hero = () => {
                   xl:text-[40px]
                 "
               >
-                YOUR NEXT CHAPTER
+                Your Global Journey
                 <br />
-                BEGINS BEYOND BORDERS
+                Starts Here
               </h1>
 
               <div
@@ -357,12 +359,13 @@ const Hero = () => {
                   xl:text-[16px]
                 "
               >
-                Whether you are planning to study, work, travel, or settle
-                abroad, Growmore Global Visa is here to provide you with
-                complete immigration support for student visas, work visas,
-                dependent visas, visitor visas and other migration services
-                across multiple countries. So, start your immigration journey
-                today with clear guidance and reliable support from us.
+                Dreaming of studying, working, travelling, or building a future
+                abroad? Growmore Global Visa is here to make your journey
+                simpler, clearer, and more confident. From student and work
+                visas to dependent, visitor and migration services, we provide
+                personalised guidance and end-to-end support across multiple
+                countries.<b>Your dream destination is closer than you think.
+                Let’s take the first step together.</b>
               </p>
 
               <div className="flex justify-center lg:justify-start">
@@ -729,10 +732,10 @@ const Hero = () => {
 
                   {/* RECAPTCHA */}
                   <div className="flex justify-center sm:justify-start">
-                      <ReCAPTCHA
-                        sitekey={"6LdQnKYtAAAAAJkOhWSSnhScrzUBMtq-k_REKsc3"}
-                        ref={recaptchaRef}
-                      />
+                    <ReCAPTCHA
+                      sitekey={"6LdQnKYtAAAAAJkOhWSSnhScrzUBMtq-k_REKsc3"}
+                      ref={recaptchaRef}
+                    />
                   </div>
 
                   {/* STATUS NOTIFICATION */}

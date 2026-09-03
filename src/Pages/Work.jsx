@@ -9,42 +9,42 @@ const destination = [
   {
     name: "Australia",
     description:
-      "Australia offers excellent opportunities for skilled professionals across a wide range of industries, with strong career prospects and a high quality of life.",
+    "Turn your skills into global opportunities in Australia. With thriving industries, strong demand for skilled professionals, and an outstanding quality of life, Australia offers the chance to build a rewarding career while enjoying a lifestyle that’s hard to beat.",
     image:
       "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "New Zealand",
     description:
-      "New Zealand provides opportunities in skilled professions, healthcare, construction, technology, and other growing sectors.",
+    "Build a career where work and life find the perfect balance. New Zealand offers skilled professionals exciting career opportunities, a supportive work culture, and the chance to enjoy a more relaxed, rewarding way of life.",
     image:
       "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Germany",
     description:
-      "Germany offers strong opportunities for skilled workers in engineering, IT, healthcare, manufacturing, and other in-demand industries.",
+      "Put your skills where innovation meets opportunity. Germany’s strong economy, world-leading industries, and demand for skilled talent make it an ideal destination to grow your career and build a secure future.",
     image:
       "https://images.unsplash.com/photo-1528114039593-4366cc08227d?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "France",
     description:
-      "France provides opportunities in IT, finance, and tourism. Strong labor laws and benefits ensure a stable and balanced work environment.",
+      "Work, grow, and experience life the French way. From dynamic industries to international career opportunities, France offers skilled professionals the chance to develop their careers while embracing its culture, lifestyle, and global outlook.",
     image:
       "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "United Kingdom",
     description:
-      "The United Kingdom offers diverse career opportunities for skilled professionals across healthcare, technology, finance, engineering, and more.",
+      "Take your career to a global stage. The UK brings together world-class industries, diverse career opportunities, and an international work environment where skilled professionals can grow, connect, and move forward.",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
   },
   {
     name: "Canada",
     description:
-      "Canada offers excellent opportunities for skilled workers, with pathways across technology, healthcare, engineering, construction, and other sectors.",
+      "Build more than a career - Build your future. Canada offers skilled professional’s opportunities across growing industries, a welcoming work environment, and the freedom to pursue both professional success and a fulfilling lifestyle.",
     image:
       "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80",
   },

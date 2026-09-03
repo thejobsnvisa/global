@@ -4,31 +4,31 @@ const servicesData = [
   {
     title: "STUDENT VISA",
     description:
-      "Are you dreaming of studying abroad at a place that offers top-quality educ...",
+      "Turn your dream of studying abroad into reality with the right guidance, course, and university...",
     xlClasses: "xl:left-[196px] xl:top-[259px]",
   },
   {
     title: "MIGRATION VISA",
     description:
-      "Moving abroad is exciting, but it can feel incomplete without your family by your side...",
+      "Make your dream of settling abroad a reality with the right migration pathway and expert guidance...",
     xlClasses: "xl:left-[644px] xl:top-[114px]",
   },
   {
     title: "WORK VISA",
     description:
-      "Securing a work visa is more than just a simple regulated process. Each country has...",
+      "Ready to take your career global? Get expert work visa guidance tailored to your destination, profession, and career goals...",
     xlClasses: "xl:left-[1030px] xl:top-[173px]",
   },
   {
     title: "VISITOR VISA",
     description:
-      "Planning to visit another country always comes with a lot of excitement, but to ma...",
+      "Dreaming of exploring a new country? Get the right visitor visa guidance and focus on making unforgettable memories...",
     xlClasses: "xl:left-[1054px] xl:top-[536px]",
   },
   {
     title: "DEPENDENT VISA",
     description:
-      "Moving abroad is exciting, but it can feel incomplete without your family by your side...",
+      "Stay close to your loved ones while building your future abroad with the right dependent visa guidance...",
     xlClasses: "xl:left-[163px] xl:top-[567px]",
   },
 ];
@@ -82,7 +82,7 @@ const Services = () => {
               className={`
                 z-20 flex flex-col justify-between rounded-[19px] bg-[#FFFFFF4F] p-4 backdrop-blur-md
                 shadow-[0_0_20.9px_0_rgba(131,131,131,0.25)] transition-transform duration-200 hover:scale-105
-                xl:absolute xl:h-[120px] xl:w-[195px] xl:p-0 xl:hover:scale-100 ${service.xlClasses}
+                xl:absolute xl:h-[135px] xl:w-[195px] xl:p-0 xl:hover:scale-100 ${service.xlClasses}
               `}
             >
               <p className="font-bold text-center text-[14px] text-[#316C69] xl:ml-2 xl:mt-3 xl:text-center">
