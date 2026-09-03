@@ -106,7 +106,6 @@ const CountrySelect = ({ value, onChange }) => {
 
 const Hero = () => {
   const recaptchaRef = useRef(null);
-  const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -170,6 +169,17 @@ const Hero = () => {
     console.log("Form Data:", submitData);
 
     // Add your API / Google Sheet submission here
+    window.alert("Your submission was successful!");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      phoneCountry: "IN",
+      inquiry: "",
+      country: "",
+      comments: "",
+    });
+    recaptchaRef.current?.reset();
   };
 
   return (
@@ -822,12 +832,10 @@ const Hero = () => {
                   />
 
                   <div className="flex justify-center sm:justify-start ">
-                    {recaptchaSiteKey ? (
                       <ReCAPTCHA
-                        sitekey={recaptchaSiteKey}
+                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
                         ref={recaptchaRef}
                       />
-                    ) : null}
                   </div>
 
                   {/* =================================================
