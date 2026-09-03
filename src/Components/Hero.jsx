@@ -822,7 +822,7 @@ const Hero = () => {
 
                   <div className="flex justify-center sm:justify-start ">
                       <ReCAPTCHA
-                        sitekey="6LeQeaYtAAAAAEMr-JHpiI0iJPOjgZ0m1NOuiR0r"
+                        sitekey="6LeQeaYtAAAAABft5ewonggZFF-LNKWQPvOwN8-2"
                         ref={recaptchaRef}
                       />
                   </div>
