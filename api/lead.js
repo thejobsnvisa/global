@@ -1,8 +1,8 @@
 import nodemailer from "nodemailer";
-import { process } from "global";
+import process from "node:process";
 
 export default async function handler(req, res) {
-const origin = req.headers.origin;
+  const origin = req.headers.origin;
   const allowedOrigins = new Set([
     "http://localhost:5173",
     "https://global-murex.vercel.app",
@@ -35,7 +35,16 @@ const origin = req.headers.origin;
       return res.status(400).json({ success: false, message: "Invalid JSON" });
     }
 
-    const { name, email, phone, visaType, message } = body;
+    // Map payload from Hero.jsx fields with fallbacks
+    const firstName = body.first_name || "";
+    const lastName = body.last_name || "";
+    const name = body.name || `${firstName} ${lastName}`.trim();
+    const email = body.company_email || body.email;
+    const phone = body.phone || "";
+    
+    // Extract inquiry and comments
+    const visaType = body.visaType || body.inquiry || "General Inquiry";
+    const message = body.message || body.requirements || body.comments || "";
     const leadSource = body.source || "Website Form";
 
     if (!name || !email) {
@@ -72,9 +81,9 @@ const origin = req.headers.origin;
             Email: email,
             Phone: phoneNumber,
             Country_Code: countryCode,
-            Inquiries: visaType || "General Inquiry",
+            Inquiries: visaType,
             Source: leadSource,
-            Message: message || "",
+            Message: message,
           }),
           signal: controller.signal,
         }
@@ -119,7 +128,7 @@ const origin = req.headers.origin;
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone || "N/A"}</p>
-        <p><b>Visa Type:</b> ${visaType || "Not specified"}</p>
+        <p><b>Visa Type:</b> ${visaType}</p>
         <p><b>Message:</b> ${message || "No message"}</p>
       `,
     });
