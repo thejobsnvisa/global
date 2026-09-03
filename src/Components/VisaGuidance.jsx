@@ -85,8 +85,6 @@ const VisaGuidance = () => {
           }))
           .filter((video) => video.id);
 
-        console.log("YouTube Videos:", formattedVideos);
-
         setVideos(formattedVideos);
 
         // Automatically select latest video

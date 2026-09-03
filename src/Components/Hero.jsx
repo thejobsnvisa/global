@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { getCountries, getCountryCallingCode } from "react-phone-number-input";
 
 import PhoneInput from "react-phone-number-input/input";
@@ -10,7 +10,6 @@ import { ChevronDown, ArrowRight } from "lucide-react";
 import heroImage from "../assets/hero-image.png";
 
 import "react-phone-number-input/style.css";
-import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from "react-router-dom";
 
 /* =========================================================
@@ -105,8 +104,6 @@ const CountrySelect = ({ value, onChange }) => {
    ========================================================= */
 
 const Hero = () => {
-  const recaptchaRef = useRef(null);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -819,13 +816,6 @@ const Hero = () => {
                       sm:min-h-[75px]
                     "
                   />
-
-                  <div className="flex justify-center sm:justify-start ">
-                      <ReCAPTCHA
-                        sitekey="6LeQeaYtAAAAABft5ewonggZFF-LNKWQPvOwN8-2"
-                        ref={recaptchaRef}
-                      />
-                  </div>
 
                   {/* =================================================
                       SUBMIT
