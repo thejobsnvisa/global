@@ -821,14 +821,12 @@ const Hero = () => {
                     "
                   />
 
-                  {recaptchaSiteKey && (
-                    <div className="flex justify-center sm:justify-start">
-                      <ReCAPTCHA
-                        sitekey={recaptchaSiteKey}
-                        ref={recaptchaRef}
-                      />
-                    </div>
-                  )}
+                  <div className="flex min-h-[78px] justify-center sm:justify-start">
+                    <ReCAPTCHA
+                      sitekey={recaptchaSiteKey}
+                      ref={recaptchaRef}
+                    />
+                  </div>
 
                   {/* =================================================
                       SUBMIT
