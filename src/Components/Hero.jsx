@@ -106,7 +106,6 @@ const CountrySelect = ({ value, onChange }) => {
 
 const Hero = () => {
   const recaptchaRef = useRef(null);
-  const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -821,11 +820,11 @@ const Hero = () => {
                     "
                   />
 
-                  <div className="flex min-h-[78px] justify-center sm:justify-start">
-                    <ReCAPTCHA
-                      sitekey={recaptchaSiteKey}
-                      ref={recaptchaRef}
-                    />
+                  <div className="flex justify-center sm:justify-start ">
+                      <ReCAPTCHA
+                        sitekey="6LeQeaYtAAAAAEMr-JHpiI0iJPOjgZ0m1NOuiR0r"
+                        ref={recaptchaRef}
+                      />
                   </div>
 
                   {/* =================================================
