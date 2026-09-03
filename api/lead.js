@@ -1,5 +1,4 @@
 import nodemailer from "nodemailer";
-import process from "node:process";
 
 export default async function handler(req, res) {
   const origin = req.headers.origin;
@@ -99,7 +98,10 @@ export default async function handler(req, res) {
     }
 
     /* ========= EMAIL CONFIG CHECK ========= */
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    const emailUser = process.env.EMAIL_USER ? process.env.EMAIL_USER.trim() : "";
+    const emailPass = process.env.EMAIL_PASS ? process.env.EMAIL_PASS.replace(/\s+/g, "") : "";
+
+    if (!emailUser || !emailPass) {
       console.error("Missing EMAIL env variables");
       return res.status(500).json({
         success: false,
@@ -113,18 +115,19 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailUser,
+        pass: emailPass,
       },
     });
 
     /* ========= SEND EMAIL ========= */
-    await transporter.sendMail({
-      from: `"Growmore" <${process.env.EMAIL_USER}>`,
-      to: ["info@growmore.one"],
-      subject: "New Appointment Booking",
+    const info = await transporter.sendMail({
+      from: `"Growmore Lead" <${emailUser}>`,
+      to: ["itgrowmore2@gmail.com"],
+      replyTo: email,
+      subject: `New Lead: ${name} - ${visaType}`,
       html: `
-        <h3>New Lead Details</h3>
+        <h3>New Lead Appointment Details</h3>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone || "N/A"}</p>
@@ -132,6 +135,8 @@ export default async function handler(req, res) {
         <p><b>Message:</b> ${message || "No message"}</p>
       `,
     });
+
+    console.log("[SMTP SUCCESS]: Message ID:", info.messageId);
 
     /* ========= SUCCESS ========= */
     return res.status(200).json({
