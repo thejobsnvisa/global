@@ -12,6 +12,8 @@ import heroImage from "../assets/hero-image.png";
 import "react-phone-number-input/style.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 /* =========================================================
    CUSTOM COUNTRY SELECT
@@ -143,10 +145,7 @@ const Hero = () => {
       : null;
 
     if (recaptchaSiteKey && !captchaToken) {
-      setStatusMessage({
-        type: "error",
-        text: "Please complete the reCAPTCHA verification.",
-      });
+      toast.warn("Please verify the captcha");
       return;
     }
 
@@ -159,7 +158,7 @@ const Hero = () => {
         ? `+${callingCode}${formData.phone.replace(`+${callingCode}`, "")}`
         : "";
 
-      // 2. Map form data to backend requirements
+      // 2. Map form data to the lead API requirements
       const payload = {
         name: formData.name,
         email: formData.email,
@@ -168,14 +167,11 @@ const Hero = () => {
         message: `[Destination Country: ${formData.country || "Not Specified"}] ${
           formData.comments
         }`.trim(),
-        source: "Hero Consultation Form",
-        recaptchaToken: captchaToken,
+        captchaToken,
+        source: "Website Hero Form",
       };
 
-      // 3. Use the same origin by default to avoid CORS errors. Configure
-      // VITE_API_BASE_URL only when the API is hosted separately (for example,
-      // during local development).
-      const apiBaseUrl = "https://global-murex.vercel.app"
+      const apiBaseUrl = "https://global-murex.vercel.app";
       const response = await fetch(`${apiBaseUrl}/api/lead`, {
         method: "POST",
         headers: {
@@ -200,10 +196,9 @@ const Hero = () => {
       }
 
       if (response.ok && result.success) {
-        setStatusMessage({
-          type: "success",
-          text: result.message || "Thank you! Our team will contact you shortly.",
-        });
+        toast.success(
+          result.message || "Thank you! Our team will contact you shortly."
+        );
 
         // Reset form & captcha on success
         setFormData(initialFormData);
@@ -216,11 +211,10 @@ const Hero = () => {
       }
     } catch (err) {
       console.error("Form Submission Error:", err);
-      const errorText = err.message || "An error occurred while submitting your request. Please try again later.";
-      setStatusMessage({
-        type: "error",
-        text: errorText,
-      });
+      toast.error(
+        err.message ||
+          "An error occurred while submitting your request. Please try again later."
+      );
     } finally {
       setIsSubmitting(false);
     }
