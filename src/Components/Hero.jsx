@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { getCountries, getCountryCallingCode } from "react-phone-number-input";
 
 import PhoneInput from "react-phone-number-input/input";
@@ -10,6 +10,7 @@ import { ChevronDown, ArrowRight } from "lucide-react";
 import heroImage from "../assets/hero-image.png";
 
 import "react-phone-number-input/style.css";
+import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from "react-router-dom";
 
 /* =========================================================
@@ -104,6 +105,8 @@ const CountrySelect = ({ value, onChange }) => {
    ========================================================= */
 
 const Hero = () => {
+  const recaptchaRef = useRef(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -354,35 +357,34 @@ const Hero = () => {
               {/* Know More */}
               <div className="flex justify-center lg:justify-start">
                 <Link to="/who-we-are">
-                  <button
-                    type="button"
-                    className="
-                      mt-7
-                      inline-flex
-                      items-center
-                      gap-3
-                      rounded-full
-                      bg-[#5bb1d0]
-                      px-7
-                      py-3.5
-                      text-[15px]
-                      font-semibold
-                      text-[#083b63]
-                      shadow-sm
-                      transition
-                      duration-300
-                      hover:bg-[#48a3c4]
-                      hover:shadow-lg
+                <button
+                  type="button"
+                  className="
+                    mt-7
+                    inline-flex
+                    items-center
+                    gap-3
+                    rounded-full
+                    bg-[#5bb1d0]
+                    px-7
+                    py-3.5
+                    text-[15px]
+                    font-semibold
+                    text-[#083b63]
+                    shadow-sm
+                    transition
+                    duration-300
+                    hover:bg-[#48a3c4]
+                    hover:shadow-lg
 
-                      sm:mt-8
-                      sm:px-8
-                      sm:py-4
-                    "
-                  >
-                    Know More
-                    <ArrowRight size={20} />
-                  </button>
-                </Link>
+                    sm:mt-8
+                    sm:px-8
+                    sm:py-4
+                  "
+                >
+                  Know More
+                  <ArrowRight size={20} />
+                </button></Link>
               </div>
             </div>
 
@@ -817,6 +819,13 @@ const Hero = () => {
                       sm:min-h-[75px]
                     "
                   />
+
+                  <div className="flex justify-center sm:justify-start ">
+                      <ReCAPTCHA
+                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                        ref={recaptchaRef}
+                      />
+                  </div>
 
                   {/* =================================================
                       SUBMIT
