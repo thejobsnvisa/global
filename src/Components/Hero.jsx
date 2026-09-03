@@ -19,12 +19,10 @@ import { Link } from "react-router-dom";
 
 const CountrySelect = ({ value, onChange }) => {
   const selectedCountry = value || "IN";
-
   const Flag = flags[selectedCountry];
 
   return (
     <div className="relative h-full w-full">
-      {/* Invisible native select */}
       <select
         value={selectedCountry}
         onChange={(e) => onChange(e.target.value)}
@@ -47,7 +45,6 @@ const CountrySelect = ({ value, onChange }) => {
         ))}
       </select>
 
-      {/* Visible country selector */}
       <div
         className="
           pointer-events-none
@@ -59,7 +56,6 @@ const CountrySelect = ({ value, onChange }) => {
           px-3
         "
       >
-        {/* Flag */}
         {Flag && (
           <Flag
             title={en[selectedCountry]}
@@ -74,27 +70,11 @@ const CountrySelect = ({ value, onChange }) => {
           />
         )}
 
-        {/* Calling code */}
-        <span
-          className="
-            whitespace-nowrap
-            text-[12px]
-            font-medium
-            text-[#333]
-          "
-        >
+        <span className="whitespace-nowrap text-[12px] font-medium text-[#333]">
           +{getCountryCallingCode(selectedCountry)}
         </span>
 
-        {/* Arrow */}
-        <ChevronDown
-          size={14}
-          className="
-            ml-auto
-            shrink-0
-            text-[#34506d]
-          "
-        />
+        <ChevronDown size={14} className="ml-auto shrink-0 text-[#34506d]" />
       </div>
     </div>
   );
@@ -106,8 +86,9 @@ const CountrySelect = ({ value, onChange }) => {
 
 const Hero = () => {
   const recaptchaRef = useRef(null);
+  const recaptchaSiteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     email: "",
     phone: "",
@@ -115,24 +96,23 @@ const Hero = () => {
     inquiry: "",
     country: "",
     comments: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState({ type: "", text: "" });
 
   /* =========================================================
-     NORMAL INPUT CHANGE
+     INPUT HANDLERS
      ========================================================= */
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
-
-  /* =========================================================
-     PHONE COUNTRY CHANGE
-     ========================================================= */
 
   const handlePhoneCountryChange = (newCountry) => {
     setFormData((prev) => ({
@@ -141,10 +121,6 @@ const Hero = () => {
       phone: "",
     }));
   };
-
-  /* =========================================================
-     PHONE NUMBER CHANGE
-     ========================================================= */
 
   const handlePhoneChange = (value) => {
     setFormData((prev) => ({
@@ -157,37 +133,104 @@ const Hero = () => {
      FORM SUBMIT
      ========================================================= */
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMessage({ type: "", text: "" });
 
-    const submitData = {
-      ...formData,
-      countryCode: `+${getCountryCallingCode(formData.phoneCountry)}`,
-      phoneCountryName: en[formData.phoneCountry],
-    };
+    // 1. Validate reCAPTCHA
+    const captchaToken = recaptchaRef.current
+      ? recaptchaRef.current.getValue()
+      : null;
 
-    console.log("Form Data:", submitData);
+    if (recaptchaSiteKey && !captchaToken) {
+      setStatusMessage({
+        type: "error",
+        text: "Please complete the reCAPTCHA verification.",
+      });
+      return;
+    }
 
-    // Add your API / Google Sheet submission here
-    window.alert("Your submission was successful!");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      phoneCountry: "IN",
-      inquiry: "",
-      country: "",
-      comments: "",
-    });
-    recaptchaRef.current?.reset();
+    setIsSubmitting(true);
+
+    try {
+      // Format phone to include full country dial code
+      const callingCode = getCountryCallingCode(formData.phoneCountry);
+      const fullPhoneNumber = formData.phone
+        ? `+${callingCode}${formData.phone.replace(`+${callingCode}`, "")}`
+        : "";
+
+      // 2. Map form data to backend requirements
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: fullPhoneNumber,
+        visaType: formData.inquiry || "General Inquiry",
+        message: `[Destination Country: ${formData.country || "Not Specified"}] ${
+          formData.comments
+        }`.trim(),
+        source: "Hero Consultation Form",
+        recaptchaToken: captchaToken,
+      };
+
+      // 3. POST request to the backend API endpoint. In development the
+      // frontend and backend commonly run on different ports, so allow the
+      // backend origin to be configured without hard-coding it here.
+      // Default to the deployed production origin when no env var is provided.
+      const apiBaseUrl = (
+        import.meta.env.VITE_API_BASE_URL || "https://global-murex.vercel.app"
+      ).replace(/\/$/, "");
+      const response = await fetch(`${apiBaseUrl}/api/lead`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", 
+        },
+        body: JSON.stringify(payload),
+      });
+
+      // Read the response as text first so an empty or non-JSON response does
+      // not throw "Unexpected end of JSON input".
+      const responseText = await response.text();
+      let result = {};
+
+      if (responseText.trim()) {
+        try {
+          result = JSON.parse(responseText);
+        } catch {
+          throw new Error(
+            "The server returned an invalid response. Please try again later."
+          );
+        }
+      }
+
+      if (response.ok && result.success) {
+        setStatusMessage({
+          type: "success",
+          text: result.message || "Thank you! Our team will contact you shortly.",
+        });
+
+        // Reset form & captcha on success
+        setFormData(initialFormData);
+        if (recaptchaRef.current) {
+          recaptchaRef.current.reset();
+        }
+      } else {
+        const errorMsg = result.message || result.error || `Server error: ${response.status}`;
+        throw new Error(errorMsg);
+      }
+    } catch (err) {
+      console.error("Form Submission Error:", err);
+      const errorText = err.message || "An error occurred while submitting your request. Please try again later.";
+      setStatusMessage({
+        type: "error",
+        text: errorText,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section className="w-full overflow-hidden">
-      {/* =====================================================
-          HERO BACKGROUND
-          ===================================================== */}
-
       <div
         className="
           relative
@@ -198,7 +241,6 @@ const Hero = () => {
           to-white
         "
       >
-        {/* Decorative background */}
         <div
           className="
             pointer-events-none
@@ -226,16 +268,6 @@ const Hero = () => {
             xl:px-16
           "
         >
-          {/* =================================================
-              IMPORTANT:
-
-              Mobile / Tablet:
-              grid-cols-1
-
-              XL:
-              YOUR ORIGINAL DESKTOP LAYOUT
-              ================================================= */}
-
           <div
             className="
               relative
@@ -244,30 +276,23 @@ const Hero = () => {
               grid-cols-1
               items-center
               gap-10
-
               sm:gap-12
               md:gap-14
               lg:gap-16
-
               xl:min-h-[550px]
               xl:grid-cols-[46%_54%]
               xl:gap-0
             "
           >
-            {/* =================================================
-                LEFT CONTENT
-                ================================================= */}
-
+            {/* LEFT CONTENT */}
             <div
               className="
                 relative
                 z-20
-
                 py-12
                 sm:py-14
                 md:py-16
                 lg:py-18
-
                 xl:py-24
               "
             >
@@ -278,15 +303,11 @@ const Hero = () => {
                   text-[18px]
                   font-medium
                   text-[#07517b]
-
                   sm:mb-6
                   sm:text-[20px]
-
                   md:text-[21px]
-
                   lg:text-left
                   lg:text-[22px]
-
                   xl:mt-[-10px]
                   xl:mb-6
                   xl:text-[23px]
@@ -305,14 +326,10 @@ const Hero = () => {
                   leading-[1.12]
                   tracking-[-1px]
                   text-[#0c3158]
-
                   sm:text-[34px]
-
                   md:text-[38px]
-
                   lg:text-left
                   lg:text-[40px]
-
                   xl:text-[40px]
                 "
               >
@@ -321,7 +338,6 @@ const Hero = () => {
                 BEGINS BEYOND BORDERS
               </h1>
 
-              {/* Green divider */}
               <div
                 className="
                   mx-auto
@@ -329,11 +345,8 @@ const Hero = () => {
                   h-[3px]
                   w-[92px]
                   bg-[#78cba8]
-
                   sm:my-6
-
                   lg:mx-0
-
                   xl:my-6
                 "
               />
@@ -346,14 +359,10 @@ const Hero = () => {
                   text-[14px]
                   leading-[1.8]
                   text-[#07517b]
-
                   sm:text-[15px]
-
                   md:text-[16px]
-
                   lg:mx-0
                   lg:text-left
-
                   xl:text-[16px]
                 "
               >
@@ -365,44 +374,40 @@ const Hero = () => {
                 today with clear guidance and reliable support from us.
               </p>
 
-              {/* Know More */}
               <div className="flex justify-center lg:justify-start">
                 <Link to="/who-we-are">
-                <button
-                  type="button"
-                  className="
-                    mt-7
-                    inline-flex
-                    items-center
-                    gap-3
-                    rounded-full
-                    bg-[#5bb1d0]
-                    px-7
-                    py-3.5
-                    text-[15px]
-                    font-semibold
-                    text-[#083b63]
-                    shadow-sm
-                    transition
-                    duration-300
-                    hover:bg-[#48a3c4]
-                    hover:shadow-lg
-
-                    sm:mt-8
-                    sm:px-8
-                    sm:py-4
-                  "
-                >
-                  Know More
-                  <ArrowRight size={20} />
-                </button></Link>
+                  <button
+                    type="button"
+                    className="
+                      mt-7
+                      inline-flex
+                      items-center
+                      gap-3
+                      rounded-full
+                      bg-[#5bb1d0]
+                      px-7
+                      py-3.5
+                      text-[15px]
+                      font-semibold
+                      text-[#083b63]
+                      shadow-sm
+                      transition
+                      duration-300
+                      hover:bg-[#48a3c4]
+                      hover:shadow-lg
+                      sm:mt-8
+                      sm:px-8
+                      sm:py-4
+                    "
+                  >
+                    Know More
+                    <ArrowRight size={20} />
+                  </button>
+                </Link>
               </div>
             </div>
 
-            {/* =================================================
-                RIGHT SIDE
-                ================================================= */}
-
+            {/* RIGHT SIDE */}
             <div
               className="
                 relative
@@ -412,18 +417,12 @@ const Hero = () => {
                 flex-col
                 items-center
                 justify-center
-
                 lg:min-h-[700px]
-
                 xl:min-h-[650px]
                 xl:flex
                 xl:flex-row
               "
             >
-              {/* =================================================
-                  FLIGHT PATH
-                  ================================================= */}
-
               <div
                 className="
                   pointer-events-none
@@ -440,28 +439,20 @@ const Hero = () => {
                   border-[#54b79c]
                   opacity-80
                   rotate-[-8deg]
-
                   xl:block
                 "
               />
 
-              {/* =================================================
-                  HERO IMAGE
-                  ================================================= */}
-
+              {/* HERO IMAGE */}
               <div
                 className="
                   relative
                   z-0
                   w-full
                   max-w-[560px]
-
                   sm:max-w-[620px]
-
                   md:max-w-[680px]
-
                   lg:max-w-[720px]
-
                   xl:max-w-[700px]
                   xl:-ml-10
                 "
@@ -473,52 +464,33 @@ const Hero = () => {
                     h-[380px]
                     w-full
                     object-contain
-
                     sm:h-[430px]
-
                     md:h-[500px]
-
                     lg:h-[560px]
-
                     xl:h-[750px]
                   "
                 />
               </div>
 
-              {/* =================================================
-                  CONSULTATION FORM
-
-                  MOBILE/TABLET:
-                  Normal flow
-
-                  XL:
-                  ORIGINAL ABSOLUTE POSITION
-                  ================================================= */}
-
+              {/* CONSULTATION FORM */}
               <div
                 className="
                   relative
                   z-30
-
                   mt-[-20px]
                   mb-12
-
                   w-full
                   max-w-[500px]
-
                   rounded-[20px]
                   bg-[#FFFFFFE8]
                   px-4
                   py-5
                   shadow-[0_0_24px_4px_#B2AFAF40]
                   backdrop-blur-[4px]
-
                   sm:px-5
                   md:max-w-[550px]
                   md:px-6
-
                   lg:max-w-[600px]
-
                   xl:absolute
                   xl:left-[380px]
                   xl:right-0
@@ -534,10 +506,6 @@ const Hero = () => {
                   xl:opacity-90
                 "
               >
-                {/* =================================================
-                    FORM HEADING
-                    ================================================= */}
-
                 <div className="mb-4 text-center sm:mb-5">
                   <p
                     className="
@@ -546,9 +514,7 @@ const Hero = () => {
                       uppercase
                       tracking-wide
                       text-[#026CC0]
-
                       sm:text-[15px]
-
                       lg:text-[16px]
                     "
                   >
@@ -561,9 +527,7 @@ const Hero = () => {
                       text-[22px]
                       font-semibold
                       text-[#1A4780]
-
                       sm:text-[24px]
-
                       xl:text-[25px]
                     "
                   >
@@ -571,24 +535,10 @@ const Hero = () => {
                   </h2>
                 </div>
 
-                {/* =================================================
-                    FORM
-                    ================================================= */}
-
+                {/* FORM */}
                 <form onSubmit={handleSubmit} className="space-y-3">
-                  {/* =================================================
-                      NAME + EMAIL
-                      ================================================= */}
-
-                  <div
-                    className="
-                      grid
-                      grid-cols-1
-                      gap-2
-
-                      sm:grid-cols-2
-                    "
-                  >
+                  {/* NAME + EMAIL */}
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                     <input
                       type="text"
                       name="name"
@@ -638,39 +588,14 @@ const Hero = () => {
                     />
                   </div>
 
-                  {/* =================================================
-                      PHONE
-                      ================================================= */}
-
-                  <div
-                    className="
-                      flex
-                      w-full
-                      gap-2
-                    "
-                  >
-                    {/* COUNTRY FLAG + CODE */}
-
-                    <div
-                      className="
-                        h-[36px]
-                        w-[115px]
-                        shrink-0
-                        rounded-[9px]
-                        border
-                        border-[#e0e4e8]
-                        bg-white
-
-                        sm:w-[120px]
-                      "
-                    >
+                  {/* PHONE */}
+                  <div className="flex w-full gap-2">
+                    <div className="h-[36px] w-[115px] shrink-0 rounded-[9px] border border-[#e0e4e8] bg-white sm:w-[120px]">
                       <CountrySelect
                         value={formData.phoneCountry}
                         onChange={handlePhoneCountryChange}
                       />
                     </div>
-
-                    {/* PHONE NUMBER */}
 
                     <div className="min-w-0 flex-1">
                       <PhoneInput
@@ -699,10 +624,7 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  {/* =================================================
-                      INQUIRY
-                      ================================================= */}
-
+                  {/* INQUIRY */}
                   <div className="relative">
                     <select
                       name="inquiry"
@@ -722,19 +644,14 @@ const Hero = () => {
                         text-[#026CC0]
                         outline-none
                         focus:border-[#69b99e]
-
                         sm:text-[14px]
                       "
                     >
                       <option value="">Inquiry for</option>
-
-                      <option value="student-visa">Student Visa</option>
-
-                      <option value="work-visa">Work Visa</option>
-
-                      <option value="visitor-visa">Visitor Visa</option>
-
-                      <option value="migration">Migration</option>
+                      <option value="Student Visa">Student Visa</option>
+                      <option value="Work Visa">Work Visa</option>
+                      <option value="Visitor Visa">Visitor Visa</option>
+                      <option value="Migration">Migration</option>
                     </select>
 
                     <ChevronDown
@@ -750,10 +667,7 @@ const Hero = () => {
                     />
                   </div>
 
-                  {/* =================================================
-                      COUNTRY
-                      ================================================= */}
-
+                  {/* COUNTRY */}
                   <div className="relative">
                     <select
                       name="country"
@@ -776,16 +690,11 @@ const Hero = () => {
                       "
                     >
                       <option value="">Country</option>
-
-                      <option value="australia">Australia</option>
-
-                      <option value="new-zealand">New Zealand</option>
-
-                      <option value="singapore">Singapore</option>
-
-                      <option value="canada">Canada</option>
-
-                      <option value="uk">United Kingdom</option>
+                      <option value="Australia">Australia</option>
+                      <option value="New Zealand">New Zealand</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Canada">Canada</option>
+                      <option value="United Kingdom">United Kingdom</option>
                     </select>
 
                     <ChevronDown
@@ -801,10 +710,7 @@ const Hero = () => {
                     />
                   </div>
 
-                  {/* =================================================
-                      COMMENTS
-                      ================================================= */}
-
+                  {/* COMMENTS */}
                   <textarea
                     name="comments"
                     placeholder="Your Comments"
@@ -826,28 +732,38 @@ const Hero = () => {
                       outline-none
                       placeholder:text-[#026CC0]
                       focus:border-[#69b99e]
-
                       sm:min-h-[75px]
                     "
                   />
 
-                  <div className="flex justify-center sm:justify-start ">
+                  {/* RECAPTCHA */}
+                  <div className="flex justify-center sm:justify-start">
                       <ReCAPTCHA
-                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                        sitekey={"6LdQnKYtAAAAAJkOhWSSnhScrzUBMtq-k_REKsc3"}
                         ref={recaptchaRef}
                       />
                   </div>
 
-                  {/* =================================================
-                      SUBMIT
-                      ================================================= */}
+                  {/* STATUS NOTIFICATION */}
+                  {statusMessage.text && (
+                    <div
+                      className={`text-center text-[12px] font-medium p-2 rounded-md ${
+                        statusMessage.type === "success"
+                          ? "bg-green-100 text-green-700"
+                          : "bg-red-100 text-red-700"
+                      }`}
+                    >
+                      {statusMessage.text}
+                    </div>
+                  )}
 
+                  {/* SUBMIT BUTTON */}
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     className="
                       mx-auto
                       mt-[-4px]
-                      xl:mt-[-6px]
                       flex
                       h-[42px]
                       w-[140px]
@@ -860,12 +776,14 @@ const Hero = () => {
                       text-white
                       transition
                       hover:bg-[#163d70]
-
+                      disabled:opacity-50
+                      disabled:cursor-not-allowed
                       sm:h-[45px]
                       sm:w-[150px]
+                      xl:mt-[-6px]
                     "
                   >
-                    Submit
+                    {isSubmitting ? "Submitting..." : "Submit"}
                   </button>
                 </form>
               </div>
