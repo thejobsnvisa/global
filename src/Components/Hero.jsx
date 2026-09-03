@@ -354,34 +354,35 @@ const Hero = () => {
               {/* Know More */}
               <div className="flex justify-center lg:justify-start">
                 <Link to="/who-we-are">
-                <button
-                  type="button"
-                  className="
-                    mt-7
-                    inline-flex
-                    items-center
-                    gap-3
-                    rounded-full
-                    bg-[#5bb1d0]
-                    px-7
-                    py-3.5
-                    text-[15px]
-                    font-semibold
-                    text-[#083b63]
-                    shadow-sm
-                    transition
-                    duration-300
-                    hover:bg-[#48a3c4]
-                    hover:shadow-lg
+                  <button
+                    type="button"
+                    className="
+                      mt-7
+                      inline-flex
+                      items-center
+                      gap-3
+                      rounded-full
+                      bg-[#5bb1d0]
+                      px-7
+                      py-3.5
+                      text-[15px]
+                      font-semibold
+                      text-[#083b63]
+                      shadow-sm
+                      transition
+                      duration-300
+                      hover:bg-[#48a3c4]
+                      hover:shadow-lg
 
-                    sm:mt-8
-                    sm:px-8
-                    sm:py-4
-                  "
-                >
-                  Know More
-                  <ArrowRight size={20} />
-                </button></Link>
+                      sm:mt-8
+                      sm:px-8
+                      sm:py-4
+                    "
+                  >
+                    Know More
+                    <ArrowRight size={20} />
+                  </button>
+                </Link>
               </div>
             </div>
 
