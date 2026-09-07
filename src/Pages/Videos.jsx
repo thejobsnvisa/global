@@ -141,7 +141,7 @@ const Videos = () => {
             >
               {latestVideos.map((video) => (
                 <SwiperSlide key={video.id.videoId}>
-                  <div className="overflow-hidden rounded-xl bg-teal-50 shadow transition hover:shadow-md">
+                  <div className="overflow-hidden rounded-xl bg-teal-50  rounded-[12px] shadow transition hover:shadow-md">
                     <div className="aspect-video">
                       <iframe
                         className="h-full w-full"
@@ -166,16 +166,16 @@ const Videos = () => {
         )}
 
         {!loading && !error && liveStreams.length > 0 && (
-          <section className="bg-gray-50 py-16">
+          <section className=" py-16">
             <div className="mx-auto max-w-7xl px-6 md:px-16">
               <h3 className="mb-8  text-center border-gray-800 pl-4 text-[30px] font-semibold text-cyan-600 ">
                 Past Live Sessions
               </h3>
 
-              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 bg-teal-50 rounded-[12px] md:grid-cols-2 lg:grid-cols-3">
                 {liveStreams.map((stream) => (
                   <div key={stream.id.videoId}>
-                    <div className="relative aspect-video overflow-hidden bg-teal-50 rounded-xl shadow-lg">
+                    <div className="relative aspect-video overflow-hidden shadow-lg">
                       <iframe
                         className="h-full w-full"
                         src={`https://www.youtube.com/embed/${stream.id.videoId}`}
