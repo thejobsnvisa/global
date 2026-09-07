@@ -123,7 +123,7 @@ const Videos = () => {
 
         {!loading && !error && latestVideos.length > 0 && (
           <section className="mx-auto max-w-7xl px-6 pb-16 md:px-16">
-            <h3 className="mb-8 border-l-4 border-[#28535B] pl-4 text-2xl font-semibold text-[#28535B]">
+            <h3 className="mb-8 text-center text-[30px] text-teal-600 pl-4 text-2xl font-semibold text-[#28535B]">
               Latest Uploads
             </h3>
 
@@ -141,7 +141,7 @@ const Videos = () => {
             >
               {latestVideos.map((video) => (
                 <SwiperSlide key={video.id.videoId}>
-                  <div className="overflow-hidden rounded-xl bg-gray-50 shadow transition hover:shadow-md">
+                  <div className="overflow-hidden rounded-xl bg-teal-50 shadow transition hover:shadow-md">
                     <div className="aspect-video">
                       <iframe
                         className="h-full w-full"
@@ -154,7 +154,7 @@ const Videos = () => {
                     </div>
 
                     <div className="p-4">
-                      <h4 className="line-clamp-2 font-medium text-gray-800">
+                      <h4 className="line-clamp-2 font-medium text-teal-700">
                         {video.snippet.title}
                       </h4>
                     </div>
@@ -168,14 +168,14 @@ const Videos = () => {
         {!loading && !error && liveStreams.length > 0 && (
           <section className="bg-gray-50 py-16">
             <div className="mx-auto max-w-7xl px-6 md:px-16">
-              <h3 className="mb-8 border-l-4 border-gray-800 pl-4 text-2xl font-semibold text-[#28535B]">
+              <h3 className="mb-8  text-center border-gray-800 pl-4 text-[30px] font-semibold text-cyan-600 ">
                 Past Live Sessions
               </h3>
 
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {liveStreams.map((stream) => (
                   <div key={stream.id.videoId}>
-                    <div className="relative aspect-video overflow-hidden rounded-xl shadow-lg">
+                    <div className="relative aspect-video overflow-hidden bg-teal-50 rounded-xl shadow-lg">
                       <iframe
                         className="h-full w-full"
                         src={`https://www.youtube.com/embed/${stream.id.videoId}`}
@@ -190,7 +190,7 @@ const Videos = () => {
                       </span>
                     </div>
 
-                    <h5 className="mt-4 font-semibold text-gray-700">
+                    <h5 className="mt-4 font-semibold text-teal-700">
                       {stream.snippet.title}
                     </h5>
                   </div>
