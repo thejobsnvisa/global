@@ -96,7 +96,7 @@ const Videos = () => {
             href="https://www.youtube.com/@GrowmoreGlobalVisa"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 flex w-full max-w-[180px] items-center justify-center gap-2 rounded-full bg-cyan-800 px-6 py-3 text-[15px] font-medium text-black transition-all duration-300 hover:bg-gray-100 sm:w-auto sm:px-8 sm:text-[17px]"
+            className="mt-8 flex w-full max-w-[180px] items-center justify-center gap-2 rounded-full bg-cyan-800 px-6 py-3 text-[15px] font-medium text-black transition-all duration-300  sm:w-auto sm:px-8 sm:text-[17px]"
           >
             <img src={g} alt="YouTube" className="h-6 w-6 object-contain" />
             <span className="text-white">YouTube</span>
