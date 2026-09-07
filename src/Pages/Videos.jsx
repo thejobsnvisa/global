@@ -170,10 +170,10 @@ const Videos = () => {
                 Past Live Sessions
               </h3>
 
-              <div className="grid grid-cols-1 gap-8  rounded-[12px] md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 bg-teal-50 rounded-[12px] md:grid-cols-2 lg:grid-cols-3">
                 {liveStreams.map((stream) => (
                   <div key={stream.id.videoId}>
-                    <div className="relative aspect-video bg-teal-50 overflow-hidden shadow-lg">
+                    <div className="relative aspect-video overflow-hidden shadow-lg">
                       <iframe
                         className="h-full w-full"
                         src={`https://www.youtube.com/embed/${stream.id.videoId}`}
