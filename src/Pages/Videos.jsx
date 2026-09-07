@@ -164,16 +164,16 @@ const Videos = () => {
         )}
 
         {!loading && !error && liveStreams.length > 0 && (
-          <section className=" py-16">
+          <section className="py-16">
             <div className="mx-auto max-w-7xl px-6 md:px-16">
-              <h3 className="mb-8  text-center border-gray-800 pl-4 text-[30px] font-semibold text-cyan-600 ">
+              <h3 className="mb-8 text-center text-[30px] font-semibold text-cyan-600">
                 Past Live Sessions
               </h3>
 
-              <div className="grid grid-cols-1 gap-8 bg-teal-50 rounded-[12px] md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 rounded-[12px] bg-teal-50 p-4 md:grid-cols-2 lg:grid-cols-3">
                 {liveStreams.map((stream) => (
-                  <div key={stream.id.videoId}>
-                    <div className="relative aspect-video overflow-hidden shadow-lg">
+                  <div key={stream.id.videoId} className="overflow-hidden rounded-xl bg-white shadow-md">
+                    <div className="relative aspect-video overflow-hidden">
                       <iframe
                         className="h-full w-full"
                         src={`https://www.youtube.com/embed/${stream.id.videoId}`}
@@ -188,7 +188,7 @@ const Videos = () => {
                       </span>
                     </div>
 
-                    <h5 className="mt-4 font-semibold text-teal-700">
+                    <h5 className="mt-4 px-4 pb-4 font-semibold text-teal-700">
                       {stream.snippet.title}
                     </h5>
                   </div>
