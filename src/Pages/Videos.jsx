@@ -119,7 +119,7 @@ const Videos = () => {
           </div>
         </section>
 
-        {!loading && !error && latestVideos.length > 0 && (
+        {!loading && !error && liveStreams.length > 0 && (
           <section className="mx-auto max-w-7xl px-6 pb-16 md:px-16">
             <h3 className="mb-8 text-center text-[30px] text-teal-600 pl-4 text-2xl font-semibold text-[#28535B]">
               Latest Uploads
@@ -137,14 +137,14 @@ const Videos = () => {
                 1280: { slidesPerView: 3 },
               }}
             >
-              {latestVideos.map((video) => (
-                <SwiperSlide key={video.id.videoId}>
+              {liveStreams.map((stream) => (
+                <SwiperSlide key={stream.id.videoId}>
                   <div className="overflow-hidden rounded-xl bg-teal-50  rounded-[12px] shadow transition hover:shadow-md">
                     <div className="aspect-video">
                       <iframe
                         className="h-full w-full"
-                        src={`https://www.youtube.com/embed/${video.id.videoId}`}
-                        title={video.snippet.title}
+                        src={`https://www.youtube.com/embed/${stream.id.videoId}`}
+                        title={stream.snippet.title}
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -153,7 +153,7 @@ const Videos = () => {
 
                     <div className="p-4">
                       <h4 className="line-clamp-2 font-medium text-teal-700">
-                        {video.snippet.title}
+                        {stream.snippet.title}
                       </h4>
                     </div>
                   </div>
@@ -163,7 +163,7 @@ const Videos = () => {
           </section>
         )}
 
-        {!loading && !error && liveStreams.length > 0 && (
+        {!loading && !error && latestVideos.length > 0 && (
           <section className="py-16">
             <div className="mx-auto max-w-7xl px-6 md:px-16">
               <h3 className="mb-8 text-center text-[30px] font-semibold text-cyan-600">
@@ -171,13 +171,13 @@ const Videos = () => {
               </h3>
 
               <div className="grid grid-cols-1 gap-8 rounded-[12px]  p-4 md:grid-cols-2 lg:grid-cols-3 mb-30">
-                {liveStreams.map((stream) => (
-                  <div key={stream.id.videoId} className="overflow-hidden rounded-xl  shadow-md">
+                {latestVideos.map((video) => (
+                  <div key={video.id.videoId} className="overflow-hidden rounded-xl  shadow-md">
                     <div className="relative aspect-video overflow-hidden">
                       <iframe
                         className="h-full w-full"
-                        src={`https://www.youtube.com/embed/${stream.id.videoId}`}
-                        title={stream.snippet.title}
+                        src={`https://www.youtube.com/embed/${video.id.videoId}`}
+                        title={video.snippet.title}
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -189,7 +189,7 @@ const Videos = () => {
                     </div>
 
                     <h5 className="mt-4 px-4 pb-4 font-semibold text-teal-700">
-                      {stream.snippet.title}
+                      {video.snippet.title}
                     </h5>
                   </div>
                 ))}
