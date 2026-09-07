@@ -170,9 +170,9 @@ const Videos = () => {
                 Past Live Sessions
               </h3>
 
-              <div className="grid grid-cols-1 gap-8 rounded-[12px] bg-teal-50 p-4 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-8 rounded-[12px]  p-4 md:grid-cols-2 lg:grid-cols-3">
                 {liveStreams.map((stream) => (
-                  <div key={stream.id.videoId} className="overflow-hidden rounded-xl bg-white shadow-md">
+                  <div key={stream.id.videoId} className="overflow-hidden rounded-xl bg-teal-50 shadow-md">
                     <div className="relative aspect-video overflow-hidden">
                       <iframe
                         className="h-full w-full"
