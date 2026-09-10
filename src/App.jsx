@@ -10,6 +10,8 @@ import Dependent from './Pages/Dependent.jsx'
 import Visitor from './Pages/Visitor.jsx'
 import Student from './Pages/Student.jsx'
 import Videos from './Pages/Videos.jsx'
+import English from "./Pages/English.jsx"
+import IELTS from './Pages/Ielts.jsx'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
         <Route path='/services/visitor-visa' element={<Visitor/>}/>
         <Route path='/services/student-visa' element={<Student/>}/>
         <Route path='/latest-update/videos'  element={<Videos/>}/>
+        <Route path='/english-test' element={<English/>}/>
+        <Route path='/english-test/ielts' element={<IELTS/>}/>
       </Routes>
     </Router>
     <Footer />
