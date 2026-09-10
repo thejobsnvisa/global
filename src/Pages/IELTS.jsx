@@ -8,7 +8,7 @@ import f5 from "../assets/f5.png";
 import f6 from "../assets/f6.png";
 import { IoIosArrowForward } from "react-icons/io";
 
-const IELTS = () => {
+const Ielts = () => {
   return (
     <>
       {/* ==================== BANNER ==================== */}
@@ -1024,4 +1024,4 @@ const IELTS = () => {
   );
 };
 
-export default IELTS;
+export default Ielts;
