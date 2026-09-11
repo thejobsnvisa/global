@@ -412,7 +412,7 @@ const English = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Start Your Visa Application With
@@ -493,7 +493,7 @@ const English = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Importance of
@@ -598,7 +598,7 @@ const English = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Popular English Tests Accepted
@@ -733,7 +733,7 @@ const English = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Choose the Right English Test With

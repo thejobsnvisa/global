@@ -385,7 +385,7 @@ const PTE = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   The Fast, Reliable English Test For
@@ -461,7 +461,7 @@ const PTE = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Top Countries
@@ -612,7 +612,7 @@ const PTE = () => {
                       sm:text-[26px]
                       md:text-[28px]
                       lg:text-[30px]
-                      xl:text-[40px]
+                      xl:text-[30px]
                     "
                   >
                     Part 1: Speaking & Writing
@@ -643,7 +643,7 @@ const PTE = () => {
                       sm:text-[26px]
                       md:text-[28px]
                       lg:text-[30px]
-                      xl:text-[40px]
+                      xl:text-[30px]
                     "
                   >
                     Part 2: Reading
@@ -671,7 +671,7 @@ const PTE = () => {
                       sm:text-[26px]
                       md:text-[28px]
                       lg:text-[30px]
-                      xl:text-[40px]
+                      xl:text-[30px]
                     "
                   >
                     Part 3: Listening
@@ -802,7 +802,7 @@ const PTE = () => {
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
-                    xl:text-[40px]
+                    xl:text-[30px]
                   "
                 >
                   Start Your PTE Journey With
