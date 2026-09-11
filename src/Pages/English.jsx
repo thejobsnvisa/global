@@ -203,25 +203,25 @@ const English = () => {
                   title: "TOEFL",
                   subtitle:
                     "Test of English as a Foreign Language",
-                  path: "/toefl",
+                  path: "/english-test/toefl",
                 },
                 {
                   img: f4,
                   title: "DUOLINGO",
                   subtitle: "English Test",
-                  path: "/duolingo",
+                  path: "/english-test/duolingo",
                 },
                 {
                   img: f5,
                   title: "CAMBRIDGE C1 ADVANCED",
                   subtitle: "Cambridge English Test",
-                  path: "/cambridge-c1-advanced",
+                  path: "/english-test/cambridge-c1-advanced",
                 },
                 {
                   img: f6,
                   title: "LANGUAGECERT ACADEMIC",
                   subtitle: "Language cert",
-                  path: "/languagecert-academic",
+                  path: "/english-test/languagecert-academic",
                 },
               ].map((test) => (
                 <a
