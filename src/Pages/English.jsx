@@ -196,7 +196,7 @@ const English = () => {
                   img: f2,
                   title: "PTE",
                   subtitle: "Pearson Test of English",
-                  path: "/pte",
+                  path: "/english-test/pte",
                 },
                 {
                   img: f3,

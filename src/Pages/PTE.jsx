@@ -1,4 +1,4 @@
-import img from "../assets/img11.png";
+import img from "../assets/img12.png";
 import b1 from "../assets/b1.svg";
 import f1 from "../assets/F1.png";
 import f2 from "../assets/F2.png";
@@ -8,7 +8,7 @@ import f5 from "../assets/F5.png";
 import f6 from "../assets/F6.png";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Ielts = () => {
+const PTE = () => {
   return (
     <>
       {/* ==================== BANNER ==================== */}
@@ -31,18 +31,17 @@ const Ielts = () => {
             inset-0
             h-full
             w-full
-            translate-x-[140px]
             object-cover
           "
         />
 
         {/* Gradient Overlay */}
         <div
-          className="
-            absolute
-            inset-0
-            bg-[linear-gradient(89.92deg,#FFFFFF_0.06%,rgba(255,255,255,0.79)_20.33%,rgba(255,255,255,0)_48.4%)]
-          "
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(89.92deg, #FFFFFF 0.06%, rgba(255, 255, 255, 0.79) 20.33%, rgba(255, 255, 255, 0) 48.4%)",
+          }}
         />
 
         {/* Banner Content */}
@@ -73,17 +72,11 @@ const Ielts = () => {
               lg:text-[18px]
             "
           >
-            <span className="text-sky-500 lg:ml-10 xl:ml-0">
-              Home &gt;{" "}
-            </span>
+            <span className="text-sky-500 lg:ml-10 xl:ml-0">Home &gt; </span>
 
-            <span className="text-sky-500">
-              English Test &gt;
-            </span>
+            <span className="text-sky-500">English Test &gt;</span>
 
-            <span className="text-cyan-800">
-              IELTS
-            </span>
+            <span className="text-cyan-800">PTE</span>
           </p>
 
           {/* Banner Heading */}
@@ -104,7 +97,7 @@ const Ielts = () => {
               xl:ml-0
             "
           >
-            IELTS
+            PTE
           </h1>
         </div>
       </section>
@@ -180,8 +173,7 @@ const Ielts = () => {
                 {
                   img: f1,
                   title: "IELTS",
-                  subtitle:
-                    "International English Language Testing System",
+                  subtitle: "International English Language Testing System",
                   path: "/english-test/ielts",
                 },
                 {
@@ -193,8 +185,7 @@ const Ielts = () => {
                 {
                   img: f3,
                   title: "TOEFL",
-                  subtitle:
-                    "Test of English as a Foreign Language",
+                  subtitle: "Test of English as a Foreign Language",
                   path: "/english-test/toefl",
                 },
                 {
@@ -350,7 +341,6 @@ const Ielts = () => {
                 "
               >
                 Contact Us
-
                 <img
                   src={b1}
                   alt="Button Image"
@@ -398,7 +388,7 @@ const Ielts = () => {
                     xl:text-[40px]
                   "
                 >
-                  The Globally Approved Test For
+                  The Fast, Reliable English Test For
                 </p>
 
                 <h2
@@ -415,7 +405,7 @@ const Ielts = () => {
                     xl:text-[60px]
                   "
                 >
-                  Many Visa Pathways
+                  Study, Work & Migration
                 </h2>
               </div>
 
@@ -433,22 +423,19 @@ const Ielts = () => {
               >
                 <div className="space-y-4">
                   <p>
-                    The IELTS is a major language test that is accepted by over
-                    12,500 organizations worldwide, including many immigration
-                    authorities, universities, and expert firms. It is used as
-                    proof of your English-language proficiency for study and
-                    migration by giving a clear idea of your English
-                    communication skills in both academic and daily life
-                    situations.
+                    Take the stress out of English testing with a completely
+                    computer-based exam: PTE. It is currently accepted by over
+                    3,900 universities and colleges worldwide. The test delivers
+                    results in almost 48 hours, which makes it the preferred
+                    choice for many people’s study, work, and migration
+                    journeys.
                   </p>
 
                   <p>
-                    With two available types, IELTS Academic and IELTS General
-                    Training, you can choose the format that matches your
-                    English requirement goals. It remains the most popular
-                    choice for people who want to go to an overseas university,
-                    secure better career opportunities, or even strengthen
-                    their visitor visa application
+                    PTE provides you with accurate, objective results by
+                    combining human expertise with AI scoring.You can approach
+                    the test with ease and confidence as you gain full access to
+                    its preparation materials.
                   </p>
                 </div>
               </div>
@@ -494,7 +481,7 @@ const Ielts = () => {
                     xl:text-[60px]
                   "
                 >
-                  Accepting IELTS
+                  Accepting PTE
                 </h2>
               </div>
 
@@ -516,7 +503,7 @@ const Ielts = () => {
                 "
               >
                 <p className="text-[16px] text-sky-600">
-                  The following are the top countries that accept IELTS scores
+                  The following are the top countries that accept PTE scores
                 </p>
 
                 <ul
@@ -530,11 +517,12 @@ const Ielts = () => {
                 >
                   <li>Australia</li>
                   <li>Canada</li>
-                  <li>United Kingdom</li>
-                  <li>United States</li>
-                  <li>New Zealand</li>
-                  <li>Ireland</li>
                   <li>France</li>
+                  <li>Germany</li>
+                  <li>Ireland</li>
+                  <li>New Zealand</li>
+                  <li>United Kingdom (UK)</li>
+                  <li>United States of America(USA)</li>
                 </ul>
               </div>
             </section>
@@ -564,7 +552,7 @@ const Ielts = () => {
                     xl:text-[60px]
                   "
                 >
-                  IELTS Test Format
+                  PTE Academic Test Format
                 </h2>
               </div>
 
@@ -591,19 +579,24 @@ const Ielts = () => {
                   "
                 >
                   <li className="text-cyan-700">
-                    IELTS evaluates your English proficiency across four key
-                    areas: listening, reading, writing, and speaking.
+                    The PTE test primarily evaluates applicants’ English
+                    proficiency based on four skills: listening, reading,
+                    writing, and speaking.
                   </li>
 
                   <li className="mt-2 text-cyan-700">
-                    The timing for the entire test section is 2 hours and 45
-                    minutes.
+                    This entirely computer-based test takes only 2 hours to
+                    complete.
                   </li>
 
                   <li className="mt-2 text-cyan-700">
-                    Listening, reading, and writing happen on the same day
-                    without any break, while a speaking test can also be
-                    scheduled on the same day or up to a week before or after.
+                    You can take the test at one of over 475 locations available
+                    worldwide.
+                  </li>
+
+                  <li className="mt-2 text-cyan-700">
+                    This test is mainly divided into 3 parts. Part 1: Speaking &
+                    Writing, Part 2: Reading, Part 3: Listening
                   </li>
                 </ul>
 
@@ -622,16 +615,18 @@ const Ielts = () => {
                       xl:text-[40px]
                     "
                   >
-                    Listening – 30 minutes*
+                    Part 1: Speaking & Writing
                   </p>
 
                   <ul className="ml-6 list-disc text-slate-600">
-                    <li>Divided into 4 parts</li>
-                    <li>Includes 40 questions</li>
+                    <li>Contains 9 different question types</li>
                     <li>
-                      Covers topics like daily conversations, academic
-                      interactions, and monologues in both social and academic
-                      contexts.
+                      Examine speaking and writing skills using English you
+                      might hear in academic environments.
+                    </li>
+                    <li>
+                      Its personal introduction part gives you a chance to
+                      familiarize yourself with PTE test technology.
                     </li>
                   </ul>
                 </div>
@@ -651,171 +646,15 @@ const Ielts = () => {
                       xl:text-[40px]
                     "
                   >
-                    Reading – 60 minutes*
+                    Part 2: Reading
                   </p>
 
-                  <ul className="ml-6 list-disc text-emerald-600">
+                  <ul className="ml-6 list-disc text-slate-600">
+                    <li>Contains 5 different question types</li>
                     <li>
-                      Format for reading section differs based on test type
-                    </li>
-                  </ul>
-
-                  {/* Academic + General Reading Card */}
-                  <div
-                    className="
-                      mt-4
-                      w-full
-                      min-h-[441px]
-                      rounded-[24px]
-                      bg-slate-100
-                      p-5
-                      sm:p-6
-                      xl:w-[621px]
-                      xl:p-[30px]
-                    "
-                  >
-                    <div
-                      className="
-                        flex
-                        flex-col
-                        gap-8
-                        xl:flex-row
-                        xl:gap-[40px]
-                      "
-                    >
-                      {/* Academic Reading */}
-                      <div
-                        className="
-                          w-full
-                          xl:min-h-[381px]
-                          xl:w-[270px]
-                        "
-                      >
-                        <p className="text-[18px] font-semibold text-emerald-700">
-                          For Academic Reading
-                        </p>
-
-                        <ul
-                          className="
-                            mt-2
-                            text-[17px]
-                            text-cyan-600
-                          "
-                        >
-                          <li className="mt-4">
-                            Three long passages, each followed by tasks.
-                          </li>
-
-                          <li className="mt-4">
-                            Topics are suitable for undergraduate or
-                            postgraduate study.
-                          </li>
-
-                          <li className="mt-4">
-                            Texts may include diagrams, graphs, or
-                            illustrations.
-                          </li>
-
-                          <li className="mt-4">
-                            Sources include books, journals, and newspapers.
-                          </li>
-
-                          <li className="mt-4">
-                            40 questions with mixed question types.
-                          </li>
-                        </ul>
-                      </div>
-
-                      {/* Vertical Divider */}
-                      <div className="hidden h-[381px] w-px shrink-0 bg-slate-400 xl:block" />
-
-                      {/* General Training Reading */}
-                      <div
-                        className="
-                          w-full
-                          xl:min-h-[381px]
-                          xl:w-[270px]
-                        "
-                      >
-                        <p className="text-[20px] font-semibold text-emerald-700">
-                          For General Training Reading
-                        </p>
-
-                        <ul
-                          className="
-                            mt-2
-                            text-[17px]
-                            text-cyan-600
-                          "
-                        >
-                          <li className="mt-4">
-                            Five to six texts of different lengths, divided
-                            into 3 sections.
-                          </li>
-
-                          <li className="mt-4">
-                            Section 1: Short everyday texts.
-                          </li>
-
-                          <li className="mt-4 xl:mt-10">
-                            Section 2: Work-related, factual texts.
-                          </li>
-
-                          <li className="mt-4">
-                            Section 3: One longer passage on a general-interest
-                            topic.
-                          </li>
-
-                          <li className="mt-4">
-                            40 questions with mixed question types.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* ==================== WRITING ==================== */}
-                <div className="mt-8">
-                  <p
-                    className="
-                      m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-sky-600
-                      sm:text-[26px]
-                      md:text-[28px]
-                      lg:text-[30px]
-                      xl:text-[40px]
-                    "
-                  >
-                    Writing – 60 minutes*
-                  </p>
-
-                  <p className="text-[16px] text-slate-600">
-                    Divided into 2 Tasks:
-                  </p>
-
-                  <ul
-                    className="
-                      ml-6
-                      mt-2
-                      w-full
-                      list-disc
-                      text-[17px]
-                      text-slate-600
-                      xl:w-[582px]
-                    "
-                  >
-                    <li className="mt-2">
-                      Task 1: Need to write at least 150 words in about 20
-                      minutes.
-                    </li>
-
-                    <li>
-                      Task 2: Need to write 250+ words on a viewpoint,
-                      argument, or problem in 40 minutes.
+                      “Reading and Writing: Fill in the Blanks” is included in
+                      this part that examines your writing along with reading
+                      skills
                     </li>
                   </ul>
                 </div>
@@ -835,11 +674,7 @@ const Ielts = () => {
                       xl:text-[40px]
                     "
                   >
-                    Speaking – 11-14 minutes*
-                  </p>
-
-                  <p className="text-[16px] text-slate-600">
-                    Divided into 3 Parts:
+                    Part 3: Listening
                   </p>
 
                   <ul
@@ -852,21 +687,98 @@ const Ielts = () => {
                     "
                   >
                     <li className="mt-2">
-                      Part 1 (4–5 minutes): General questions about yourself
-                      and familiar topics.
+                      Contains 8 different question types
                     </li>
 
                     <li>
-                      Part 2 (3–4 minutes): Speak for 2 minutes based on a
-                      provided task card.
+                      All questions come from audio or video clips that play
+                      automatically
                     </li>
 
                     <li>
-                      Part 3 (4–5 minutes): Discussion of more abstract ideas
-                      related to the topic of Part 2.
+                      After listening to each question, you need to answer the
+                      question in different types of formats, like
+                      multiple-choice questions, fill-in-the-blank questions,
+                      missing word selection, sentence typing, etc.
                     </li>
                   </ul>
                 </div>
+              </div>
+            </section>
+
+               <section className="mt-10 lg:mt-14">
+              <div
+                className="
+                  mb-6
+                  sm:mb-8
+                  lg:mb-12
+                  xl:mb-14
+                  xl:mt-[-30px]
+                "
+              >
+                <h2
+                  className="
+                    m-0
+                    mt-1
+                    text-[28px]
+                    font-bold
+                    leading-[1.05]
+                    text-[#8DC8AB]
+                    sm:text-[34px]
+                    md:text-[40px]
+                    lg:text-[46px]
+                    xl:text-[60px]
+                  "
+                >
+                  PTE Scoring
+                </h2>
+              </div>
+
+              <div
+                className="
+                  w-full
+                  min-w-0
+                  rounded-[34px]
+                  bg-white
+                  xl:mt-[-10px]
+                  xl:w-[701px]
+                "
+              >
+                {/* Test Overview */}
+                <ul
+                  className="
+                    ml-6
+                    mt-[-10px]
+                    w-full
+                    pr-4
+                    text-[16px]
+                    list-disc
+                    sm:pr-6
+                  "
+                >
+                  <li className="text-cyan-700 ">
+                    Overall scores range between 10 and 90. 
+                  </li>
+
+                  <li className=" text-cyan-700 ">
+                    Individual communicative scoring is also given, which helps individuals to pinpoint their strengths and weaknesses. 
+                  </li>
+
+                  <li className=" text-cyan-700 ">
+                    Results are typically available within 48 hours. 
+                  </li>
+                   
+                  <p className="mt-3 text-cyan-700 font-bold">Here are the general score requirements:</p> 
+                  <li className="mt-2 text-cyan-700 ">
+                    Foundation courses: 36–50 
+                  </li>
+                  <li className=" text-cyan-700 ">
+                    Undergraduate degrees: 51–60 
+                  </li>
+                  <li className=" text-cyan-700 ">
+                    Postgraduate degrees: 58–67 
+                  </li>
+                </ul>
               </div>
             </section>
 
@@ -893,7 +805,7 @@ const Ielts = () => {
                     xl:text-[40px]
                   "
                 >
-                  Step Forward Globally
+                  Start Your PTE Journey With
                 </p>
 
                 <h2
@@ -910,7 +822,7 @@ const Ielts = () => {
                     xl:text-[60px]
                   "
                 >
-                  With IELTS
+                  Clarity and Confidence
                 </h2>
               </div>
 
@@ -941,80 +853,24 @@ const Ielts = () => {
                     sm:text-[17px]
                   "
                 >
-                  IELTS opens doors to study, work, and migration worldwide.
-                  With Growmore Global Visa, you get clear guidance on
-                  required scores, test formats, and preparation so you can aim
-                  for the result your visa pathway truly needs.
+                  PTE is not complicated when you have the right direction on
+                  where to start. Growmore Global Visa helps you understand the
+                  exact score requirements, test formats, and preparation
+                  strategies for your visa pathway to ensure you don’t waste
+                  time making assumptions.
                 </p>
-              </div>
-            </section>
-
-            {/* ==================== IELTS RESULTS ==================== */}
-            <section className="mt-10 lg:mt-14">
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <h2
+                  <p
                   className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
-                  IELTS Results
-                </h2>
-
-                <p
-                  className="
-                    mt-8
-                    min-h-[131px]
-                    w-full
-                    text-[18px]
-                    font-semibold
-                    text-cyan-700
-                    xl:w-[701px]
-                  "
-                >
-                  Your IELTS score is reported on a 9-band scale ranging from
-                  1 (non-user) to 9 (expert), and the duration of the result to
-                  come depends on the test format:
-                </p>
-
-                <ul
-                  className="
-                    ml-5
                     mt-4
-                    list-disc
-                    text-[16px]
-                    text-cyan-700
-                    xl:mt-[-60px]
+                    text-justify
+                    text-[17px]
+                    leading-relaxed
+                    text-emerald-700
+                    sm:text-[17px]
                   "
                 >
-                  <li>
-                    <b>IELTS on paper:</b> 13 days after your test
-                  </li>
-
-                  <li>
-                    <b>IELTS on computer:</b> 1–5 days after your test
-                  </li>
-
-                  <li>
-                    <b>IELTS Online:</b> 6–8 days after your test
-                  </li>
-                </ul>
+                 So, take the first step toward studying or migrating abroad with Growmore Global Visa, and get expert guidance on PTE score requirements. 
+                </p>
               </div>
             </section>
           </section>
@@ -1024,4 +880,4 @@ const Ielts = () => {
   );
 };
 
-export default Ielts;
+export default PTE;

@@ -14,6 +14,7 @@ import Student from "./Pages/Student.jsx";
 import Videos from "./Pages/Videos.jsx";
 import English from "./Pages/English.jsx";
 import Ielts from "./Pages/Ielts.jsx";
+import PTE from "./Pages/PTE.jsx";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
 
         <Route path="/english-test" element={<English />} />
         <Route path="/english-test/ielts" element={<Ielts />} />
+        <Route path="/english-test/pte" element={<PTE />} />
       </Routes>
 
       <Footer />
