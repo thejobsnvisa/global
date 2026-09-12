@@ -1,4 +1,4 @@
-import img from "../assets/img14.png";
+import img from "../assets/img15.png";
 import b1 from "../assets/b1.svg";
 import f1 from "../assets/F1.png";
 import f2 from "../assets/F2.png";
@@ -8,7 +8,7 @@ import f5 from "../assets/F5.png";
 import f6 from "../assets/F6.png";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Duolingo = () => {
+const Cambridge = () => {
   return (
     <>
       {/* ==================== BANNER ==================== */}
@@ -76,7 +76,7 @@ const Duolingo = () => {
 
             <span className="text-sky-500">English Test &gt;</span>
 
-            <span className="text-cyan-800">Duolingo</span>
+            <span className="text-cyan-800">Cambridge C1 Advanced</span>
           </p>
 
           {/* Banner Heading */}
@@ -97,7 +97,7 @@ const Duolingo = () => {
               xl:ml-0
             "
           >
-            Duolingo
+            Cambridge C1 Advanced
           </h1>
         </div>
       </section>
@@ -388,7 +388,7 @@ const Duolingo = () => {
                     xl:text-[40px]
                   "
                 >
-                  A Smarter Way to Measure
+                  Advanced English That
                 </p>
 
                 <h2
@@ -405,7 +405,7 @@ const Duolingo = () => {
                     xl:text-[60px]
                   "
                 >
-                  English Proficiency
+                  Institutions Trust
                 </h2>
               </div>
 
@@ -423,14 +423,19 @@ const Duolingo = () => {
               >
                 <div className="space-y-4">
                   <p>
-                    The Duolingo English Test has become one of the most
-                    accessible and efficient English proficiency exams
-                    worldwide. Fully online and trusted by 6,000+ institutions,
-                    it is available remotely anytime without the need for an
-                    advanced appointment booking. Its computer-adaptive
-                    technology adjusts difficulty in real time and also delivers
-                    precise result promptly. All this together makes Duolingo a
-                    preferred choice for students and professionals worldwide.
+                    Cambridge C1 Advanced is an internationally recognised
+                    English qualification accepted by more than 11,000
+                    educational institutions, businesses, and government
+                    departments worldwide. It is designed to demonstrate
+                    advanced communication ability and is used for academic
+                    entry, professional growth, and international mobility.
+                  </p>
+                  <p>
+                    When it comes to C1 Advanced, it is not just another English
+                    test; it is a qualification that validates real and
+                    high-level language skills. It consistently stands out as
+                    one of the most trustworthy and widely acknowledged advanced
+                    English tests worldwide.
                   </p>
                 </div>
               </div>
@@ -476,7 +481,7 @@ const Duolingo = () => {
                     xl:text-[60px]
                   "
                 >
-                  Duolingo
+                  Cambridge C1 Advanced
                 </h2>
               </div>
 
@@ -498,8 +503,8 @@ const Duolingo = () => {
                 "
               >
                 <p className="text-[16px] text-sky-600">
-                  The following are the top countries that accept Duolingo
-                  scores
+                  The following are the top countries that accept Cambridge C1
+                  Advanced scores
                 </p>
 
                 <ul
@@ -511,12 +516,13 @@ const Duolingo = () => {
                     text-teal-600
                   "
                 >
-                  <li>USA</li>
-                  <li>Canada</li>
                   <li>UK</li>
+                  <li>Australia</li>
+                  <li>Canada</li>
+                  <li>USA</li>
                   <li>Germany</li>
-                  <li>France</li>
-                  <li>Italy</li>
+                  <li>Netherlands</li>
+                  <li>Ireland</li>
                 </ul>
               </div>
             </section>
@@ -546,7 +552,7 @@ const Duolingo = () => {
                     xl:text-[60px]
                   "
                 >
-                  Duolingo Test Format
+                  Cambridge C1 Advanced Test Format
                 </h2>
               </div>
               <p
@@ -562,9 +568,9 @@ const Duolingo = () => {
                       xl:text-[18px]
                     "
               >
-                It is the 1-hour test that evaluates candidate’s reading,
-                writing, listening, and speaking skills in real-world English
-                communication.
+                The C1 Advanced exam evaluates the candidate’s English
+                proficiency across four components. Here is the information on 4
+                components:
               </p>
 
               <div
@@ -582,21 +588,6 @@ const Duolingo = () => {
                   <p
                     className="
                       m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-emerald-700
-                      sm:text-[20px]
-                      md:text-[22px]
-                      lg:text-[22px]
-                      xl:text-[24px]
-                    "
-                  >
-                    The complete test is divided into 3 parts
-                  </p>
-                  <p
-                    className="
-                      m-0
                       pb-2
                       text-[22px]
                       leading-[1.15]
@@ -607,13 +598,17 @@ const Duolingo = () => {
                       xl:text-[24px]
                     "
                   >
-                    Setup & ID Verification – 5 minutes
+                    Reading & Use of English (1 hour 30 minutes)
                   </p>
 
                   <ul className="ml-6 list-disc text-slate-600">
+                    <li>8 parts | 56 questions</li>
                     <li>
-                      Quickly checks and identifies verification before you
-                      begin the exam.
+                      Tests reading comprehension across various text types
+                    </li>
+                    <li>
+                      Evaluates grammar, vocabulary, and overall language
+                      control in context
                     </li>
                   </ul>
                 </div>
@@ -633,13 +628,14 @@ const Duolingo = () => {
                       xl:text-[24px]
                     "
                   >
-                    Scored Assessment – 45 minutes
+                    Writing (1 hour 30 minutes)
                   </p>
 
                   <ul className="ml-6 list-disc text-slate-600">
+                    <li>2 parts</li>
                     <li>
-                      Adaptive test that evaluates reading, writing, listening,
-                      and speaking skills.
+                      Asks to write two pieces of content related to essays,
+                      proposals, reports, reviews, or formal letters/emails.
                     </li>
                   </ul>
                 </div>
@@ -658,7 +654,7 @@ const Duolingo = () => {
                       xl:text-[24px]
                     "
                   >
-                    Writing & Speaking Samples – 10 minutes
+                    Listening (Approximately 40 minutes)
                   </p>
 
                   <ul
@@ -670,9 +666,49 @@ const Duolingo = () => {
                       text-slate-600
                     "
                   >
+                    <li>4 parts | 30 questions</li>
                     <li className="mt-2">
-                      Record quick speaking and writing tasks that reflect how
-                      you use English in real situations.
+                      Tests your ability to understand a range of spoken
+                      material such as interviews, presentations, radio
+                      broadcasts, discussions, and everyday conversations.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-8">
+                  <p
+                    className="
+                      m-0
+                      pb-1
+                      text-[22px]
+                      leading-[1.15]
+                      text-sky-600
+                      sm:text-[20px]
+                      md:text-[22px]
+                      lg:text-[22px]
+                      xl:text-[24px]
+                    "
+                  >
+                    Speaking (15–23 minutes)
+                  </p>
+
+                  <ul
+                    className="
+                      ml-6
+                      mt-2
+                      list-disc
+                      text-[17px]
+                      text-slate-600
+                    "
+                  >
+                    <li>4 parts</li>
+                    <li className="mt-2">
+                      Conducted in pairs or groups to evaluate interactive
+                      communication skills by two examiners.
+                    </li>
+                    <li className="mt-2">
+                      One of them interacts with the candidate while the other
+                      observes for an accurate assessment.
                     </li>
                   </ul>
                 </div>
@@ -703,7 +739,7 @@ const Duolingo = () => {
                     xl:text-[60px]
                   "
                 >
-                  Duolingo Scoring System
+                  C1 Advanced – Scoring
                 </h2>
               </div>
 
@@ -730,18 +766,18 @@ const Duolingo = () => {
                   "
                 >
                   <li className="text-cyan-700 ">
-                    All scores are reported on a 10-160 scale, in increments of
-                    5.
+                    Your official results are reported using the Cambridge
+                    English Scale.
                   </li>
 
                   <li className=" text-cyan-700 ">
-                    Subscores are also given to measure specific skill areas and
-                    are averaged to create your overall score.
+                    The digital exam result will be available within 5–10
+                    working days, and for the paper-based exam, the result will
+                    be available within 4–6 weeks.
                   </li>
 
                   <li className=" text-cyan-700 ">
-                    The result of test is given within 48 hours which remain
-                    valid for two years.
+                    Certificates for C1 Advanced do not expire for a lifetime
                   </li>
                 </ul>
               </div>
@@ -761,8 +797,7 @@ const Duolingo = () => {
                       xl:text-[24px]
                     "
                 >
-                  Here is the quick comparison of Duolingo with IELTS & TOEFL
-                  iBT Score:
+                  For C1 Advanced, results are reported as
                 </p>
 
                 {/* Academic + General Reading Card */}
@@ -770,11 +805,13 @@ const Duolingo = () => {
                   className="
                       mt-4
                       w-full
-                      min-h-[441px]
+                      h-auto
+                      min-h-[290px]
                       rounded-[24px]
                       bg-slate-100
                       p-5
                       sm:p-6
+                      xl:h-[290px]
                       xl:w-[800px]
                       xl:p-[30px]
                     "
@@ -793,11 +830,11 @@ const Duolingo = () => {
                       className="
                           w-full
                           xl:min-h-[381px]
-                          xl:w-[270px]
+                          xl:w-[370px]
                         "
                     >
                       <p className="text-[18px] text-center font-bold text-emerald-700">
-                        Duolingo Score
+                        Cambridge English Scale Score 
                       </p>
 
                       <ul
@@ -808,89 +845,34 @@ const Duolingo = () => {
                             text-cyan-600
                           "
                       >
-                        <li className="mt-4">160</li>
+                        <li className="mt-4">200-210</li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          155
+                          193-199
                         </li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          150
+                          180-192
                         </li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          145
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          140
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          135
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          130
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          125
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          120
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          115
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          110
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          105
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          100
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          95
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          90
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          85
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          80
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          75
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          70
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          65
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          60
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          5-10
+                          160-179
                         </li>
                       </ul>
                     </div>
 
                     {/* Vertical Divider */}
-                    <div className="hidden h-[995px] mt-3 w-px shrink-0 bg-slate-300 xl:block" />
+                    <div className="hidden h-[235px] mt-3 w-px shrink-0 bg-slate-400 xl:block" />
 
                     {/* General Training Reading */}
                     <div
                       className="
                           w-full
                           xl:min-h-[361px]
-                          xl:w-[400px]
+                          xl:w-[350px]
                         "
                     >
                       <p className="text-[18px] font-bold text-center text-emerald-700">
-                        IELTS Equivalent
+                        Grade 
                       </p>
-
-                      <ul
+                         <ul
                         className="
                             mt-2
                             text-[17px]
@@ -898,42 +880,21 @@ const Duolingo = () => {
                             text-cyan-600
                           "
                       >
-                        <li className="mt-4">8.5-9</li>
-                        <li className="border-t-2 pt-8 border-slate-300 mt-2">
-                          8
-                        </li>
-                        <li className="border-t-2 pt-8 border-slate-300 mt-7.5">
-                          7.5
-                        </li>
-                        <li className="border-t-2 pt-8 border-slate-300 mt-6.5">
-                          7
-                        </li>
-                        <li className="border-t-2 pt-8 border-slate-300 mt-7">
-                          6.5
-                        </li>
-                        <li className="border-t-2 pt-12 border-slate-300 mt-7">
-                          6
-                        </li>
-                        <li className="border-t-2 pt-6 border-slate-300 mt-13">
-                          5.5
-                        </li>
-                        <li className="border-t-2 pt-12 border-slate-300 mt-9">
-                          5
-                        </li>
-                        <li className="border-t-2 pt-12 border-slate-300 mt-14">
-                          4.5
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-13">
-                          4
+                        <li className="mt-11">Grade A</li>
+                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
+                          Grade B
                         </li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          0-4
+                          Grade C
+                        </li>
+                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
+                          Grade D
                         </li>
                       </ul>
                     </div>
 
                     {/* Vertical Divider */}
-                    <div className="hidden h-[995px] mt-3 w-[1px] shrink-0 bg-slate-400 xl:block" />
+                    <div className="hidden h-[235px] mt-3 w-px shrink-0 bg-slate-400 xl:block" />
 
                     {/* General Training Reading */}
                     <div
@@ -944,7 +905,7 @@ const Duolingo = () => {
                         "
                     >
                       <p className="text-[18px] font-bold text-center text-emerald-700">
-                        TOEFL iBT Equivalent
+                        CEFR Level
                       </p>
 
                       <ul
@@ -955,77 +916,46 @@ const Duolingo = () => {
                             text-cyan-600
                           "
                       >
-                        <li className="mt-4">120</li>
+                        <li className="mt-11">C2</li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          119
+                          C1
                         </li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          117-118
+                          C1
                         </li>
                         <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          113-116
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          109-112
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          104-108
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          98-103
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          93-97
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          87-92
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          82-86
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          76-81
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          70-75
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          65-69
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          59-64
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          53-58
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          47-52
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          41-46
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          35-40
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          30-34
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          24-29
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          18-23
-                        </li>
-                        <li className="border-t-2 pt-2 border-slate-300 mt-2">
-                          0-17
+                          B2
                         </li>
                       </ul>
                     </div>
+
                   </div>
                 </div>
               </div>
-            </section>
+                <ul
+                  className="
+                    ml-6
+                    xl:mt-[10px]
+                    w-full
+                    max-w-[601px]
+                    pr-4
+                    text-[17px]
+                    font-semibold
+                    list-disc
+                    sm:pr-6
+                    xl:w-[601px]
+                  "
+                >
+                  <li className="text-cyan-700 ">
+                   Scores of 180 and above show that you have successfully achieved the C1 Advanced level. 
+                  </li>
 
+                  <li className=" text-cyan-700 ">
+                    Scores between 160–179 do not meet the C1 level, but you still receive a B2 level certificate.
+                  </li>
+                </ul>
+            </section>
+             
             {/* ==================== SECTION 4 ==================== */}
             <section className="mt-10 lg:mt-14">
               <div
@@ -1049,7 +979,7 @@ const Duolingo = () => {
                     xl:text-[30px]
                   "
                 >
-                  Make Your Duolingo Results
+                  Unlock Global Opportunities
                 </p>
 
                 <h2
@@ -1066,10 +996,10 @@ const Duolingo = () => {
                     xl:text-[60px]
                   "
                 >
-                  Work for Your Future
+                  With C1 Advanced
                 </h2>
               </div>
-
+               
               <div
                 className="
                   w-full
@@ -1097,14 +1027,16 @@ const Duolingo = () => {
                     sm:text-[17px]
                   "
                 >
-                  This Duolingo English Test is a fast, fully online exam
-                  recognized by thousands of institutions worldwide. With the
-                  ability to provide quick results and globally accepted scores,
-                  it remains the smart choice for advancing your studies or
-                  career abroad. So, get your Duolingo English Test done with
-                  ease by following expert guidance from Growmore Global Visa.
+                  C1 Advanced stands out among other tests because it focuses on
+                  real academic and professional language ability rather than
+                  just test performance. Its global reputation makes it a
+                  trusted qualification for anyone who is aiming to study, work,
+                  or build a future in an English-speaking environment. So,
+                  unlock your global opportunities by getting expert C1 Advanced
+                  test support from Growmore Global Visa.
                 </p>
               </div>
+
             </section>
           </section>
         </div>
@@ -1113,4 +1045,4 @@ const Duolingo = () => {
   );
 };
 
-export default Duolingo;
+export default Cambridge;
