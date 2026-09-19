@@ -14,9 +14,88 @@ import y13 from "../assets/y13.png"
 import y15 from "../assets/y15.png"
 import y16 from "../assets/y16.png"
 import y17 from "../assets/y17.png"
-import y18 from "../assets/y18.jpg"
+import y18 from "../assets/y18.jpg" 
+import y19 from "../assets/y22.png"
+import y20 from "../assets/y21.png"
+import y21 from "../assets/y23.jpg"
+import y22 from "../assets/y24.jpg"
+import y23 from "../assets/y25.jpg"
+import y24 from "../assets/y26.jpg"
+
 
 export const blogs = [
+  {
+    id: 23,
+    slug:"uk-graduate-visa-changes-2027-what-international-students-need-to-know",
+    title:"UK Graduate Visa Changes 2027: What International Students Need to Know",
+    metaTitle: "UK Graduate Visa Changes 2027: What International Students Need to Know",
+    description:
+      "Learn about the UK Graduate Visa changes expected in 2027, including the latest updates, eligibility requirements, application process, and what international students should prepare for.",
+    metaDescription:
+      "Discover the UK Graduate Visa changes for 2027 and understand how they may affect international students, post-study work options, eligibility, and future applications.",
+    date: "sep 11, 2026",
+    image: y24,
+  },
+  {
+    id: 22,
+    slug:"parents-biggest-concerns-about-sending-children-abroad",
+    title:"Parents’ Biggest Concerns About Sending Children Abroad",
+    metaTitle: "Parents’ Biggest Concerns About Sending Children Abroad",
+    description:
+      "Explore the biggest concerns parents have when sending their children abroad, from safety and finances to accommodation, wellbeing, and academic success.",
+    metaDescription:
+      "Understand parents’ common concerns about children studying abroad and learn how to prepare for safety, costs, accommodation, support, and student wellbeing.",
+    date: "sep 1, 2026",
+    image: y23,
+  },
+   {
+    id: 21,
+    slug:"common-reasons-why-student-visas-get-rejected",
+    title:"Common Reasons Why Student Visas Get Rejected",
+    metaTitle: "Common Reasons Student Visas Get Rejected and How to Avoid Them",
+    description:
+      "Learn the most common reasons student visa applications are rejected, including financial evidence, incomplete documents, credibility concerns, and how international students can avoid common mistakes.",
+    metaDescription:
+      "Discover why student visas get rejected and how to strengthen your application with accurate documents, clear financial evidence, and strong interview preparation.",
+    date: "Aug 21, 2026",
+    image: y22,
+  },
+  {
+    id: 20,
+    slug:"uk-graduate-visa-changes-2027",
+    title:"UK Graduate Visa Changes 2027: Everything International Students Should Know",
+    metaTitle: "UK Graduate Visa Changes 2027: What International Students Need to Know",
+    description:
+      "Understand the UK Graduate Visa changes expected in 2027, including the updated visa duration, eligibility requirements, application timeline, and what international students should do to prepare.",
+    metaDescription:
+      "Learn what the UK Graduate Visa changes in 2027 mean for international students, including eligibility, visa duration, application requirements, and post-study work options.",
+    date: "Aug 8, 2026",
+    image: y21,
+  },
+  {
+    id: 19,
+    slug:"part-time-jobs-abroad-reality-vs-expectations",
+    title:"Part-Time Jobs Abroad: Reality vs Expectations",
+    metaTitle: "Part-Time Jobs Abroad: Reality, Rules and Expectations",
+    description:
+      "Learn the reality of working part-time abroad as an international student, including work rules, earning expectations, living costs, and how to balance employment with your studies.",
+    metaDescription:
+      "Discover what international students should know about part-time jobs abroad, including work-hour limits, typical earnings, job options, costs, and the importance of prioritising your studies.",
+    date: "July 27, 2026",
+    image: y20,
+  },
+   {
+    id: 18,
+    slug:"sop-mistakes-that-can-affect-your-admission-chances",
+    title:"SOP Mistakes That Can Affect Your Admission Chances",
+    metaTitle: "SOP Mistakes That Can Hurt Your Study Abroad Admission",
+    description:
+      "Learn about common statement of purpose mistakes that can weaken your study abroad application and discover how to write a clear, persuasive SOP that improves your admission chances.",
+    metaDescription:
+      "Discover the most common SOP mistakes students make, including generic content, poor structure, and weak course justification, and learn how to avoid them in your admission application.",
+    date: "July 21, 2026",
+    image: y19,
+  },
   {
     id: 17,
     slug:"how-to-choose-the-right-country-based-on-your-budget",
