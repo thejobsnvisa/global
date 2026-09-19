@@ -22,6 +22,9 @@ import Acadmic from "./Pages/Acadmic.jsx";
 import ContactUs from "./Pages/ContactUs.jsx";
 import News from "./Pages/News.jsx";
 import NewsArticle from "./Pages/NewsArtical.jsx";
+import Blogs from "./Pages/Blogs.jsx";
+import BlogsArticle from "./Pages/BlogsArtical.jsx";
+
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <Route path="/latest-update/videos" element={<Videos />} />
         <Route path="/latest-update/news" element={<News/>} />
         <Route path="/news/:slug/" element={<NewsArticle />} />
+
+        <Route path="/latest-update/blogs" element={<Blogs/>} />
+        <Route path="/blogs/:slug/" element={<BlogsArticle />} />
 
 
         <Route path="/english-test" element={<English />} />
