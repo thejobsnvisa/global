@@ -748,7 +748,7 @@ const Hero = () => {
                   lg:absolute
                   lg:left-[140px]
                   lg:right-0
-                  lg:top-[80px]
+                  lg:top-[65px]
                   lg:mt-0
                   lg:mb-0
                   lg:h-[580px]
@@ -759,16 +759,16 @@ const Hero = () => {
                   lg:bg-[#FFFFFFA8]
                   lg:opacity-90
 
-                  xl:left-[280px]
+                  xl:left-[275px]
                   xl:top-20
                   xl:h-[640px]
                   xl:w-[440px]
                   xl:px-[24px]
                   xl:py-[25px]
 
-                  2xl:left-[500px]
-                  2xl:top-20
-                  2xl:h-[640px]
+                  2xl:left-[300px]
+                  2xl:top-27
+                  2xl:h-[680px]
                   2xl:w-[480px]
                   2xl:px-[28px]
                   2xl:py-[28px]

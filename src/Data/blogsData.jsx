@@ -12,9 +12,47 @@ import y11 from "../assets/y11.png"
 import y12 from "../assets/y12.png"
 import y13 from "../assets/y13.png"
 import y15 from "../assets/y15.png"
-
+import y16 from "../assets/y16.png"
+import y17 from "../assets/y17.png"
+import y18 from "../assets/y18.jpg"
 
 export const blogs = [
+  {
+    id: 17,
+    slug:"how-to-choose-the-right-country-based-on-your-budget",
+    title:"How to Choose the Right Country Based on Your Budget",
+    metaTitle: "How to Choose the Right Country Based on Your Budget",
+    description:
+      "Learn how to choose the right country to study abroad based on your budget, including tuition fees, living costs, scholarships, visa expenses, and available financial support.",
+    metaDescription:
+      "Discover how to compare study abroad destinations by tuition fees, living expenses, scholarships, visa costs, and career opportunities to find the best country for your budget.",
+    date: "July 17, 2026",
+    image: y18,
+  },
+  {
+    id: 16,
+    slug:"student-visa-rejected-heres-what-you-should-do-next",
+    title:"Student Visa Rejected? Here’s What You Should Do Next",
+    metaTitle: "Student Visa Rejected? What to Do Next",
+    description:
+      "Learn what to do after a student visa refusal, including how to understand the rejection reasons, correct application weaknesses, and prepare a stronger reapplication.",
+    metaDescription:
+      "Find out what to do after your student visa is rejected, from reviewing the refusal letter and addressing concerns to deciding whether to appeal or reapply.",
+    date: "July 11, 2026",
+    image: y17,
+  },
+  {
+    id: 15,
+    slug:"essential-documents-every-student-needs-before-applying-abroad",
+    title:"Essential Documents Every Student Needs Before Applying Abroad",
+    metaTitle: "Essential Documents to Study Abroad: Complete Checklist",
+    description:
+      "Discover the essential documents students need before applying to study abroad, including academic records, passports, language test results, financial proof, and visa paperwork.",
+    metaDescription:
+      "Explore the complete study abroad document checklist, including university application records, English test scores, financial documents, and student visa requirements.",
+    date: "July 7, 2026",
+    image: y16,
+  },
   {
     id: 14,
     slug:"can-i-study-abroad-with-a-low-percentage-complete-guide",

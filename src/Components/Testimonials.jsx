@@ -124,13 +124,13 @@ const Testimonials = () => {
 
             md:mt-[40px]
 
-            xl:absolute
-            xl:top-[55px]
-            xl:left-[98px]
-            xl:w-[430px]
-            xl:h-[430px]
-            xl:mt-0
-            xl:pb-0
+            lg:absolute
+            lg:top-[55px]
+            lg:left-[98px]
+            lg:w-[430px]
+            lg:h-[430px]
+            lg:mt-0
+            lg:pb-0
           "
         >
           {/* =====================================================
@@ -143,6 +143,7 @@ const Testimonials = () => {
               items-center
               gap-[10px]
               mb-[25px]
+              lg:ml-[-70px]
               xl:ml-0
               xl:mt-0
             "
@@ -180,7 +181,7 @@ const Testimonials = () => {
               SECTION HEADING
           ====================================================== */}
 
-          <div className="mb-[10px] sm:mb-[18px]">
+          <div className="mb-[10px] sm:mb-[18px] lg:ml-[-70px] xl:ml-0">
             <p
               className="
                 text-[18px]
@@ -217,7 +218,7 @@ const Testimonials = () => {
               CLIENT SLIDES
           ====================================================== */}
 
-          <div className="relative">
+          <div className="relative lg:ml-[-70px] xl:ml-0">
             <div
               className="
                 flex
@@ -453,12 +454,12 @@ const Testimonials = () => {
             mx-auto
             w-full
 
-            xl:absolute
-            xl:top-[110px]
-            xl:left-[700px]
-            xl:pt-0
-            xl:mx-0
-            xl:w-auto
+              lg:absolute
+              lg:top-[110px]
+              lg:left-[700px]
+              lg:pt-0
+              lg:mx-0
+              lg:w-auto
           "
         >
           {/* =====================================================
@@ -481,6 +482,12 @@ const Testimonials = () => {
               pb-[85px]
 
               sm:px-[40px]
+
+              lg:w-[480px]
+              lg:h-[300px]
+              lg:mt-[20px]
+              lg:ml-[-220px]
+              lg:mx-0
 
               xl:w-[510px]
               xl:h-[330px]
