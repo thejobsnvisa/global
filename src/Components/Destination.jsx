@@ -1,35 +1,45 @@
 import { useEffect, useRef } from "react";
+import newzealand from "../assets/newzealand1.jpg"
+import australia1 from "../assets/australia1.jpg"
+import canada from "../assets/canada.jpg"
+import uk from "../assets/united kingdom.jpg"
+import france from "../assets/france.jpg"
+import germany from "../assets/germany.jpg"
+import russia from "../assets/russia.jpg"
+import singapore from "../assets/singapore.jpg"
 
 const destination = [
   {
     name: "New Zealand",
-    image:
-      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80",
+    image: newzealand,
   },
   {
     name: "Australia",
-    image:
-      "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80",
+    image: australia1,
   },
   {
     name: "Canada",
-    image:
-      "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80",
+    image: canada,
   },
   {
     name: "UK",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    image: uk,
   },
   {
     name: "France",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+    image: france,
   },
   {
-    name: "Italy",
-    image:
-      "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=800&q=80",
+    name: "Germany",
+    image: germany,
+  },
+  {
+    name: "Russia",
+    image: russia,
+  },
+  {
+    name: "Singapore",
+    image: singapore,
   },
 ];
 

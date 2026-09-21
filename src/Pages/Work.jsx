@@ -4,49 +4,49 @@ import WorkVisa from "../Components/WorkVisa";
 import Application from "../Components/Application";
 import Benefit from "../Components/Benefit"
 import GlobalVisa from "../Components/GlobalVisa";
+import australia1 from "../assets/australia1.jpg"
+import newzealand from "../assets/newzealand1.jpg"
+import germany from "../assets/germany.jpg"
+import france from "../assets/france.jpg"
+import uk from "../assets/united kingdom.jpg"
+import canada from "../assets/canada.jpg"
 
 const destination = [
   {
     name: "Australia",
     description:
     "Turn your skills into global opportunities in Australia. With thriving industries, strong demand for skilled professionals, and an outstanding quality of life, Australia offers the chance to build a rewarding career while enjoying a lifestyle that’s hard to beat.",
-    image:
-      "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80",
+    image:australia1,
   },
   {
     name: "New Zealand",
     description:
     "Build a career where work and life find the perfect balance. New Zealand offers skilled professionals exciting career opportunities, a supportive work culture, and the chance to enjoy a more relaxed, rewarding way of life.",
-    image:
-      "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80",
+    image:newzealand,
   },
   {
     name: "Germany",
     description:
       "Put your skills where innovation meets opportunity. Germany’s strong economy, world-leading industries, and demand for skilled talent make it an ideal destination to grow your career and build a secure future.",
-    image:
-      "https://images.unsplash.com/photo-1528114039593-4366cc08227d?auto=format&fit=crop&w=800&q=80",
+    image:germany,
   },
   {
     name: "France",
     description:
       "Work, grow, and experience life the French way. From dynamic industries to international career opportunities, France offers skilled professionals the chance to develop their careers while embracing its culture, lifestyle, and global outlook.",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+    image:france,
   },
   {
     name: "United Kingdom",
     description:
       "Take your career to a global stage. The UK brings together world-class industries, diverse career opportunities, and an international work environment where skilled professionals can grow, connect, and move forward.",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    image:uk,
   },
   {
     name: "Canada",
     description:
       "Build more than a career - Build your future. Canada offers skilled professional’s opportunities across growing industries, a welcoming work environment, and the freedom to pursue both professional success and a fulfilling lifestyle.",
-    image:
-      "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80",
+    image:canada,
   },
 ];
 const Work = () => {

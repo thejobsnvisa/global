@@ -707,7 +707,6 @@ const Hero = () => {
                     h-[380px]
                     w-full
                     object-contain
-
                     sm:h-[430px]
 
                     md:h-[500px]
