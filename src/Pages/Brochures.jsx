@@ -97,7 +97,7 @@ const Brochures = () => {
           </h1>
         </div>
       </section>
-      <div className="mb-16 w-full px-4 py-8 sm:mb-20 sm:px-6 lg:mb-24 lg:px-8 xl:mb-32">
+      <div className="mb-50 w-full px-4 py-8 sm:mb-20 sm:px-6 md:mb-50 lg:mb-55 lg:px-8 xl:mb-32">
         <div className="mx-auto w-full max-w-[1200px]">
           <style>{`
             @keyframes brochureCardIn {
@@ -121,13 +121,13 @@ const Brochures = () => {
                   loading="eager"
                   decoding="async"
 
-                  className="mt-[-10px] h-[220px] w-full rounded-t-[30px] object-contain sm:h-[250px]"
+                  className="mt-[-35px] lg:h-[290px] md:h-[280px] h-[270px] w-full rounded-t-[30px] object-contain"
                 />
                 <div>
                   <img
                     src={l1}
                     alt="bg image"
-                    className="-mt-[50px]  w-full rounded-b-[30px] object-cover"
+                    className="-mt-[70px]  w-full rounded-b-[30px] object-cover"
                   />
                   <h2 className="relative z-10 -mt-[120px] ml-5 text-[20px] font-semibold text-teal-800 sm:text-[20px]">
                     {item.title}
@@ -136,7 +136,7 @@ const Brochures = () => {
                     href={item.pdf}
                     download
                     aria-label="Download Brochures"
-                    className="relative z-10 mx-auto mb-5 mt-7 flex h-10 w-[min(160px,calc(100%-2rem))] items-center justify-center gap-2 rounded-[12px] bg-sky-300 px-3  text-sm font-semibold leading-[125%] text-[#265257] transition-colors duration-300"
+                    className="relative z-10 mx-auto mb-5 mt-8 flex h-10 w-[min(160px,calc(100%-2rem))] items-center justify-center gap-2 rounded-[12px] bg-sky-300 px-3  text-sm font-semibold leading-[125%] text-[#265257] transition-colors duration-300"
                   >
                     <span className="text-[20px] font-semibold text-sky-950">Download</span>
                     <PiFileArrowUpDuotone className="h-6 w-6 text-sky-950" />
