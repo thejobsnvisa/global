@@ -24,6 +24,7 @@ import News from "./Pages/News.jsx";
 import NewsArticle from "./Pages/NewsArtical.jsx";
 import Blogs from "./Pages/Blogs.jsx";
 import BlogsArticle from "./Pages/BlogsArtical.jsx";
+import Brochures from "./Pages/Brochures.jsx";
 
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
         <Route path="/english-test/cambridge-c1-advanced" element={<Cambridge/>} />
         <Route path="/english-test/languagecert-academic" element={<Acadmic/>} />
         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/brochures" element={<Brochures/>}/>
       </Routes>
 
       <Footer />

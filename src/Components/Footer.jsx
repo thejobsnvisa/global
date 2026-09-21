@@ -43,14 +43,14 @@ const Footer = () => {
                 and migration visa applications with trusted expertise.
               </p>
 
-              <button
-                type="button"
+              <a
+                href="/brochures"
                 aria-label="Download Brochures"
                 className="mt-6 xl:mt-0 xl:absolute xl:top-[325px] xl:left-[115px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
               >
                 <span>Download Brochures</span>
                 <FaFileArrowDown className="w-4 h-4" />
-              </button>
+              </a>
 
               <img
                 src={card}

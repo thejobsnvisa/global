@@ -1,5 +1,12 @@
 import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaTelegramPlane,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function CommentSection() {
   const recaptchaRef = useRef(null);
@@ -55,42 +62,47 @@ export default function CommentSection() {
           <a
             href={`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`}
             target="_blank"
+            rel="noreferrer"
             className="hover:text-blue-600"
+            aria-label="Share on Facebook"
           >
-            <i className="fab fa-facebook-f"></i>
+            <FaFacebookF aria-hidden="true" />
           </a>
           <a
             href={`https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`}
             target="_blank"
-            
+            rel="noreferrer"
             className="hover:text-blue-700"
+            aria-label="Share on LinkedIn"
           >
-            <i className="fab fa-linkedin-in"></i>
+            <FaLinkedinIn aria-hidden="true" />
           </a>
           <a
             href={`https://api.whatsapp.com/send?text=${pageUrl}`}
             target="_blank"
-            
+            rel="noreferrer"
             className="hover:text-green-500"
+            aria-label="Share on WhatsApp"
           >
-            <i className="fab fa-whatsapp"></i>
+            <FaWhatsapp aria-hidden="true" />
           </a>
           <a
             href={`https://t.me/share/url?url=${pageUrl}&text=${text}`}
             target="_blank"
-            
+            rel="noreferrer"
             className="hover:text-blue-700"
+            aria-label="Share on Telegram"
           >
-            <i className="fab fa-telegram-plane"></i>
+            <FaTelegramPlane aria-hidden="true" />
           </a>
           <a
             href={`https://pinterest.com/pin/create/button/?url=${pageUrl}`}
             target="_blank"
-            
+            rel="noreferrer"
             className="hover:text-green-500"
+            aria-label="Share on Pinterest"
           >
-            {" "}
-            <i className="fab fa-pinterest-p"></i>
+            <FaPinterestP aria-hidden="true" />
           </a>
         </div>
 
