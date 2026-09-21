@@ -45,9 +45,9 @@ const article = [
 
 const LatestArticles = () => {
   return (
-    <section className="w-full bg-white px-5 py-[45px] sm:px-8 sm:py-[50px] md:px-12 md:py-[55px] lg:px-8 lg:py-[20px] mt-10">
+    <section className="mt-10 w-full overflow-hidden bg-white px-4 py-[45px] sm:px-8 sm:py-[50px] md:px-12 md:py-[55px] lg:px-8 lg:py-[20px]">
        {/* Heading */}
-        <div className="mb-[28px] lg:ml-3 xl:ml-30">
+        <div className="mx-auto mb-[28px] w-full max-w-[1250px]">
           <h2
             className="
               text-[28px]
@@ -88,7 +88,7 @@ const LatestArticles = () => {
             Global Immigration and Visa News
           </p>
         </div>
-     <div className="mx-auto w-[1250px]">
+    <div className="mx-auto w-full max-w-[1250px]">
                {/* Articles */}
                <div
                  className="
@@ -111,6 +111,7 @@ const LatestArticles = () => {
                      group
                      w-full
                      max-w-[450px]
+                     min-w-0
                      overflow-hidden
                      rounded-[30px]
                      bg-gradient-to-b
@@ -137,10 +138,12 @@ const LatestArticles = () => {
                          src={article.image}
                          alt={article.title}
                          className="
-                         h-[180px]
-                         p-3
-                         rounded-[40px]
+                         h-auto
+                         min-h-[150px]
                          w-full
+                         rounded-[40px]
+                         p-3
+                         sm:h-[180px]
                          object-contain
                          transition-transform
                          duration-300

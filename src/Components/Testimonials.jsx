@@ -450,10 +450,10 @@ const Testimonials = () => {
         <div
           className="
             relative
-            pt-[35px]
+            pt-[15px]
+            mb-10
             mx-auto
             w-full
-
               lg:absolute
               lg:top-[110px]
               lg:left-[700px]
