@@ -11,10 +11,10 @@ import AustraliaPdf from "../assets/Australia.pdf";
 import DubaiPdf from "../assets/Dubai.pdf";
 import UkPdf from "../assets/UK1.pdf";
 import UsaPdf from "../assets/USA.pdf";
-import CanadaPdf from "../assets/canada.pdf";
-import FrancePdf from "../assets/france.pdf";
+import CanadaPdf from "../assets/Canada.pdf";
+import FrancePdf from "../assets/France.pdf";
 import RussiaPdf from "../assets/Russia.pdf";
-import NewZealandPdf from "../assets/new zealand.pdf";
+import NewZealandPdf from "../assets/New Zealand.pdf";
 import l1 from "../assets/l1.png";
 import { PiFileArrowUpDuotone } from "react-icons/pi";
 
