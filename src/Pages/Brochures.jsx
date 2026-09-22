@@ -113,7 +113,7 @@ const Brochures = () => {
                   animation: "brochureCardIn 0.6s ease-out both",
                   animationDelay: `${index * 100}ms`,
                 }}
-                className="xl:h-[340px] lg:h-[320px] md:h-[322px] h-[310px] w-full max-w-[328px] overflow-hidden rounded-[30px] shadow-[0_0_10px_0_#59595933] transition duration-300 hover:-translate-y-2 hover:shadow-[0_8px_20px_0_#59595955]"
+                className="xl:h-[330px] lg:h-[320px] md:h-[322px] h-[310px] w-full max-w-[328px] overflow-hidden rounded-[30px] shadow-[0_0_10px_0_#59595933] transition duration-300 hover:-translate-y-2 hover:shadow-[0_8px_20px_0_#59595955]"
               >
                 <img
                   src={item.img}
