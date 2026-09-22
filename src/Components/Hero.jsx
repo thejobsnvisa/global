@@ -481,9 +481,7 @@ const Hero = () => {
                   lg:text-left
                   lg:text-[44px]
 
-                  xl:text-[52px]
-
-                  2xl:text-[60px]
+                  xl:text-[50px]
                 "
               >
                 Your Global Journey
@@ -519,7 +517,7 @@ const Hero = () => {
               <p
                 className="
                   mx-auto
-                  max-w-[650px]
+                  max-w-[550px]
                   text-center
                   text-[14px]
                   leading-[1.8]
@@ -535,8 +533,6 @@ const Hero = () => {
 
                   xl:text-[18px]
                   xl:leading-[1.9]
-
-                  2xl:text-[19px]
                 "
               >
                 Dreaming of studying, working,
@@ -703,10 +699,19 @@ const Hero = () => {
                 <img
                   src={heroImage}
                   alt="Global destinations"
+                  style={{
+                    WebkitMaskImage:
+                      "radial-gradient(ellipse at center, #000 48%, rgba(0, 0, 0, 0.92) 68%, transparent 100%)",
+                    maskImage:
+                      "radial-gradient(ellipse at center, #000 48%, rgba(0, 0, 0, 0.92) 68%, transparent 100%)",
+                  }}
                   className="
                     h-[380px]
                     w-full
                     object-contain
+                    mix-blend-multiply
+                    opacity-90
+
                     sm:h-[430px]
 
                     md:h-[500px]

@@ -25,6 +25,7 @@ import NewsArticle from "./Pages/NewsArtical.jsx";
 import Blogs from "./Pages/Blogs.jsx";
 import BlogsArticle from "./Pages/BlogsArtical.jsx";
 import Brochures from "./Pages/Brochures.jsx";
+import PointsCalculator from "./Pages/PointsCalculator.jsx";
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
         <Route path="/english-test/languagecert-academic" element={<Acadmic/>} />
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/brochures" element={<Brochures/>}/>
+        <Route path="/migration-assessment/points-calculator-australia" element={<PointsCalculator/>}/>
       </Routes>
 
       <Footer />

@@ -99,13 +99,13 @@ const NewsArticle = () => {
       </Helmet>
       <div className="min-h-screen bg-white font-jakarta text-[#042325]">
         {/* HEADER */}
-        <section className="bg-slate-100 h-[170px] w-[1321px] py-14 text-sky-800 rounded-[34px] mt-6 xl:ml-22">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
-            <h1 className="text-[24px] md:text-[32px] font-semibold leading-snug">
+        <section className="bg-slate-100 min-h-[170px] w-full max-w-[1321px] mx-auto px-4 sm:px-6 py-10 sm:py-14 text-sky-800 rounded-2xl sm:rounded-[34px] mt-6">
+          <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
+            <h1 className="text-xl sm:text-2xl md:text-[32px] font-semibold leading-snug break-words">
               {article.title}
             </h1>
 
-            <p className="text-gray-500 text-sm mt-6 flex items-center gap-2">
+            <p className="text-gray-500 text-sm mt-4 sm:mt-6 flex items-center gap-2">
               <LuCalendarDays className="h-4 w-4 text-slate-400" />{" "}
               {article.date}
             </p>

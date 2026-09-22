@@ -113,7 +113,7 @@ const Brochures = () => {
                   animation: "brochureCardIn 0.6s ease-out both",
                   animationDelay: `${index * 100}ms`,
                 }}
-                className="h-[340px] w-full max-w-[328px] overflow-hidden rounded-[30px] shadow-[0_0_10px_0_#59595933] transition duration-300 hover:-translate-y-2 hover:shadow-[0_8px_20px_0_#59595955]"
+                className="xl:h-[340px] lg:h-[320px] md:h-[322px] h-[310px] w-full max-w-[328px] overflow-hidden rounded-[30px] shadow-[0_0_10px_0_#59595933] transition duration-300 hover:-translate-y-2 hover:shadow-[0_8px_20px_0_#59595955]"
               >
                 <img
                   src={item.img}
@@ -121,7 +121,7 @@ const Brochures = () => {
                   loading="eager"
                   decoding="async"
 
-                  className="mt-[-35px] lg:h-[290px] md:h-[280px] h-[270px] w-full rounded-t-[30px] object-contain"
+                  className="mt-[-40px] lg:h-[290px] md:h-[280px] h-[270px] w-full rounded-t-[30px] object-contain"
                 />
                 <div>
                   <img
