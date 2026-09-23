@@ -1,19 +1,19 @@
 import { useState } from "react";
 
-export default function SpecialEduStep({ updateScore, nextStep, prevStep }) {
+export default function CommunityStep({ updateScore, nextStep, prevStep }) {
   const [selected, setSelected] = useState(null);
 
-  const selectSpecialEdu = (value, pts) => {
+  const selectCommunity = (value, pts) => {
     setSelected(value);
 
     // RESET SECOND QUESTION IF NO SELECTED
     if (value === "0") {
-      updateScore("specialEdu", 0);
+      updateScore("community", 0);
       return;
     }
 
     // BASE 5 POINTS
-    updateScore("specialEdu", pts);
+    updateScore("community", pts);
   };
 
   return (
@@ -112,7 +112,7 @@ export default function SpecialEduStep({ updateScore, nextStep, prevStep }) {
           type="CHECKBOX"
           name="australianEdu"
           checked={selected === "10"}
-          onChange={() => selectSpecialEdu("10", 10)}
+          onChange={() => selectCommunity("10", 10)}
           className="
               h-5
               w-5
@@ -151,7 +151,7 @@ export default function SpecialEduStep({ updateScore, nextStep, prevStep }) {
           type="CHECKBOX"
           name="australianEdu"
           checked={selected === "0"}
-          onChange={() => selectSpecialEdu("0", 0)}
+          onChange={() => selectCommunity("0", 0)}
           className="
               h-5
               w-5
