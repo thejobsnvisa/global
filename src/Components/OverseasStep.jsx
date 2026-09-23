@@ -67,7 +67,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
           h-auto
           mt-[14px]
           ml-0
-          text-[18px]
+          text-xl
           leading-7
           text-cyan-600
           font-semibold
@@ -79,7 +79,6 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
           xl:w-[680px]
           xl:h-[33px]
           xl:ml-[30px]
-          xl:text-[24px]
           xl:leading-normal
         "
       >
@@ -109,7 +108,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
           md:w-[90%]
 
           xl:pl-6
-          xl:mt-20
+          xl:mt-12
           xl:w-[650px]
           xl:ml-6
           xl:space-y-2
@@ -181,7 +180,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
               border-[2px]
               border-slate-200
 
-              xl:mt-[-80px]
+              xl:mt-[-85px]
               xl:ml-8.5
             "
           />
@@ -389,7 +388,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[140px]
+              xl:mt-[160px]
               xl:ml-[-360px]
             "
             onClick={prevStep}
@@ -411,7 +410,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[140px]
+              xl:mt-[160px]
               xl:ml-[-15px]
             "
             onClick={nextStep}

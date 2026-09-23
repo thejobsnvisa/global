@@ -89,28 +89,12 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
           </ul>
         </div>
       </label>
-
-      {/* Buttons */}
-      {/* Buttons */}
-        <div
-          className="
-            flex
-            flex-col
-            gap-3
-            w-full
-            mt-6
-
-            sm:flex-row
-            sm:gap-4
-
-            md:col-span-2
-
-            xl:flex
-            xl:flex-row
-            xl:w-auto
-            xl:gap-0
-            xl:mt-0
-          "
+    <div
+         style={{
+          display: "flex",
+          justifyContent: "start",
+          marginTop: "10px",
+        }}
         >
           <button
             className="
@@ -125,8 +109,8 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[140px]
-              xl:ml-[-360px]
+              xl:mt-[40px]
+              xl:ml-[20px]
             "
             onClick={prevStep}
           >
@@ -147,7 +131,7 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[140px]
+              xl:mt-[40px]
               xl:ml-[-15px]
             "
             onClick={nextStep}
