@@ -94,7 +94,8 @@ export default function AgeStep({ updateScore, nextStep, prevStep }) {
          style={{
           display: "flex",
           justifyContent: "start",
-          marginTop: "45px",
+          marginTop: "120px",
+          gap:"30px"
         }}
         >
           <button
@@ -107,10 +108,10 @@ export default function AgeStep({ updateScore, nextStep, prevStep }) {
               text-[18px]
               rounded-[20px]
               sm:w-[170px]
-
+              xl:gap-0
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[40px]
+              xl:mt-[-40px]
               xl:ml-[20px]
             "
             onClick={prevStep}
@@ -132,7 +133,7 @@ export default function AgeStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[40px]
+              xl:mt-[-40px]
               xl:ml-[-15px]
             "
             onClick={nextStep}

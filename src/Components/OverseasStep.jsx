@@ -371,7 +371,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
             xl:flex
             xl:flex-row
             xl:w-auto
-            xl:gap-0
+            xl:gap-8
             xl:mt-0
           "
         >

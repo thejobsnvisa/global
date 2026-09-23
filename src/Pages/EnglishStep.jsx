@@ -9,7 +9,7 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
   };
 
   return (
-    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[780px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[500px] xl:mt-[40px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
+        <div className="w-[calc(100%-2rem)] max-w-[750px] h-[500px] overflow-y-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:mt-[40px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
       <h2 className="w-auto mt-[20px] ml-0 font-semibold pb-1 text-[30px] leading-tight text-cyan-800 sm:ml-2 xl:w-[280px] xl:ml-[30px]">
         English Language
       </h2>
@@ -93,7 +93,8 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
          style={{
           display: "flex",
           justifyContent: "start",
-          marginTop: "10px",
+          marginTop: "40px",
+          gap:"30px"
         }}
         >
           <button
@@ -106,10 +107,10 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
               text-[18px]
               rounded-[20px]
               sm:w-[170px]
-
+              xl:gap-0
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[40px]
+              xl:mt-[58px]
               xl:ml-[20px]
             "
             onClick={prevStep}
@@ -131,7 +132,7 @@ export default function EnglishStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[40px]
+              xl:mt-[58px]
               xl:ml-[-15px]
             "
             onClick={nextStep}
