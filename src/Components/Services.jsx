@@ -5,30 +5,35 @@ const servicesData = [
     title: "STUDENT VISA",
     description:
       "Turn your dream of studying abroad into reality with the right guidance, course, and university...",
+    path: "/services/student-visa",
     xlClasses: "xl:left-[196px] xl:top-[259px]",
   },
   {
     title: "MIGRATION VISA",
     description:
       "Make your dream of settling abroad a reality with the right migration pathway and expert guidance...",
+    path: "/services/migration-visa",
     xlClasses: "xl:left-[644px] xl:top-[114px]",
   },
   {
     title: "WORK VISA",
     description:
       "Ready to take your career global? Get expert work visa guidance tailored to your destination, profession, and career goals...",
+    path: "/services/work-visa",
     xlClasses: "xl:left-[1030px] xl:top-[173px]",
   },
   {
     title: "VISITOR VISA",
     description:
       "Dreaming of exploring a new country? Get the right visitor visa guidance and focus on making unforgettable memories...",
+    path: "/services/visitor-visa",
     xlClasses: "xl:left-[1054px] xl:top-[536px]",
   },
   {
     title: "DEPENDENT VISA",
     description:
       "Stay close to your loved ones while building your future abroad with the right dependent visa guidance...",
+    path: "/services/dependent-visa",
     xlClasses: "xl:left-[163px] xl:top-[567px]",
   },
 ];
@@ -77,13 +82,19 @@ const Services = () => {
         {/* Service Cards Container */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:block">
           {servicesData.map((service, index) => (
-            <div
+            <a
               key={index}
+              href={service.path}
               className={`
                 z-20 flex flex-col justify-between rounded-[19px] bg-[#FFFFFF4F] p-4 backdrop-blur-md
-                shadow-[0_0_20.9px_0_rgba(131,131,131,0.25)] transition-transform duration-200 hover:scale-105
+                shadow-[0_0_20.9px_0_rgba(131,131,131,0.25)] transition-all duration-300 ease-out
+                hover:-translate-y-2 hover:scale-105 hover:shadow-[0_8px_24px_0_rgba(131,131,131,0.35)]
                 xl:absolute xl:h-[135px] xl:w-[195px] xl:p-0 xl:hover:scale-100 ${service.xlClasses}
               `}
+              style={{
+                animation: "serviceCardIn 600ms ease-out both",
+                animationDelay: `${index * 120}ms`,
+              }}
             >
               <p className="font-bold text-center text-[14px] text-[#316C69] xl:ml-2 xl:mt-3 xl:text-center">
                 {service.title}
@@ -96,9 +107,22 @@ const Services = () => {
               <p className="mt-3 text-right font-semibold text-[14px] text-[#67938F] xl:ml-18 xl:mt-1 xl:text-left">
                 View →
               </p>
-            </div>
+            </a>
           ))}
         </div>
+
+        <style>{`
+          @keyframes serviceCardIn {
+            from {
+              opacity: 0;
+              transform: translateY(24px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}</style>
 
       </div>
     </section>

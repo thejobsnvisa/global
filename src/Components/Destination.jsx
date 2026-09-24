@@ -7,6 +7,7 @@ import france from "../assets/france.jpg"
 import germany from "../assets/germany.jpg"
 import russia from "../assets/russia.jpg"
 import singapore from "../assets/singapore.jpg"
+import dubai from "../assets/dubai.jpg"
 
 const destination = [
   {
@@ -32,6 +33,10 @@ const destination = [
   {
     name: "Germany",
     image: germany,
+  },
+  {
+    name: "Dubai",
+    image: dubai,
   },
   {
     name: "Russia",
