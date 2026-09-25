@@ -26,6 +26,7 @@ import Blogs from "./Pages/Blogs.jsx";
 import BlogsArticle from "./Pages/BlogsArtical.jsx";
 import Brochures from "./Pages/Brochures.jsx";
 import PointsCalculator from "./Pages/PointsCalculator.jsx";
+import StudentvisaAustralia from "./Pages/StudentvisaAustralia.jsx";
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/brochures" element={<Brochures/>}/>
         <Route path="/migration-assessment/points-calculator-australia" element={<PointsCalculator/>}/>
+        <Route path="services/student-visa/australia" element={<StudentvisaAustralia/>}/>
       </Routes>
 
       <Footer />

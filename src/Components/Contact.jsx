@@ -294,7 +294,7 @@ const Contact = () => {
       </h2>
 
       <div
-        className="w-full max-w-[456px] rounded-[20px] p-[16px] sm:p-[30px] mx-auto mb-10 mt-4"
+        className="w-full max-w-[456px] rounded-[20px] p-[16px] sm:p-[30px] mx-auto mb-45 lg:mb-10 mt-4"
         style={{
           backgroundColor: "#FFFFFFA8",
           boxShadow: "0px 0px 24px 4px #B2AFAF40",

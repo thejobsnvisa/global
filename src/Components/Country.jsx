@@ -13,18 +13,18 @@ import e11 from "../assets/e11.png";
 import e12 from "../assets/e12.png";
 
 const countries = [
-  ["Australia", e1],
-  ["Canada", e2],
-  ["United Kingdom", e3],
-  ["UAE", e4],
-  ["France", e5],
-  ["USA", e6],
-  ["Germany", e7],
-  ["New Zealand", e8],
-  ["Europe", e9],
-  ["Georgia", e10],
-  ["Singapore", e11],
-  ["Russia", e12],
+  ["Australia", e1, "student-visa/australia"],
+  ["Canada", e2, "student-visa/canada"],
+  ["United Kingdom", e3, "student-visa/united-kingdom"],
+  ["UAE", e4, "student-visa/uae"],
+  ["France", e5, "student-visa/france"],
+  ["USA", e6, "student-visa/usa"],
+  ["Germany", e7, "student-visa/germany"],
+  ["New Zealand", e8, "student-visa/new-zealand"],
+  ["Europe", e9, "student-visa/europe"],
+  ["Georgia", e10, "student-visa/georgia"],
+  ["Singapore", e11, "student-visa/singapore"],
+  ["Russia", e12, "student-visa/russia"],
 ];
 
 const Country = () => {
@@ -65,9 +65,10 @@ const Country = () => {
               transform: `translateX(calc(-${activeSlide} * (var(--slide-width) + 0.75rem)))`,
             }}
           >
-            {[...countries, ...countries].map(([name, image], index) => (
-              <article
+            {[...countries, ...countries].map(([name, image, path], index) => (
+              <a
                 key={`${name}-${index}`}
+                href={path}
                 className="flex h-[153px] min-w-[calc(50%_-_6px)] shrink-0 flex-col items-center justify-center rounded-[20px] bg-gradient-to-r from-[#E4FFED] to-[#E8F7FF] py-3 sm:min-w-[calc(25%_-_9px)]"
               >
                 <div className="mt-[-65px] mb-2 flex h-28 w-28 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm">
@@ -82,7 +83,7 @@ const Country = () => {
                   {name}
                   <span aria-hidden="true"> → </span>
                 </div>
-              </article>
+              </a>
             ))}
           </div>
         </div>
