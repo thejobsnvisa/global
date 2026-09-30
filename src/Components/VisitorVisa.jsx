@@ -170,7 +170,7 @@ const VisitorVisa = () => {
                 </p>
 
                 {/* ================= CARDS SECTION ================= */}
-                <div className="mt-10 grid w-full max-w-[830px] grid-cols-1 gap-4 sm:gap-5 md:gap-6 lg:mx-0 xl:ml-55 lg:ml-15 lg:grid-cols-2 lg:gap-6 lg:w-[830px] lg:h-[390px]">
+                <div className="mt-10 grid w-full max-w-[830px] grid-cols-1 gap-4 sm:gap-5 md:gap-6 lg:mx-0 xl:ml-55 lg:ml-45 lg:grid-cols-2 lg:gap-6 lg:w-[830px] lg:h-[390px]">
                   {/* Financial Proof Card */}
                   <div className="rounded-[20px] shadow-[0px_0px_30px_0px_#76767633] bg-white p-4 sm:p-5 lg:p-6">
                     <h3 className="mb-4 text-lg font-bold text-cyan-700 text-center">Financial Proof</h3>

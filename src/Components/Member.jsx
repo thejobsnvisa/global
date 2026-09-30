@@ -46,7 +46,7 @@ const Member = () => {
           <img
             src={g1}
             alt="Growmore YouTube Community"
-            className="h-auto w-[700px] lg:ml-30 xl:ml-48 object-contain transition-transform duration-300 hover:scale-[1.01]"
+            className="h-auto w-[700px] lg:ml-50 xl:ml-48 object-contain transition-transform duration-300 hover:scale-[1.01]"
           />
         </div>
 

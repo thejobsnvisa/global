@@ -455,8 +455,10 @@ const Testimonials = () => {
             mx-auto
             w-full
               lg:absolute
-              lg:top-[110px]
-              lg:left-[700px]
+              lg:top-[130px]
+              xl:top-[110px]
+              lg:left-[800px]
+              xl:left-[700px]
               lg:pt-0
               lg:mx-0
               lg:w-auto

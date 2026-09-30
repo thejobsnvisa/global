@@ -132,7 +132,7 @@ const Approach = () => {
 
       {/* Main Container */}
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start" ref={cardSectionRef}>
-        <div className="w-full lg:w-[580px]">
+        <div className="w-full lg:w-[580px] lg:mt-12 xl:mt-0">
           {cards.map((card, index) => (
             <div
               key={`${card.id}-${animationKey}`}
