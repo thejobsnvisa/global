@@ -768,7 +768,7 @@ const English = () => {
 
                   sm:rounded-[34px]
                   sm:p-8
-
+                  mb-10
                   xl:w-[701px]
                   xl:h-[298px]
                   xl:mt-[-15px]

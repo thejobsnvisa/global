@@ -429,7 +429,7 @@ const Migration = () => {
 </section>
       <Assist />
       <MigrationVisa/>
-      <section className="w-full bg-white py-16 md:py-20 lg:py-[50px] xl:py-[70px] xl:h-[680px] lg:h-[1050px] md:h-[800px] sm:h-[600px]">
+      <section className="w-full bg-white py-16 md:py-20 lg:py-[30px] xl:py-[70px] xl:h-[680px] lg:h-[1050px] md:h-[800px] sm:h-[600px]">
         <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-10 xl:px-0">
           <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px]">
             <p

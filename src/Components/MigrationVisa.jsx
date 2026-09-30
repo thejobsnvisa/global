@@ -39,7 +39,7 @@ const MigrationVisa = () => {
       {/* ========================================================= */} 
       {/* 1. DESKTOP VIEW (xl:block)                                */} 
       {/* ========================================================= */} 
-      <div className="hidden xl:block w-full h-[1020px] relative"> 
+      <div className="hidden xl:block w-full h-[1020px] mt-10 relative"> 
         {/* Requirements Text Overlays */} 
         <p className="w-[209px] h-[59px] pt-[480px] ml-[278px] font-semibold text-[16px] text-slate-600"> 
           Relevant education, qualifications, and professional experience 

@@ -129,7 +129,7 @@ const Brochures = () => {
                     alt="bg image"
                     className="-mt-[70px]  w-full rounded-b-[30px] object-cover"
                   />
-                  <h2 className="relative z-10 -mt-[120px] ml-5 text-[20px] font-semibold text-teal-800 sm:text-[20px]">
+                  <h2 className="relative z-10 lg:-mt-[128px] xl:-mt-[120px] ml-5 text-[20px] font-semibold text-teal-800 sm:text-[20px]">
                     {item.title}
                   </h2>
                   <a

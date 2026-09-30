@@ -1216,6 +1216,7 @@ const TOEFL = () => {
                   p-6
                   sm:rounded-[34px]
                   sm:p-8
+                  lg:mb-10
                   xl:mt-[-15px]
                   xl:w-[701px]
                   xl:rounded-[34px]
