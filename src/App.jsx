@@ -3,7 +3,6 @@ import "./App.css";
 
 import Navbar from "./Components/Navbar.jsx";
 import Footer from "./Components/Footer.jsx";
-
 import Home from "./Pages/Home.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import Work from "./Pages/Work.jsx";
@@ -28,6 +27,7 @@ import Brochures from "./Pages/Brochures.jsx";
 import PointsCalculator from "./Pages/PointsCalculator.jsx";
 import StudentvisaAustralia from "./Pages/StudentvisaAustralia.jsx";
 import StudentvisaDubai from "./Pages/StudentvisaDubai.jsx";
+import StudentvisaFrance from "./Pages/StudentvisaFrance.jsx";
 
 
 function App() {
@@ -65,6 +65,7 @@ function App() {
         <Route path="/migration-assessment/points-calculator-australia" element={<PointsCalculator/>}/>
         <Route path="/services/student-visa/australia" element={<StudentvisaAustralia/>}/>
         <Route path="/services/student-visa/dubai" element={<StudentvisaDubai/>}/>
+        <Route path="/services/student-visa/france" element={<StudentvisaFrance/>}/>
       </Routes>
 
       <Footer />

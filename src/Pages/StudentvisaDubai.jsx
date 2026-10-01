@@ -88,7 +88,7 @@ const StudentvisaDubai = () => {
                className="
                        mt-6
                        w-full
-                       max-w-[450px]
+                       max-w-[350px]
                        text-[38px]
                        font-semibold
                        leading-[1.1]
