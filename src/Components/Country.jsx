@@ -16,7 +16,7 @@ const countries = [
   ["Australia", e1, "student-visa/australia"],
   ["Canada", e2, "student-visa/canada"],
   ["United Kingdom", e3, "student-visa/united-kingdom"],
-  ["UAE", e4, "student-visa/uae"],
+  ["Dubai", e4, "student-visa/dubai"],
   ["France", e5, "student-visa/france"],
   ["USA", e6, "student-visa/usa"],
   ["Germany", e7, "student-visa/germany"],
