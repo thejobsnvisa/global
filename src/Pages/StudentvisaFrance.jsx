@@ -414,6 +414,7 @@ const StudentvisaFrance = () => {
           </ul>
         </div>
       </div>
+      <States1/>
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
@@ -492,7 +493,6 @@ const StudentvisaFrance = () => {
     </div>
   </div>
 </section>
-<States1/>
       <Contact />
     </>
   );

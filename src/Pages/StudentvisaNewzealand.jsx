@@ -1,11 +1,11 @@
-import img from "../assets/ge1.png";
+import img from "../assets/ne1.png";
 import Contact from "../Components/Contact";
-import a3 from "../assets/ge2.png";
-import a4 from "../assets/ge3.png";
-import States2 from "../Components/States2";
-import RequirementsRight3 from "../Components/RequirementsRight3";
+import a3 from "../assets/ne2.png";
+import a4 from "../assets/ne3.png";
+import States3 from "../Components/States3";
+import RequirementsRight7 from "../Components/RequirementsRight7";
 
-const StudentvisaGermany = () => {
+const StudentvisaNewzealand = () => {
   return (
     <>
       <section
@@ -81,7 +81,7 @@ const StudentvisaGermany = () => {
           >
             <span className="text-sky-500">Home &gt; </span>
             <span className="text-sky-500">Student Visa &gt; </span>
-            <span className="text-cyan-800">Germany</span>
+            <span className="text-cyan-800">New Zealand</span>
           </p>
 
           {/* Banner Heading */}
@@ -105,7 +105,7 @@ const StudentvisaGermany = () => {
                     lg:text-[50px]
                   "
           >
-            Student Visa Germany
+            Student Visa New Zealand
           </h1>
         </div>
       </section>
@@ -176,7 +176,7 @@ const StudentvisaGermany = () => {
                      xl:text-[60px]
                    "
             >
-              The Germany
+              The New Zealand
             </h2>
           </div>
 
@@ -286,7 +286,7 @@ const StudentvisaGermany = () => {
              xl:leading-[1.6]
            "
               >
-Germany is one of the world’s most powerful and reliable destinations for higher education, offering international students a compelling combination of globally recognised education, industry-driven learning, affordability, and long-term career security. Renowned for its academic excellence and research leadership, Germany’s universities emphasise practical, application-oriented teaching closely aligned with industry needs, making graduates highly employable. As Europe’s largest economy and a global leader in engineering, automotive, artificial intelligence, IT, renewable energy, healthcare, and manufacturing, Germany provides exceptional career opportunities for skilled professionals.
+                New Zealand is a country where education is personal, life is balanced, and the future feels clear. Known for its safety, natural beauty, and welcoming culture, New Zealand offers international students a learning environment that values quality over pressure. Universities focus on practical skills, critical thinking, and real-world readiness, supported by smaller class sizes and close academic guidance. Beyond the classroom, students experience a peaceful lifestyle, meaningful work opportunities, and a strong sense of belonging — making New Zealand not just a place to study, but a place to grow, thrive, and build a confident global future 
               </p>
             </div>
           </div>
@@ -300,23 +300,24 @@ Germany is one of the world’s most powerful and reliable destinations for high
           <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                4,00,000+
+               120,000 +
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                International students
+                International students <br />
+                studying in New Zealand
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                300+ Universities
+                Top 15
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-              An 18-month post-study job search visa, Schengen access to 27 countries, and a high PR success rate make it an ideal study destination.
+               Quality of life & safety rank and 50% + Graduates stay to work long-term 
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                10,00,000+
+                2000,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
                 Annual job openings
@@ -325,31 +326,26 @@ Germany is one of the world’s most powerful and reliable destinations for high
           </div>
         </div>
       </div>
-       <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
+         <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px] ">
         <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
           Choose Your
         </h2>
         <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
           Pathway
         </p>
-        <div className="w-[284px] h-[320px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[180px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Healthcare & Nursing
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Nursing (RN, EN)</li>
-            <li>Aged Care Nursing</li>
-            <li>Mental Health Nursing</li>
-            <li>Midwifery</li>
-            <li>Medical Laboratory Science</li>
-            <li>Pharmacy</li>
-            <li>Physiotherapy</li>
-            <li>Occupational Therapy</li>
-            <li>Radiography & Medical Imaging</li>
+            <li>Nursing</li>
+            <li>Health Science</li>
             <li>Public Health</li>
+            <li>Biomedical Science</li>
+            <li>Environmental Health </li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-318px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[220px] mt-[-180px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Education & Teaching
           </h2>
@@ -362,81 +358,57 @@ Germany is one of the world’s most powerful and reliable destinations for high
             <li>Vocational & Training Teacher</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[420px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[190px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Engineering
           </h2>
-          <div className="mt-8 max-xl:mt-4">
-            <p className="w-[256px] h-[262px] text-[16px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full">
-              Civil Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>Structural Engineering</li>
-              <li>Construction Management</li>
-              <li>Transport & Highway Engineering</li>
-            </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-165px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
-              Mechanical Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>HVAC Engineering</li>
-              <li>Automotive Engineering</li>
-              <li>Robotics & Mechatronics</li>
-              <li>Manufacturing Engineering</li>
-            </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-145px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
-              Electrical Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>Power Engineering</li>
-              <li>Electronics Engineering</li>
-              <li>Telecommunications Engineering</li>
-            </ul>
-          </div>
+            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+            <li>Civil Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Electrical & Electronic Engineering </li>
+            <li>Chemical Engineering</li>
+            <li>Mechatronics Engineering</li>
+          </ul>
         </div>
-        <div className="w-[284px] h-[260px] mt-[-50px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[200px] mt-[38px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Business Administration (MBA)</li>
-            <li>Project Management</li>
-            <li>Human Resource Management</li>
+            <li>Business Administration</li>
+            <li>Management & Leadership</li>
+            <li>Marketing & Digital Marketing</li>
             <li>Accounting & Finance</li>
-            <li>Marketing & Communication</li>
-            <li>Supply Chain & Logistics</li>
-            <li className="w-[240px]">Hospitality & Tourism Management</li>
+            <li>International Business</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[360px] mt-[-360px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[230px] mt-[-160px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Information Technology & Computer Science
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
-            <li>Software Engineering</li>
-            <li>Cyber Security</li>
+            <li>Computer Science</li>
+            <li>Information Technology</li>
             <li>Data Science & Analytics</li>
             <li>Cloud Computing</li>
-            <li>Artificial Intelligence & Machine Learning</li>
-            <li>Network & System Administration</li>
-            <li>Web Development</li>
-            <li>Information Systems</li>
-            <li>ICT Business Analyst</li>
-            <li>UI/UX Design</li>
+            <li>Cybersecurity</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[165px] mt-[-165px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[205px] mt-[-265px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
            Other
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Arts & Design</li>
-            <li>Trades & Vocational Studies</li>
-            <li>Agriculture & Environmental Science</li>
+            <li>Social Sciences & Psychology</li>
+            <li>Architecture</li>
+            <li>Law & Legal Studies</li>
+            <li>Graphic Designing</li>
+            <li>Interior Design</li>
+            <li>Journalism</li>
           </ul>
         </div>
       </div>
-      <States2/>
+      <States3/>
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
@@ -509,10 +481,7 @@ Germany is one of the world’s most powerful and reliable destinations for high
           lg:justify-end
         "
       >
-        <RequirementsRight3
-          title="Germany Student Visa Requirements"
-          requirements={[]}
-        />
+        <RequirementsRight7 />
       </div>
 
     </div>
@@ -523,4 +492,4 @@ Germany is one of the world’s most powerful and reliable destinations for high
   );
 };
 
-export default StudentvisaGermany;
+export default StudentvisaNewzealand;
