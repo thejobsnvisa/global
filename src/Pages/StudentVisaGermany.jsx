@@ -1,11 +1,11 @@
-import img from "../assets/sg1.png";
+import img from "../assets/ge1.png";
 import Contact from "../Components/Contact";
-import a3 from "../assets/a3.png";
-import a4 from "../assets/a4.png";
-import RequirementsRight from "../Components/RequirementsRight";
-import States from "../Components/States";
+import a3 from "../assets/ge2.png";
+import a4 from "../assets/ge3.png";
+import States2 from "../Components/States2";
+import RequirementsRight3 from "../Components/RequirementsRight3";
 
-const StudentvisaAustralia = () => {
+const StudentvisaGermany = () => {
   return (
     <>
       <section
@@ -81,7 +81,7 @@ const StudentvisaAustralia = () => {
           >
             <span className="text-sky-500">Home &gt; </span>
             <span className="text-sky-500">Student Visa &gt; </span>
-            <span className="text-cyan-800">Australia</span>
+            <span className="text-cyan-800">Germany</span>
           </p>
 
           {/* Banner Heading */}
@@ -89,7 +89,7 @@ const StudentvisaAustralia = () => {
             className="
                     mt-6
                     w-full
-                    max-w-[450px]
+                    max-w-[350px]
                     text-[38px]
                     font-semibold
                     leading-[1.1]
@@ -105,7 +105,7 @@ const StudentvisaAustralia = () => {
                     lg:text-[50px]
                   "
           >
-            Student Visa Australia
+            Student Visa Germany
           </h1>
         </div>
       </section>
@@ -176,7 +176,7 @@ const StudentvisaAustralia = () => {
                      xl:text-[60px]
                    "
             >
-              The Australia
+              The Germany
             </h2>
           </div>
 
@@ -272,7 +272,7 @@ const StudentvisaAustralia = () => {
              leading-7
              text-cyan-700
              text-justify
-     
+             mt-[-40px]
              sm:text-[15px]
              sm:leading-7
      
@@ -286,15 +286,7 @@ const StudentvisaAustralia = () => {
              xl:leading-[1.6]
            "
               >
-                Australia has an amazing education system that is centred around
-                real careers rather than just giving degrees for international
-                students. It has world-class universities that offer quality
-                education along with significant scholarships and part-time work
-                options, making it more affordable. With transparent student
-                visa rules and a multicultural society, it remains one of the
-                safest options . A perk of post-study work rights makes
-                rewarding study destinations for students who want both quality
-                education and long-term career opportunities.
+Germany is one of the world’s most powerful and reliable destinations for higher education, offering international students a compelling combination of globally recognised education, industry-driven learning, affordability, and long-term career security. Renowned for its academic excellence and research leadership, Germany’s universities emphasise practical, application-oriented teaching closely aligned with industry needs, making graduates highly employable. As Europe’s largest economy and a global leader in engineering, automotive, artificial intelligence, IT, renewable energy, healthcare, and manufacturing, Germany provides exceptional career opportunities for skilled professionals.
               </p>
             </div>
           </div>
@@ -308,34 +300,32 @@ const StudentvisaAustralia = () => {
           <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                8,00,000+
+                4,00,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                International students <br />
-                studying in Australia
+                International students
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                6,00,000+
+                300+ Universities
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                Job opportunities available across Australia with strong demand
-                in Healthcare, IT, Hospitality and Retail
+              An 18-month post-study job search visa, Schengen access to 27 countries, and a high PR success rate make it an ideal study destination.
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                1,00,000+
+                10,00,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                Temporary Graduate Visas approved yearly
+                Annual job openings
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full xl:max-h-[1000px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
+       <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
         <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
           Choose Your
         </h2>
@@ -518,16 +508,19 @@ const StudentvisaAustralia = () => {
           lg:justify-end
         "
       >
-        <RequirementsRight />
+        <RequirementsRight3
+          title="Germany Student Visa Requirements"
+          requirements={[]}
+        />
       </div>
 
     </div>
   </div>
 </section>
-<States/>
+<States2/>
       <Contact />
     </>
   );
 };
 
-export default StudentvisaAustralia;
+export default StudentvisaGermany;
