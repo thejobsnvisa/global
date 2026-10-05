@@ -137,9 +137,9 @@ const States2 = () => {
     <div ref={sectionRef} className="w-full h-[720px] lg:h-[650px] pt-10 bg-[#EBF7F6]">
       {/* Title Header */}
       <div className="flex items-baseline justify-center whitespace-nowrap">
-        <p className="text-[40px] leading-none text-[#4298A9]">Australian</p>
+        <p className="text-[40px] leading-none text-[#4298A9]">Germany</p>
         <span className="ml-2 text-[60px] leading-none font-semibold text-[#5B9E7D]">
-          States2
+          States
         </span>
       </div>
 
