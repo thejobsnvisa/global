@@ -1,11 +1,11 @@
-import img from "../assets/sg1.png";
+import img from "../assets/ca1.png";
 import Contact from "../Components/Contact";
-import a3 from "../assets/a3.png";
-import a4 from "../assets/a4.png";
-import RequirementsRight from "../Components/RequirementsRight";
-import States from "../Components/States";
+import a3 from "../assets/ca2.png";
+import a4 from "../assets/ca3.png";
+import States4 from "../Components/States4";
+import RequirementsRight8 from "../Components/RequirementsRight8";
 
-const StudentvisaAustralia = () => {
+const StudentvisaCanada = () => {
   return (
     <>
       <section
@@ -81,7 +81,7 @@ const StudentvisaAustralia = () => {
           >
             <span className="text-sky-500">Home &gt; </span>
             <span className="text-sky-500">Student Visa &gt; </span>
-            <span className="text-cyan-800">Australia</span>
+            <span className="text-cyan-800">Canada</span>
           </p>
 
           {/* Banner Heading */}
@@ -89,7 +89,7 @@ const StudentvisaAustralia = () => {
             className="
                     mt-6
                     w-full
-                    max-w-[450px]
+                    max-w-[350px]
                     text-[38px]
                     font-semibold
                     leading-[1.1]
@@ -105,7 +105,7 @@ const StudentvisaAustralia = () => {
                     lg:text-[50px]
                   "
           >
-            Student Visa Australia
+            Student Visa Canada
           </h1>
         </div>
       </section>
@@ -176,7 +176,7 @@ const StudentvisaAustralia = () => {
                      xl:text-[60px]
                    "
             >
-              The Australia
+              The Canada
             </h2>
           </div>
 
@@ -272,7 +272,7 @@ const StudentvisaAustralia = () => {
              leading-7
              text-cyan-700
              text-justify
-     
+             mt-[-40px]
              sm:text-[15px]
              sm:leading-7
      
@@ -286,15 +286,7 @@ const StudentvisaAustralia = () => {
              xl:leading-[1.6]
            "
               >
-                Australia has an amazing education system that is centred around
-                real careers rather than just giving degrees for international
-                students. It has world-class universities that offer quality
-                education along with significant scholarships and part-time work
-                options, making it more affordable. With transparent student
-                visa rules and a multicultural society, it remains one of the
-                safest options . A perk of post-study work rights makes
-                rewarding study destinations for students who want both quality
-                education and long-term career opportunities.
+              With globally respected qualifications, supportive professors, and industry-connected programs, Canada gives students the confidence to step into the future with purpose. Studying in Canada is also about living fully. From vibrant cities to peaceful natural landscapes, from multicultural friendships to meaningful work experiences, students grow not only academically, but personally. Many who come to Canada as students choose to stay — building careers, families, and a life they are proud of.Canada’s education system is built on balance — academic excellence combined with practical learning, research, and real-world exposure.
               </p>
             </div>
           </div>
@@ -308,58 +300,52 @@ const StudentvisaAustralia = () => {
           <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                8,00,000+
+               1 Million+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
                 International students <br />
-                studying in Australia
+                studying in Canada
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                6,00,000+
+                1 Million+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                Job opportunities available across Australia with strong demand
-                in Healthcare, IT, Hospitality and Retail
+               Job opportunities across Canada with strong demand in STEM, healthcare, business, and skilled professions. 
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                1,00,000+
+                240,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                Temporary Graduate Visas approved yearly
+                Up to 3 years (PGWP) and PGWPs issued yearly
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full xl:max-h-[1000px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
+         <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px] ">
         <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
           Choose Your
         </h2>
         <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
           Pathway
         </p>
-        <div className="w-[284px] h-[320px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[180px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Healthcare & Nursing
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Nursing (RN, EN)</li>
-            <li>Aged Care Nursing</li>
-            <li>Mental Health Nursing</li>
-            <li>Midwifery</li>
-            <li>Medical Laboratory Science</li>
-            <li>Pharmacy</li>
-            <li>Physiotherapy</li>
-            <li>Occupational Therapy</li>
-            <li>Radiography & Medical Imaging</li>
+            <li>Nursing</li>
+            <li>Health Science</li>
             <li>Public Health</li>
+            <li>Biomedical Science</li>
+            <li>Environmental Health </li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-318px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[220px] mt-[-180px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Education & Teaching
           </h2>
@@ -372,81 +358,57 @@ const StudentvisaAustralia = () => {
             <li>Vocational & Training Teacher</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[420px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[190px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Engineering
           </h2>
-          <div className="mt-8 max-xl:mt-4">
-            <p className="w-[256px] h-[262px] text-[16px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full">
-              Civil Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>Structural Engineering</li>
-              <li>Construction Management</li>
-              <li>Transport & Highway Engineering</li>
-            </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-165px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
-              Mechanical Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>HVAC Engineering</li>
-              <li>Automotive Engineering</li>
-              <li>Robotics & Mechatronics</li>
-              <li>Manufacturing Engineering</li>
-            </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-145px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
-              Electrical Engineering
-            </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
-              <li>Power Engineering</li>
-              <li>Electronics Engineering</li>
-              <li>Telecommunications Engineering</li>
-            </ul>
-          </div>
+            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+            <li>Civil Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Electrical & Electronic Engineering </li>
+            <li>Chemical Engineering</li>
+            <li>Mechatronics Engineering</li>
+          </ul>
         </div>
-        <div className="w-[284px] h-[260px] mt-[-50px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[200px] mt-[38px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Business Administration (MBA)</li>
-            <li>Project Management</li>
-            <li>Human Resource Management</li>
+            <li>Business Administration</li>
+            <li>Management & Leadership</li>
+            <li>Marketing & Digital Marketing</li>
             <li>Accounting & Finance</li>
-            <li>Marketing & Communication</li>
-            <li>Supply Chain & Logistics</li>
-            <li className="w-[240px]">Hospitality & Tourism Management</li>
+            <li>International Business</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[360px] mt-[-360px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[230px] mt-[-160px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Information Technology & Computer Science
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
-            <li>Software Engineering</li>
-            <li>Cyber Security</li>
+            <li>Computer Science</li>
+            <li>Information Technology</li>
             <li>Data Science & Analytics</li>
             <li>Cloud Computing</li>
-            <li>Artificial Intelligence & Machine Learning</li>
-            <li>Network & System Administration</li>
-            <li>Web Development</li>
-            <li>Information Systems</li>
-            <li>ICT Business Analyst</li>
-            <li>UI/UX Design</li>
+            <li>Cybersecurity</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[165px] mt-[-165px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[205px] mt-[-265px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
            Other
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Arts & Design</li>
-            <li>Trades & Vocational Studies</li>
-            <li>Agriculture & Environmental Science</li>
+            <li>Social Sciences & Psychology</li>
+            <li>Architecture</li>
+            <li>Law & Legal Studies</li>
+            <li>Graphic Designing</li>
+            <li>Interior Design</li>
+            <li>Journalism</li>
           </ul>
         </div>
       </div>
-      <States/>
+      <States4/>
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
@@ -519,7 +481,7 @@ const StudentvisaAustralia = () => {
           lg:justify-end
         "
       >
-        <RequirementsRight />
+        <RequirementsRight8 />
       </div>
 
     </div>
@@ -530,4 +492,4 @@ const StudentvisaAustralia = () => {
   );
 };
 
-export default StudentvisaAustralia;
+export default StudentvisaCanada;
