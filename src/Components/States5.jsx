@@ -241,7 +241,7 @@ const States5 = () => {
               initial="hidden"
               animate={isInView ? "show" : "hidden"}
               exit="exit"
-              className="flex flex-col gap-[18px] mt-15"
+              className="flex flex-col gap-[18px] mt-14"
             >
               {States5List.map(({ id, title }) => {
                 const isSelected = selectedStateId === id;
