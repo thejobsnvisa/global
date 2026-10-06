@@ -80,11 +80,6 @@ const Navbar = () => {
           path:
             "/migration-assessment/points-calculator-canada",
         },
-        {
-          name: "Canada (CRS)",
-          path:
-            "/migration-assessment/points-calculator-canada-crs",
-        },
       ],
     },
 
