@@ -419,7 +419,7 @@ const StudentvisaCanada = () => {
       <div className="lg:col-span-6">
 
         {/* Heading */}
-        <div className="mb-8 text-left sm:mb-8 mt-6">
+        <div className="mb-8 text-left sm:mb-8 mt-10">
           <p
             className="
               m-0
