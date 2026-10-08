@@ -1,11 +1,11 @@
-import img from "../assets/us1.png";
+import img from "../assets/uk1.png";
 import Contact from "../Components/Contact";
-import a3 from "../assets/us2.png";
-import a4 from "../assets/us3.png";
-import States5 from "../Components/States5";
-import RequirementsRight9 from "../Components/RequirementsRight9";
+import a3 from "../assets/uk2.png";
+import a4 from "../assets/uk3.png";
+import States6 from "../Components/States6";
+import RequirementsRight10 from "../Components/RequirementsRight10";
 
-const StudentvisaUsa = () => {
+const StudentvisaUk = () => {
   return (
     <>
       <section
@@ -81,7 +81,7 @@ const StudentvisaUsa = () => {
           >
             <span className="text-sky-500">Home &gt; </span>
             <span className="text-sky-500">Student Visa &gt; </span>
-            <span className="text-cyan-800">USA</span>
+            <span className="text-cyan-800">UK</span>
           </p>
 
           {/* Banner Heading */}
@@ -105,7 +105,7 @@ const StudentvisaUsa = () => {
                     lg:text-[50px]
                   "
           >
-            Student Visa USA
+            Student Visa UK
           </h1>
         </div>
       </section>
@@ -176,7 +176,7 @@ const StudentvisaUsa = () => {
                      xl:text-[60px]
                    "
             >
-              The USA
+              The UK
             </h2>
           </div>
 
@@ -300,26 +300,26 @@ const StudentvisaUsa = () => {
           <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                85,000+
+                7,00,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                H-1B work visas issued every year
+                International students studying in the UK
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                4,000+
+               35,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-               Universities and colleges offering globally recognized education and flexible study options.
+               Jobs available across Dubai with strong demand in Technology & AI, Real Estate & Construction, and Healthcare
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
               <h2 className="font-semibold text-[26px] text-emerald-700">
-                11 million
+                1,40,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-                job openings annually across major industries
+                PSW visas approved yearly
               </p>
             </div>
           </div>
@@ -332,21 +332,21 @@ const StudentvisaUsa = () => {
         <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
           Pathway
         </p>
-        <div className="w-[288px] h-[290px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[288px] h-[240px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Healthcare & Nursing
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Biotechnology</li>
-            <li>Biomedical Sciences</li>
-            <li>Public Health (STEM-designated tracks)</li>
-            <li>Health Informatics & Health Data Analytics</li>
+            <li>Medicine (MBBS)</li>
+            <li>Nursing</li>
+            <li>Pharmacy</li>
+            <li>Public Health</li>
             <li>Clinical Research</li>
-            <li>Bioinformatics</li>
-            <li>Nursing (STEM pathways available)</li>
+            <li>Dentistry</li>
+            <li>Health Informatics</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-290px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[220px] mt-[-240px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Education & Teaching
           </h2>
@@ -370,53 +370,50 @@ const StudentvisaUsa = () => {
             <li>Chemical Engineering</li>
             <li>Aerospace Engineering</li>
             <li>Biomedical Engineering</li>
-            <li>Environmental Engineering</li>
+            <li>Mechatronics Engineering</li>
           </ul>
         </div>
-        <div className="w-[288px] h-[240px] mt-[88px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[288px] h-[220px] mt-[38px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
             <li>Business Administration</li>
-            <li>Accountancy</li>
             <li>Finance</li>
             <li>Marketing</li>
             <li>Business Management</li>
-            <li>Supply Chain Management</li>
+            <li>International Business</li>
             <li>Human Resource Management</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[260px] mt-[-310px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[240px] mt-[-240px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
             Information Technology & Computer Science
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
-           <li>Computer Science</li>
-           <li>Computer Engineering</li>
            <li>Artificial Intelligence</li>
+           <li>Machine Learning</li>
            <li>Data Science</li>
-           <li>Information Systems</li>
-           <li>Information Security</li>
-           <li>Software Engineering</li>
+           <li>Cybersecurity</li>
+           <li>Robotics</li>
+           <li>Cloud Computing</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[265px] mt-[-242px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
+        <div className="w-[284px] h-[240px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
           <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
            Other
           </h2>
           <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Psychology</li>
             <li>Economics</li>
-            <li>International Relations</li>
-            <li>Political Science</li>
-            <li>Environmental Studies & Sustainability</li>
-            <li>Communication & Media Studies</li>
-            <li>Law (Pre-Law pathways)</li>
+            <li>Creative Arts and Design</li>
+            <li>Journalism</li>
+            <li>Architecture</li>
+            <li>Modern Languages & Linguistics</li>
+            <li>Hospitality and Tourism Management</li>
           </ul>
         </div>
       </div>
-      <States5/>
+      <States6/>
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
@@ -489,7 +486,7 @@ const StudentvisaUsa = () => {
           lg:justify-end
         "
       >
-        <RequirementsRight9
+        <RequirementsRight10
           title="Germany Student Visa Requirements"
           requirements={[]}
         />
@@ -503,4 +500,4 @@ const StudentvisaUsa = () => {
   );
 };
 
-export default StudentvisaUsa;
+export default StudentvisaUk;
