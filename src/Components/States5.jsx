@@ -222,18 +222,20 @@ const States5 = () => {
   const activeData = stateData[selectedStateId];
 
   return (
-    <div ref={sectionRef} className="w-full h-[720px] lg:h-[785px] pt-10 bg-[#EBF7F6]">
+    <div ref={sectionRef} className="w-full bg-[#EBF7F6] px-4 py-10 sm:px-6 lg:h-[785px] lg:pt-10">
       {/* Title Header */}
       <div className="flex items-baseline justify-center whitespace-nowrap">
-        <p className="text-[40px] leading-none text-[#4298A9]">USA</p>
-        <span className="ml-2 text-[60px] leading-none font-semibold text-[#5B9E7D]">
+        <p className="text-[28px] text-[#4298A9] sm:text-[32px] lg:text-[40px] lg:leading-none">
+          USA
+        </p>
+        <span className="ml-2 text-[40px] font-semibold text-[#5B9E7D] sm:text-[48px] lg:text-[60px] lg:leading-none">
           States
         </span>
       </div>
 
-      <div className="mt-[65px] flex justify-center gap-10 px-10">
+      <div className="mt-8 flex flex-col items-center gap-6 sm:gap-8 lg:mt-[65px] lg:flex-row lg:justify-center lg:gap-10 lg:px-10">
         {/* Left Side Buttons */}
-        <div className="w-[420px] min-h-[580px]">
+        <div className="w-full max-w-[420px] lg:w-[420px] lg:min-h-[580px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={animationKey}
@@ -241,7 +243,7 @@ const States5 = () => {
               initial="hidden"
               animate={isInView ? "show" : "hidden"}
               exit="exit"
-              className="flex flex-col gap-[18px] mt-14"
+              className="mt-0 flex flex-col gap-[18px] lg:mt-14"
             >
               {States5List.map(({ id, title }) => {
                 const isSelected = selectedStateId === id;
@@ -257,7 +259,7 @@ const States5 = () => {
                       scale: isSelected ? 1.02 : 1,
                     }}
                     transition={{ duration: 0.2 }}
-                    className="flex h-[62px] w-full items-center justify-center rounded-[12px] border text-center text-[20px] font-medium cursor-pointer shadow-sm"
+                    className="flex h-[54px] w-full items-center justify-center rounded-[12px] border text-center text-[17px] font-medium shadow-sm cursor-pointer sm:text-[18px] lg:h-[62px] lg:text-[20px]"
                   >
                     {title}
                   </motion.button>
@@ -268,7 +270,7 @@ const States5 = () => {
         </div>
 
         {/* Right Side: Entire Card Animated as a Whole */}
-        <div className="w-[580px] h-[592px] relative">
+        <div className="relative w-full max-w-[580px] lg:h-[592px] lg:w-[580px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedStateId}
@@ -276,16 +278,15 @@ const States5 = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -80 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="w-full h-full rounded-[36px] bg-white px-[36px] py-[30px] shadow-sm flex flex-col gap-[16px]"
+              className="flex h-auto w-full flex-col gap-[16px] rounded-[24px] bg-white px-[20px] py-[22px] shadow-sm sm:px-[26px] lg:h-full lg:rounded-[36px] lg:px-[36px] lg:py-[30px]"
             >
               <div className="text-center">
-                <p className="text-[24px] font-bold text-[#20697B]">
+                <p className="text-[20px] font-bold text-[#20697B] sm:text-[22px] lg:text-[24px]">
                   {activeData.title}
                 </p>
               </div>
 
-              <div className="text-[16px] leading-[1.35] text-[#20697B] flex flex-col gap-2.5">
-
+              <div className="flex flex-col gap-2.5 text-[15px] leading-[1.35] text-[#20697B] sm:text-[16px] lg:text-[16px]">
                 <div>
                   <p className="font-bold">Popular Universities</p>
                   <ul className="list-disc pl-5 mt-1 text-[#00609C] space-y-0.5">
@@ -298,12 +299,11 @@ const States5 = () => {
                 <div>
                   <p className="font-bold">Job Opportunities</p>
                   <ul className="list-disc pl-5 mt-1 text-[#00609C] space-y-0.5">
-                    {(activeData.JobOpportunities  ?? []).map((item, index) => (
+                    {(activeData.JobOpportunities ?? []).map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
                 </div>
-
 
                 <div>
                   <p className="font-bold">Key Industries</p>
@@ -317,7 +317,7 @@ const States5 = () => {
                 <div>
                   <p className="font-bold">City Highlights</p>
                   <ul className="list-disc pl-5 mt-1 text-[#00609C] space-y-0.5">
-                    {activeData.CityHighlights.map((item, index) => (
+                    {(activeData.CityHighlights ?? []).map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>

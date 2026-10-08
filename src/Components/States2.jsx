@@ -137,15 +137,17 @@ const States2 = () => {
     <div ref={sectionRef} className="w-full h-[720px] lg:h-[650px] pt-10 bg-[#EBF7F6]">
       {/* Title Header */}
       <div className="flex items-baseline justify-center whitespace-nowrap">
-        <p className="text-[40px] leading-none text-[#4298A9]">Germany</p>
-        <span className="ml-2 text-[60px] leading-none font-semibold text-[#5B9E7D]">
+        <p className="text-[28px] leading-none text-[#4298A9] sm:text-[32px] xl:text-[40px]">
+          Germany
+        </p>
+        <span className="ml-2 text-[38px] leading-none font-semibold text-[#5B9E7D] sm:text-[46px] xl:text-[60px]">
           States
         </span>
       </div>
 
-      <div className="mt-[60px] flex justify-center gap-10 px-10">
+      <div className="mt-8 flex flex-col items-center gap-6 px-4 sm:px-6 xl:mt-[60px] xl:flex xl:justify-center xl:gap-10 xl:px-10">
         {/* Left Side Buttons */}
-        <div className="w-[420px] min-h-[580px]">
+        <div className="w-full max-w-[420px] xl:w-[420px] xl:min-h-[580px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={animationKey}
@@ -153,7 +155,7 @@ const States2 = () => {
               initial="hidden"
               animate={isInView ? "show" : "hidden"}
               exit="exit"
-              className="flex flex-col gap-[18px]"
+              className="flex flex-col gap-[14px] xl:gap-[18px]"
             >
               {States2List.map(({ id, title }) => {
                 const isSelected = selectedStateId === id;
@@ -169,7 +171,7 @@ const States2 = () => {
                       scale: isSelected ? 1.02 : 1,
                     }}
                     transition={{ duration: 0.2 }}
-                    className="flex h-[62px] w-full items-center justify-center rounded-[12px] border text-center text-[20px] font-medium cursor-pointer shadow-sm"
+                    className="flex h-[54px] w-full items-center justify-center rounded-[12px] border text-center text-[18px] font-medium cursor-pointer shadow-sm sm:h-[58px] xl:h-[62px] xl:text-[20px]"
                   >
                     {title}
                   </motion.button>
@@ -180,7 +182,7 @@ const States2 = () => {
         </div>
 
         {/* Right Side: Entire Card Animated as a Whole */}
-        <div className="w-[580px] h-[400px] relative">
+        <div className="relative w-full max-w-[580px] xl:w-[580px] xl:h-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedStateId}
@@ -188,19 +190,18 @@ const States2 = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -80 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="w-full h-full rounded-[36px] bg-white px-[36px] py-[30px] shadow-sm flex flex-col gap-[16px]"
+              className="w-full rounded-[28px] bg-white px-[22px] py-[24px] shadow-sm flex flex-col gap-[14px] sm:px-[28px] sm:py-[28px] xl:h-full xl:rounded-[36px] xl:px-[36px] xl:py-[30px] xl:gap-[16px]"
             >
               <div className="text-center">
-                <p className="text-[24px] font-bold text-[#20697B]">
+                <p className="text-[22px] font-bold text-[#20697B] xl:text-[24px]">
                   {activeData.title}
                 </p>
-                <p className="mt-1 text-[16px] text-slate-500">
+                <p className="mt-1 text-[14px] text-slate-500 sm:text-[15px] xl:text-[16px]">
                   {activeData.description}
                 </p>
               </div>
 
-              <div className="text-[16px] leading-[1.35] text-[#20697B] flex flex-col gap-2.5">
-
+              <div className="text-[14px] leading-[1.35] text-[#20697B] flex flex-col gap-2.5 sm:text-[15px] xl:text-[16px]">
                 <div>
                   <p className="font-bold">Popular Universities</p>
                   <ul className="list-disc pl-5 mt-1 text-[#00609C] space-y-0.5">

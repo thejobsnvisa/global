@@ -1,112 +1,110 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 
-const States4 = () => {
-  const States4List = [
-    { id: "To", title: "Toronto, Ontario" },
-    { id: "Va", title: "Vancouver, British Columbia" },
-    { id: "Mo", title: "Montreal, Quebec" },
-    { id: "Ot", title: "Ottawa, Ontario" },
-    { id: "Ca", title: "Calgary & Edmonton, Alberta" },
-  ];
+const states4List = [
+  { id: "To", title: "Toronto, Ontario" },
+  { id: "Va", title: "Vancouver, British Columbia" },
+  { id: "Mo", title: "Montreal, Quebec" },
+  { id: "Ot", title: "Ottawa, Ontario" },
+  { id: "Ca", title: "Calgary & Edmonton, Alberta" },
+];
 
-  const stateData = {
-    To: {
-      title: "Toronto, Ontario",
-      description: "A city full of ambition, diversity, and opportunity.",
-      PopularUniversities: [
-        "University of Toronto",
-        "York University",
-        "Toronto Metropolitan University (formerly Ryerson)",
-        "Humber College",
-        "Seneca Polytechnic"
-      ],
-      CityHighlights: [
-        "Canada’s financial and business heart",
-        "Excellent part-time work and internship opportunities",
-        "A truly global city where cultures come together",
+const stateData = {
+  To: {
+    title: "Toronto, Ontario",
+    description: "A city full of ambition, diversity, and opportunity.",
+    PopularUniversities: [
+      "University of Toronto",
+      "York University",
+      "Toronto Metropolitan University (formerly Ryerson)",
+      "Humber College",
+      "Seneca Polytechnic",
     ],
-    },
-    Va: {
-      title: "Vancouver, British Columbia",
-      description: "Where innovation meets nature.",
-      PopularUniversities: [
-        "University of British Columbia (UBC)",
-        "Simon Fraser University",
-        "University of Victoria",
-        "Langara College",
-        "Douglas College",
-          ],
-      CityHighlights: [
-        "Strong technology, sustainability, and creative industries",
-        "Exceptional quality of life with ocean and mountain views",
-        "A progressive and student-friendly environment"
-          ],
-    },
-    Mo: {
-      title: "Montreal, Quebec",
-      description: "A city that inspires creativity and independent thinking.",
-      PopularUniversities: [
-        "McGill University",
-        "Concordia University",
-        "Université de Montréal",
-        "HEC Montréal",
-        "Université du Québec à Montréal (UQAM)"
-      ],
-      CityHighlights: [
-        "World-class education with affordable living costs",
-        "Global hub for AI, research, and arts",
-        "A unique bilingual and multicultural lifestyle",
-      ],
-    },
-    Ot: {
-      title: "Ottawa, Ontario",
-      description: "Quiet, focused, and full of opportunity.",
-      PopularUniversities: [
-        "University of Ottawa",
-        "Carleton University",
-        "Algonquin College",
-        "La Cité Collegiale",
-        "Dominican University College",
-      ],
-      CityHighlights: [
-        "Canada’s capital with strong research and public sector links",
-        "Safe, peaceful, and ideal for focused study",
-        "Growing technology and government job opportunities",
-      ],
-    },
-    Ca: {
-      title: "Calgary & Edmonton, Alberta",
-      description: "Affordable cities with growing futures.",
-      PopularUniversities: [
-        "University of Alberta",
-        "University of Calgary ",
-        "MacEwan University",
-        "Mount Royal University",
-        "Northern Alberta Institute of Technology (NAIT)",
-      ],
-      CityHighlights: [
-        "Lower cost of living compared to major cities",
-        "Expanding job markets in engineering, energy, healthcare, and business",
-        "Ideal for students planning long-term settlement"
-      ],
-    },
-   
-  };
+    CityHighlights: [
+      "Canada’s financial and business heart",
+      "Excellent part-time work and internship opportunities",
+      "A truly global city where cultures come together",
+    ],
+  },
+  Va: {
+    title: "Vancouver, British Columbia",
+    description: "Where innovation meets nature.",
+    PopularUniversities: [
+      "University of British Columbia (UBC)",
+      "Simon Fraser University",
+      "University of Victoria",
+      "Langara College",
+      "Douglas College",
+    ],
+    CityHighlights: [
+      "Strong technology, sustainability, and creative industries",
+      "Exceptional quality of life with ocean and mountain views",
+      "A progressive and student-friendly environment",
+    ],
+  },
+  Mo: {
+    title: "Montreal, Quebec",
+    description: "A city that inspires creativity and independent thinking.",
+    PopularUniversities: [
+      "McGill University",
+      "Concordia University",
+      "Université de Montréal",
+      "HEC Montréal",
+      "Université du Québec à Montréal (UQAM)",
+    ],
+    CityHighlights: [
+      "World-class education with affordable living costs",
+      "Global hub for AI, research, and arts",
+      "A unique bilingual and multicultural lifestyle",
+    ],
+  },
+  Ot: {
+    title: "Ottawa, Ontario",
+    description: "Quiet, focused, and full of opportunity.",
+    PopularUniversities: [
+      "University of Ottawa",
+      "Carleton University",
+      "Algonquin College",
+      "La Cité Collegiale",
+      "Dominican University College",
+    ],
+    CityHighlights: [
+      "Canada’s capital with strong research and public sector links",
+      "Safe, peaceful, and ideal for focused study",
+      "Growing technology and government job opportunities",
+    ],
+  },
+  Ca: {
+    title: "Calgary & Edmonton, Alberta",
+    description: "Affordable cities with growing futures.",
+    PopularUniversities: [
+      "University of Alberta",
+      "University of Calgary ",
+      "MacEwan University",
+      "Mount Royal University",
+      "Northern Alberta Institute of Technology (NAIT)",
+    ],
+    CityHighlights: [
+      "Lower cost of living compared to major cities",
+      "Expanding job markets in engineering, energy, healthcare, and business",
+      "Ideal for students planning long-term settlement",
+    ],
+  },
+};
 
-  const [selectedStateId, setSelectedStateId] = useState(States4List[0].id);
+const States4 = () => {
+  const [selectedStateId, setSelectedStateId] = useState(states4List[0].id);
   const [animationKey, setAnimationKey] = useState(0);
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { amount: 0.3 });
 
-  // Step through each state with readable timing
   useEffect(() => {
     if (!isInView) return;
 
     const timeouts = [];
 
-    States4List.forEach((state, index) => {
+    states4List.forEach((state, index) => {
       const timer = setTimeout(() => {
         setSelectedStateId(state.id);
       }, index * 1800);
@@ -171,7 +169,7 @@ const States4 = () => {
               exit="exit"
               className="flex flex-col gap-[18px]"
             >
-              {States4List.map(({ id, title }) => {
+              {states4List.map(({ id, title }) => {
                 const isSelected = selectedStateId === id;
                 return (
                   <motion.button
