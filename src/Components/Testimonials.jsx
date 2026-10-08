@@ -457,7 +457,7 @@ const Testimonials = () => {
               lg:absolute
               lg:top-[130px]
               xl:top-[110px]
-              lg:left-[700px]
+              lg:left-[730px]
               xl:left-[700px]
               lg:pt-0
               lg:mx-0
