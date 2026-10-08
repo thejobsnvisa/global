@@ -36,6 +36,7 @@ import StudentvisaNewzealand from "./Pages/StudentvisaNewzealand.jsx";
 import StudentvisaCanada from "./Pages/StudentvisaCanada.jsx";
 import StudentvisaUsa from "./Pages/StudentvisaUsa.jsx";
 import StudentvisaUk from "./Pages/StudentvisaUk.jsx";
+import StudentvisaEurope from "./Pages/StudentvisaEurope.jsx";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/services/student-visa/canada" element={<StudentvisaCanada/>}/>
         <Route path="/services/student-visa/usa" element={< StudentvisaUsa/>}/>
         <Route path="/services/student-visa/united-kingdom" element={<StudentvisaUk/>}/>
+        <Route path="/services/student-visa/europe" element={<StudentvisaEurope/>}/>
       </Routes>
       <Footer />
     </Router>
