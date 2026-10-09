@@ -23,7 +23,7 @@ const topRowFeatures = [
     bgColor: "bg-[#EBF7FC]",
     textColor: "text-sky-600",
     description:
-      "Comprehensive visa solutions catering to various international destinations across the globe.",
+      "With expertise across leading global destinations, our team helps you explore the right migration pathways and navigate the visa process with confidence.",
   },
   {
     icon: d3,
@@ -31,7 +31,7 @@ const topRowFeatures = [
     bgColor: "bg-[#F3FAF7]",
     textColor: "text-teal-500",
     description:
-      "Tailored strategies designed specifically around your skills, qualifications, and future goals.",
+      "Tailored immigration solutions based on your profile, goals, qualifications, and preferred destination—helping you choose the pathway that best fits your future plans",
   },
 ];
 
@@ -42,7 +42,7 @@ const bottomRowFeatures = [
     bgColor: "bg-[#EBF7FC]",
     textColor: "text-sky-600",
     description:
-      "Dedicated assistance for business sponsorship, work visas, and employer nomination schemes.",
+      "Get expert assistance with employer-sponsored visa pathways, from assessing eligibility and preparing documents to supporting your application process",
   },
   {
     icon: d4,
@@ -50,7 +50,7 @@ const bottomRowFeatures = [
     bgColor: "bg-[#F3FAF7]",
     textColor: "text-teal-500",
     description:
-      "Complete handling of your application from document preparation to final visa lodgement.",
+      "Complete support from initial assessment and document preparation to application submission, follow-up, and final visa outcome.",
   },
   {
     icon: d5,
@@ -58,7 +58,7 @@ const bottomRowFeatures = [
     bgColor: "bg-[#EBF7FC]",
     textColor: "text-sky-600",
     description:
-      "Post-visa arrival guidance to ensure a seamless transition to your new home.",
+      "Support beyond your visa, helping you prepare for life abroad with guidance on settling in, essential services, employment, accommodation, and community integration",
   },
 ];
 
