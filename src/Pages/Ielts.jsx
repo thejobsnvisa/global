@@ -31,8 +31,9 @@ const Ielts = () => {
             inset-0
             h-full
             w-full
-            translate-x-[140px]
+            lg:translate-x-[140px]
             object-cover
+            sm:translate-x-[0px]
           "
         />
 

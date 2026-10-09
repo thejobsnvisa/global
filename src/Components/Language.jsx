@@ -1,23 +1,23 @@
 import { useState } from "react";
 
-export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
+export default function Language({ updateScore, nextStep, prevStep }) {
   const [selected, setSelected] = useState(null);
 
-  const selectProfessionalu = (value, pts) => {
+  const selectlanguage = (value, pts) => {
     setSelected(value);
 
     // RESET SECOND QUESTION IF NO SELECTED
     if (value === "0") {
-      updateScore("professional", 0);
+      updateScore("language", 0);
       return;
     }
 
     // BASE 5 POINTS
-    updateScore("professional", pts);
+    updateScore("language", pts);
   };
 
   return (
-    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[500px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[500px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
+    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[400px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[400px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
       {/* Heading */}
       <h2
         className="
@@ -38,7 +38,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
           xl:text-[30px]
         "
       >
-        Professional Year in Australia
+        Language
       </h2>
 
       <hr className="mx-2 sm:mx-6 mt-2 border-[1px] border-slate-200" />
@@ -64,18 +64,16 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
           xl:leading-normal
         "
       >
-        Degree, diploma, advanced diploma or trade qualification from an
-        Australian educational institution which took at least 2 years of
-        full-time study and was taught in English.
+      Do you know French ?
       </p>
 
-      {/* YES OPTION */}
+     {/* YES OPTION */}
       <label className={`option ${selected === "5" ? "active" : ""}`}>
         <input
           type="CHECKBOX"
           name="australianEdu"
-          checked={selected === "5"}
-          onChange={() => selectProfessionalu("5", 5)}
+          checked={selected === "10"}
+          onChange={() => selectlanguage("10", 10)}
           className="
               h-5
               w-5
@@ -85,7 +83,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
               border-slate-200
               mt-4
               ml-2
-              xl:mt-[110px]
+              xl:mt-[20px]
               xl:ml-8.5
             "
         />
@@ -96,7 +94,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
               w-auto
               min-w-0
               ml-10
-              mt-[-32px]
+              mt-[-62px]
               xl:mt-[-32px]
               xl:w-[80px]
               xl:ml-16
@@ -114,7 +112,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
           type="CHECKBOX"
           name="australianEdu"
           checked={selected === "0"}
-          onChange={() => selectProfessionalu("0", 0)}
+          onChange={() => selectlanguage("0", 0)}
           className="
               h-5
               w-5
@@ -153,7 +151,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
           display: "flex",
           justifyContent: "start",
           marginTop: "130px",
-          gap: "30px",
+          gap:"30px"
         }}
       >
         <button
@@ -171,11 +169,11 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
               xl:w-[170px]
               xl:mr-10
               xl:mt-0
-              xl:ml-[20px]
+              xl:ml-[5px]
             "
           onClick={prevStep}
         >
-          ← Preview
+          ←  Preview
         </button>
 
         <button
@@ -197,7 +195,7 @@ export default function ProfessionalStep({ updateScore, nextStep, prevStep }) {
             "
           onClick={nextStep}
         >
-          Next →
+          Next  →
         </button>
       </div>
     </div>

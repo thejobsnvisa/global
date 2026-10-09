@@ -1,90 +1,90 @@
 import { useState } from "react";
 
-export default function EducationStep({ updateScore, nextStep, prevStep }) {
+export default function Exerience({ updateScore, nextStep, prevStep }) {
   const [selected, setSelected] = useState(null);
 
-  const selectEducation = (value, pts) => {
+  const selectexperience = (value, pts) => {
     setSelected(value);
-    updateScore("education", pts);
+    updateScore("experience", pts);
   };
 
   return (
-    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[500px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[500px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
-      <h2 className="w-auto mt-[20px] ml-0 font-semibold pb-1 text-[30px] leading-tight text-cyan-800 sm:ml-2 xl:w-[450px] xl:ml-[30px]">
-        Educational Qualifications
+    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[300px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[400px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
+      <h2 className="w-auto mt-[20px] ml-0 font-semibold pb-1 text-[30px] leading-tight text-cyan-800 sm:ml-2 xl:w-[210px] xl:ml-[30px]">
+        Experience
       </h2>
       <hr className="mx-6 mt-2 border-[1px] border-slate-200" />
 
       <p className="w-full h-auto mt-[20px] ml-0 text-xl text-cyan-600 font-semibold sm:ml-2 sm:text-[24px] xl:w-[472px] xl:h-[33px] xl:ml-[30px]">
-        What is your highest qualification?
+        Years of skilled work experience
       </p>
 
       {/* 189 */}
       <label
-        className={`option ${selected === "20" ? "active" : ""}`}
+        className={`option ${selected === "189" ? "active" : ""}`}
         style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}
       >
         <input
           type="CHECKBOX"
-          name="exp"
-          checked={selected === "20"}
-          onChange={() => selectEducation("20", 20)}
+          name="experience"
+          checked={selected === "1"}
+          onChange={() => selectexperience("1", 9)}
           className="h-5 w-5 mt-6 ml-0 shrink-0 rounded-[6px] border-[2px] border-slate-200 sm:ml-2 xl:ml-8"
         />
         <div className="mt-[20px] min-w-0">
-          <b className="font-semibold text-[18px] text-teal-600">A Doctorate degree (PhD) from an Australian educational institution or a Doctorate from another educational institution that is of a recognised standard</b>
+          <b className="font-semibold text-[20px] text-teal-600">1 Year</b>
         </div>
       </label>
 
       {/* 190 */}
       <label
-        className={`option ${selected === "15" ? "active" : ""}`}
+        className={`option ${selected === "190" ? "active" : ""}`}
         style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}
       >
         <input
           type="CHECKBOX"
-          name="exp"
-          checked={selected === "15"}
-          onChange={() => selectEducation("15", 15)}
+          name="experience"
+          checked={selected === "2-3"}
+          onChange={() => selectexperience("2-3", 11)}
           className="h-5 w-5 mt-5 ml-0 shrink-0 rounded-[6px] border-[2px] border-slate-200 sm:ml-2 xl:ml-8"
         />
-        <div className="mt-[16px] min-w-0">
-          <b className="font-semibold text-[18px] text-teal-600">A Bachelor degree from an Australian educational institution or a Bachelor qualification from another educational institution that is of a recognised standard</b>
+        <div className="mt-[14px] min-w-0">
+          <b className="font-semibold text-[20px] text-teal-600">2-3 Years</b>
         </div>
       </label>
 
       {/* 491 */}
       <label
-        className={`option ${selected === "10" ? "active" : ""}`}
+        className={`option ${selected === "491" ? "active" : ""}`}
         style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}
       >
         <input
           type="CHECKBOX"
-          name="exp"
-          checked={selected === "10"}
-          onChange={() => selectEducation("10", 10)}
+          name="experience"
+          checked={selected === "3-5"}
+          onChange={() => selectexperience("3-5", 13)}
           className="h-5 w-5 mt-5 ml-0 shrink-0 rounded-[6px] border-[2px] border-slate-200 sm:ml-2 xl:ml-8"
         />
-        <div className="mt-4 min-w-0">
-          <b className="font-semibold text-[18px] text-teal-600">
-            A diploma or trade qualification completed in Australia; or other award or qualification recognised by the skills assessing authority
+        <div className="mt-3.5 min-w-0">
+          <b className="font-semibold text-[20px] text-teal-600">
+            3-5 Years
           </b>
         </div>
       </label>
       {/* 491 */}
       <label
-        className={`option ${selected === "0" ? "active" : ""}`}
+        className={`option ${selected === "491" ? "active" : ""}`}
         style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}
       >
         <input
           type="CHECKBOX"
-          name="exp"
-          checked={selected === "0"} onChange={() => selectEducation("0",0)}
+          name="experience"
+          checked={selected === "6"} onChange={() => selectexperience("6",15)}
           className="h-5 w-5 mt-5 ml-0 shrink-0 rounded-[6px] border-[2px] border-slate-200 sm:ml-2 xl:ml-8"
         />
         <div className="mt-4 min-w-0">
-          <b className="font-semibold text-[18px] text-teal-600">
-            No Recognised Qualification
+          <b className="font-semibold text-[20px] text-teal-600">
+            6 or Above
           </b>
         </div>
       </label>
@@ -94,7 +94,7 @@ export default function EducationStep({ updateScore, nextStep, prevStep }) {
          style={{
           display: "flex",
           justifyContent: "start",
-          marginTop: "45px",
+          marginTop: "120px",
           gap:"30px"
         }}
         >
@@ -108,10 +108,10 @@ export default function EducationStep({ updateScore, nextStep, prevStep }) {
               text-[18px]
               rounded-[20px]
               sm:w-[170px]
-              gap-0
+              xl:gap-0
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[-5px]
+              xl:mt-[-95px]
               xl:ml-[20px]
             "
             onClick={prevStep}
@@ -133,8 +133,8 @@ export default function EducationStep({ updateScore, nextStep, prevStep }) {
 
               xl:w-[170px]
               xl:mr-10
-              xl:mt-[-5px]
-              xl:ml-[-15px]
+              xl:mt-[-95px]
+              xl:ml-[-25px]
             "
             onClick={nextStep}
           >

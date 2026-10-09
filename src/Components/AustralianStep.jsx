@@ -28,7 +28,7 @@ export default function AustralianStep({ updateScore, nextStep, prevStep }) {
         /* Keep XL view exactly as before */
         xl:w-[750px]
         xl:h-[500px]
-        xl:mt-[40px]
+        xl:mt-[60px]
         xl:mb-[270px]
         xl:ml-[180px]
         xl:mr-0

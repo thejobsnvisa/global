@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function FinalResult({
+export default function FinalResult1({
   prevStep,
   reset,
   total,
@@ -13,7 +13,7 @@ export default function FinalResult({
   const isEligible = score >= 65;
 
   return (
-    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[500px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[500px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
+    <div className="w-[calc(100%-2rem)] max-w-[750px] min-h-[400px] h-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:h-[400px] xl:mt-[40px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
 
       {/* CENTER CONTENT */}
       <div className="mt-8 sm:mt-12 md:mt-20 text-center px-4 sm:px-6 py-8 sm:py-10">
@@ -108,7 +108,7 @@ export default function FinalResult({
       </div>
 
       {!isEligible && (
-        <div className="mt-6 sm:mt-10 md:mt-[-50px] text-center px-4 sm:px-6 py-8 sm:py-10">
+        <div className="mt-6 xl:mt-[-100px] sm:mt-10 md:mt-[-50px] text-center px-4 sm:px-6 py-8 sm:py-10">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-teal-800 mb-4 ">
              Criteria doesn’t match
             </h2>

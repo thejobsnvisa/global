@@ -1,18 +1,12 @@
 import { useState } from "react";
 import img from "../assets/p2.png";
-import ScorePanel from "../Components/ScorePanel";
-import VisaStep from "./VisaStep";
-import AgeStep from "./AgeStep";
-import EnglishStep from "./EnglishStep";
-import OverseasStep from "../Components/OverseasStep";
-import AustralianStep from "../Components/AustralianStep";
-import EducationStep from "../Components/EducationStep";
-import AustralianEduStep from "../Components/AustralianEduStep";
-import SpecialEduStep from "../Components/SpecialEduStep";
-import Credit from "../Components/Credit";
-import PartnerQualificationStep from "../Components/PartnerQualificationStep";
-import ProfessionalStep from "../Components/ProfessionalStep";
-import FinalResult from "../Components/FinalResult";
+import ScorePanel from "../Components/ScorePanel1";
+import Age from "./Age";
+import FinalResult from "../Components/FinalResult1";
+import Exerience from "./Experience";
+import Language from "../Components/Language";
+import Education from "../Components/Education";
+import Adaptibility from "../Components/Adaptibility";
 
 const PointsCalculatorCanada = () => {
     /* ---------------- STEP CONTROLLER ---------------- */ const [
@@ -23,17 +17,12 @@ const PointsCalculatorCanada = () => {
     scores,
     setScores,
   ] = useState({
-    visa: 0,
     age: 0,
-    english: 0,
-    overseas: 0,
-    australian: 0,
+    experience: 0,
+    language: 0,
+    languageproficiency: 0,
     education: 0,
-    australianEdu: 0,
-    specialEdu: 0,
-    community: 0,
-    partnerQualification: 0,
-    professional: 0,
+    adaptability: 0,
   });
   /* ---------------- UPDATE SCORE SAFELY ---------------- */ const updateScore =
     (key, value) => {
@@ -45,17 +34,12 @@ const PointsCalculatorCanada = () => {
   /* ⭐ RESTART CALCULATOR */ const restartCalculator = () => {
     setStep(1);
     setScores({
-      visa: 0,
-      age: 0,
-      english: 0,
-      overseas: 0,
-      australian: 0,
-      education: 0,
-      australianEdu: 0,
-      specialEdu: 0,
-      community: 0,
-      partnerQualification: 0,
-      professional: 0,
+    age: 0,
+    experience: 0,
+    language: 0,
+    languageproficiency: 0,
+    education: 0,
+    adaptability: 0,
     });
   };
   /* ---------------- TOTAL POINTS ---------------- */ const totalScore =
@@ -178,91 +162,54 @@ const PointsCalculatorCanada = () => {
         </div>
       </div>
       
-        <div className="calculator-container w-full">
+        <div className="calculator-container w-full h-[600px] ">
           {/* LEFT FORM */}
           <div className="form-panel w-full max-w-full">
+            
             {step === 1 && (
-              <VisaStep updateScore={updateScore} nextStep={nextStep} />
+              <Age
+                updateScore={updateScore}
+                nextStep={nextStep}
+                prevStep={prevStep}
+              />
             )}
 
             {step === 2 && (
-              <AgeStep
+              <Exerience
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
               />
             )}
-
             {step === 3 && (
-              <EnglishStep
+              <Language
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
               />
             )}
-
-            {step === 4 && (
-              <OverseasStep
+              {step === 4 && (
+              <Language
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
               />
             )}
-
-            {step === 5 && (
-              <AustralianStep
+              {step === 5 && (
+              <Education
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
               />
             )}
-
-            {step === 6 && (
-              <EducationStep
+              {step === 6 && (
+              <Adaptibility
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
               />
             )}
-
             {step === 7 && (
-              <AustralianEduStep
-                updateScore={updateScore}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-
-            {step === 8 && (
-              <SpecialEduStep
-                updateScore={updateScore}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-
-            {step === 9 && (
-              <Credit
-                updateScore={updateScore}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 10 && (
-              <PartnerQualificationStep
-                updateScore={updateScore}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 11 && (
-              <ProfessionalStep
-                updateScore={updateScore}
-                nextStep={nextStep}
-                prevStep={prevStep}
-              />
-            )}
-            {step === 12 && (
               <FinalResult
                 prevStep={prevStep}
                 reset={restartCalculator}
