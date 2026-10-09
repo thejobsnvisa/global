@@ -94,7 +94,7 @@ export default function Language({ updateScore, nextStep, prevStep }) {
               w-auto
               min-w-0
               ml-10
-              mt-[-62px]
+              mt-[-30px]
               xl:mt-[-32px]
               xl:w-[80px]
               xl:ml-16

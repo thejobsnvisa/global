@@ -25,7 +25,7 @@ export default function Age({ nextStep, updateScore }) {
   };
 
   return (
-    <div className="w-[calc(100%-2rem)] max-w-[750px] h-[400px]  overflow-y-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6 xl:w-[750px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
+    <div className="w-[calc(100%-2rem)] max-w-[750px] h-[400px]  overflow-y-auto border-[1px] border-slate-200 mt-6 mb-10 mx-auto rounded-[30px] bg-slate-50 px-4 sm:px-6  xl:w-[750px] xl:mt-[60px] xl:mb-[270px] xl:ml-[180px] xl:mr-0 xl:px-0">
       <h2 className="w-auto mt-[20px] ml-0 font-semibold pb-1 text-[30px] leading-tight text-cyan-800 sm:ml-2 xl:w-[280px] xl:ml-[30px]">
         Age
       </h2>

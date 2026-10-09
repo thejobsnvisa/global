@@ -42,11 +42,11 @@ export default function ScorePanel({ scores, total }) {
         /* Preserve the current xl layout at 1280px and wider. */
         @media (min-width: 1024px) and (max-width: 1279px) {
           .score-panel-wrapper {
-            width: 740px;
-            height:380px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0;
+            width: min(740px, calc(100% - 32px));
+            height: auto;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 0 !important;
           }
 
           .score-panel-wrapper .score-panel {
@@ -56,16 +56,16 @@ export default function ScorePanel({ scores, total }) {
 
         @media (min-width: 641px) and (max-width: 1023px) {
           .score-panel-wrapper {
-            width: 100%;
+            width: calc(100% - 32px);
             max-width: 740px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 0 !important;
           }
 
           .score-panel-wrapper .score-panel {
             width: 100% !important;
-            min-height: 500px;
+            min-height: 400px;
           }
 
           .score-panel-wrapper .score-table {
@@ -84,17 +84,17 @@ export default function ScorePanel({ scores, total }) {
 
         @media (max-width: 640px) {
           .score-panel-wrapper {
-            width: 92%;
+            width: calc(100% - 32px);
             max-width: none;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 0 !important;
           }
 
           .score-panel-wrapper .score-panel {
             width: 100% !important;
-            min-height: 700px;
-            padding-bottom: 40px;
+            min-height: 400px;
+            padding: 18px 16px 24px !important;
           }
 
           .score-panel-wrapper .score-table {
