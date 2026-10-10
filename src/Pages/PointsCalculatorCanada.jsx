@@ -7,6 +7,7 @@ import Exerience from "./Experience";
 import Language from "../Components/Language";
 import Education from "../Components/Education";
 import Adaptibility from "../Components/Adaptibility";
+import Language2 from "../Components/Language2";
 
 const PointsCalculatorCanada = () => {
     /* ---------------- STEP CONTROLLER ---------------- */ const [
@@ -189,7 +190,7 @@ const PointsCalculatorCanada = () => {
               />
             )}
               {step === 4 && (
-              <Language
+              <Language2
                 updateScore={updateScore}
                 nextStep={nextStep}
                 prevStep={prevStep}
