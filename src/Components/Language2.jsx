@@ -92,7 +92,7 @@ export default function Language2({ updateScore, nextStep, prevStep }) {
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
-              xl:w-[80px]
+              xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 6 or lower (0 points)</b>
@@ -138,7 +138,7 @@ component.</li>
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
-              xl:w-[80px]
+              xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 7 (16 points)</b>
@@ -179,7 +179,7 @@ component.</li>
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
-              xl:w-[80px]
+              xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 8 (20 points)</b>
@@ -220,7 +220,7 @@ component.</li>
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
-              xl:w-[80px]
+              xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 9 (24 points)</b>
@@ -261,7 +261,7 @@ component.</li>
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
-              xl:w-[80px]
+              xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 10 or higher (24 points)</b>
@@ -298,7 +298,7 @@ component.</li>
               xl:w-[170px]
               xl:mr-10
               xl:mt-0
-              xl:ml-[5px]
+              xl:ml-[20px]
             "
           onClick={prevStep}
         >
@@ -320,7 +320,7 @@ component.</li>
               xl:w-[170px]
               xl:mr-10
               xl:mt-0
-              xl:ml-[-15px]
+              xl:ml-[-25px]
             "
           onClick={nextStep}
         >
