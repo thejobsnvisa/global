@@ -58,7 +58,7 @@ const QualityCommitment = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % commitmentItems.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
