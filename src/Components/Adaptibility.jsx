@@ -4,11 +4,11 @@ export default function Adaptibility({ prevStep, nextStep, updateScore }) {
   const [selected, setSelected] = useState([]);
 
   const ageOptions = [
-    { value: "Previous work in Canada (1+ year NOC 0,A,B)", label: "Previous work in Canada (1+ year NOC 0,A,B)", points: 25 },
-    { value: "Previous study in Canada", label: "Previous study in Canada", points: 23 },
-    { value: "Spouse previous study in Canada)", label: "Spouse previous study in Canada)", points: 22 },
-    { value: "Spouse previous work in Canada", label: "Spouse previous work in Canada", points: 21 },
-    { value: "Relative in Canada (18+ years)", label: "Relative in Canada (18+ years)", points: 15 },
+    { value: "Previous work in Canada (1+ year NOC 0,A,B)", label: "Previous work in Canada (1+ year NOC 0,A,B)", points: 10 },
+    { value: "Previous study in Canada", label: "Previous study in Canada", points: 5 },
+    { value: "Spouse previous study in Canada", label: "Spouse previous study in Canada)", points: 5 },
+    { value: "Spouse previous work in Canada", label: "Spouse previous work in Canada", points: 5 },
+    { value: "Relative in Canada (18+ years)", label: "Relative in Canada (18+ years)", points: 5 },
     { value: "Spouse language ability (CLB 4+)", label: "Spouse language ability (CLB 4+)", points: 5 },
   ];
 

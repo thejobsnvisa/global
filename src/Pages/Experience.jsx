@@ -61,13 +61,13 @@ export default function Exerience({ updateScore, nextStep, prevStep }) {
         <input
           type="CHECKBOX"
           name="experience"
-          checked={selected === "3-5"}
-          onChange={() => selectexperience("3-5", 13)}
+          checked={selected === "4-5"}
+          onChange={() => selectexperience("4-5", 13)}
           className="h-5 w-5 mt-5 ml-0 shrink-0 rounded-[6px] border-[2px] border-slate-200 sm:ml-2 xl:ml-8"
         />
         <div className="mt-3.5 min-w-0">
           <b className="font-semibold text-[20px] text-teal-600">
-            3-5 Years
+            4-5 Years
           </b>
         </div>
       </label>

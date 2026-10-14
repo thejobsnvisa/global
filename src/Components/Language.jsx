@@ -151,7 +151,8 @@ export default function Language({ updateScore, nextStep, prevStep }) {
           display: "flex",
           justifyContent: "start",
           marginTop: "130px",
-          gap:"30px"
+          gap:"30px",
+          marginLeft:"20px",
         }}
       >
         <button
