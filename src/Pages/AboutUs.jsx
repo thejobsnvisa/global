@@ -115,6 +115,7 @@ const AboutUs = () => {
               lg:text-[60px]
               lg:ml-10 xl:ml-0
               2xl:text-[68px]
+              font-bold
             "
           >
             Who We Are
@@ -286,6 +287,7 @@ const AboutUs = () => {
             md:text-[48px]
             lg:text-[50px]
             2xl:text-[56px]
+            font-bold
           "
               >
                 Us Apart
@@ -478,6 +480,7 @@ const AboutUs = () => {
             lg:ml-10
             xl:text-[54px]
             2xl:text-[60px]
+            font-bold
           "
               >
                 Excellence
