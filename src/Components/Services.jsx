@@ -40,9 +40,9 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[linear-gradient(90.06deg,#EEF7FC_0.75%,#FBF6E9_99.05%)]">
+    <section className="relative w-full  overflow-hidden bg-[linear-gradient(90.06deg,#EEF7FC_0.75%,#FBF6E9_99.05%)]">
       {/* Container */}
-      <div className="relative mx-auto min-h-screen w-full max-w-[1440px] px-4 py-8 md:px-8 xl:h-[719px] xl:p-0">
+      <div className="relative mx-auto min-h-screen w-full max-w-[1440px] px-4 py-8 md:px-8 xl:h-[719px] xl:p-0 2xl:min-h-[800px]">
         
         {/* Background White Center Panel (Desktop Only) */}
         <div

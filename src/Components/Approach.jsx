@@ -115,7 +115,7 @@ const Approach = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#EFFCFF] py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-10 lg:px-28">
+    <div className="w-full min-h-screen bg-[#EFFCFF] py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-10 lg:px-28 2xl:min-h-[800px]">
       {/* Header */}
       <div className="flex items-center gap-[10px] sm:mb-3 mb-2 ">
         <span className="text-[28px] sm:text-[36px] md:text-[40px] lg:text-[40px] text-[#338292]">Our</span>
@@ -131,8 +131,8 @@ const Approach = () => {
       </p>
 
       {/* Main Container */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start" ref={cardSectionRef}>
-        <div className="w-full lg:w-[580px] lg:mt-12 xl:mt-0">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 2xl:gap-12 items-start 2xl:justify-between 2xl:max-w-[1500px] 2xl:mx-auto" ref={cardSectionRef}>
+        <div className="w-full lg:w-[580px] lg:mt-12 xl:mt-0 2xl:flex-shrink-0">
           {cards.map((card, index) => (
             <div
               key={`${card.id}-${animationKey}`}
@@ -184,7 +184,7 @@ const Approach = () => {
         </div>
 
         {/* Right Banner Image */}
-        <div className="w-full sm:w-[400px] md:w-[480px] lg:w-[460px] xl:w-[560px] h-[500px] sm:h-[600px] md:h-[650px] xl:h-[700px] rounded-[32px] bg-white overflow-hidden flex-shrink-0 shadow-md xl:ml-10 mt-8 xl:mt-[-80px]">
+        <div className="w-full sm:w-[400px] md:w-[480px] lg:w-[460px] xl:w-[560px] 2xl:w-[600px] h-[500px] sm:h-[600px] md:h-[650px] xl:h-[700px] 2xl:h-[750px] rounded-[32px] bg-white overflow-hidden flex-shrink-0 shadow-md xl:ml-10 2xl:ml-0 mt-8 xl:mt-[-80px]">
           <img
             src={g9}
             alt="approach presentation"
