@@ -9,106 +9,107 @@ const StudentvisaUk = () => {
   return (
     <>
       <section
-        className="
-                relative
-                h-[300px]
-                w-full
-                overflow-hidden
-        
-                sm:h-[340px]
-                md:h-[370px]
-                lg:h-[400px]
-                xl:h-[420px]
-              "
-      >
-        {/* Banner Image */}
-        <img
-          src={img}
-          alt="Migration"
-          className="
-                  absolute
-                  inset-0
-                  h-full
-                  w-full
-                  translate-x-0
-                  md:translate-x-[60px]
-                  xl:translate-x-[130px]
-                  xl:object-contain
-                  object-cover
-                "
-        />
-
-        {/* Gradient Overlay */}
-        <div
-          className="
-                  absolute
-                  inset-0
-                  bg-[linear-gradient(89.92deg,#FFFFFF_25%,rgba(255,255,255,0)_58.4%)]
-                "
-        />
-
-        {/* Banner Content */}
-        <div
-          className="
-                  relative
-                  z-10
-                  mx-auto
-                  flex
-                  h-full
-                  w-full
-                  max-w-[1256px]
-                  flex-col
-                  justify-center
-        
-                  px-5
-                  sm:px-8
-                  md:px-12
-                  lg:px-10
-                  xl:px-0
-                "
-        >
-          {/* Breadcrumb */}
-          <p
-            className="
-                    mb-2
-                    text-[14px]
-                    mt-[-70px]
-                    sm:text-[16px]
-                    md:text-[17px]
-                    lg:text-[18px]
-                    lg:ml-[40px]
-                  "
-          >
-            <span className="text-sky-500">Home &gt; </span>
-            <span className="text-sky-500">Student Visa &gt; </span>
-            <span className="text-cyan-800">UK</span>
-          </p>
-
-          {/* Banner Heading */}
-          <h1
-            className="
-                    mt-6
-                    w-full
-                    max-w-[350px]
-                    text-[38px]
-                    font-semibold
-                    leading-[1.1]
-                    text-[#669980]
-        
-                    sm:mt-8
-                    sm:text-[44px]
-        
-                    md:mt-10
-                    md:text-[50px]
-                    lg:ml-[40px]
-                    lg:mt-12
-                    lg:text-[50px]
-                  "
-          >
-            Student Visa UK
-          </h1>
-        </div>
-      </section>
+              className="
+                      relative
+                      h-[300px]
+                      w-full
+                      overflow-hidden
+              
+                      sm:h-[340px]
+                      md:h-[370px]
+                      lg:h-[400px]
+                      xl:h-[420px]
+                    "
+            >
+              {/* Banner Image */}
+              <img
+                src={img}
+                alt="Migration"
+                className="
+                        absolute
+                        inset-0
+                        h-full
+                        w-full
+                        translate-x-0
+                        md:translate-x-[60px]
+                        xl:translate-x-[130px]
+                        xl:object-contain
+                        object-cover
+                      "
+              />
+      
+              {/* Gradient Overlay */}
+              <div
+                className="
+                        absolute
+                        inset-0
+                        bg-[linear-gradient(89.92deg,#FFFFFF_25%,rgba(255,255,255,0)_58.4%)]
+                      "
+              />
+      
+              {/* Banner Content */}
+              <div
+                className="
+                        relative
+                        z-10
+                        mx-auto
+                        flex
+                        h-full
+                        w-full
+                        max-w-[1256px]
+                        flex-col
+                        justify-center
+              
+                        px-5
+                        sm:px-8
+                        md:px-12
+                        lg:px-10
+                        xl:px-0
+                      "
+              >
+                {/* Breadcrumb */}
+                <p
+                  className="
+                          mb-2
+                          text-[14px]
+                          mt-[-70px]
+                          sm:text-[16px]
+                          md:text-[17px]
+                          lg:text-[18px]
+                          lg:ml-[10px]
+                        "
+                >
+                  <span className="text-sky-500">Home &gt; </span>
+                  <span className="text-sky-500">Services &gt; </span>
+                  <a href="/services/student-visa" className="text-sky-500">Student Visa &gt; </a>
+                  <span className="text-cyan-800">Uk</span>
+                </p>
+      
+                {/* Banner Heading */}
+                <h1
+                  className="
+                          mt-6
+                          w-full
+                          max-w-[450px]
+                          text-[38px]
+                          font-semibold
+                          leading-[1.1]
+                          text-[#669980]
+              
+                          sm:mt-8
+                          sm:text-[44px]
+              
+                          md:mt-10
+                          md:text-[50px]
+                          lg:ml-[8px]
+                          lg:mt-12
+                          lg:text-[50px]
+                        "
+                >
+                  Student Visa Uk
+                </h1>
+              </div>
+            </section>
       <section
         className="
                relative

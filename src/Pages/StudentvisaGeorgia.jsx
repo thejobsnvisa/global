@@ -75,11 +75,12 @@ const  StudentvisaGeorgia = () => {
                        sm:text-[16px]
                        md:text-[17px]
                        lg:text-[18px]
-                       lg:ml-[40px]
+                       lg:ml-[10px]
                      "
              >
                <span className="text-sky-500">Home &gt; </span>
-               <span className="text-sky-500">Student Visa &gt; </span>
+               <span className="text-sky-500">Services &gt; </span>
+               <a href="/services/student-visa" className="text-sky-500">Student Visa &gt; </a>
                <span className="text-cyan-800">Georgia</span>
              </p>
    
@@ -88,7 +89,7 @@ const  StudentvisaGeorgia = () => {
                className="
                        mt-6
                        w-full
-                       max-w-[350px]
+                       max-w-[450px]
                        text-[38px]
                        font-semibold
                        leading-[1.1]
@@ -99,7 +100,7 @@ const  StudentvisaGeorgia = () => {
            
                        md:mt-10
                        md:text-[50px]
-                       lg:ml-[40px]
+                       lg:ml-[8px]
                        lg:mt-12
                        lg:text-[50px]
                      "

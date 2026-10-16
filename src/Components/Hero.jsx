@@ -402,14 +402,14 @@ const Hero = () => {
               md:gap-14
 
               lg:min-h-[680px]
-              lg:grid-cols-[minmax(0,45%)_minmax(0,55%)]
+              lg:grid-cols-[45%_55%]
               lg:gap-0
 
               xl:min-h-[720px]
-              xl:grid-cols-[minmax(0,45%)_minmax(0,55%)]
+              xl:grid-cols-[45%_55%]
 
               2xl:min-h-[800px]
-              2xl:grid-cols-[minmax(0,44%)_minmax(0,56%)]
+              2xl:grid-cols-[44%_56%]
             "
           >
             {/* =================================================
@@ -623,7 +623,6 @@ const Hero = () => {
             <div
               className="
                 relative
-                min-w-0
                 flex
                 min-h-0
                 w-full
@@ -751,30 +750,30 @@ const Hero = () => {
                   md:px-6
 
                   lg:absolute
-                  lg:left-[18%]
-                  lg:right-auto
+                  lg:left-[140px]
+                  lg:right-0
                   lg:top-[65px]
                   lg:mt-0
                   lg:mb-0
-                  lg:min-h-[580px]
-                  lg:h-auto
-                  lg:w-[min(82%,380px)]
+                  lg:h-[580px]
+                  lg:w-[380px]
                   lg:max-w-none
                   lg:px-[20px]
                   lg:py-[22px]
                   lg:bg-[#FFFFFFA8]
                   lg:opacity-90
 
-                  xl:left-[25%]
+                  xl:left-[275px]
                   xl:top-20
-                  xl:w-[min(75%,440px)]
+                  xl:h-[640px]
+                  xl:w-[440px]
                   xl:px-[24px]
                   xl:py-[25px]
 
-                  2xl:left-[25%]
+                  2xl:left-[300px]
                   2xl:top-27
-                  2xl:min-h-[680px]
-                  2xl:w-[min(75%,480px)]
+                  2xl:h-[680px]
+                  2xl:w-[480px]
                   2xl:px-[28px]
                   2xl:py-[28px]
                 "

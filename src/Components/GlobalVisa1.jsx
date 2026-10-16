@@ -55,6 +55,7 @@ const GlobalVisa1 = () => {
 
           lg:max-w-[850px]
           lg:text-[38px]
+          lg:ml-28
 
           xl:mx-0
           xl:w-[740px]

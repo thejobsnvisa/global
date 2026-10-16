@@ -14,7 +14,7 @@ import card from "../assets/mara-card.png";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full -mt-[200px] overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16  xl:bg-transparent">
+    <footer className="relative w-full -mt-[200px] 2xl:mt-20 overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16  xl:bg-transparent">
       <div className="relative w-full min-h-0">
         
         {/* Background Curve (Desktop only 1280px+) */}
@@ -35,10 +35,10 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="logo"
-                className="w-[280px] sm:w-[320px] xl:w-[391px] h-auto xl:h-[113px] xl:absolute xl:top-[80px] xl:left-[95px] opacity-100 rotate-0"
+                className="w-[280px] sm:w-[320px] xl:w-[391px] h-auto xl:h-[113px] xl:absolute xl:top-[80px] xl:left-[95px] 2xl:w-[469px] 2xl:h-[136px] 2xl:top-[120px] 2xl:left-[114px] opacity-100 rotate-0"
               />
 
-              <p className="mt-4 xl:mt-0 xl:absolute xl:top-[200px] xl:left-[101px] xl:w-[362px] xl:h-[72px] xl:rounded-[18px] xl:p-4 text-[15px] xl:text-[16px] font-semibold leading-[140%] xl:leading-[130%] text-teal-200 font-[Poppins]">
+              <p className="mt-4 xl:mt-0 xl:absolute xl:top-[200px] xl:left-[101px] xl:w-[362px] xl:h-[72px] xl:rounded-[18px] xl:p-4 2xl:top-[260px] 2xl:left-[121px] 2xl:w-[434px] 2xl:h-[86px] text-[15px] xl:text-[16px] font-semibold leading-[140%] xl:leading-[130%] text-teal-200 font-[Poppins]">
                 We guide clients globally through student, work, visitor, dependent,
                 and migration visa applications with trusted expertise.
               </p>
@@ -46,7 +46,7 @@ const Footer = () => {
               <a
                 href="/brochures"
                 aria-label="Download Brochures"
-                className="mt-6 xl:mt-0 xl:absolute xl:top-[325px] xl:left-[115px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
+                className="mt-6 xl:mt-0 xl:absolute xl:top-[325px] xl:left-[115px] 2xl:top-[390px] 2xl:left-[138px] 2xl:w-[216px] 2xl:h-[48px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
               >
                 <span>Download Brochures</span>
                 <FaFileArrowDown className="w-4 h-4" />
@@ -55,7 +55,7 @@ const Footer = () => {
               <img
                 src={card}
                 alt="Mara card"
-                className="mt-6 xl:mt-0 xl:absolute w-[200px] h-[160px] rotate-0 opacity-100 xl:top-[390px] xl:left-[115px] object-contain"
+                className="mt-6 xl:mt-0 xl:absolute w-[200px] h-[160px] rotate-0 opacity-100 xl:top-[390px] xl:left-[115px] 2xl:top-[488px] 2xl:left-[138px] 2xl:w-[240px] 2xl:h-[192px] object-contain"
               />
             </div>
 
@@ -65,10 +65,10 @@ const Footer = () => {
               <img
                 src={bg}
                 alt="Footer background"
-                className="hidden xl:block absolute w-[640px] h-[350px] rotate-0 opacity-100 top-[140px] left-[820px] object-cover pointer-events-none"
+                className="hidden xl:block absolute w-[640px] h-[350px] rotate-0 opacity-100 top-[140px] right-0 2xl:top-[168px] 2xl:w-[768px] 2xl:h-[420px] object-cover pointer-events-none"
               />
 
-              <div className="w-full xl:w-[320px] lg:w-[350px] xl:h-[130px] xl:absolute xl:right-[65px] xl:bottom-32 xl:top-[369px] bg-[#0F727B54] backdrop-blur-[6px] rounded-[16px] p-5 xl:p-4 text-white opacity-[0.85] z-10">
+              <div className="w-full xl:w-[320px] lg:w-[350px] xl:h-[130px] xl:absolute xl:right-[65px] xl:bottom-32 xl:top-[369px] 2xl:w-[384px] 2xl:h-[220px] 2xl:right-[78px] 2xl:top-[443px] bg-[#0F727B54] backdrop-blur-[6px] rounded-[16px] p-5 xl:p-4 text-white opacity-[0.85] z-10">
                 <p className="text-white text-[16px] font-semibold xl:h-[54px] leading-[27px] mb-4 xl:mb-0">
                   Looking for Professional Visa Support?
                 </p>
@@ -128,7 +128,7 @@ const Footer = () => {
           </div>
 
           {/* Links Section (Fluid Grid for 768px & 1024px) */}
-          <div className="xl:absolute xl:top-[340px] xl:left-[320px] xl:w-[680px] xl:h-[126px] opacity-100 xl:rounded-[14px] xl:px-6 xl:py-3 z-6">
+          <div className="xl:absolute xl:top-[340px] xl:left-[320px] xl:w-[680px] xl:h-[126px] 2xl:top-[408px] 2xl:left-[384px] 2xl:w-[640px] 2xl:h-[151px] opacity-100 xl:rounded-[14px] xl:px-6 xl:py-3 z-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-1 text-white">
               {/* Services */}
               <div>
@@ -173,8 +173,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright Bar */}
-        <div className="w-full mt-4 xl:mt-2 xl:absolute xl:top-[568px] border-t border-[#2E6773] py-4 xl:py-0">
-          <p className="text-center text-white text-[16px] xl:mt-1">
+        <div className="w-full mt-4 xl:mt-2 xl:absolute xl:top-[568px] 2xl:top-[742px] border-t border-[#2E6773] py-4 xl:py-0">
+          <p className="text-center text-white text-[16px] xl:mt-1 2xl:mt-4">
             © Growmore 2026 | All rights reserved.
           </p>
         </div>
