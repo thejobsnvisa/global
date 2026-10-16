@@ -286,7 +286,7 @@ const StudentvisaUk = () => {
              xl:leading-[1.6]
            "
               >
-               The United States has long been a dream destination for students around the world. Home to some of the world’s most respected universities, the USA offers an education system that values curiosity, creativity, and individuality. With thousands of universities and an incredible range of programs, students are free to shape their academic journey around their passions, strengths, and future ambitions.Studying in the USA is more than earning a degree—it’s about experiencing innovation firsthand. From cutting-edge research and practical, hands-on learning to internships with global companies.
+              The UK remains one of the most in-demand study destinations for international students by offering globally recognized degrees and excellent job opportunities. Its universities are known for short-duration, career-focused courses that allow students to complete qualifications faster while also maintaining a high academic standard. Students can benefit from part-time work and also get access to post-study work opportunities that truly support long-term career growth. In short, the country provides students with an education that is both academically respected and professionally relevant
               </p>
             </div>
           </div>
