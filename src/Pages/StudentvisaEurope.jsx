@@ -218,7 +218,7 @@ const StudentvisaEurope = () => {
            md:h-[400px]
            md:max-w-[600px]
      
-           lg:mt-[-135px]
+           lg:mt-0
            lg:h-[450px]
            lg:w-[50%]
            lg:max-w-none
@@ -273,7 +273,7 @@ const StudentvisaEurope = () => {
              leading-7
              text-cyan-700
              text-justify
-             mt-[-40px]
+             mt-0
              sm:text-[15px]
              sm:leading-7
      
@@ -326,18 +326,19 @@ const StudentvisaEurope = () => {
           </div>
         </div>
       </div>
-       <div className="w-full h-[800px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-130px] 2xl:ml-[-5px] ">
-        <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
+       <section className="mx-auto mt-4 w-full max-w-[1200px] px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <h2 className="mx-auto mt-2 w-full text-center text-[32px] text-[#4298A9] sm:text-[36px] lg:text-[40px]">
           Choose Your
         </h2>
-        <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
+        <p className="mt-1 text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
           Pathway
         </p>
-        <div className="w-[288px] h-[240px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-8">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Healthcare & Nursing
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
             <li>Medicine (MD/MBBS)</li>
             <li>Nursing</li>
             <li>Pharmacy</li>
@@ -347,11 +348,11 @@ const StudentvisaEurope = () => {
             <li>Biomedical Sciences</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-240px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Education & Teaching
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
             <li>Early Childhood Education</li>
             <li>Primary Education</li>
             <li>Secondary Education</li>
@@ -360,11 +361,11 @@ const StudentvisaEurope = () => {
             <li>Educational Sciences</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[240px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Engineering
           </h2>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+            <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
             <li>Civil Engineering</li>
             <li>Mechanical Engineering</li>
             <li>Electrical Engineering</li>
@@ -374,11 +375,11 @@ const StudentvisaEurope = () => {
             <li>Environmental Engineering</li>
           </ul>
         </div>
-        <div className="w-[288px] h-[240px] mt-[38px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
             <li>Business Administration</li>
             <li>Business Management</li>
             <li>Finance & Accounting</li>
@@ -388,11 +389,11 @@ const StudentvisaEurope = () => {
             <li>Economics</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[260px] mt-[-260px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Information Technology & Computer Science
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
+          <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
            <li>Computer Science</li>
            <li>Software Engineering</li>
            <li>Artificial Intelligence</li>
@@ -402,11 +403,11 @@ const StudentvisaEurope = () => {
            <li>Information Systems</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[245px] mt-[-242px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6">
+          <h2 className="font-bold text-[18px] text-teal-700">
            Other
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] leading-7 text-sky-800">
             <li>Psychology</li>
             <li>Architecture</li>
             <li>Creative Arts & Design</li>
@@ -416,13 +417,14 @@ const StudentvisaEurope = () => {
             <li>Law</li>
           </ul>
         </div>
-      </div>
+        </div>
+      </section>
       <States7/>
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
     {/* Main Content */}
-    <div className="grid grid-cols-1 gap-[-140px] lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14 lg:mt-[-100px]">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14">
 
       {/* ================= LEFT SECTION ================= */}
       <div className="lg:col-span-6">

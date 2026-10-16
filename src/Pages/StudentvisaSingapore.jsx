@@ -325,102 +325,38 @@ Singapore combines high-quality education, global exposure and a strategic posit
           </div>
         </div>
       </div>
-       <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px] ">
-        <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
-          Choose Your
-        </h2>
-        <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
-          Pathway
-        </p>
-        <div className="w-[284px] h-[240px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
-            Healthcare & Nursing
+       <section className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-[1200px]">
+          <h2 className="text-center text-[32px] text-[#4298A9] sm:text-[40px]">
+            Choose Your
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Medicine</li>
-            <li>Nursing</li>
-            <li>Dentistry</li>
-            <li>Pharmacy</li>
-            <li>Pharmaceutical Science</li>
-            <li>Public Health</li>
-            <li>Biomedical Science</li>
-          </ul>
+          <p className="mt-1 text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[60px]">
+            Pathway
+          </p>
+          <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            {[
+              { title: "Healthcare & Nursing", items: ["Medicine", "Nursing", "Dentistry", "Pharmacy", "Pharmaceutical Science", "Public Health", "Biomedical Science"] },
+              { title: "Education & Teaching", items: ["Early Childhood Education", "Primary School Teaching", "Secondary School Teaching", "Special Education", "TESOL / English Teaching", "Vocational & Training Teacher"] },
+              { title: "Engineering", items: ["Civil Engineering", "Mechanical Engineering", "Electrical Engineering", "Chemical Engineering", "Aerospace Engineering", "Biomedical Engineering", "Environmental Engineering"] },
+              { title: "Business & Management", items: ["Business Administration", "Accountancy", "Finance", "Marketing", "Business Management", "Supply Chain Management", "Human Resource Management"] },
+              { title: "Information Technology & Computer Science", items: ["Computer Science", "Computer Engineering", "Artificial Intelligence", "Data Science", "Information Systems", "Information Security", "Software Engineering"] },
+              { title: "Other", items: ["Economics", "Law", "Architecture", "Industrial Design", "Communication Studies", "Social Sciences", "Hospitality & Tourism"] },
+            ].map(({ title, items }) => (
+              <div key={title} className="min-w-0 rounded-[20px] bg-sky-100 p-5 sm:p-6">
+                <h3 className="text-lg font-bold text-teal-700">{title}</h3>
+                <ul className="mt-4 list-disc space-y-1 pl-5 text-[16px] text-sky-800">
+                  {items.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-240px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
-            Education & Teaching
-          </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Early Childhood Education</li>
-            <li>Primary School Teaching</li>
-            <li>Secondary School Teaching</li>
-            <li>Special Education</li>
-            <li>TESOL / English Teaching</li>
-            <li>Vocational & Training Teacher</li>
-          </ul>
-        </div>
-        <div className="w-[284px] h-[240px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
-            Engineering
-          </h2>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Civil Engineering</li>
-            <li>Mechanical Engineering</li>
-            <li>Electrical Engineering</li>
-            <li>Chemical Engineering</li>
-            <li>Aerospace Engineering</li>
-            <li>Biomedical Engineering</li>
-            <li>Environmental Engineering</li>
-          </ul>
-        </div>
-        <div className="w-[284px] h-[240px] mt-[38px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
-           Business & Management
-          </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Business Administration</li>
-            <li>Accountancy</li>
-            <li>Finance</li>
-            <li>Marketing</li>
-            <li>Business Management</li>
-            <li>Supply Chain Management</li>
-            <li>Human Resource Management</li>
-          </ul>
-        </div>
-        <div className="w-[284px] h-[260px] mt-[-260px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
-            Information Technology & Computer Science
-          </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
-           <li>Computer Science</li>
-           <li>Computer Engineering</li>
-           <li>Artificial Intelligence</li>
-           <li>Data Science</li>
-           <li>Information Systems</li>
-           <li>Information Security</li>
-           <li>Software Engineering</li>
-          </ul>
-        </div>
-        <div className="w-[284px] h-[240px] mt-[-242px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
-           Other
-          </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
-            <li>Economics</li>
-            <li>Law</li>
-            <li>Architecture</li>
-            <li>Industrial Design</li>
-            <li>Communication Studies</li>
-            <li>Social Sciences</li>
-            <li>Hospitality & Tourism</li>
-          </ul>
-        </div>
-      </div>
-      <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20 xl:mt-[-180px]">
+      </section>
+      <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
       
           {/* Main Content */}
-          <div className="grid grid-cols-1 gap-[-140px] lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14 lg:mt-[-100px]">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14">
       
             {/* ================= LEFT SECTION ================= */}
             <div className="lg:col-span-6">

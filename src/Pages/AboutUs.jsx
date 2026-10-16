@@ -442,7 +442,7 @@ const AboutUs = () => {
             className="
         w-full
         md:max-w-[700px]
-        lg:w-[40%]
+        lg:w-[42%]
         xl:w-[40%]
         2xl:w-[42%]
       "
@@ -538,12 +538,12 @@ const AboutUs = () => {
         sm:justify-center
         md:justify-start
         lg:mt-0
-        lg:w-[20%]
-        lg:justify-left
+        lg:w-[28%]
+        lg:justify-center
         xl:mt-0
         xl:w-[28%]
         2xl:w-[26%]
-        xl:justify-left
+        xl:justify-center
       "
           >
             <div
@@ -584,9 +584,9 @@ const AboutUs = () => {
         w-full
         sm:mt-12
         md:mt-14
-        lg:w-[25%]
+        lg:w-[28%]
         lg:justify-center
-        lg:mt-[-40px]
+        lg:mt-0
         xl:mt-0
         xl:w-[28%]
         2xl:w-[28%]
@@ -702,13 +702,8 @@ const AboutUs = () => {
     md:py-16
     lg:px-10
     xl:px-0
-    xl:py-[125px]
-    h-[1520px]
-    md:h-[1200px]
-    lg:h-[760px]
-    xl:h-[760px]
-    2xl:h-[850px]
-    2xl:py-[150px]
+    xl:py-16
+    2xl:py-20
   "
       >
         <div
@@ -728,14 +723,7 @@ const AboutUs = () => {
             <div
               className="
           w-full
-          h-auto
-          xl:w-[1216px]
-          xl:h-[462px]
-          2xl:w-full
-          2xl:h-[520px]
-          xl:top-[79px]
-          xl:left-[111px]
-          xl:gap-[90px]
+          xl:w-full
         "
             >
               <div
@@ -763,12 +751,13 @@ const AboutUs = () => {
                 mx-auto
                 w-full
                 max-w-[346px]
-                h-[400px]
+                aspect-[4/5]
                 overflow-hidden
                 rounded-3xl
                 border
                 border-slate-200
                 shadow-sm
+                sm:aspect-auto
                 sm:h-[430px]
                 md:h-[440px]
                 lg:h-[462px]

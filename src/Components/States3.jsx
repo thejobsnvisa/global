@@ -199,7 +199,7 @@ const States3 = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -80 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="flex h-full w-full flex-col gap-[12px] rounded-[24px] bg-white px-[20px] py-[20px] shadow-sm sm:gap-[14px] sm:px-[24px] sm:py-[24px] lg:gap-[16px] lg:rounded-[36px] lg:px-[36px] lg:py-[30px]"
+              className="flex h-full w-full flex-col gap-[12px] rounded-[24px] bg-white px-[20px] py-[20px] shadow-sm sm:gap-[14px] sm:px-[24px] sm:py-[24px] lg:gap-[16px] lg:rounded-[36px] lg:px-[36px] lg:py-[30px] mt-[-94px]"
             >
               <div className="text-center">
                 <p className="text-[20px] font-bold text-[#20697B] sm:text-[22px] lg:text-[24px]">

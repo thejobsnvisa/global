@@ -218,7 +218,6 @@ const StudentvisaGermany = () => {
            md:h-[400px]
            md:max-w-[600px]
      
-           lg:mt-[-135px]
            lg:h-[450px]
            lg:w-[50%]
            lg:max-w-none
@@ -273,7 +272,6 @@ const StudentvisaGermany = () => {
              leading-7
              text-cyan-700
              text-justify
-             mt-[-40px]
              sm:text-[15px]
              sm:leading-7
      
@@ -326,18 +324,18 @@ Germany is one of the world’s most powerful and reliable destinations for high
           </div>
         </div>
       </div>
-       <div className="w-full h-[900px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
-        <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
+      <div className="mx-auto mt-4 grid w-full max-w-[1200px] grid-cols-1 gap-6 px-4 pb-10 sm:grid-cols-2 xl:grid-cols-3">
+       <h2 className="col-span-full mt-4 w-full text-center text-[32px] text-[#4298A9] sm:text-[36px]">
           Choose Your
         </h2>
-        <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
+        <p className="col-span-full -mt-5 w-full text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px]">
           Pathway
         </p>
-        <div className="w-[284px] h-[320px] mt-[80px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
             Healthcare & Nursing
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
             <li>Nursing (RN, EN)</li>
             <li>Aged Care Nursing</li>
             <li>Mental Health Nursing</li>
@@ -350,11 +348,11 @@ Germany is one of the world’s most powerful and reliable destinations for high
             <li>Public Health</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-318px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
             Education & Teaching
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
             <li>Early Childhood Education</li>
             <li>Primary School Teaching</li>
             <li>Secondary School Teaching</li>
@@ -363,57 +361,57 @@ Germany is one of the world’s most powerful and reliable destinations for high
             <li>Vocational & Training Teacher</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[420px] mt-[-220px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
             Engineering
           </h2>
-          <div className="mt-8 max-xl:mt-4">
-            <p className="w-[256px] h-[262px] text-[16px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full">
+          <div className="mt-4 space-y-4">
+            <p className="w-full text-[16px] font-semibold text-sky-800">
               Civil Engineering
             </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
+            <ul className="w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
               <li>Structural Engineering</li>
               <li>Construction Management</li>
               <li>Transport & Highway Engineering</li>
             </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-165px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
+            <p className="w-full text-[16px] font-semibold text-sky-800">
               Mechanical Engineering
             </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
+            <ul className="w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
               <li>HVAC Engineering</li>
               <li>Automotive Engineering</li>
               <li>Robotics & Mechatronics</li>
               <li>Manufacturing Engineering</li>
             </ul>
-            <p className="w-[256px] h-[262px] text-[16px] mt-[-145px] font-semibold text-sky-800 max-xl:h-auto max-xl:w-full max-xl:mt-4">
+            <p className="w-full text-[16px] font-semibold text-sky-800">
               Electrical Engineering
             </p>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-[-235px] ml-6 max-xl:h-auto max-xl:w-full max-xl:mt-0 max-xl:ml-0 max-xl:pl-6">
+            <ul className="w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
               <li>Power Engineering</li>
               <li>Electronics Engineering</li>
               <li>Telecommunications Engineering</li>
             </ul>
           </div>
         </div>
-        <div className="w-[284px] h-[260px] mt-[-50px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
             <li>Business Administration (MBA)</li>
             <li>Project Management</li>
             <li>Human Resource Management</li>
             <li>Accounting & Finance</li>
             <li>Marketing & Communication</li>
             <li>Supply Chain & Logistics</li>
-            <li className="w-[240px]">Hospitality & Tourism Management</li>
+            <li>Hospitality & Tourism Management</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[360px] mt-[-360px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
             Information Technology & Computer Science
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
+          <ul className="mt-4 w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
             <li>Software Engineering</li>
             <li>Cyber Security</li>
             <li>Data Science & Analytics</li>
@@ -426,11 +424,11 @@ Germany is one of the world’s most powerful and reliable destinations for high
             <li>UI/UX Design</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[165px] mt-[-165px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="w-full font-bold text-[18px] text-teal-700">
            Other
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 w-full list-disc space-y-1 pl-6 text-[16px] text-sky-800">
             <li>Arts & Design</li>
             <li>Trades & Vocational Studies</li>
             <li>Agriculture & Environmental Science</li>
@@ -442,7 +440,7 @@ Germany is one of the world’s most powerful and reliable destinations for high
   <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
 
     {/* Main Content */}
-    <div className="grid grid-cols-1 gap-[-140px] lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14 lg:mt-[-100px]">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center lg:gap-10 xl:gap-14">
 
       {/* ================= LEFT SECTION ================= */}
       <div className="lg:col-span-6">

@@ -328,18 +328,18 @@ const StudentvisaFrance = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[800px] mt-4 max-xl:h-auto max-xl:px-4 max-xl:pb-10 max-xl:overflow-hidden xl:ml-[-50px] 2xl:ml-[-5px]">
-        <h2 className="ml-165 mt-8 w-[254px] text-center h-[28px] text-[#4298A9] text-[40px] xl:ml-160 max-xl:mx-auto max-xl:w-full max-xl:max-w-[254px] max-xl:h-auto max-xl:text-[32px]">
+      <div className="mx-auto mt-4 grid w-full max-w-[1200px] grid-cols-1 gap-6 px-4 pb-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:gap-8">
+        <h2 className="col-span-full mt-4 text-center text-[32px] text-[#4298A9] sm:text-[36px] lg:text-[40px]">
           Choose Your
         </h2>
-        <p className="w-[268px] h-[42px] font-semibold text-center mt-2 ml-165 text-[60px] text-[#5B9E7D] xl:ml-158 max-xl:mx-auto max-xl:w-full max-xl:max-w-[268px] max-xl:h-auto max-xl:text-[44px]">
+        <p className="col-span-full -mt-5 text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
           Pathway
         </p>
-         <div className="w-[284px] h-[220px] mt-[68px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[220px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+         <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Education & Teaching
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Early Childhood Education</li>
             <li>Primary School Teaching</li>
             <li>Secondary School Teaching</li>
@@ -348,11 +348,11 @@ const StudentvisaFrance = () => {
             <li>Vocational & Training Teacher</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[190px] mt-[-218px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[320px] max-xl:mt-8 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Healthcare & Nursing
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Biotechnology</li>
             <li>Biomedical Sciences</li>
             <li>Public Health</li>
@@ -360,11 +360,11 @@ const StudentvisaFrance = () => {
             <li>Environmental Health</li>
           </ul>
         </div>
-        <div className="w-[294px] h-[200px] mt-[-190px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-8.5 font-bold text-[18px] ml-20 text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Engineering
           </h2>
-            <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+            <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Mechanical Engineering</li>
             <li>Electrical & Electronics Engineering </li>
             <li>Civil Engineering</li>
@@ -372,11 +372,11 @@ const StudentvisaFrance = () => {
             <li>Environmental Health</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[50px] ml-[280px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[260px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[226px] h-[11px] ml-6 font-bold text-[18px] text-teal-700">
+        <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
            Business & Management
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Business Administration (MBA)</li>
             <li>International Business</li>
             <li>Management & Leadership</li>
@@ -385,11 +385,11 @@ const StudentvisaFrance = () => {
             <li>Luxury Brand Management</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[360px] mt-[-250px] ml-[622px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[360px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-7.5 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
             Information Technology & Computer Science
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-12 ml-5.5 max-xl:h-auto max-xl:w-full max-xl:mt-6 max-xl:ml-0 max-xl:pl-6">
+          <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Software Engineering</li>
             <li>Cyber Security</li>
             <li>Data Science & Analytics</li>
@@ -402,11 +402,11 @@ const StudentvisaFrance = () => {
             <li>UI/UX Design</li>
           </ul>
         </div>
-        <div className="w-[284px] h-[220px] mt-[-345px] ml-[955px] rounded-[20px] pt-[20px] pr-[14] pb-[20px] pl-[14px] gap-[20px] bg-sky-100 max-xl:box-border max-xl:w-full max-xl:max-w-[420px] max-xl:h-auto max-xl:min-h-[165px] max-xl:mt-6 max-xl:ml-auto max-xl:mr-auto">
-          <h2 className="w-[206px] h-[11px] ml-24 font-bold text-[18px] text-teal-700 max-xl:h-auto max-xl:w-full max-xl:ml-0">
+        <div className="w-full rounded-[20px] bg-sky-100 p-5">
+          <h2 className="font-bold text-[18px] text-teal-700">
            Other
           </h2>
-          <ul className="list-disc w-[256px] h-[250px] text-[16px] text-sky-800 mt-6 ml-6 max-xl:h-auto max-xl:w-full max-xl:pl-6 max-xl:ml-0">
+          <ul className="mt-4 list-disc pl-6 text-[16px] text-sky-800">
             <li>Arts & Design</li>
             <li>Trades & Vocational Studies</li>
             <li>Agriculture & Environmental Science</li>

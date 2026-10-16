@@ -32,9 +32,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <section
-        className="relative h-[300px] w-full overflow-hidden sm:h-[340px] md:h-[370px] lg:h-[480px]"
-      >
+      <section className="relative h-[260px] w-full overflow-hidden sm:h-[320px] md:h-[380px] lg:h-[480px]">
         <img
           src={img}
           alt="About Us banner"
@@ -49,30 +47,30 @@ const ContactUs = () => {
           }}
         />
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1256px] flex-col justify-center px-5 sm:px-8 md:px-12 lg:px-0">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1256px] flex-col justify-center px-5 sm:px-8 md:px-12 lg:px-10">
           <p className="mb-2 text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]">
-            <span className="text-sky-500 lg:ml-10 xl:ml-0">Home &gt; </span>
+            <span className="text-sky-500">Home &gt; </span>
             <span className="text-cyan-800">Contact Us</span>
           </p>
 
-          <h1 className="mt-6 w-full text-[32px] font-semibold leading-[1.1] text-[#669980] sm:mt-10 sm:text-[44px] md:mt-16 md:text-[52px] lg:mt-20 lg:ml-10 lg:text-[60px] xl:ml-0">
+          <h1 className="mt-4 text-[32px] font-semibold leading-tight text-[#669980] sm:mt-8 sm:text-[44px] md:mt-10 md:text-[52px] lg:mt-12 lg:text-[60px]">
             Contact Us
           </h1>
         </div>
       </section>
 
-      <section className="relative w-full overflow-hidden py-10 sm:py-16 xl:mb-[-300px] md:mb-0 lg:mb-0 mb-20">
+      <section className="relative w-full py-10 sm:py-14 lg:py-16">
         <div className="mx-auto w-full max-w-[1256px] px-4 sm:px-8 md:px-12 lg:px-0">
-          <div className="mb-10 flex flex-col items-center text-center md:items-start md:text-left">
-            <p className="text-[28px] leading-none lg:ml-80 xl:ml-110 text-[#4298A9] sm:text-[34px] md:text-[40px]">
+          <div className="mb-8 flex flex-col items-center text-center sm:mb-10">
+            <p className="text-[24px] leading-tight text-[#4298A9] sm:text-[30px] md:text-[36px]">
               Stay Connected With
             </p>
-            <h1 className="mt-4 text-[36px] font-semibold leading-none text-[#5B9E7D] lg:ml-50 xl:ml-80 sm:text-[48px] md:text-[60px]">
+            <h2 className="mt-2 text-[30px] font-semibold leading-tight text-[#5B9E7D] sm:mt-3 sm:text-[42px] md:text-[52px] lg:text-[60px]">
               Growmore Global Visa
-            </h1>
+            </h2>
           </div>
 
-          <div className="grid gap-10 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
             {offices.map((office) => (
               <div key={office.country} className="w-full">
                 <div className="mb-6 text-center">
@@ -82,17 +80,17 @@ const ContactUs = () => {
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="flex h-auto min-h-[64px] items-center gap-3 rounded-[10px] bg-slate-100 px-[20px] py-[14px] lg:h-[64px]">
                     <img src={call} alt="Call icon" className="h-[30px] w-[30px]" />
-                    <div className="ml-3 flex flex-col">
+                    <div className="ml-3 flex min-w-0 flex-col">
                       <p className="text-[16px] mt-1 font-semibold text-cyan-600">Requesting A Call</p>
-                      <p className="text-[16px] font-semibold text-cyan-600">{office.requestCall}</p>
+                      <p className="break-words text-[15px] font-semibold text-cyan-600 sm:text-[16px]">{office.requestCall}</p>
                     </div>
                   </div>
 
                   <div className="flex h-auto min-h-[64px] items-center gap-3 rounded-[10px] bg-slate-100 px-[20px] py-[14px] lg:h-[64px]">
                     <img src={whatsapp} alt="whatsapp icon" className="h-[30px] w-[30px]" />
-                    <div className="ml-3 flex flex-col">
+                    <div className="ml-3 flex min-w-0 flex-col">
                       <p className="text-[16px] mt-1 font-semibold text-cyan-600">WhatsApp</p>
-                      <p className="text-[16px] font-semibold text-cyan-600">{office.whatsapp}</p>
+                      <p className="break-words text-[15px] font-semibold text-cyan-600 sm:text-[16px]">{office.whatsapp}</p>
                     </div>
                   </div>
                 </div>
@@ -100,33 +98,34 @@ const ContactUs = () => {
                 <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="flex h-auto min-h-[64px] items-center gap-3 rounded-[10px] bg-slate-100 px-[20px] py-[14px] lg:h-[64px]">
                     <img src={email} alt="email icon" className="h-[30px] w-[30px]" />
-                    <div className="ml-3 flex flex-col">
+                    <div className="ml-3 flex min-w-0 flex-col">
                       <p className="text-[16px] mt-1 font-semibold text-cyan-600">Email</p>
-                      <p className=" text-[16px] font-semibold text-cyan-600">{office.email}</p>
+                      <p className="break-all text-[15px] font-semibold text-cyan-600 sm:text-[16px]">{office.email}</p>
                     </div>
                   </div>
 
                   <div className="flex h-auto min-h-[64px] items-center gap-3 rounded-[10px] bg-slate-100 px-[20px] py-[14px] lg:h-[64px]">
                     <img src={clock} alt="clock icon" className="h-[30px] w-[30px]" />
-                    <div className="ml-3 flex flex-col">
+                    <div className="ml-3 flex min-w-0 flex-col">
                       <p className="text-[16px] mt-1 font-semibold text-cyan-600">{office.hoursLabel}</p>
                       <p className=" text-[16px] font-semibold text-cyan-600">{office.hours}</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-4 flex h-auto min-h-[94px] items-center gap-3 rounded-[10px] bg-slate-100 px-[20px] py-[14px]">
-                  <img src={location} alt="location icon" className="h-[30px] w-[30px]" />
-                  <div className="ml-3 flex flex-col">
+                <div className="mt-4 flex min-h-[94px] items-start gap-3 rounded-[10px] bg-slate-100 px-4 py-4 sm:items-center sm:px-5">
+                  <img src={location} alt="location icon" className="mt-1 h-[30px] w-[30px] shrink-0 sm:mt-0" />
+                  <div className="ml-1 flex min-w-0 flex-col sm:ml-3">
                     <p className="text-[16px] font-semibold text-cyan-600">Location</p>
-                    <p className="mt-2 text-[16px] font-semibold text-cyan-600 xl:w-[404px]">{office.address}</p>
+                    <p className="mt-2 break-words text-[15px] font-semibold text-cyan-600 sm:text-[16px]">{office.address}</p>
                   </div>
                 </div>
 
-                <div className="mt-8 h-[300px] w-full overflow-hidden rounded-xl sm:h-[350px]">
+                <div className="mt-6 h-[240px] w-full overflow-hidden rounded-xl sm:mt-8 sm:h-[300px] lg:h-[350px]">
                   <iframe
                     src={office.map}
                     className="h-full w-full rounded-xl"
+                    title={`${office.country} office location map`}
                     style={{ border: 0 }}
                     loading="lazy"
                     allowFullScreen

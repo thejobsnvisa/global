@@ -1,6 +1,7 @@
 import { useState } from "react";
 import one from "../assets/one.png";
 import one1 from "../assets/one1.png";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const testimonials = [
   {
@@ -384,7 +385,7 @@ const Testimonials = () => {
                   transition
                 "
               >
-                ←
+                <FaArrowLeft className="w-4 h-4" />
               </button>
 
               {/* Slide Indicators */}
@@ -437,7 +438,7 @@ const Testimonials = () => {
                   transition
                 "
               >
-                →
+               <FaArrowRight  className="w-4 h-4"/>
               </button>
             </div>
           </div>
