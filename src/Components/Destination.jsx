@@ -13,38 +13,47 @@ const destination = [
   {
     name: "New Zealand",
     image: newzealand,
+    link: "/services/student-visa/new-zealand",
   },
   {
     name: "Australia",
     image: australia1,
+    link: "/services/student-visa/australia",
   },
   {
     name: "Canada",
     image: canada,
+    link: "/services/student-visa/canada",
   },
   {
     name: "UK",
     image: uk,
+    link: "/services/student-visa/uk",
   },
   {
     name: "France",
     image: france,
+    link: "/services/student-visa/france",
   },
   {
     name: "Germany",
     image: germany,
+    link: "/services/student-visa/germany",
   },
   {
     name: "Dubai",
     image: dubai,
+    link: "/services/student-visa/dubai",
   },
   {
     name: "Russia",
     image: russia,
+    link: "/services/student-visa/russia",
   },
   {
     name: "Singapore",
     image: singapore,
+    link: "/services/student-visa/singapore",
   },
 ];
 
@@ -72,20 +81,20 @@ const Destination = () => {
   }, []);
 
   return (
-    <section className="w-full bg-white py-16 md:py-20 lg:ml-8 xl:ml-0 lg:py-[70px]">
-      <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-0">
+    <section className="w-full bg-white py-[clamp(3rem,7vw,5rem)]">
+      <div className="mx-auto w-full max-w-[1350px] px-[clamp(1.25rem,5vw,3rem)]">
 
         {/* Heading */}
-        <div className="mb-8 md:mb-10 lg:mb-[28px]">
+        <div className="mb-[clamp(1.75rem,4vw,2.5rem)]">
           <p
-            className="text-[25px] leading-[1.15] text-[#26839A] md:text-[28px] lg:text-[40px]"
+            className="text-[clamp(1.5rem,3vw,2.5rem)] leading-[1.15] text-[#26839A]"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Start with
           </p>
 
           <h2
-            className="mt-0 text-[32px] font-bold leading-[1.1] text-[#82CBAA] sm:text-[38px] md:text-[42px] lg:text-[60px]"
+            className="mt-0 text-[clamp(2rem,4.5vw,3.75rem)] font-bold leading-[1.1] text-[#82CBAA]"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Your Destination
@@ -99,31 +108,24 @@ const Destination = () => {
             ref={sliderRef}
             className="
               flex
-              gap-[22px]
+              gap-[clamp(1rem,2vw,1.625rem)]
               overflow-x-auto
               pb-4
               scrollbar-hide
-              md:gap-[26px]
-              lg:overflow-hidden
             "
           >
             {destination.concat(destination).map((destination, index) => (
-              <div
+              <a
                 key={`${destination.name}-${index}`}
+                href={destination.link}
                 className="
                   group
                   relative
-                  h-[300px]
-                  min-w-[245px]
+                  h-[clamp(18.75rem,28vw,21.875rem)]
+                  min-w-0
+                  flex-[0_0_clamp(15rem,22vw,17.5rem)]
                   overflow-hidden
                   rounded-[25px]
-                  sm:h-[330px]
-                  sm:min-w-[170px]
-                  md:h-[350px]
-                  md:min-w-[190px]
-                  lg:h-[300px]
-                  lg:min-w-[220px]
-                  lg:flex-1
                 "
               >
                 {/* Image */}
@@ -165,7 +167,7 @@ const Destination = () => {
                     {destination.name}
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
