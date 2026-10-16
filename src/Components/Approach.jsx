@@ -7,42 +7,43 @@ import d5 from "../assets/d5.svg";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
+const cards = [
+  {
+    id: 0,
+    title: "Initial Contact",
+    description:
+      "Reach out to us via WhatsApp or our website to start your visa process.",
+    img: Call,
+  },
+  {
+    id: 1,
+    title: "Consult & Enroll",
+    description:
+      "Get guidance from our counsellor/RMA & confirm your enrollment with us.",
+    img: user,
+  },
+  {
+    id: 2,
+    title: "Prepare Documents",
+    description:
+      "Collect, verify, and arrange all documents for your visa application.",
+    img: documents,
+  },
+  {
+    id: 3,
+    title: "Submit Application",
+    description: "Submit your visa application accurately and on time.",
+    img: d4,
+  },
+  {
+    id: 4,
+    title: "Continuous Guidance",
+    description: "Get guidance at every step, from submission to outcome.",
+    img: d5,
+  },
+];
+
 const Approach = () => {
-  const cards = [
-    {
-      id: 0,
-      title: "Initial Contact",
-      description:
-        "Reach out to us via WhatsApp or our website to start your visa process.",
-      img: Call,
-    },
-    {
-      id: 1,
-      title: "Consult & Enroll",
-      description:
-        "Get guidance from our counsellor/RMA & confirm your enrollment with us.",
-      img: user,
-    },
-    {
-      id: 2,
-      title: "Prepare Documents",
-      description:
-        "Collect, verify, and arrange all documents for your visa application.",
-      img: documents,
-    },
-    {
-      id: 3,
-      title: "Submit Application",
-      description: "Submit your visa application accurately and on time.",
-      img: d4,
-    },
-    {
-      id: 4,
-      title: "Continuous Guidance",
-      description: "Get guidance at every step, from submission to outcome.",
-      img: d5,
-    },
-  ];
 
   const cardSectionRef = useRef(null);
   const cardSectionInView = useInView(cardSectionRef, { margin: "-50px" });
@@ -117,26 +118,26 @@ const Approach = () => {
   return (
     <div className="w-full min-h-screen bg-[#EFFCFF] py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-10 lg:px-28 2xl:min-h-[800px]">
       {/* Header */}
-      <div className="flex items-center gap-[10px] sm:mb-3 mb-2 2xl:translate-x-130">
+      <div className="flex items-center gap-[10px] mb-2 sm:mb-3">
         <span className="text-[28px] sm:text-[36px] md:text-[40px] lg:text-[40px] 2xl:text-[50px] text-[#338292]">Our</span>
       </div>
-      <div className="mt-[-30px] 2xl:translate-x-130">
+      <div className="mt-[-30px]">
          <span className="text-[32px] sm:text-[40px] sm:mt-4 md:text-[45px] lg:text-[60px] font-bold text-[#8DC8AB]">
           Approach
         </span>
       </div>
-      <p className="text-[14px] mt-2 sm:text-[15px] md:text-[17px] 2xl:text-[20px] text-[#3682B1] 2xl:translate-x-130 mb-8 sm:mb-10 md:mb-12 leading-snug">
+      <p className="text-[clamp(0.875rem,1.2vw,1.25rem)] mt-2 text-[#3682B1] mb-8 sm:mb-10 md:mb-12 leading-snug">
         Workflow at Growmore Global Visa <br /> Making Immigration Simple Across
         All Countries
       </p>
 
       {/* Main Container */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 2xl:gap-12 items-start 2xl:justify-between 2xl:max-w-[1500px] 2xl:mx-auto" ref={cardSectionRef}>
-        <div className="w-full lg:w-[580px] lg:mt-12 xl:mt-0 2xl:flex-shrink-0">
+      <div className="flex flex-col lg:flex-row gap-[clamp(1.5rem,4vw,3rem)] items-start w-full max-w-[1500px] mx-auto" ref={cardSectionRef}>
+        <div className="w-full min-w-0 lg:flex-1 lg:mt-12 xl:mt-0">
           {cards.map((card, index) => (
             <div
               key={`${card.id}-${animationKey}`}
-              className="relative pb-8 last:pb-0 flex items-center gap-12"
+              className="relative pb-8 last:pb-0 flex items-center gap-[clamp(1rem,3vw,3rem)]"
             >
               {/* Connecting Line */}
               {index !== cards.length - 1 && (
@@ -146,7 +147,7 @@ const Approach = () => {
                   initial="initial"
                   animate={cardSectionInView ? "animate" : "initial"}
                   style={{ originY: 0 }}
-                  className="absolute left-[38px] top-[76px] w-[2px] sm:ml-0 md:ml-10 lg:ml-10 h-[36px] border-l-2 border-dashed border-[#338292]/40 z-0"
+                  className="absolute left-[38px] top-[76px] w-[2px] h-[36px] border-l-2 border-dashed border-[#338292]/40 z-0"
                 />
               )}
 
@@ -156,7 +157,7 @@ const Approach = () => {
                 variants={iconVariant}
                 initial="initial"
                 animate={cardSectionInView ? "animate" : "initial"}
-                className="w-[76px] h-[76px] rounded-[6px] bg-white flex items-center md:ml-10 justify-center flex-shrink-0 shadow-[0px_0px_20px_3px_rgba(0,0,0,0.15)] z-10"
+                className="w-[76px] h-[76px] rounded-[6px] bg-white flex items-center justify-center flex-shrink-0 shadow-[0px_0px_20px_3px_rgba(0,0,0,0.15)] z-10"
               >
                 <img
                   src={card.img}
@@ -171,6 +172,7 @@ const Approach = () => {
                 variants={textVariant}
                 initial="initial"
                 animate={cardSectionInView ? "animate" : "initial"}
+                className="min-w-0"
               >
                 <h3 className="text-[20px] font-bold text-[#009966]">
                   {card.title}
@@ -184,7 +186,7 @@ const Approach = () => {
         </div>
 
         {/* Right Banner Image */}
-        <div className="w-full sm:w-[400px] md:w-[480px] lg:w-[460px] xl:w-[560px] 2xl:w-[600px] h-[500px] sm:h-[600px] md:h-[650px] xl:h-[700px] 2xl:h-[750px] rounded-[32px] bg-white overflow-hidden flex-shrink-0 shadow-md xl:ml-10 2xl:ml-0 mt-8 xl:mt-[-80px]">
+        <div className="w-full min-w-0 max-w-[600px] lg:flex-1 h-[clamp(20rem,55vw,46.875rem)] rounded-[32px] bg-white overflow-hidden shadow-md mt-8 xl:mt-[-80px]">
           <img
             src={g9}
             alt="approach presentation"

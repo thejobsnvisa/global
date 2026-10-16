@@ -134,7 +134,7 @@ const States2 = () => {
   const activeData = stateData[selectedStateId] ?? stateData[States2List[0].id];
 
   return (
-    <div ref={sectionRef} className="w-full h-[720px] lg:h-[650px] pt-10 bg-[#EBF7F6]">
+    <div ref={sectionRef} className="w-full min-h-[720px] h-auto lg:min-h-[650px] pt-10 pb-10 bg-[#EBF7F6]">
       {/* Title Header */}
       <div className="flex items-baseline justify-center whitespace-nowrap">
         <p className="text-[28px] leading-none text-[#4298A9] sm:text-[32px] xl:text-[40px]">
@@ -145,9 +145,9 @@ const States2 = () => {
         </span>
       </div>
 
-      <div className="mt-8 flex flex-col items-center gap-6 px-4 sm:px-6 xl:mt-[60px] xl:flex xl:justify-center xl:gap-10 xl:px-10">
+      <div className="mt-8 flex flex-col items-center gap-6 px-4 sm:px-6 xl:mt-[60px] xl:flex-row xl:items-start xl:justify-center xl:gap-10 xl:px-10">
         {/* Left Side Buttons */}
-        <div className="w-full max-w-[420px] xl:w-[420px] xl:min-h-[580px]">
+        <div className="w-full max-w-[420px] xl:w-[420px] xl:shrink-0">
           <AnimatePresence mode="wait">
             <motion.div
               key={animationKey}
@@ -162,8 +162,10 @@ const States2 = () => {
                 return (
                   <motion.button
                     key={id}
+                    type="button"
                     variants={buttonItemVariants}
                     onClick={() => setSelectedStateId(id)}
+                    aria-pressed={isSelected}
                     animate={{
                       backgroundColor: isSelected ? "#1C5B6C" : "#B8E6FE",
                       color: isSelected ? "#FFFFFF" : "#00609C",

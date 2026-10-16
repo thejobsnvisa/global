@@ -39,6 +39,7 @@ const AboutUs = () => {
           sm:h-[340px]
           md:h-[370px]
           lg:h-[400px]
+          2xl:h-[460px]
         "
       >
         {/* Banner Image */}
@@ -79,6 +80,7 @@ const AboutUs = () => {
             sm:px-8
             md:px-12
             lg:px-0
+            2xl:max-w-[1440px]
           "
         >
           {/* Breadcrumb */}
@@ -89,6 +91,7 @@ const AboutUs = () => {
               sm:text-[16px]
               md:text-[17px]
               lg:text-[18px]
+              2xl:text-[20px]
             "
           >
             <span className="text-sky-500 lg:ml-10 xl:ml-0">Home &gt; </span>
@@ -111,6 +114,7 @@ const AboutUs = () => {
               lg:mt-20
               lg:text-[60px]
               lg:ml-10 xl:ml-0
+              2xl:text-[68px]
             "
           >
             Who We Are
@@ -133,6 +137,7 @@ const AboutUs = () => {
           md:py-14
           lg:px-0
           lg:py-[42px]
+          2xl:py-[56px]
         "
       >
         <div
@@ -143,6 +148,7 @@ const AboutUs = () => {
             max-w-[1150px]
             xl:max-w-[1150px]
             lg:max-w-[950px]
+            2xl:max-w-[1250px]
             flex-col
             gap-6
           "
@@ -160,6 +166,7 @@ const AboutUs = () => {
               sm:text-[17px]
               md:text-[18px]
               lg:text-[20px]
+              2xl:text-[21px]
             "
           >
             Every international journey begins with a reason - a dream to study,
@@ -179,6 +186,7 @@ const AboutUs = () => {
               sm:text-[17px]
               md:text-[18px]
               lg:text-[20px]
+              2xl:text-[21px]
             "
           >
             Growmore Global Visa is here to help turn that reason into a
@@ -200,6 +208,7 @@ const AboutUs = () => {
               sm:text-[17px]
               md:text-[18px]
               lg:text-[20px]
+              2xl:text-[21px]
             "
           >
             Our approach is simple: understand your goals, explain your options
@@ -220,6 +229,7 @@ const AboutUs = () => {
       flex
       w-full
       max-w-[1440px]
+      2xl:max-w-[1600px]
       flex-col
       px-5
       py-10
@@ -233,6 +243,8 @@ const AboutUs = () => {
       lg:py-[32px]
       xl:pl-[80px]
       xl:pr-[54px]
+      2xl:px-[100px]
+      2xl:py-[52px]
     "
         >
           {/* LEFT CONTENT */}
@@ -242,6 +254,7 @@ const AboutUs = () => {
         lg:w-[48%]
         lg:pr-[40px]
         xl:pr-[55px]
+        2xl:pr-[72px]
       "
           >
             {/* Heading */}
@@ -272,6 +285,7 @@ const AboutUs = () => {
             sm:text-[46px]
             md:text-[48px]
             lg:text-[50px]
+            2xl:text-[56px]
           "
               >
                 Us Apart
@@ -291,6 +305,7 @@ const AboutUs = () => {
           md:mt-8
           md:text-[18px]
           lg:text-[19px]
+          2xl:text-[21px]
         "
               style={{
                 fontFamily: "Poppins, sans-serif",
@@ -312,6 +327,7 @@ const AboutUs = () => {
           sm:text-[14px]
           md:text-[15px]
           lg:text-[16px]
+          2xl:text-[17px]
         "
               style={{
                 fontFamily: "Poppins, sans-serif",
@@ -344,6 +360,7 @@ const AboutUs = () => {
         lg:mt-0
         lg:w-[52%]
         lg:justify-start
+        2xl:w-[52%]
       "
           >
             <div
@@ -355,6 +372,7 @@ const AboutUs = () => {
           sm:rounded-[22px]
           lg:ml-[-20px]
           xl:ml-[-30px]
+          2xl:max-w-[740px]
         "
             >
               <img
@@ -369,6 +387,7 @@ const AboutUs = () => {
             sm:h-[280px]
             md:h-[320px]
             lg:h-[380px]
+            2xl:h-[440px]
           "
               />
             </div>
@@ -395,6 +414,7 @@ const AboutUs = () => {
     lg:py-[45px]
     xl:px-0
     xl:py-[55px]
+    2xl:py-[70px]
   "
       >
         <div
@@ -403,6 +423,7 @@ const AboutUs = () => {
       flex
       w-full
       max-w-[1256px]
+      2xl:max-w-[1440px]
       lg:flex-row
       lg:items-center
       lg:justify-between
@@ -421,6 +442,7 @@ const AboutUs = () => {
         md:max-w-[700px]
         lg:w-[40%]
         xl:w-[40%]
+        2xl:w-[42%]
       "
           >
             {/* Heading */}
@@ -437,6 +459,7 @@ const AboutUs = () => {
             lg:text-[36px]
             lg:ml-10
             xl:text-[38px]
+            2xl:text-[42px]
           "
               >
                 Led By Expertise And
@@ -454,6 +477,7 @@ const AboutUs = () => {
             md:text-[50px]
             lg:ml-10
             xl:text-[54px]
+            2xl:text-[60px]
           "
               >
                 Excellence
@@ -477,6 +501,7 @@ const AboutUs = () => {
           lg:ml-10
           xl:mt-8
           xl:text-[16px]
+          2xl:text-[17px]
         "
             >
               <p className="m-0 text-cyan-700">
@@ -514,6 +539,7 @@ const AboutUs = () => {
         lg:justify-left
         xl:mt-0
         xl:w-[28%]
+        2xl:w-[26%]
         xl:justify-left
       "
           >
@@ -529,6 +555,8 @@ const AboutUs = () => {
           md:w-[270px]
           xl:h-[400px]
           xl:w-[285px]
+          2xl:h-[440px]
+          2xl:w-[315px]
         "
             >
               <img
@@ -558,6 +586,7 @@ const AboutUs = () => {
         lg:mt-[-40px]
         xl:mt-0
         xl:w-[28%]
+        2xl:w-[28%]
       "
           >
             <div
@@ -598,14 +627,15 @@ const AboutUs = () => {
             lg:mr-10
             xl:mt-0
             xl:text-[32px]
+            2xl:text-[36px]
           "
               >
-                Lorem ipsum dolor{" "}
-                <span className="font-semibold text-[#008F84]">sit amet,</span>{" "}
+                More than visas {" "}
+                <span className="font-semibold text-[#008F84]">Growmore is</span>{" "}
                 <span className="font-semibold text-[#008F84]">
-                  consectetur
+                  about
                 </span>{" "}
-                adipiscing elit, sed do eiusmod tempor
+                guiding dreams across borders.
               </p>
             </div>
 
@@ -625,6 +655,7 @@ const AboutUs = () => {
             text-[#273C50]
             sm:text-[20px]
             xl:text-[20px]
+            2xl:text-[22px]
           "
                 style={{
                   fontFamily: "Caveat, cursive",
@@ -641,6 +672,7 @@ const AboutUs = () => {
             sm:text-[13px]
             xl:ml-4
             xl:text-[16px]
+            2xl:text-[17px]
           "
               >
                 Founder
@@ -672,6 +704,8 @@ const AboutUs = () => {
     md:h-[1200px]
     lg:h-[760px]
     xl:h-[760px]
+    2xl:h-[850px]
+    2xl:py-[150px]
   "
       >
         <div
@@ -680,6 +714,7 @@ const AboutUs = () => {
       flex
       w-full
       max-w-[1256px]
+      2xl:max-w-[1440px]
       flex-col
       xl:flex-row
       xl:items-center
@@ -693,6 +728,8 @@ const AboutUs = () => {
           h-auto
           xl:w-[1216px]
           xl:h-[462px]
+          2xl:w-full
+          2xl:h-[520px]
           xl:top-[79px]
           xl:left-[111px]
           xl:gap-[90px]
@@ -711,6 +748,8 @@ const AboutUs = () => {
             lg:gap-6
             xl:gap-10
             xl:ml-12
+            2xl:ml-0
+            2xl:gap-12
           "
               >
                 {teams.slice(0, 3).map((member, index) => (
@@ -732,6 +771,8 @@ const AboutUs = () => {
                 lg:h-[462px]
                 xl:w-[346px]
                 xl:h-[462px]
+                2xl:max-w-[390px]
+                2xl:h-[520px]
               "
                   >
                     <img
@@ -759,6 +800,7 @@ const AboutUs = () => {
                   sm:h-[140px]
                   lg:h-[143px]
                   xl:h-[143px]
+                  2xl:h-[160px]
                 "
                     >
                       <h3 className="text-md font-semibold text-white">

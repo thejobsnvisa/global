@@ -134,20 +134,20 @@ const States1 = () => {
   const activeData = stateData[selectedStateId];
 
   return (
-    <div ref={sectionRef} className="w-full min-h-[720px] bg-[#EBF7F6] px-4 py-10 lg:h-[650px] lg:px-10 lg:pt-10">
+    <div ref={sectionRef} className="w-full bg-[#EBF7F6] px-[clamp(1rem,4vw,2.5rem)] py-[clamp(2rem,5vw,2.5rem)]">
       {/* Title Header */}
       <div className="flex items-baseline justify-center whitespace-nowrap text-center">
-        <p className="text-[28px] leading-none text-[#4298A9] sm:text-[32px] lg:text-[40px]">
+        <p className="text-[clamp(28px,4vw,40px)] leading-none text-[#4298A9]">
           France
         </p>
-        <span className="ml-2 text-[38px] leading-none font-semibold text-[#5B9E7D] sm:text-[48px] lg:text-[60px]">
+        <span className="ml-2 text-[clamp(38px,6vw,60px)] leading-none font-semibold text-[#5B9E7D]">
           States
         </span>
       </div>
 
-      <div className="mt-[30px] flex flex-col items-center justify-center gap-6 sm:mt-[40px] lg:mt-[60px] lg:flex-row lg:items-start lg:justify-center lg:gap-10">
+      <div className="mt-[clamp(30px,5vw,60px)] flex flex-wrap items-start justify-center gap-[clamp(1.5rem,4vw,2.5rem)]">
         {/* Left Side Buttons */}
-        <div className="w-full max-w-[420px] lg:w-[420px] lg:min-h-[580px]">
+        <div className="w-full max-w-[420px] flex-[1_1_320px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={animationKey}
@@ -155,7 +155,7 @@ const States1 = () => {
               initial="hidden"
               animate={isInView ? "show" : "hidden"}
               exit="exit"
-              className="flex flex-col gap-[14px] sm:gap-[18px]"
+              className="flex flex-col gap-[clamp(14px,2vw,18px)]"
             >
               {States1List.map(({ id, title }) => {
                 const isSelected = selectedStateId === id;
@@ -171,7 +171,7 @@ const States1 = () => {
                       scale: isSelected ? 1.02 : 1,
                     }}
                     transition={{ duration: 0.2 }}
-                    className="flex h-[54px] w-full items-center justify-center rounded-[12px] border text-center text-[18px] font-medium cursor-pointer shadow-sm sm:h-[62px] sm:text-[20px] lg:h-[62px] lg:text-[20px]"
+                    className="flex h-[clamp(54px,6vw,62px)] w-full items-center justify-center rounded-[12px] border text-center text-[clamp(18px,2vw,20px)] font-medium cursor-pointer shadow-sm"
                   >
                     {title}
                   </motion.button>
@@ -182,7 +182,7 @@ const States1 = () => {
         </div>
 
         {/* Right Side: Entire Card Animated as a Whole */}
-        <div className="w-full max-w-[580px] lg:w-[580px] lg:h-[400px] relative">
+        <div className="relative w-full max-w-[580px] flex-[1_1_420px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedStateId}
@@ -190,18 +190,18 @@ const States1 = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -80 }}
               transition={{ duration: 0.35, ease: "easeOut" }}
-              className="w-full rounded-[24px] bg-white px-[20px] py-[20px] shadow-sm flex flex-col gap-[16px] sm:rounded-[30px] sm:px-[26px] sm:py-[26px] lg:h-full lg:rounded-[36px] lg:px-[36px] lg:py-[30px]"
+              className="flex w-full flex-col gap-[16px] rounded-[clamp(24px,4vw,36px)] bg-white p-[clamp(20px,4vw,36px)] shadow-sm"
             >
               <div className="text-center">
-                <p className="text-[22px] font-bold text-[#20697B] sm:text-[24px] lg:text-[24px]">
+                <p className="text-[clamp(22px,3vw,24px)] font-bold text-[#20697B]">
                   {activeData.title}
                 </p>
-                <p className="mt-1 text-[14px] text-slate-500 sm:text-[16px] lg:text-[16px]">
+                <p className="mt-1 text-[clamp(14px,2vw,16px)] text-slate-500">
                   {activeData.description}
                 </p>
               </div>
 
-              <div className="text-[14px] leading-[1.35] text-[#20697B] flex flex-col gap-2.5 sm:text-[16px] lg:text-[16px]">
+              <div className="flex flex-col gap-2.5 text-[clamp(14px,2vw,16px)] leading-[1.35] text-[#20697B]">
                 <div>
                   <p className="font-bold">Popular Universities</p>
                   <ul className="list-disc pl-5 mt-1 text-[#00609C] space-y-0.5">
