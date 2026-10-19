@@ -126,7 +126,9 @@ const Videos = () => {
             </h3>
 
             <Swiper
+              className="videos-swiper"
               modules={[Navigation, Pagination]}
+              style={{ paddingTop: "48px", paddingBottom: "40px" }}
               spaceBetween={24}
               slidesPerView={1}
               navigation
