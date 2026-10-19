@@ -3,9 +3,9 @@ import b1 from "../assets/b1.svg";
 import q2 from "../assets/q3.png";
 import DependentVisa from "../Components/DependentVisa";
 import DependentVisaSection from "../Components/DependentVisaSection";
-import v1 from "../assets/v1.png";
-import v2 from "../assets/v2.png";
-import v3 from "../assets/v3.png";
+import v1 from "../assets/de1.png";
+import v2 from "../assets/de2.png";
+import v3 from "../assets/de3.png";
 import bg2 from "../assets/bg2.png";
 
 const Dependent = () => {
@@ -329,15 +329,12 @@ const Dependent = () => {
     relative
     w-full
     overflow-hidden
-    bg-teal-50
-    lg:h-[550px]
-    md:h-[650px]
-    h-[700px]
-    py-10
-    sm:py-12
-    md:py-14
+    bg-[#F0FBF8]
+    h-auto
+    py-12
+    sm:py-14
+    md:py-16
     lg:py-16
-    xl:py-10
   "
       >
         <div
@@ -395,23 +392,23 @@ const Dependent = () => {
               Dependent Visa
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1210px] gap-4 sm:gap-4 md:gap-4 lg:gap-5 lg:mt-[80px] xl:gap-[30px] mx-auto px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-[1100px] gap-6 sm:gap-6 md:gap-6 lg:gap-[38px] mx-auto px-4">
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="bg-white w-full h-auto md:h-[210px] border-[1px] border-slate-200 rounded-[20px] shadow-[inset_0px_0px_28px_0px_#4FABC440] p-4 flex flex-col items-start text-left"
+                className="bg-white w-full min-h-[260px] md:min-h-[300px] lg:min-h-[360px] border border-[#E6F1F2] rounded-[20px] shadow-[inset_0px_0px_28px_0px_#4FABC430] px-6 py-7 flex flex-col items-center text-center"
               >
-                <div className="flex items-center gap-2 mb-2 ml-0 md:ml-[15px]">
+                <div className="flex flex-col items-center gap-3 mb-3">
                   <img
                     src={card.img}
                     alt={card.title}
-                    className="w-12 h-12 object-contain"
+                    className="w-20 h-20 object-contain"
                   />
-                  <h3 className="text-teal-700 text-[16px] sm:text-[18px] font-semibold">
+                  <h3 className="text-teal-700 text-[15px] sm:text-[16px] font-semibold leading-tight">
                     {card.title}
                   </h3>
                 </div>
-                <p className="text-slate-800 text-[14px] lg:text-[14px] sm:text-[15px] lg:mt-1 ml-0 md:ml-[15px]">
+                <p className="text-slate-700 text-[13px] sm:text-[14px] leading-[1.45] max-w-[260px]">
                   {card.description}
                 </p>
               </div>
@@ -557,36 +554,34 @@ const Dependent = () => {
       mt-0
       flex
       h-auto
+      min-w-0
       w-full
       max-w-[550px]
       flex-col
-      gap-5
+      gap-4
 
-      sm:gap-6
-      md:gap-7
+      sm:gap-5
+      md:gap-6
       lg:w-[50%]
       lg:max-w-[550px]
       lg:gap-7
 
-      xl:ml-[10px]
-      xl:mt-[20px]
-      xl:w-[550px]
+      xl:mt-[15px]
+      xl:w-full
       xl:gap-[35px]
     "
             >
               {/* Paragraph 1 */}
               <p
                 className="
-        xl:ml-[-40px]
         w-full
-        text-[15px]
-        leading-7
+        text-[14px]
+        leading-6
         text-cyan-700
         text-justify
 
         sm:text-[15px]
         sm:leading-7
-        sm:ml-[15px]
         md:text-[16px]
         md:leading-[1.7]
 
@@ -603,10 +598,10 @@ const Dependent = () => {
                 compliance, and case accuracy at the time of lodging application
                 over assumptions or shortcuts.
               </p>
-              <p className="w-[599px] h-[11px] text-[18px] font-semibold leading-[1] text-cyan-600 xl:ml-[-40px]">
+              <p className="w-full text-[16px] font-semibold leading-snug text-cyan-600 sm:text-[18px] ">
                 Things that set us apart include
               </p>
-              <ul className="list-disc text-teal-800 text-[16px] xl:ml-[-28px] leading-[2]">
+              <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px]">
                 <li>
                   Detailed evaluation of dependent eligibility to ensure
                   approval success
