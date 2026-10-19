@@ -115,7 +115,7 @@ const WorkVisa = () => {
             lg:w-[55%]
             lg:justify-start
             lg:pt-[42px]
-            lg:pl-[35px]
+            lg:pl-[10px]
           "
         >
           <p

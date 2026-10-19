@@ -39,49 +39,49 @@ const MigrationVisa = () => {
       {/* ========================================================= */} 
       {/* 1. DESKTOP VIEW (xl:block)                                */} 
       {/* ========================================================= */} 
-      <div className="hidden xl:block w-full h-[1020px] mt-10 relative"> 
+      <div className="hidden xl:block w-full max-w-[1600px] h-[1020px] mt-10 mx-auto relative"> 
         {/* Requirements Text Overlays */} 
-        <p className="w-[209px] h-[59px] pt-[480px] ml-[278px] font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[17.375%] top-[47.1%] w-[13.1%] font-semibold text-[16px] text-slate-600"> 
           Relevant education, qualifications, and professional experience 
         </p> 
-        <p className="w-[180px] h-[59px] mt-[-180px] ml-[65px] text-justify font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[4.06%] top-[35.2%] w-[11.25%] text-justify font-semibold text-[16px] text-slate-600"> 
           Occupation eligibility under the country’s migration or skills list 
         </p> 
-        <p className="w-[209px] h-[59px] mt-[-240px] ml-[260px] text-justify font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[16.25%] top-[17.5%] w-[13.1%] text-justify font-semibold text-[16px] text-slate-600"> 
           Language proficiency, such as IELTS or equivalent tests 
         </p> 
-        <p className="w-[230px] h-[59px] mt-[50px] ml-[680px] font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[42.5%] top-[28.1%] w-[14.4%] font-semibold text-[16px] text-slate-600"> 
           Age criteria as defined under the migration programs 
         </p> 
-        <p className="w-[198px] h-[59px] mt-[-160px] ml-[1080px] font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[67.5%] top-[18.2%] w-[12.4%] font-semibold text-[16px] text-slate-600"> 
           Health and character clearances 
         </p> 
-        <p className="w-[198px] h-[59px] mt-[80px] ml-[1280px] font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[80%] top-[30%] w-[12.4%] font-semibold text-[16px] text-slate-600"> 
           Proof of financial stability or settlement funds 
         </p> 
-        <p className="w-[198px] h-[59px] mt-[270px] ml-[1180px] font-semibold text-[16px] text-slate-600"> 
+        <p className="absolute left-[73.75%] top-[62.3%] w-[12.4%] font-semibold text-[16px] text-slate-600"> 
           Points-based eligibility (where applicable) 
         </p> 
 
         {/* TOP CARD: Heading drops down from TOP */} 
-        <div className="w-[532px] min-h-[140px] ml-[500px] mt-[-120px] rounded-[10px] p-4 bg-white/80 backdrop-blur-[4px] shadow-sm border border-slate-200 overflow-hidden"> 
+        <div className="absolute left-[31.25%] top-[56.3%] w-[33.25%] min-h-[140px] rounded-[10px] p-4 bg-white/80 backdrop-blur-[4px] shadow-sm border border-slate-200 overflow-hidden"> 
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={slideFromTop}
           >
-            <p className="w-[512px] h-[60px] text-[40px] text-[#006996] ml-5 leading-tight"> 
+            <p className="w-full text-[clamp(1.5rem,2.5vw,2.5rem)] text-[#006996] leading-tight"> 
               General Requirements for 
             </p> 
-            <h3 className="w-[450px] h-[42px] font-semibold text-[60px] mt-[-10px] ml-5 text-[#174C32] leading-none"> 
+            <h3 className="w-full font-semibold text-[clamp(2.5rem,3.75vw,3.75rem)] mt-1 text-[#174C32] leading-none"> 
               Migration Visas 
             </h3> 
           </motion.div>
         </div> 
 
         {/* BOTTOM CARD: Description rises up from BOTTOM */} 
-        <div className="w-[794px] min-h-[171px] ml-[352px] mt-6 rounded-[12px] p-5 bg-white/80 backdrop-blur-[10px] shadow-lg border border-slate-200 overflow-hidden"> 
+        <div className="absolute left-[22%] top-[72.3%] w-[49.625%] min-h-[171px] rounded-[12px] p-5 bg-white/80 backdrop-blur-[10px] shadow-lg border border-slate-200 overflow-hidden"> 
           <motion.div
             initial="hidden"
             whileInView="visible"

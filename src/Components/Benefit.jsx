@@ -32,6 +32,7 @@ const BenefitCard = ({ benefit }) => {
         sm:px-6
 
         md:h-[220px]
+        md:w-[calc(50%-10px)]
 
         lg:w-[320px]
         lg:px-5
@@ -174,7 +175,7 @@ const Benefit = () => {
     {
       title: "Improved Communication & Adaptability",
       description:
-        "We monitor the application, respond to immigration queries, and guide you through the process until a final decision is issued.",
+        "Build communication skills and adaptability by working with people from diverse cultures and professional backgrounds.",
       image: communication,
     },
     {
@@ -225,59 +226,15 @@ const Benefit = () => {
         {/* =====================================================
             HEADING
         ====================================================== */}
-        <div
-          className="
-            mb-10
-
-            sm:mb-12
-
-            md:mb-14
-
-            lg:mb-12
-
-            xl:mb-14
-          "
-        >
-          <p
-            className="
-              m-0
-              text-[24px]
-              leading-[1.15]
-              text-[#26839A]
-
-              sm:text-[26px]
-
-              md:text-[28px]
-
-              lg:text-[24px]
-
-              xl:text-[40px]
-            "
-          >
+        <div className="relative z-30 lg:ml-12">
+          <p className="m-0 mt-4 text-[20px] leading-[1.15] text-[#26839A] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px]">
             Benefits of
           </p>
-
-          <h2
-            className="
-              m-0
-              mt-1
-              text-[30px]
-              font-bold
-              leading-[1.05]
-              text-[#5B9E7D]
-
-              sm:text-[34px]
-
-              md:text-[40px]
-
-              lg:text-[34px]
-
-              xl:text-[60px]
-            "
-          >
+          <h2 className="m-0 mt-1 mb-8 text-[30px] font-bold leading-[1.05] text-[#5B9E7D] sm:text-[34px] md:text-[40px] lg:text-[48px] xl:text-[60px]">
             Working Abroad
           </h2>
         </div>
+
 
         {/* =====================================================
             ROW 1

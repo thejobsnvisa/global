@@ -1,4 +1,3 @@
-import React from "react";
 
 import d1 from "../assets/d1.png";
 import d2 from "../assets/d3.png";
@@ -70,10 +69,10 @@ const steps = [
 
 const Application = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F0FDFA] py-12 sm:py-14 md:py-16 lg:h-[480px] lg:py-0 xl:h-[600px]">
+    <section className="relative w-full overflow-hidden bg-[#F0FDFA] py-10 sm:py-12 md:py-14 xl:h-[600px] xl:py-0">
       <div className="relative mx-auto h-full w-full max-w-[1440px] px-5 sm:px-8 md:px-10 lg:px-6 xl:px-[54px]">
         {/* Header Section */}
-        <div className="relative z-30 lg:absolute lg:left-6 lg:top-4 xl:left-[54px] xl:top-[30px]">
+        <div className="relative z-30 xl:absolute xl:left-[54px] xl:top-[30px]">
           <p
             className="m-0 mt-4 text-[24px] leading-[1.15] text-[#26839A] sm:text-[26px] md:text-[28px] lg:text-[24px] xl:text-[40px]"
             
@@ -95,7 +94,7 @@ const Application = () => {
         </div>
 
         {/* Timeline Desktop Container */}
-        <div className="absolute inset-x-0 top-0 hidden h-full lg:block">
+        <div className="absolute inset-x-0 top-0 hidden h-full xl:block">
           <img
             src={c4}
             alt=""
@@ -104,29 +103,19 @@ const Application = () => {
           />
 
           {steps.map((item, index) => (
-            <React.Fragment key={index}>
-              {/* LG View Node */}
-              <div
-                className="absolute z-20 -translate-x-1/2 -translate-y-1/2 lg:block xl:hidden"
-                style={item.lgStyle}
-              >
-                <StepContent item={item} isXl={false} />
-              </div>
-
-              {/* XL View Node */}
-              <div
-                className="absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 xl:block"
-                style={item.xlStyle}
-              >
-                <StepContent item={item} isXl={true} />
-              </div>
-            </React.Fragment>
+            <div
+              key={index}
+              className="absolute z-20 -translate-x-1/2 -translate-y-1/2"
+              style={item.xlStyle}
+            >
+              <StepContent item={item} isXl />
+            </div>
           ))}
         </div>
 
         {/* Mobile View */}
-        <div className="mt-8 block lg:hidden">
-          <div className="space-y-4 sm:space-y-5 md:space-y-6">
+        <div className="mt-8 block xl:hidden">
+          <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-2 md:gap-6">
             {steps.map((item, index) => (
               <div
                 key={index}
@@ -149,12 +138,12 @@ const Application = () => {
                 </div>
                 <div className="relative z-10 min-w-0 flex-1">
                   <h3
-                    className="lg:text-[18px] font-semibold leading-tight text-[#4F6670] sm:text-[19px] md:text-[21px]"
+                    className="text-base font-semibold leading-tight text-[#4F6670] sm:text-lg md:text-xl"
                     
                   >
                     {item.title}
                   </h3>
-                  <p className="mt-2 lg:text-[20px] leading-[1.45] text-[#26839A] sm:text-[14px] md:text-[15px]">
+                  <p className="mt-2 text-sm leading-[1.45] text-[#26839A] sm:text-base">
                     {item.points}
                   </p>
                 </div>

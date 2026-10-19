@@ -228,9 +228,14 @@ const Work = () => {
           </h1>
         </div>
       </section>
+      <section className="w-full px-5 py-8 sm:px-8 md:py-10">
+        <p className="mx-auto w-full max-w-[1200px] text-center text-base leading-relaxed text-cyan-600 sm:text-lg md:text-[20px]">
+          Securing a work visa is more than just a simple regulated process. Each country has its own employment laws, sponsorship rules, occupation requirements, and compliance standards that you must meet if you want to get a work visa for that country. At Growmore Global Visa, we offer expert work visa services for global destinations by ensuring that each visa application is strictly prepared based on the current immigration law and individual eligibility criteria.
+        </p>
+      </section>
    <section className="w-full bg-white py-16 md:py-20 lg:py-[50px] xl:py-[70px]">
   <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-10 xl:px-0">
-    <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px]">
+    <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px] lg:ml-14.5">
       <p
         className="text-[25px] leading-[1.15] text-[#26839A] md:text-[28px] lg:text-[32px] xl:text-[40px]"
         style={{ fontFamily: "Poppins, sans-serif" }}

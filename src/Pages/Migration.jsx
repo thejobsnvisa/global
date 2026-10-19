@@ -2,7 +2,6 @@ import img from "../assets/q1.png";
 import q2 from "../assets/q2.png";
 import Assist from "../Components/Assist";
 import MigrationVisa from "../Components/MigrationVisa";
-import { useEffect,useRef } from "react";
 import Overseas from "../Components/Overseas";
 import Visa from "../Components/Visa";
 import australia1 from "../assets/australia1.jpg"
@@ -52,27 +51,6 @@ const destination = [
 ];
 
 const Migration = () => {
-   const sliderRef = useRef(null);
-  
-    useEffect(() => {
-      const slider = sliderRef.current;
-      if (!slider) return;
-  
-      let frameId;
-      const speed = 0.5;
-  
-      const animate = () => {
-        if (!slider) return;
-        slider.scrollLeft += speed;
-        if (slider.scrollLeft >= slider.scrollWidth / 2) {
-          slider.scrollLeft -= slider.scrollWidth / 2;
-        }
-        frameId = requestAnimationFrame(animate);
-      };
-  
-      frameId = requestAnimationFrame(animate);
-      return () => cancelAnimationFrame(frameId);
-    }, []);
   return (
     <>
       <section
@@ -138,6 +116,7 @@ const Migration = () => {
             sm:text-[16px]
             md:text-[17px]
             lg:text-[18px]
+            ml-10
           "
           >
             <span className="text-sky-500">Home &gt; </span>
@@ -162,6 +141,7 @@ const Migration = () => {
 
             lg:mt-12
             lg:text-[60px]
+            ml-10
           "
           >
             Migration
@@ -282,7 +262,7 @@ const Migration = () => {
           lg:max-w-none
 
           xl:h-[491px]
-          xl:w-[613px]
+          xl:w-[calc(50%-17.5px)]
         "
       >
         <img
@@ -325,9 +305,9 @@ const Migration = () => {
           lg:max-w-[550px]
           lg:gap-7
 
-          xl:ml-10
+          xl:ml-0
           xl:mt-[38px]
-          xl:w-[550px]
+          xl:w-[calc(50%-17.5px)]
           xl:gap-[35px]
         "
       >
@@ -429,9 +409,9 @@ const Migration = () => {
 </section>
       <Assist />
       <MigrationVisa/>
-      <section className="w-full bg-white py-16 md:py-20 lg:py-[30px] xl:py-[70px] xl:h-[680px] lg:h-[1050px] md:h-[800px] sm:h-[600px]">
+      <section className="w-full bg-white py-12 sm:py-14 md:py-16 lg:py-12 xl:py-[70px]">
         <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-10 xl:px-0">
-          <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px]">
+          <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px] ml-7">
             <p
               className="text-[25px] leading-[1.15] text-[#26839A] md:text-[28px] lg:text-[32px] xl:text-[40px]"
               style={{ fontFamily: "Poppins, sans-serif" }}
@@ -449,8 +429,7 @@ const Migration = () => {
           <div className="relative">
             <div
               id="destination-slider"
-              ref={sliderRef}
-              className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide sm:gap-5 md:gap-6 lg:grid lg:grid-cols-3 lg:gap-5 lg:overflow-visible lg:pb-0 xl:grid-cols-6 xl:gap-5"
+              className="grid grid-flow-col auto-cols-[minmax(245px,1fr)] gap-5 overflow-x-auto overscroll-x-contain pb-4 scrollbar-hide sm:auto-cols-[minmax(260px,1fr)] md:auto-cols-[minmax(280px,1fr)] lg:grid-flow-row lg:grid-cols-3 lg:auto-cols-auto lg:overflow-visible lg:pb-0 xl:grid-cols-6 xl:gap-5"
             >
               {destination.map((item, index) => (
                 <div
@@ -461,15 +440,15 @@ const Migration = () => {
                     relative
                     isolate
                     h-[300px]
-                    min-w-[245px]
+                    min-w-0
                     overflow-hidden
                     rounded-[30px]
                     bg-[#056835]
                     cursor-pointer
                     sm:h-[330px]
-                    sm:min-w-[210px]
+                    sm:min-w-0
                     md:h-[350px]
-                    md:min-w-[225px]
+                    md:min-w-0
                     lg:h-[300px]
                     lg:min-w-0
                     lg:w-full
