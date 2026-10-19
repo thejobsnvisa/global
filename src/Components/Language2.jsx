@@ -91,19 +91,21 @@ export default function Language2({ updateScore, nextStep, prevStep }) {
               min-w-0
               ml-10
               mt-[-30px]
+              text-teal-600
+              font-semibold
               xl:mt-[-32px]
               xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 6 or lower (0 points)</b>
 
-          <ul className="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-            <li><b>IELTS General Training:</b> CLB 4 or lower: below 4.5 Listening, below 3.5 Reading, below 4.0 Writing, or below
+          <ul className="list-disc pl-5 mt-2 text-sm text-gray-500 space-y-1">
+            <li><b className="text-gray-600">IELTS General Training:</b> CLB 4 or lower: below 4.5 Listening, below 3.5 Reading, below 4.0 Writing, or below
 4.0 Speaking; CLB 5: 5.0 Listening, 4.0 Reading, 5.0 Writing, 5.0 Speaking; CLB 6: 5.5 Listening, 5.0 Reading,
 5.5 Writing, 5.5 Speaking</li>
-            <li><b>CELPIP-General:</b> CLB 4 or lower: below 4 in any component; CLB 5: 5 in each component; CLB 6: 6 in each
+            <li><b className="text-gray-600">CELPIP-General:</b> CLB 4 or lower: below 4 in any component; CLB 5: 5 in each component; CLB 6: 6 in each
 component.</li>
-            <li><b>PTE Core:</b> CLB 4 or lower: below 28 Listening, below 33 Reading, below 41 Writing, or below 42 Speaking; CLB
+            <li><b className="text-gray-600">PTE Core:</b> CLB 4 or lower: below 28 Listening, below 33 Reading, below 41 Writing, or below 42 Speaking; CLB
 5: 39–49 Listening, 42–50 Reading, 51–59 Writing, 51–58 Speaking; CLB 6: 50–59 Listening, 51–59 Reading,
 60–68 Writing, 59–67 Speaking.</li>
           </ul>
@@ -136,6 +138,8 @@ component.</li>
               w-auto
               min-w-0
               ml-10
+              text-teal-600
+              font-semibold
               mt-[-30px]
               xl:mt-[-32px]
               xl:w-[560px]
@@ -143,10 +147,10 @@ component.</li>
             ">
           <b>CLB 7 (16 points)</b>
 
-          <ul className="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-            <li><b>IELTS General Training:</b> 6.0 in each component</li>
-            <li><b>CELPIP-General:</b> 7 in each component</li>
-            <li><b>PTE Core:</b> 60–70 Listening, 60–68 Reading, 69–78 Writing, 68–75 Speaking</li>
+          <ul className="list-disc pl-5 mt-2 text-sm text-gray-500 space-y-1">
+            <li><b className="text-gray-600">IELTS General Training:</b> 6.0 in each component</li>
+            <li><b className="text-gray-600">CELPIP-General:</b> 7 in each component</li>
+            <li><b className="text-gray-600">PTE Core:</b> 60–70 Listening, 60–68 Reading, 69–78 Writing, 68–75 Speaking</li>
           </ul>
         </div>
       </label>
@@ -180,14 +184,16 @@ component.</li>
               mt-[-30px]
               xl:mt-[-32px]
               xl:w-[560px]
+              text-teal-600
+              font-semibold
               xl:ml-16
             ">
           <b>CLB 8 (20 points)</b>
 
-          <ul className="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-            <li><b>IELTS General Training:</b> 7.5 Listening, 6.5 Reading, 6.5 Writing, 6.5 Speaking</li>
-            <li><b>CELPIP-General:</b> 8 in each component</li>
-            <li><b>PTE Core:</b> 71–81 Listening, 69–77 Reading, 79–87 Writing, 76–83 Speaking</li>
+          <ul className="list-disc pl-5 mt-2 text-sm text-gray-500 space-y-1">
+            <li><b className="text-gray-600">IELTS General Training:</b> 7.5 Listening, 6.5 Reading, 6.5 Writing, 6.5 Speaking</li>
+            <li><b className="text-gray-600">CELPIP-General:</b> 8 in each component</li>
+            <li><b className="text-gray-600">PTE Core:</b> 71–81 Listening, 69–77 Reading, 79–87 Writing, 76–83 Speaking</li>
           </ul>
         </div>
       </label>
@@ -221,14 +227,16 @@ component.</li>
               mt-[-30px]
               xl:mt-[-32px]
               xl:w-[560px]
+              text-teal-600
+              font-semibold
               xl:ml-16
             ">
           <b>CLB 9 (24 points)</b>
 
-          <ul className="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-            <li><b>IELTS General Training:</b> 8.0 Listening, 7.0 Reading, 7.0 Writing, 7.0 Speaking</li>
-            <li><b>CELPIP-General:</b> 9 in each component</li>
-            <li><b>PTE Core:</b> 82–88 Listening, 78–87 Reading, 88–89 Writing, 84–88 Speaking</li>
+          <ul className="list-disc pl-5 mt-2 text-sm text-gray-500 space-y-1">
+            <li><b className="text-gray-600">IELTS General Training:</b> 8.0 Listening, 7.0 Reading, 7.0 Writing, 7.0 Speaking</li>
+            <li><b className="text-gray-600">CELPIP-General:</b> 9 in each component</li>
+            <li><b className="text-gray-600">PTE Core:</b> 82–88 Listening, 78–87 Reading, 88–89 Writing, 84–88 Speaking</li>
           </ul>
         </div>
       </label>
@@ -261,15 +269,17 @@ component.</li>
               ml-10
               mt-[-30px]
               xl:mt-[-32px]
+              text-teal-600
+              font-semibold
               xl:w-[560px]
               xl:ml-16
             ">
           <b>CLB 10 or higher (24 points)</b>
 
-          <ul className="list-disc pl-5 mt-2 text-sm text-gray-700 space-y-1">
-            <li><b>IELTS General Training:</b> 8.5+ Listening, 8.0+ Reading, 7.5+ Writing, 7.5+ Speaking</li>
-            <li><b>CELPIP-General:</b> 10+ in each component</li>
-            <li><b>PTE Core:</b> 89+ Listening, 88+ Reading, 90+ Writing, 89+ Speaking</li>
+          <ul className="list-disc pl-5 mt-2 text-sm text-gray-500 space-y-1">
+            <li><b className="text-gray-600">IELTS General Training:</b> 8.5+ Listening, 8.0+ Reading, 7.5+ Writing, 7.5+ Speaking</li>
+            <li><b className="text-gray-600">CELPIP-General:</b> 10+ in each component</li>
+            <li><b className="text-gray-600">PTE Core:</b> 89+ Listening, 88+ Reading, 90+ Writing, 89+ Speaking</li>
           </ul>
         </div>
       </label>
