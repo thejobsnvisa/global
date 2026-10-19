@@ -381,7 +381,7 @@ const PTE = () => {
                     m-0
                     text-[22px]
                     leading-[1.15]
-                    text-[#64D0E6]
+                    text-[#31859A]
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
@@ -457,7 +457,7 @@ const PTE = () => {
                     m-0
                     text-[22px]
                     leading-[1.15]
-                    text-[#64D0E6]
+                    text-[#31859A]
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]
@@ -798,7 +798,7 @@ const PTE = () => {
                     m-0
                     text-[22px]
                     leading-[1.15]
-                    text-[#64D0E6]
+                    text-[#31859A]
                     sm:text-[26px]
                     md:text-[28px]
                     lg:text-[30px]

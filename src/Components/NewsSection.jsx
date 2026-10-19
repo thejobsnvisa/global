@@ -48,7 +48,7 @@ const NewsSection = () => {
                   aria-label={`Read ${blog.title}`}
                   className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 text-bold  transition-transform duration-300 group-hover:translate-x-1"
                 >
-                 <LuArrowRight  className="h-8 w-8"/>
+                 <LuArrowRight  className="h-6 w-6"/>
                 </Link>
               </div>
             </div>
@@ -70,7 +70,7 @@ const NewsSection = () => {
         : "text-black hover:text-green-500 cursor-pointer"
     }`}
   >
-    <LuArrowLeft  className="h-8 w-8"/>
+    <LuArrowLeft  className="h-6 w-6"/>
   </button>
 
   <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-400 text-[18px]">
@@ -84,7 +84,7 @@ const NewsSection = () => {
     aria-label="Next page"
     className="flex h-9 w-9 items-center justify-center rounded-full bg-sky-100 text-cyan-700 font-bold"
   >
-    <LuArrowRight  className="h-12 w-12"/>
+    <LuArrowRight  className="h-6 w-6"/>
   </button>
 
 </div>

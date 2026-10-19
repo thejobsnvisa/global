@@ -235,9 +235,9 @@ const Work = () => {
       </section>
    <section className="w-full bg-white py-16 md:py-20 lg:py-[50px] xl:py-[70px]">
   <div className="mx-auto w-full max-w-[1350px] px-5 sm:px-8 lg:px-10 xl:px-0">
-    <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px] lg:ml-14.5">
+    <div className="mb-8 md:mb-10 lg:mb-7 xl:mb-[28px] lg:ml-3">
       <p
-        className="text-[25px] leading-[1.15] text-[#26839A] md:text-[28px] lg:text-[32px] xl:text-[40px]"
+        className="text-[25px] leading-[1.15] text-[#31859A] md:text-[28px] lg:text-[32px] xl:text-[40px]"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
         Top Countries to

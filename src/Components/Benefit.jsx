@@ -226,7 +226,7 @@ const Benefit = () => {
         {/* =====================================================
             HEADING
         ====================================================== */}
-        <div className="relative z-30 lg:ml-12">
+        <div className="relative z-30 lg:ml-4">
           <p className="m-0 mt-4 text-[20px] leading-[1.15] text-[#26839A] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px]">
             Benefits of
           </p>

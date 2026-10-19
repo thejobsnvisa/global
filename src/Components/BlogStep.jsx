@@ -131,7 +131,7 @@ const BlogStep = () => {
                           <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#078C67] transition-all duration-300 group-hover:w-full"></span>
                         </span>
                         <span className="transition-transform duration-300 group-hover:translate-x-1">
-                          <LuArrowRight  className="h-8 w-8"/>
+                          <LuArrowRight  className="h-6 w-6"/>
                         </span>
                       </button>
                     </Link>
@@ -156,7 +156,7 @@ const BlogStep = () => {
                 : "text-black hover:text-green-500 cursor-pointer"
             }`}
           >
-           <LuArrowLeft  className="h-8 w-8"/>
+           <LuArrowLeft  className="h-6 w-6"/>
           </button>
 
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-400">
@@ -170,7 +170,7 @@ const BlogStep = () => {
             aria-label="Next page"
             className="flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-cyan-700 font-bold"
           >
-            <LuArrowRight  className="h-8 w-8"/>
+            <LuArrowRight  className="h-6 w-6"/>
           </button>
         </div>
       </div>

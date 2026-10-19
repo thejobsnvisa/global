@@ -44,7 +44,7 @@ const Student = () => {
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
           {/* Heading */}
           <div className="mb-8 text-left sm:mb-10 lg:mb-12">
-            <p className="m-0 text-xl font-normal leading-snug text-[#26839A] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <p className="m-0 text-xl font-normal leading-snug text-[#31859A] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Start Your Abroad Study Adventure
             </p>
             <h2 className="m-0 mt-1 text-2xl font-bold leading-tight text-[#5B9E7D] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
@@ -113,7 +113,7 @@ const Student = () => {
       <section className="relative w-full overflow-hidden bg-white py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
           <div className="mb-8 text-start sm:mb-12">
-            <p className="m-0 text-xl font-normal leading-snug text-[#64D0E6] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            <p className="m-0 text-xl font-normal leading-snug text-[#31859A] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Why Studying Abroad Is
             </p>
             <h2 className="m-0 mt-1 text-2xl font-bold leading-tight text-[#8DC8AB] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">

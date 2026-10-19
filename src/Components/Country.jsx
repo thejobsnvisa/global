@@ -56,13 +56,13 @@ const Country = () => {
         <div className="overflow-visible">
           <div
             onTransitionEnd={handleTransitionEnd}
-            className={`flex gap-3 [--slide-width:calc(50%_-_6px)] sm:[--slide-width:calc(25%_-_9px)] ${
+            className={`flex gap-12 [--slide-width:calc(50%_-_6px)] sm:[--slide-width:calc(25%_-_9px)] ${
               isAnimating
                 ? "transition-transform duration-500 ease-in-out"
                 : ""
             }`}
             style={{
-              transform: `translateX(calc(-${activeSlide} * (var(--slide-width) + 0.75rem)))`,
+              transform: `translateX(calc(-${activeSlide} * (var(--slide-width) + 1.25rem)))`,
             }}
           >
             {[...countries, ...countries].map(([name, image, path], index) => (

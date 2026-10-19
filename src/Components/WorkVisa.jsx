@@ -115,14 +115,14 @@ const WorkVisa = () => {
             lg:w-[55%]
             lg:justify-start
             lg:pt-[42px]
-            lg:pl-[10px]
+            lg:pl-[-15px]
           "
         >
           <p
             className="
               text-[28px]
               leading-[1.15]
-              text-[#26839A]
+              text-[#31859A]
 
               sm:text-[32px]
               md:text-[36px]
