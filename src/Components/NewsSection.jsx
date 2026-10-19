@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { news } from "../Data/newsData";
+import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 
 const NewsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -47,7 +48,7 @@ const NewsSection = () => {
                   aria-label={`Read ${blog.title}`}
                   className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 text-bold  transition-transform duration-300 group-hover:translate-x-1"
                 >
-                  →
+                 <LuArrowRight  className="h-8 w-8"/>
                 </Link>
               </div>
             </div>
@@ -69,7 +70,7 @@ const NewsSection = () => {
         : "text-black hover:text-green-500 cursor-pointer"
     }`}
   >
-    ←
+    <LuArrowLeft  className="h-8 w-8"/>
   </button>
 
   <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-400 text-[18px]">
@@ -83,7 +84,7 @@ const NewsSection = () => {
     aria-label="Next page"
     className="flex h-9 w-9 items-center justify-center rounded-full bg-sky-100 text-cyan-700 font-bold"
   >
-    →
+    <LuArrowRight  className="h-12 w-12"/>
   </button>
 
 </div>

@@ -114,9 +114,7 @@ const LatestArticles = () => {
                      min-w-0
                      overflow-hidden
                      rounded-[30px]
-                     bg-gradient-to-b
-                     from-white
-                     to-[#ECFFF5]
+                     bg-[#ECFFF5]
                      shadow-[0px_4px_14px_rgba(0,0,0,0.12)]
                      transition-all
                      duration-300

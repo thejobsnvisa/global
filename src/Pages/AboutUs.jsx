@@ -96,7 +96,7 @@ const AboutUs = () => {
           >
             <span className="text-sky-500 lg:ml-10 xl:ml-0">Home &gt; </span>
 
-            <span className="text-cyan-800">Who We Are</span>
+            <span className="text-cyan-800">About Us</span>
           </p>
 
           {/* Banner Heading */}
@@ -118,7 +118,7 @@ const AboutUs = () => {
               font-bold
             "
           >
-            Who We Are
+            About Us
           </h1>
         </div>
       </section>
@@ -701,6 +701,9 @@ const AboutUs = () => {
     md:px-12
     md:py-16
     lg:px-10
+    h-[1620px]
+    md:h-[1230px]
+    lg:h-[750px]
     xl:px-0
     xl:py-16
     2xl:py-20

@@ -225,7 +225,7 @@ const QualityCommitment = () => {
               md:h-[195px]
               md:w-[180px]
 
-              lg:left-[130px]
+              lg:left-[50px]
 
               xl:absolute
               xl:left-[50px]
@@ -295,7 +295,7 @@ const QualityCommitment = () => {
               md:-translate-x-1/2
 
               lg:absolute
-              lg:left-[367px]
+              lg:left-[270px]
               lg:top-[132px]
               lg:h-[260px]
               lg:w-[430px]

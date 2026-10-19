@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { blogs } from "../Data/blogsData";
 import { Link } from "react-router-dom";
-import { LuCalendarDays } from "react-icons/lu";
+import { LuArrowLeft, LuCalendarDays } from "react-icons/lu";
+import { LuArrowRight } from "react-icons/lu";
 const BlogStep = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -51,9 +52,7 @@ const BlogStep = () => {
                 max-w-[450px]
                 overflow-hidden
                 rounded-[30px]
-                bg-gradient-to-b
-                from-white
-                to-[#ECFFF5]
+                bg-[#ECFFF5]
                 shadow-[0px_4px_14px_rgba(0,0,0,0.12)]
                 transition-all
                 duration-300
@@ -132,7 +131,7 @@ const BlogStep = () => {
                           <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#078C67] transition-all duration-300 group-hover:w-full"></span>
                         </span>
                         <span className="transition-transform duration-300 group-hover:translate-x-1">
-                          →
+                          <LuArrowRight  className="h-8 w-8"/>
                         </span>
                       </button>
                     </Link>
@@ -157,7 +156,7 @@ const BlogStep = () => {
                 : "text-black hover:text-green-500 cursor-pointer"
             }`}
           >
-            ←
+           <LuArrowLeft  className="h-8 w-8"/>
           </button>
 
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-400">
@@ -171,7 +170,7 @@ const BlogStep = () => {
             aria-label="Next page"
             className="flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-cyan-700 font-bold"
           >
-            →
+            <LuArrowRight  className="h-8 w-8"/>
           </button>
         </div>
       </div>
