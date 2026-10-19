@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -14,6 +14,7 @@ const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 const CHANNEL_ID = import.meta.env.VITE_YOUTUBE_CHANNEL_ID;
 
 const Videos = () => {
+  const swiperRef = useRef(null);
   const [latestVideos, setLatestVideos] = useState([]);
   const [liveStreams, setLiveStreams] = useState([]);
   const [error, setError] = useState(false);
@@ -125,43 +126,63 @@ const Videos = () => {
               Latest Uploads
             </h3>
 
-            <Swiper
-              className="videos-swiper"
-              modules={[Navigation, Pagination]}
-              style={{ paddingTop: "48px", paddingBottom: "40px" }}
-              spaceBetween={24}
-              slidesPerView={1}
-              navigation
-              pagination={{ clickable: true }}
-              breakpoints={{
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-                1280: { slidesPerView: 3 },
-              }}
-            >
-              {liveStreams.map((stream) => (
-                <SwiperSlide key={stream.id.videoId}>
-                  <div className="overflow-hidden rounded-xl bg-teal-50  rounded-[12px] shadow transition hover:shadow-md">
-                    <div className="aspect-video">
-                      <iframe
-                        className="h-full w-full"
-                        src={`https://www.youtube.com/embed/${stream.id.videoId}`}
-                        title={stream.snippet.title}
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                aria-label="Previous videos"
+                onClick={() => swiperRef.current?.slidePrev()}
+                className="shrink-0 rounded-full bg-cyan-800 px-3 py-2 text-2xl text-white"
+              >
+                ‹
+              </button>
+              <Swiper
+                className="videos-swiper min-w-0 flex-1"
+                modules={[Navigation, Pagination]}
+                onSwiper={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                style={{ paddingTop: "48px", paddingBottom: "40px" }}
+                spaceBetween={24}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                  1280: { slidesPerView: 3 },
+                }}
+              >
+                {liveStreams.map((stream) => (
+                  <SwiperSlide key={stream.id.videoId}>
+                    <div className="overflow-hidden rounded-xl bg-teal-50 rounded-[12px] shadow transition hover:shadow-md">
+                      <div className="aspect-video">
+                        <iframe
+                          className="h-full w-full"
+                          src={`https://www.youtube.com/embed/${stream.id.videoId}`}
+                          title={stream.snippet.title}
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
 
-                    <div className="p-4">
-                      <h4 className="line-clamp-2 font-medium text-teal-700">
-                        {stream.snippet.title}
-                      </h4>
+                      <div className="p-4">
+                        <h4 className="line-clamp-2 font-medium text-teal-700">
+                          {stream.snippet.title}
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <button
+                type="button"
+                aria-label="Next videos"
+                onClick={() => swiperRef.current?.slideNext()}
+                className="shrink-0 rounded-full bg-cyan-800 px-3 py-2 text-2xl text-white"
+              >
+                ›
+              </button>
+            </div>
           </section>
         )}
 
