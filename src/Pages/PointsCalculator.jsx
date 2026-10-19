@@ -73,6 +73,7 @@ const PointsCalculator = () => {
             md:h-[370px]
             lg:h-[400px]
             xl:h-[420px]
+            2xl:h-[680px]
           "
       >
         {/* Banner Image */}
@@ -88,6 +89,7 @@ const PointsCalculator = () => {
               md:translate-x-[60px]
               xl:translate-x-[130px]
               xl:object-contain
+              2xl:object-cover
               object-cover
             "
         />
@@ -163,7 +165,7 @@ const PointsCalculator = () => {
         </div>
       </section>
       <div className="h-auto min-h-[360px] w-full bg-cyan-50">
-        <div className="mx-auto h-auto min-h-[252px] w-full max-w-[1050px] gap-[30px] px-5 py-[34px] xl:ml-[202px]  xl:mr-0 xl:w-[1050px] xl:px-0 xl:py-0">
+        <div className="mx-auto h-auto min-h-[252px] w-full max-w-[1050px] gap-[30px] px-5 py-[34px] xl:ml-[202px] xl:mr-0 xl:w-[1050px] xl:px-0 xl:py-0 2xl:mx-auto">
           <ul className="list-disc pl-5  text-[16px] text-cyan-900 text-justify pt-[68px] xl:text-[18px]">
             <li>
               This New Point Test method is designed to help you determine
@@ -189,7 +191,7 @@ const PointsCalculator = () => {
         </div>
       </div>
       
-        <div className="calculator-container w-full">
+        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px]">
           {/* LEFT FORM */}
           <div className="form-panel w-full max-w-full">
             {step === 1 && (
