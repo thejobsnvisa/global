@@ -124,6 +124,8 @@ const Work = () => {
       /* XL - KEEP YOUR PERFECT DESIGN */
       xl:object-contain
       xl:translate-x-[140px]
+
+      2xl:object-contain
     "
         />
 

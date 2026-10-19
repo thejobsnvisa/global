@@ -82,9 +82,11 @@ const Student = () => {
                 by providing the best student visa service.
               </p>
               <p>
-                Whether you are heading for a Student Visa Australia, a Student
-                Visa the UK, or a Student Visa UAE, processing it perfectly is
-                your first step on the pathway to making your dreams a reality.
+                Whether you are heading for a student visa in Australia,
+                Canada, the United Kingdom, Dubai, France, the USA, Germany,
+                New Zealand, Europe, Georgia, Singapore, or Russia, processing
+                it perfectly is your first step on the pathway to making your
+                dreams a reality.
               </p>
               <p className="text-teal-700">
                 By studying abroad, you won’t simply obtain a piece of paper

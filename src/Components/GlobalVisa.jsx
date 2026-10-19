@@ -9,7 +9,6 @@ const GlobalVisa = () => {
         bg-cover
         bg-center
         bg-no-repeat
-
         px-4
         py-8
         sm:px-6
