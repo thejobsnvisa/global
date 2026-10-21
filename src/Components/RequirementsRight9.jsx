@@ -140,8 +140,7 @@ export default function RequirementsRight9() {
               <li>SEVIS Fee Receipt</li>
               <li>DS-160 Confirmation Page</li>
               <li>Visa Appointment Confirmation</li>
-              <li>Financial Documents (see below)</li>
-            </ul>
+                          </ul>
           </div>
         )}
       </div>

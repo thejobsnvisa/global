@@ -140,7 +140,6 @@ export default function RequirementsRight7() {
               <li>Student Visa Application Forms</li>
               <li>Medical Examination (if required)</li>
               <li>Police Clearance Certificate (if required)</li>
-              <li>Financial Documents (see below)</li>
             </ul>
           </div>
         )}
