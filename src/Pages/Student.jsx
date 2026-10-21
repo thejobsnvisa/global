@@ -12,7 +12,7 @@ const Student = () => {
   return (
     <>
       {/* ================= HERO / BANNER SECTION ================= */}
-      <section className="relative h-[280px] w-full overflow-hidden sm:h-[340px] md:h-[380px] lg:h-[450px]">
+      <section className="relative h-[280px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[380px] lg:h-[450px]">
         {/* Banner Image */}
         <img
           src={img}

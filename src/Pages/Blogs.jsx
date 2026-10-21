@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <>
       <div>
-        <section className="relative h-[240px] w-full overflow-hidden sm:h-[300px] md:h-[370px] lg:h-[480px]">
+        <section className="relative h-[240px] w-full overflow-hidden sm:h-[300px] md:h-[370px] lg:h-[480px] 2xl:h-[580px]">
           <img
             src={img}
             alt="Blogs banner"

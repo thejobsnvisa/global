@@ -7,7 +7,7 @@ const News = () => {
     <>
       <div>
        <section
-               className="relative h-[300px] w-full overflow-hidden sm:h-[340px] md:h-[370px] lg:h-[480px]"
+               className="relative h-[300px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[370px] lg:h-[480px]"
              >
                <img
                  src={img}

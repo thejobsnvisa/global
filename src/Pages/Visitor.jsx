@@ -7,7 +7,7 @@ import bg2 from "../assets/bg5.png";
 const Visitor = () => {
   return (
     <>
-      <section className="relative h-[300px] w-full overflow-hidden sm:h-[340px] md:h-[370px] lg:h-[420px] xl:h-[510px]">
+      <section className="relative h-[300px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[370px] lg:h-[420px] xl:h-[510px]">
         {/* Banner Image */}
         <img
           src={img}

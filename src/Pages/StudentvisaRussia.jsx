@@ -18,6 +18,7 @@ const  StudentvisaRussia = () => {
                    md:h-[370px]
                    lg:h-[400px]
                    xl:h-[420px]
+                  2xl:h-[480px]
                  "
          >
            {/* Banner Image */}
@@ -33,6 +34,7 @@ const  StudentvisaRussia = () => {
                      md:translate-x-[60px]
                      xl:translate-x-[130px]
                      xl:object-contain
+                     2xl:object-cover
                      object-cover
                    "
            />

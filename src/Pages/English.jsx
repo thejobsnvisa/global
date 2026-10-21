@@ -23,6 +23,7 @@ const English = () => {
           sm:h-[340px]
           md:h-[370px]
           lg:h-[480px]
+          2xl:h-[580px]
         "
       >
         <img

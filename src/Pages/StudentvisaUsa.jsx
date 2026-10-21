@@ -19,6 +19,7 @@ const StudentvisaUsa = () => {
                       md:h-[370px]
                       lg:h-[400px]
                       xl:h-[420px]
+                     2xl:h-[580px]
                     "
             >
               {/* Banner Image */}
@@ -34,6 +35,7 @@ const StudentvisaUsa = () => {
                         md:translate-x-[60px]
                         xl:translate-x-[130px]
                         xl:object-contain
+                        2xl:object-cover
                         object-cover
                       "
               />

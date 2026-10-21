@@ -71,7 +71,7 @@ const Brochures = () => {
   ];
   return (
     <>
-      <section className="relative h-[300px] w-full overflow-hidden sm:h-[340px] md:h-[370px] lg:h-[480px]">
+      <section className="relative h-[300px] w-full overflow-hidden sm:h-[340px] 2xl:h-[580px] md:h-[370px] lg:h-[480px]">
         <img
           src={img}
           alt="About Us banner"

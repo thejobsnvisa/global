@@ -86,7 +86,7 @@ const Work = () => {
     sm:h-[320px]
     md:h-[360px]
     lg:h-[380px]
-
+    2xl:h-[580px]
     xl:h-[400px]
   "
       >
