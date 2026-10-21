@@ -72,9 +72,9 @@ export default async function handler(req, res) {
 
     const message = String(
       body.message ||
-      body.requirements ||
-      body.comments ||
-      ""
+        body.requirements ||
+        body.comments ||
+        ""
     ).trim();
 
     const leadSource = String(
@@ -110,7 +110,8 @@ export default async function handler(req, res) {
     }
 
     /* ========= CRM SYNC ========= */
-    // CRM failures are logged separately from email failures.
+    let crmSuccess = false;
+
     try {
       console.log("[CRM] Sending lead:", email);
 
@@ -151,9 +152,11 @@ export default async function handler(req, res) {
       console.log("[CRM STATUS]:", crmResponse.status);
       console.log("[CRM RESPONSE]:", crmText);
 
-      if (!crmResponse.ok) {
+      crmSuccess = crmResponse.ok;
+
+      if (!crmSuccess) {
         console.error(
-          "[CRM ERROR] Webhook returned HTTP",
+          "[CRM ERROR] HTTP status:",
           crmResponse.status
         );
       }
@@ -177,84 +180,87 @@ export default async function handler(req, res) {
 
       return res.status(500).json({
         success: false,
+        crmSuccess,
+        emailSuccess: false,
         message:
-          "Email configuration is missing. Please check the server environment variables.",
+          "Email configuration is missing. Check Vercel environment variables.",
       });
     }
 
-    /* ========= SMTP CONFIG ========= */
+    /* ========= GMAIL SMTP CONFIG ========= */
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-
-      connectionTimeout: 20000,
-      greetingTimeout: 20000,
-      socketTimeout: 30000,
-
+      service: "gmail",
       auth: {
         user: emailUser,
         pass: emailPass,
       },
+      connectionTimeout: 20000,
+      greetingTimeout: 20000,
+      socketTimeout: 30000,
     });
 
-    /* ========= SMTP CONNECTION TEST ========= */
+    /* ========= VERIFY GMAIL AUTHENTICATION ========= */
     try {
       await transporter.verify();
-      console.log("[SMTP VERIFIED] Gmail connection successful");
+
+      console.log(
+        "[SMTP VERIFIED] Gmail connection and authentication successful"
+      );
     } catch (err) {
-      console.error("[SMTP VERIFY ERROR]:", {
+      console.error("[SMTP AUTH ERROR]:", {
         code: err.code,
         command: err.command,
         responseCode: err.responseCode,
+        response: err.response,
         message: err.message,
       });
 
       return res.status(502).json({
         success: false,
+        crmSuccess,
+        emailSuccess: false,
         message:
-          "Email server authentication failed. Please check the Gmail SMTP configuration.",
-        errorCode: err.code || "SMTP_VERIFY_FAILED",
+          "Gmail SMTP authentication failed. Check EMAIL_USER and EMAIL_PASS.",
+        errorCode: err.code || "SMTP_AUTH_ERROR",
       });
     }
 
+    /* ========= ESCAPE HTML ========= */
+    const escapeHtml = (value) =>
+      String(value).replace(/[&<>"']/g, (char) => {
+        const entities = {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        };
+
+        return entities[char];
+      });
+
     /* ========= SEND EMAIL ========= */
     try {
-      const escapeHtml = (value) =>
-        String(value).replace(/[&<>"']/g, (char) => {
-          const entities = {
-            "&": "&amp;",
-            "<": "&lt;",
-            ">": "&gt;",
-            '"': "&quot;",
-            "'": "&#39;",
-          };
-
-          return entities[char];
-        });
+      const recipient = "itgrowmore2@gmail.com";
 
       const info = await transporter.sendMail({
         from: {
           name: "Growmore Lead",
           address: emailUser,
         },
-
-        to: "itgrowmore2@gmail.com",
-
+        to: recipient,
         replyTo: email,
-
         subject: `New Lead: ${name} - ${visaType}`,
 
-        text: `
-New Lead Appointment Details
-
-Name: ${name}
-Email: ${email}
-Phone: ${phone || "N/A"}
-Visa Type: ${visaType}
-Source: ${leadSource}
-Message: ${message || "No message"}
-        `.trim(),
+        text: [
+          "New Lead Appointment Details",
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Phone: ${phone || "N/A"}`,
+          `Visa Type: ${visaType}`,
+          `Source: ${leadSource}`,
+          `Message: ${message || "No message"}`,
+        ].join("\n"),
 
         html: `
           <h3>New Lead Appointment Details</h3>
@@ -267,37 +273,43 @@ Message: ${message || "No message"}
         `,
       });
 
-      console.log("[SMTP SUCCESS]:", {
+      console.log("[SMTP SEND RESULT]:", {
         messageId: info.messageId,
         accepted: info.accepted,
         rejected: info.rejected,
         response: info.response,
       });
 
-      // Do not report success if Gmail rejected every recipient.
-      if (
-        !info.accepted ||
-        !info.accepted.some(
-          (address) =>
-            address.toLowerCase() ===
-            "itgrowmore2@gmail.com"
-        )
-      ) {
+      /* ========= CHECK RECIPIENT ACCEPTANCE ========= */
+      const accepted = (info.accepted || []).some(
+        (address) =>
+          address.toLowerCase() === recipient.toLowerCase()
+      );
+
+      if (!accepted) {
         console.error(
-          "[EMAIL DELIVERY ERROR] Recipient was not accepted"
+          "[EMAIL ERROR] Recipient was not accepted by SMTP"
         );
 
         return res.status(502).json({
           success: false,
+          crmSuccess,
+          emailSuccess: false,
           message:
             "The email server did not accept the recipient.",
         });
       }
 
       /* ========= SUCCESS ========= */
+      console.log(
+        "[EMAIL SUCCESS] Message accepted by Gmail:",
+        info.messageId
+      );
+
       return res.status(200).json({
         success: true,
-        emailSent: true,
+        crmSuccess,
+        emailSuccess: true,
         message:
           "Thank you! Your inquiry has been submitted successfully.",
       });
@@ -306,14 +318,16 @@ Message: ${message || "No message"}
         code: err.code,
         command: err.command,
         responseCode: err.responseCode,
+        response: err.response,
         message: err.message,
       });
 
       return res.status(502).json({
         success: false,
-        emailSent: false,
+        crmSuccess,
+        emailSuccess: false,
         message:
-          "Your inquiry could not be confirmed by the email server. Please try again later.",
+          "Your inquiry could not be confirmed by the email server.",
         errorCode: err.code || "SMTP_SEND_FAILED",
       });
     }
