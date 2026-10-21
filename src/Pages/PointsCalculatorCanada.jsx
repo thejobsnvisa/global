@@ -58,6 +58,7 @@ const PointsCalculatorCanada = () => {
             md:h-[370px]
             lg:h-[400px]
             xl:h-[420px]
+            2xl:h-[490px]
           "
       >
         {/* Banner Image */}
@@ -71,8 +72,9 @@ const PointsCalculatorCanada = () => {
               w-full
               translate-x-0
               md:translate-x-[60px]
-              xl:translate-x-[180px]
+              xl:translate-x-[130px]
               xl:object-contain
+              2xl:object-cover
               object-cover
             "
         />
@@ -148,8 +150,8 @@ const PointsCalculatorCanada = () => {
         </div>
       </section>
       <div className="h-auto min-h-[360px] w-full bg-cyan-50">
-        <div className="mx-auto h-auto min-h-[252px] w-full max-w-[1050px] gap-[30px] px-5 py-[34px] xl:ml-[202px]  xl:mr-0 xl:w-[1050px] xl:px-0 xl:py-0">
-          <ul className="list-disc pl-5 text-[16px] text-cyan-900 text-justify pt-8 sm:pt-10 xl:pt-[68px] xl:text-[18px]">
+        <div className="mx-auto h-auto min-h-[252px] w-full max-w-[1050px] gap-[30px] px-5 py-[34px] xl:ml-[202px] xl:mr-0 xl:w-[1050px] xl:px-0 xl:py-0 2xl:mx-auto">
+          <ul className="list-disc pl-5 text-[16px] text-cyan-900 text-justify pt-[68px] xl:text-[18px]">
             <li>
               This Canada PR Points Calculator is designed to help you assess your potential eligibility for Canadian permanent residence through skilled immigration pathways. The calculator considers key factors such as age, education, work experience, language proficiency, and other relevant factors to estimate your overall points.
             </li>
@@ -163,9 +165,9 @@ const PointsCalculatorCanada = () => {
         </div>
       </div>
       
-        <div className="calculator-container w-full lg:mb-20 xl:mb-0 h-auto min-h-[600px] xl:h-[600px] max-xl:flex max-xl:flex-col max-xl:gap-6 max-xl:px-4 sm:max-xl:px-6 lg:max-xl:px-8">
+        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px]">
           {/* LEFT FORM */}
-          <div className="form-panel w-full max-w-full max-xl:min-w-0">
+          <div className="form-panel w-full max-w-full">
             
             {step === 1 && (
               <Age
@@ -223,7 +225,7 @@ const PointsCalculatorCanada = () => {
           <ScorePanel
             scores={scores}
             total={totalScore}
-            className="ml-0 h-auto w-full max-xl:ml-0 max-xl:min-w-0 xl:ml-[200px] xl:h-[1000px]"
+            className="ml-0 h-auto w-full xl:ml-[200px] xl:h-[1000px]"
           />
         </div>
     </>

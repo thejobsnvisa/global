@@ -14,8 +14,8 @@ import card from "../assets/mara-card.png";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full -mt-[220px] overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16 2xl:mt-[40px]  2xl:min-h-[1020px] xl:bg-transparent">
-      <div className="relative w-full min-h-0 2xl:min-h-[920px]">
+    <footer className="relative w-full -mt-[220px] xl:mt-0 overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16 2xl:min-h-[1020px]  2xl:min-h-[1020px] xl:bg-transparent">
+      <div className="relative w-full min-h-0  2xl:min-h-[920px]">
         
         {/* Background Curve (Desktop only 1280px+) */}
         <img 
@@ -46,7 +46,7 @@ const Footer = () => {
               <a
                 href="/brochures"
                 aria-label="Download Brochures"
-                className="mt-6 xl:mt-0 xl:absolute xl:top-[325px] xl:left-[115px] 2xl:top-[470px] 2xl:left-[138px] 2xl:w-[286px] 2xl:h-[48px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] 2xl:text-[16px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
+                className="mt-6 xl:mt-[-20px] xl:absolute xl:top-[325px] xl:left-[115px] 2xl:top-[470px] 2xl:left-[138px] 2xl:w-[286px] 2xl:h-[48px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] 2xl:text-[16px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
               >
                 <span className="2xl:text-[20px]">Download Brochures</span>
                 <FaFileArrowDown className="w-4 h-4" />
@@ -55,7 +55,7 @@ const Footer = () => {
               <img
                 src={card}
                 alt="Mara card"
-                className="mt-6 xl:mt-0 xl:absolute w-[200px] h-[160px] rotate-0 opacity-100 xl:top-[390px] xl:left-[115px] 2xl:top-[568px] 2xl:left-[138px] 2xl:w-[280px] 2xl:h-[242px] object-contain"
+                className="mt-6 xl:mt-[-25px] xl:absolute w-[200px] h-[160px] rotate-0 opacity-100 xl:top-[390px] xl:left-[115px] 2xl:top-[568px] 2xl:left-[138px] 2xl:w-[280px] 2xl:h-[242px] object-contain"
               />
             </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
                 className="hidden xl:block absolute w-[640px] h-[350px] rotate-0 opacity-100 top-[140px] right-0 2xl:top-[218px] 2xl:w-[768px] 2xl:h-[420px] object-cover pointer-events-none"
               />
 
-              <div className="w-full xl:w-[320px] lg:w-[350px] xl:h-[130px] xl:absolute xl:right-[65px] xl:bottom-32 xl:top-[369px] 2xl:w-[524px] 2xl:h-[280px] 2xl:right-[78px] 2xl:top-[443px] bg-[#0F727B54] backdrop-blur-[6px] rounded-[16px] p-5 xl:p-4 text-white opacity-[0.85] z-10">
+              <div className="w-full xl:w-[320px] lg:w-[350px] xl:h-[130px] xl:absolute xl:right-[65px] xl:bottom-32 xl:top-[319px] 2xl:w-[524px] 2xl:h-[280px] 2xl:right-[78px] 2xl:top-[443px] bg-[#0F727B54] backdrop-blur-[6px] rounded-[16px] p-5 xl:p-4 text-white opacity-[0.85] z-10">
                 <p className="text-white text-[16px] 2xl:text-[28px] font-semibold xl:h-[54px] leading-[27px] mb-4 xl:mb-0">
                   Looking for Professional Visa Support?
                 </p>
@@ -134,11 +134,11 @@ const Footer = () => {
           </div>
 
           {/* Links Section (Fluid Grid for 768px & 1024px) */}
-          <div className="xl:absolute xl:top-[340px] xl:left-[320px] xl:w-[680px] xl:h-[126px] 2xl:top-[408px] 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-[640px] 2xl:min-h-[340px] opacity-100 xl:rounded-[14px] xl:px-6 xl:py-3 z-10">
+          <div className="xl:absolute xl:top-[310px] xl:left-[330px] xl:w-[680px] xl:h-[126px] 2xl:top-[408px] 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-[640px] 2xl:min-h-[340px] opacity-100 xl:rounded-[14px] xl:px-6 xl:py-3 z-10">
             <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-[0.8fr_0.8fr_1.4fr] gap-6 xl:gap-1 text-white">
               {/* Services */}
               <div>
-                <h3 className="mb-3 xl:mb-4 text-[18px] 2xl:text-[35px] 2xl:ml-[-230px] font-semibold text-teal-100">
+                <h3 className="mb-3 xl:mb-4  text-[18px] 2xl:text-[35px] 2xl:ml-[-230px] font-semibold text-teal-100">
                   Services
                 </h3>
                 <ul className="space-y-2 text-[16px] 2xl:text-[27px] 2xl:ml-[-230px] 2xl:leading-relaxed text-white">
@@ -179,7 +179,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Bar */}
-        <div className="w-full mt-4 xl:mt-2 xl:absolute xl:top-[568px] 2xl:top-[860px] border-t border-[#2E6773] py-4 xl:py-0">
+        <div className="w-full mt-3 xl:mt-2 xl:absolute xl:top-[535px] 2xl:top-[860px] border-t border-[#2E6773] py-4 xl:py-0">
           <p className="text-center text-white text-[16px] 2xl:text-[28px] xl:mt-1 2xl:mt-10">
             © Growmore 2026 | All rights reserved.
           </p>

@@ -137,7 +137,7 @@ export default function DependentVisaSection() {
               w-full
               text-[24px]
               leading-tight
-              font-semibold
+              font-bold
               text-[#5B9E7D]
 
               sm:text-[28px]

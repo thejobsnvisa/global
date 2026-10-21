@@ -23,6 +23,7 @@ const steps = [
     // Distinct styles per breakpoint
     lgStyle: { top: "58%", left: "11.5%" },
     xlStyle: { top: "62%", left: "8.5%" },
+    "2xlStyle": { top: "78%", left: "8.5%" },
     position: "bottom",
     image: img1,
   },
@@ -33,6 +34,7 @@ const steps = [
       "Tailored guidance based on your profile and university requirements",
     lgStyle: { top: "64%", left: "31%" },
     xlStyle: { top: "71%", left: "28.5%" },
+    "2xlStyle": { top: "64%", left: "34.5%" },
     position: "top",
     image: img2,
   },
@@ -43,6 +45,7 @@ const steps = [
       "Handling paperwork and deadline",
     lgStyle: { top: "47%", left: "54%" },
     xlStyle: { top: "48%", left: "53%" },
+    "2xlStyle": { top: "42%", left: "60%" },
     position: "bottom",
     image: img3,
   },
@@ -53,6 +56,7 @@ const steps = [
       "Assistance with financials, documents, and embassy processes.",
     lgStyle: { top: "52%", left: "72%" },
     xlStyle: { top: "54%", left: "72%" },
+    "2xlStyle": { top: "54%", left: "88%" },
     position: "top",
     image: img4,
   },
@@ -63,6 +67,7 @@ const steps = [
       "Orientation on travel, accommodation, and life abroad.",
     lgStyle: { top: "36%", left: "91%" },
     xlStyle: { top: "30.8%", left: "93%" },
+    "2xlStyle": { top: "34.8%", left: "113.5%" },
     position: "bottom",
     image: img5,
   },
@@ -97,7 +102,7 @@ const Application1 = () => {
             src={c4}
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute left-1/2 top-[58%] z-0 w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-cover lg:top-1/2 xl:top-1/2"
+            className="pointer-events-none absolute left-1/2 top-[58%] z-0 w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-cover lg:top-1/2 xl:top-1/2 2xl:mt-[-20px]"
           />
 
           {steps.map((item, index) => (
@@ -112,8 +117,16 @@ const Application1 = () => {
 
               {/* XL View Node */}
               <div
-                className="absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 xl:block"
+                className="absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 xl:block 2xl:hidden"
                 style={item.xlStyle}
+              >
+                <StepContent item={item} isXl={true} />
+              </div>
+
+              {/* 2XL View Node */}
+              <div
+                className="absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 2xl:block"
+                style={item["2xlStyle"]}
               >
                 <StepContent item={item} isXl={true} />
               </div>

@@ -148,7 +148,7 @@ const Dependent = () => {
               What is a
             </p>
 
-            <h2
+            <h1
               className="
                 m-0
                 mt-1
@@ -164,7 +164,7 @@ const Dependent = () => {
               "
             >
               Dependent Visa?
-            </h2>
+            </h1>
           </div>
 
           {/* ================= MAIN CONTENT ================= */}
@@ -602,7 +602,7 @@ const Dependent = () => {
                 Things that set us apart include
               </p>
               <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px]">
-                <li>
+                <li>  
                   Detailed evaluation of dependent eligibility to ensure
                   approval success
                 </li>
