@@ -68,7 +68,7 @@ export default function RequirementsRight11() {
 
             {/* Dependents */}
             <div className="mb-3">
-              <h4 className="text-[#008A73] mb-1">
+              <h4 className="text-[#008A73] mb-1 font-bold">
                Living Cost Requirements
               </h4>
               <ul className="list-disc pl-5 space-y-[2px]">
@@ -82,7 +82,7 @@ export default function RequirementsRight11() {
 
               <ul className="list-disc pl-5  space-y-[2px]">
                <li>Personal bank statements</li>
-               <li>Parents' or sponsor's bank statements</li>
+               <li>Parent's or sponsor's bank statements</li>
                <li>Scholarship or funding letter</li>
                <li>Education loan sanction letter (if accepted)</li>
                <li>Sponsor's income proof and sponsorship declaration</li>

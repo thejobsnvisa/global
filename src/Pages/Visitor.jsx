@@ -330,9 +330,10 @@ const Visitor = () => {
     xl:mb-0
     md:h-[1600px]
     lg:h-[1250px]
+
     lg:py-16
 
-    xl:h-[950px]
+    xl:h-[1050px]
     xl:py-10
   "
 >

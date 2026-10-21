@@ -22,8 +22,8 @@ const steps = [
       "Understand your goals and eligibility",
     // Distinct styles per breakpoint
     lgStyle: { top: "58%", left: "11.5%" },
-    xlStyle: { top: "62%", left: "8.5%" },
-    "2xlStyle": { top: "78%", left: "8.5%" },
+    xlStyle: { top: "54%", left: "10.5%" },
+    "2xlStyle": { top: "59%", left: "8.5%" },
     position: "bottom",
     image: img1,
   },
@@ -33,8 +33,8 @@ const steps = [
     points:
       "Tailored guidance based on your profile and university requirements",
     lgStyle: { top: "64%", left: "31%" },
-    xlStyle: { top: "71%", left: "28.5%" },
-    "2xlStyle": { top: "64%", left: "34.5%" },
+    xlStyle: { top: "62%", left: "30.5%" },
+    "2xlStyle": { top: "49%", left: "34.5%" },
     position: "top",
     image: img2,
   },
@@ -44,8 +44,8 @@ const steps = [
     points:
       "Handling paperwork and deadline",
     lgStyle: { top: "47%", left: "54%" },
-    xlStyle: { top: "48%", left: "53%" },
-    "2xlStyle": { top: "42%", left: "60%" },
+    xlStyle: { top: "42%", left: "53%" },
+    "2xlStyle": { top: "32%", left: "60%" },
     position: "bottom",
     image: img3,
   },
@@ -55,8 +55,8 @@ const steps = [
     points:
       "Assistance with financials, documents, and embassy processes.",
     lgStyle: { top: "52%", left: "72%" },
-    xlStyle: { top: "54%", left: "72%" },
-    "2xlStyle": { top: "54%", left: "88%" },
+    xlStyle: { top: "48%", left: "72%" },
+    "2xlStyle": { top: "41%", left: "88%" },
     position: "top",
     image: img4,
   },
@@ -66,8 +66,8 @@ const steps = [
     points:
       "Orientation on travel, accommodation, and life abroad.",
     lgStyle: { top: "36%", left: "91%" },
-    xlStyle: { top: "30.8%", left: "93%" },
-    "2xlStyle": { top: "34.8%", left: "113.5%" },
+    xlStyle: { top: "28.8%", left: "93%" },
+    "2xlStyle": { top: "21.8%", left: "116.5%" },
     position: "bottom",
     image: img5,
   },
@@ -75,7 +75,7 @@ const steps = [
 
 const Application1 = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:h-[600px] lg:min-h-0 lg:py-0 xl:h-[600px] 2xl:h-[680px]">
+    <section className="relative min-h-screen w-full overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:h-[600px] lg:min-h-0 lg:py-0 xl:h-[680px] 2xl:h-[880px]">
       <div className="relative mx-auto h-full w-full max-w-[1440px] px-5 sm:px-8 md:px-10 lg:px-6 xl:px-[54px]">
         {/* Header Section */}
         <div className="relative z-30 lg:absolute lg:left-6 lg:top-4 xl:left-[54px] xl:top-[30px]">
@@ -102,7 +102,7 @@ const Application1 = () => {
             src={c4}
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute left-1/2 top-[58%] z-0 w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-cover lg:top-1/2 xl:top-1/2 2xl:mt-[-20px]"
+            className="pointer-events-none absolute left-1/2 top-[58%] z-0 w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-cover lg:top-1/2 xl:mt-[-40px] 2xl:mt-[-130px]"
           />
 
           {steps.map((item, index) => (

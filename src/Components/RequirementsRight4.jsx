@@ -86,7 +86,7 @@ export default function RequirementsRight4() {
 
               <ul className="list-disc pl-5 space-y-[2px]">
                 <li>Personal bank statements</li>
-                <li>Parents' or sponsor's financial documents</li>
+                <li>Parent's or sponsor's financial documents</li>
                 <li>Scholarship or sponsorship letter</li>
                 <li>Education loan documents</li>
                 <li>Proof of tuition fee payment</li>

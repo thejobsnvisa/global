@@ -1056,6 +1056,7 @@ const Acadmic = () => {
                   xl:pr-[30px]
                   xl:pb-[40px]
                   xl:pl-[30px]
+                  xl:mb-20
                 "
               >
                 <p

@@ -772,12 +772,13 @@ const English = () => {
                   mb-10
                   xl:w-[701px]
                   xl:h-[298px]
-                  xl:mt-[-15px]
+                  xl:mt-[-25px]
                   xl:rounded-[34px]
                   xl:pt-[25px]
                   xl:pr-[30px]
                   xl:pb-[40px]
                   xl:pl-[30px]
+                  xl:mb-20
                 "
               >
                 <p

@@ -165,7 +165,7 @@ const PointsCalculatorCanada = () => {
         </div>
       </div>
       
-        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px]">
+        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px] 2xl:h-[680px] xl:h-[640px]">
           {/* LEFT FORM */}
           <div className="form-panel w-full max-w-full">
             

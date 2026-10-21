@@ -1,6 +1,6 @@
 import img from "../assets/brochure.png";
 import Australia from "../assets/Australia.png";
-import Dubai from "../assets/Dubai.png";
+import Dubai from "../assets/Dub1.png";
 import UK from "../assets/UK.png";
 import USA from "../assets/USA.png";
 import Canada from "../assets/Canada.png";
@@ -97,7 +97,7 @@ const Brochures = () => {
           </h1>
         </div>
       </section>
-      <div className="mb-50 w-full px-4 py-8 sm:mb-20 sm:px-6 md:mb-50 lg:mb-55 lg:px-8 xl:mb-32">
+      <div className="mb-50 w-full px-4 py-8 sm:mb-20 sm:px-6 md:mb-50 lg:mb-55 xl:mb-60 lg:px-8 xl:mb-22">
         <div className="mx-auto w-full max-w-[1200px]">
           <style>{`
             @keyframes brochureCardIn {
@@ -129,7 +129,7 @@ const Brochures = () => {
                     alt="bg image"
                     className="-mt-[70px]  w-full rounded-b-[30px] object-cover"
                   />
-                  <h2 className="relative z-10 lg:-mt-[128px] xl:-mt-[120px] ml-5 text-[20px] font-semibold text-teal-800 sm:text-[20px]">
+                  <h2 className="relative z-10 lg:-mt-[128px] xl:-mt-[120px] ml-5 text-[20px] font-bold text-teal-800 sm:text-[20px]">
                     {item.title}
                   </h2>
                   <a
@@ -138,7 +138,7 @@ const Brochures = () => {
                     aria-label="Download Brochures"
                     className="relative z-10 mx-auto mb-5 mt-8 flex h-10 w-[min(160px,calc(100%-2rem))] items-center justify-center gap-2 rounded-[12px] bg-sky-300 px-3  text-sm font-semibold leading-[125%] text-[#265257] transition-colors duration-300"
                   >
-                    <span className="text-[20px] font-semibold text-sky-950">Download</span>
+                    <span className="text-[16px] font-semibold text-sky-950">Download</span>
                     <PiFileArrowUpDuotone className="h-6 w-6 text-sky-950" />
                   </a>
                 </div>
