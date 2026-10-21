@@ -18,7 +18,7 @@ const StudentvisaDubai = () => {
                   md:h-[370px]
                   lg:h-[400px]
                   xl:h-[420px]
-                  2xl:h-[480px]
+                 2xl:h-[580px]
                 "
         >
           {/* Banner Image */}
