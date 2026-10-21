@@ -60,7 +60,7 @@ const Services = () => {
             Visa
           </p>
           <h2
-            className="m-0 mt-[4px] text-[40px] font-semibold leading-[1.05] text-[#82CBAA] sm:text-[48px] xl:text-[54px]"
+            className="m-0 mt-[4px] text-[40px] font-semibold leading-[1.05] text-[#5B9E7D] sm:text-[48px] xl:text-[54px]"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Services

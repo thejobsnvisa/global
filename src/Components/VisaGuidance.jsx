@@ -131,7 +131,7 @@ const VisaGuidance = () => {
               </span>
             </div>
             <div className="mt-[-30px]">
-              <span className="text-[32px] font-semibold text-[#8DC8AB] sm:mt-4 sm:text-[40px] md:text-[45px] lg:text-[60px]">
+              <span className="text-[32px] font-semibold text-[#5B9E7D] sm:mt-4 sm:text-[40px] md:text-[45px] lg:text-[60px]">
                 Visa Guidance
               </span>
             </div>

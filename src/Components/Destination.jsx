@@ -94,7 +94,7 @@ const Destination = () => {
           </p>
 
           <h2
-            className="mt-0 text-[clamp(2rem,4.5vw,3.75rem)] font-bold leading-[1.1] text-[#82CBAA]"
+            className="mt-0 text-[clamp(2rem,4.5vw,3.75rem)] font-bold leading-[1.1] text-[#5B9E7D]"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             Your Destination

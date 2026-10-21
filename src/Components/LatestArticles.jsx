@@ -64,7 +64,7 @@ const LatestArticles = () => {
               className="
                 text-[42px]
                 font-semibold
-                text-[#8DC8AB]
+                text-[#5B9E7D]
                 sm:text-[48px]
                 md:text-[54px]
                 lg:text-[60px]

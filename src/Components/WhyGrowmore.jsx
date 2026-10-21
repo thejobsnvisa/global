@@ -182,7 +182,7 @@ const WhyGrowmore = () => {
                 font-bold
                 leading-[1.05]
                 tracking-[-1px]
-                text-[#85CDAE]
+                text-[#5B9E7D]
                 md:text-[44px]
                 lg:text-[60px]
               "

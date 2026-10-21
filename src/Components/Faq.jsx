@@ -584,7 +584,7 @@ const Faq = () => {
             m-0
             font-semibold
             leading-[1.05]
-            text-[#8DC8AB]
+            text-[#5B9E7D]
 
             text-[34px]
 

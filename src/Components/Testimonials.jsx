@@ -170,7 +170,7 @@ const Testimonials = () => {
                 lg:text-[60px]
                 leading-tight
                 font-semibold
-                text-[#8DC8AB]
+                text-[#5B9E7D]
                 mt-[-5px]
               "
             >

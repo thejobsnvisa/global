@@ -68,7 +68,7 @@ export default function Certification() {
                 xl:text-[60px]
                 leading-tight
                 font-semibold
-                text-[#8DC8AB]
+                text-[#5B9E7D]
               "
             >
               Accreditation

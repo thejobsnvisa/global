@@ -185,13 +185,11 @@ const QualityCommitment = () => {
                 text-[36px]
                 font-bold
                 leading-[1.05]
-                text-[#669980]
+                text-[#5B9E7D]
 
                 sm:text-[42px]
                 md:text-[48px]
-
-                xl:text-[50px]
-                xl:text-[54px]
+                xl:text-[60px]
               "
             >
               Commitment

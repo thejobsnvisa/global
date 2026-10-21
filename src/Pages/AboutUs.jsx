@@ -106,7 +106,7 @@ const AboutUs = () => {
               text-[38px]
               font-semibold
               leading-[1.1]
-              text-[#669980]
+              text-[#5B9E7D]
               sm:mt-12
               sm:text-[44px]
               md:mt-16
@@ -280,13 +280,12 @@ const AboutUs = () => {
             m-0
             mt-[4px]
             text-[40px]
-            font-semibold
             leading-[1.05]
-            text-[#669980]
+            text-[#5B9E7D]
             sm:text-[46px]
             md:text-[48px]
-            lg:text-[50px]
-            2xl:text-[56px]
+            lg:text-[60px]
+            2xl:text-[60px]
             font-bold
           "
               >
@@ -472,13 +471,12 @@ const AboutUs = () => {
             m-0
             mt-[4px]
             text-[40px]
-            font-semibold
             leading-[1.05]
-            text-[#669980]
+            text-[#5B9E7D]
             sm:text-[46px]
             md:text-[50px]
             lg:ml-10
-            xl:text-[54px]
+            xl:text-[60px]
             2xl:text-[60px]
             font-bold
           "

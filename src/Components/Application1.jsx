@@ -61,8 +61,8 @@ const steps = [
     title: "Pre-Departure Support",
     points:
       "Orientation on travel, accommodation, and life abroad.",
-    lgStyle: { top: "36%", left: "93%" },
-    xlStyle: { top: "30.8%", left: "95.4%" },
+    lgStyle: { top: "36%", left: "91%" },
+    xlStyle: { top: "30.8%", left: "93%" },
     position: "bottom",
     image: img5,
   },
@@ -70,23 +70,23 @@ const steps = [
 
 const Application1 = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white py-12 sm:py-14 md:py-16 lg:h-[600px] md:h-[1150px] h-[950px] lg:py-0 xl:h-[600px] mb-45 md:mb-0 lg:mb-0 xl:mb-0">
+    <section className="relative min-h-screen w-full overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:h-[600px] lg:min-h-0 lg:py-0 xl:h-[600px] 2xl:h-[680px]">
       <div className="relative mx-auto h-full w-full max-w-[1440px] px-5 sm:px-8 md:px-10 lg:px-6 xl:px-[54px]">
         {/* Header Section */}
         <div className="relative z-30 lg:absolute lg:left-6 lg:top-4 xl:left-[54px] xl:top-[30px]">
           <p
-            className="m-0 mt-4 text-[24px] leading-[1.15] text-[#26839A] sm:text-[26px] md:text-[28px] lg:text-[24px] xl:text-[40px]"
+            className="m-0 mt-4 text-[24px] leading-[1.15] text-[#26839A] sm:text-[26px] md:text-[28px] lg:text-[24px] xl:text-[40px] 2xl:text-[46px]"
             
           >
             Our Approach for
           </p>
           <h2
-            className="m-0 mt-1 text-[30px] font-bold leading-[1.05] text-[#5B9E7D] sm:text-[34px] md:text-[40px] lg:text-[34px] xl:text-[60px]"
+            className="m-0 mt-1 text-[30px] font-bold leading-[1.05] text-[#5B9E7D] sm:text-[34px] md:text-[40px] lg:text-[34px] xl:text-[60px] 2xl:text-[68px]"
             
           >
             Every Student Visa
           </h2>
-          <p className="mt-3 w-full max-w-[390px] text-left text-[14px] leading-[1.4] text-slate-600 sm:text-[15px] md:max-w-[480px] md:text-[16px] lg:max-w-[310px] lg:text-[12px] xl:mt-4 xl:max-w-[470px] xl:text-[15px]">
+          <p className="mt-3 w-full max-w-[390px] text-left text-[14px] leading-[1.4] text-slate-600 sm:text-[15px] md:max-w-[480px] md:text-[16px] lg:max-w-[310px] lg:text-[12px] xl:mt-4 xl:max-w-[470px] xl:text-[15px] 2xl:max-w-[520px] 2xl:text-[16px]">
            We carefully understand the requirements of each student and do a step-by-step, structured visa processing.
           </p>
         </div>
@@ -123,7 +123,7 @@ const Application1 = () => {
 
         {/* Mobile View */}
         <div className="mt-8 block lg:hidden">
-          <div className="space-y-4 sm:space-y-5 md:space-y-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:gap-6">
             {steps.map((item, index) => (
               <div
                 key={index}
@@ -146,12 +146,12 @@ const Application1 = () => {
                 </div>
                 <div className="relative z-10 min-w-0 flex-1">
                   <h3
-                    className="lg:text-[18px] font-semibold leading-tight text-[#4F6670] sm:text-[19px] md:text-[21px]"
+                    className="text-[17px] font-semibold leading-tight text-[#4F6670] sm:text-[18px] md:text-[20px]"
                     
                   >
                     {item.title}
                   </h3>
-                  <p className="mt-2 lg:text-[20px] leading-[1.45] text-[#26839A] sm:text-[14px] md:text-[15px]">
+                  <p className="mt-2 text-[13px] leading-[1.45] text-[#26839A] sm:text-[14px] md:text-[15px]">
                     {item.points}
                   </p>
                 </div>
@@ -168,12 +168,12 @@ const Application1 = () => {
 const StepContent = ({ item, isXl }) => (
   <>
     <div
-      className={`relative z-20 flex items-center justify-center rounded-[8px] border border-[#E5EEF0] bg-white shadow-[0px_3px_10px_rgba(0,0,0,0.10)] ${isXl ? "h-[42px] w-[42px]" : "h-[34px] w-[34px]"}`}
+      className={`relative z-20 flex items-center justify-center rounded-[8px] border border-[#E5EEF0] bg-white shadow-[0px_3px_10px_rgba(0,0,0,0.10)] ${isXl ? "h-[42px] w-[42px] 2xl:h-[48px] 2xl:w-[48px]" : "h-[34px] w-[34px]"}`}
     >
       <img
         src={item.icon}
         alt={item.title}
-        className={`object-contain ${isXl ? "h-[25px] w-[25px]" : "h-[15px] w-[15px]"}`}
+        className={`object-contain ${isXl ? "h-[25px] w-[25px] 2xl:h-[29px] 2xl:w-[29px]" : "h-[15px] w-[15px]"}`}
       />
     </div>
 
@@ -181,28 +181,28 @@ const StepContent = ({ item, isXl }) => (
       className={`absolute left-1/2 z-20 -translate-x-1/2 text-center ${
         item.position === "bottom"
           ? isXl
-            ? "top-[52px] w-[165px]"
+            ? "top-[52px] w-[165px] 2xl:top-[60px] 2xl:w-[190px]"
             : "top-[40px] w-[135px]"
           : isXl
-            ? "bottom-[56px] w-[175px]"
+            ? "bottom-[56px] w-[175px] 2xl:bottom-[64px] 2xl:w-[200px]"
             : "bottom-[42px] w-[135px]"
       }`}
     >
       <img
         src={item.image}
         alt=""
-        className="absolute w-[30px] h-[90px] top-[-6px] left-[60px] -translate-x-1/2 opacity-100 pointer-events-none"
+        className="pointer-events-none absolute left-1/2 top-[-6px] h-[90px] w-[30px] -translate-x-1/2 opacity-100 2xl:h-[100px] 2xl:w-[34px]"
       />
 
       <div className="relative z-10">
         <h3
-          className={`font-semibold text-[#4F6670] ${isXl ? "mb-2 text-[15px]" : "mb-1 text-[10.5px]"}`}
+          className={`font-semibold text-[#4F6670] ${isXl ? "mb-2 text-[15px] 2xl:text-[16px]" : "mb-1 text-[10.5px]"}`}
           
         >
           {item.title}
         </h3>
         <p
-          className={`m-0 font-medium text-[#26839A] ${isXl ? "text-[13px] leading-[1.35]" : "text-[9px] leading-[1.25]"}`}
+          className={`m-0 font-medium text-[#26839A] ${isXl ? "text-[13px] leading-[1.35] 2xl:text-[14px]" : "text-[9px] leading-[1.25]"}`}
         >
           {item.points}
         </p>

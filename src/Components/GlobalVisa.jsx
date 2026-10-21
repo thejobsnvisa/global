@@ -5,18 +5,21 @@ const GlobalVisa = () => {
     <div
       className="
         w-full
-        min-h-[880px]
+        min-h-[580px]
         bg-cover
         bg-center
         bg-no-repeat
         px-4
-        py-8
+        py-10
         sm:px-6
         sm:py-10
+        sm:min-h-[640px]
         md:px-8
         md:py-12
+        md:min-h-[760px]
         lg:px-10
         lg:py-16
+        lg:min-h-[880px]
         mb-5
       "
       style={{
@@ -33,12 +36,13 @@ const GlobalVisa = () => {
           w-full
           max-w-4xl
           text-center
-          text-xl
+          text-lg
           leading-tight
           text-[#295963]
-          sm:text-2xl
-          md:text-3xl
-          lg:text-[40px]
+          sm:text-xl
+          md:text-2xl
+          lg:text-3xl
+          xl:text-[40px]
         "
       >
         Why Trust Growmore Global Visa
@@ -56,10 +60,11 @@ const GlobalVisa = () => {
           leading-tight
           text-[#1E744A]
 
-          text-3xl
-          sm:text-4xl
-          md:text-5xl
-          lg:text-6xl
+          text-2xl
+          sm:text-3xl
+          md:text-4xl
+          lg:text-5xl
+          xl:text-6xl
         "
       >
         For Work Visa?
@@ -69,7 +74,7 @@ const GlobalVisa = () => {
       <div
         className="
           mx-auto
-          mt-8
+          mt-6
           h-auto
           min-h-0
           w-full
@@ -78,10 +83,10 @@ const GlobalVisa = () => {
           bg-[#FFFFFF4D]
           p-4
           backdrop-blur-[6px]
-          sm:mt-10
+          sm:mt-8
           sm:rounded-3xl
           sm:p-6
-          md:mt-12
+          md:mt-10
           md:p-8
           lg:mt-10
           lg:p-10
@@ -106,9 +111,7 @@ const GlobalVisa = () => {
               leading-relaxed
               text-cyan-950
               sm:text-base
-              sm:text-[17px]
               md:text-lg
-              lg:text-xl
             "
           >
             Expert Guidance You Can Trust : Get professional visa guidance from
@@ -123,9 +126,7 @@ const GlobalVisa = () => {
               leading-relaxed
               text-cyan-950
               sm:text-base
-              sm:text-[17px]
               md:text-lg
-              lg:text-xl
             "
           >
             Global Work Visa Knowledge: Planning to work in Australia, Canada,
@@ -140,9 +141,7 @@ const GlobalVisa = () => {
               leading-relaxed
               text-cyan-950
               sm:text-base
-              sm:text-[17px]
               md:text-lg
-              lg:text-xl
             "
           >
             From Profile to Visa : From your initial profile assessment and
@@ -157,9 +156,7 @@ const GlobalVisa = () => {
               leading-relaxed
               text-cyan-950
               sm:text-base
-              sm:text-[17px]
               md:text-lg
-              lg:text-xl
             "
           >
             Employer-Sponsored Visa Support: Have an employer ready to sponsor
@@ -174,9 +171,7 @@ const GlobalVisa = () => {
               leading-relaxed
               text-cyan-950
               sm:text-base
-              sm:text-[17px]
               md:text-lg
-              lg:text-xl
             "
           >
             Get It Right the First Time: Small mistakes can create unnecessary

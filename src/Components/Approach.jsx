@@ -122,7 +122,7 @@ const Approach = () => {
         <span className="text-[28px] sm:text-[36px] md:text-[40px] lg:text-[40px] 2xl:text-[50px] text-[#338292]">Our</span>
       </div>
       <div className="mt-[-30px]">
-         <span className="text-[32px] sm:text-[40px] sm:mt-4 md:text-[45px] lg:text-[60px] font-bold text-[#8DC8AB]">
+         <span className="text-[32px] sm:text-[40px] sm:mt-4 md:text-[45px] lg:text-[60px] font-bold text-[#5B9E7D]">
           Approach
         </span>
       </div>
