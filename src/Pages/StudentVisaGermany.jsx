@@ -330,7 +330,7 @@ Germany is one of the world’s most powerful and reliable destinations for high
        <h2 className="col-span-full mt-4 w-full text-center text-[32px] text-[#4298A9] sm:text-[36px]">
           Choose Your
         </h2>
-        <p className="col-span-full -mt-5 w-full text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px]">
+        <p className="col-span-full -mt-10 w-full text-center text-[44px] font-bold text-[#5B9E7D] sm:text-[52px]">
           Pathway
         </p>
         <div className="box-border w-full rounded-[20px] bg-sky-100 p-5">

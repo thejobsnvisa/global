@@ -1,7 +1,7 @@
 /* global process */
 import nodemailer from "nodemailer";
 
-  export default async function handler(req, res) {
+export default async function handler(req, res) {
   const origin = req.headers.origin;  
 
   /* ========= CORS ========= */
@@ -122,7 +122,7 @@ import nodemailer from "nodemailer";
           from: `"Growmore Lead" <${emailUser}>`,
           to: ["itgrowmore2@gmail.com"],
           replyTo: email,
-          subject: `New Lead: ${name} - ${visaType}`,
+          subject: `New Lead: ${name} - ${visaType}`, // Fixed raw newline issue
           html: `
             <h3>New Lead Appointment Details</h3>
             <p><b>Name:</b> ${name}</p>

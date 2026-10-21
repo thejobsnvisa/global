@@ -342,7 +342,7 @@ const StudentvisaAustralia = () => {
         <div className="mx-auto max-w-[1250px]">
           <div className="mb-8 text-center sm:mb-10">
             <h2 className="text-[30px] leading-tight text-[#4298A9] sm:text-[36px] lg:text-[40px]">Choose Your</h2>
-            <p className="mt-1 text-[42px] font-semibold leading-tight text-[#5B9E7D] sm:text-[50px] lg:text-[60px]">Pathway</p>
+            <p className="-mt-3 text-[42px] font-bold leading-tight text-[#5B9E7D] sm:text-[50px] lg:text-[60px]">Pathway</p>
           </div>
           <div className="grid grid-cols-1 items-start gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6"><h3 className="mb-4 text-lg font-bold text-teal-700">Healthcare & Nursing</h3><ul className="list-disc space-y-1 pl-5 text-base text-sky-800"><li>Nursing (RN, EN)</li><li>Aged Care Nursing</li><li>Mental Health Nursing</li><li>Midwifery</li><li>Medical Laboratory Science</li><li>Pharmacy</li><li>Physiotherapy</li><li>Occupational Therapy</li><li>Radiography & Medical Imaging</li><li>Public Health</li></ul></div>

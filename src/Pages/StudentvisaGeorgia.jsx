@@ -332,7 +332,7 @@ const  StudentvisaGeorgia = () => {
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-8 text-center sm:mb-10">
             <h2 className="text-3xl font-normal text-[#4298A9] sm:text-4xl">Choose Your</h2>
-            <p className="mt-1 text-4xl font-semibold text-[#5B9E7D] sm:text-5xl lg:text-[60px]">Pathway</p>
+            <p className="mt-1 text-4xl font-bold text-[#5B9E7D] sm:text-5xl lg:text-[60px]">Pathway</p>
           </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             <div className="rounded-[20px] bg-sky-100 p-5 sm:p-6"><h3 className="text-lg font-bold text-teal-700">Healthcare & Nursing</h3><ul className="mt-4 list-disc space-y-1 pl-5 text-base text-sky-800"><li>Medicine(MD)</li><li>Nursing</li><li>Dentistry</li><li>Pharmacy</li><li>Physical Therapy</li><li>Veterinary Medicine</li></ul></div>

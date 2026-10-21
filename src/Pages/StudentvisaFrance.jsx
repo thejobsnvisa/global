@@ -92,7 +92,7 @@ const StudentvisaFrance = () => {
                   className="
                           mt-6
                           w-full
-                          max-w-[450px]
+                          max-w-[350px]
                           text-[38px]
                           font-semibold
                           leading-[1.1]
@@ -334,7 +334,7 @@ const StudentvisaFrance = () => {
         <h2 className="col-span-full mt-4 text-center text-[32px] text-[#4298A9] sm:text-[36px] lg:text-[40px]">
           Choose Your
         </h2>
-        <p className="col-span-full -mt-5 text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
+        <p className="col-span-full -mt-12 text-center text-[44px] font-bold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
           Pathway
         </p>
          <div className="w-full rounded-[20px] bg-sky-100 p-5">

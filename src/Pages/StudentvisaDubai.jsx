@@ -91,7 +91,7 @@ const StudentvisaDubai = () => {
               className="
                       mt-6
                       w-full
-                      max-w-[450px]
+                      max-w-[350px]
                       text-[38px]
                       font-semibold
                       leading-[1.1]
@@ -332,7 +332,7 @@ const StudentvisaDubai = () => {
         <div className="mx-auto max-w-[1200px]">
           <div className="mb-8 text-center sm:mb-10">
             <h2 className="text-3xl text-[#4298A9] sm:text-4xl">Choose Your</h2>
-            <p className="mt-1 text-4xl font-semibold text-[#5B9E7D] sm:text-5xl lg:text-6xl">
+            <p className="-mt-2 text-4xl font-bold text-[#5B9E7D] sm:text-5xl lg:text-6xl">
               Pathway
             </p>
           </div>

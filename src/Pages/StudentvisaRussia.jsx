@@ -332,7 +332,7 @@ const  StudentvisaRussia = () => {
           <h2 className="text-center text-[30px] font-medium text-[#4298A9] sm:text-[36px] lg:text-[40px]">
             Choose Your
           </h2>
-          <p className="mt-1 text-center text-[42px] font-semibold leading-tight text-[#5B9E7D] sm:text-[50px] lg:text-[60px]">
+          <p className="-mt-4 text-center text-[42px] font-bold leading-tight text-[#5B9E7D] sm:text-[50px] lg:text-[60px]">
             Pathway
           </p>
           <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-6">

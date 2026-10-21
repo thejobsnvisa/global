@@ -268,18 +268,8 @@ const Hero = () => {
          ===================================================== */
 
       if (response.ok && result.success) {
-        const successMessage =
-          result.message ||
-          "Thank you! Our team will contact you shortly.";
-
-        toast.success(successMessage);
-
-        setStatusMessage({
-          type: "success",
-          text: successMessage,
-        });
-
         setFormData(initialFormData);
+        window.alert("Your request has been submitted successfully.");
 
         if (recaptchaRef.current) {
           recaptchaRef.current.reset();

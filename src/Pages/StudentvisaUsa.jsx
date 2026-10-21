@@ -92,7 +92,7 @@ const StudentvisaUsa = () => {
                   className="
                           mt-6
                           w-full
-                          max-w-[450px]
+                          max-w-[350px]
                           text-[38px]
                           font-semibold
                           leading-[1.1]
@@ -333,7 +333,7 @@ const StudentvisaUsa = () => {
           <h2 className="text-center text-3xl text-[#4298A9] sm:text-4xl">
             Choose Your
           </h2>
-          <p className="mt-1 text-center text-4xl font-semibold text-[#5B9E7D] sm:text-5xl">
+          <p className="mt-1 text-center text-4xl font-bold text-[#5B9E7D] sm:text-5xl">
             Pathway
           </p>
           <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-10 lg:grid-cols-3 lg:gap-6">

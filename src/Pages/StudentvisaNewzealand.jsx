@@ -333,7 +333,7 @@ const StudentvisaNewzealand = () => {
         <h2 className="col-span-full mt-0 text-center text-[32px] text-[#4298A9] sm:text-[36px] lg:text-[40px]">
           Choose Your
         </h2>
-        <p className="col-span-full -mt-4 text-center text-[44px] font-semibold leading-tight text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
+        <p className="col-span-full -mt-10 text-center text-[44px] font-bold leading-tight text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
           Pathway
         </p>
         <div className="rounded-[20px] bg-sky-100 p-6 sm:p-7">

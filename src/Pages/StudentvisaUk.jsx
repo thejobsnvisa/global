@@ -92,7 +92,7 @@ const StudentvisaUk = () => {
                   className="
                           mt-6
                           w-full
-                          max-w-[450px]
+                          max-w-[350px]
                           text-[38px]
                           font-semibold
                           leading-[1.1]
@@ -314,7 +314,7 @@ const StudentvisaUk = () => {
                35,000+
               </h2>
               <p className="mt-3 text-[15px] text-slate-700">
-               Jobs available across Dubai with strong demand in Technology & AI, Real Estate & Construction, and Healthcare
+               Job opportunities across the UK in technology, healthcare, finance, and engineering
               </p>
             </div>
             <div className="min-h-[158px] w-full max-w-[266px] text-center rounded-[14px] p-6 bg-white shadow-[0_0_30px_0_#76767633]">
@@ -332,7 +332,7 @@ const StudentvisaUk = () => {
         <h2 className="col-span-full mx-auto mt-0 w-full text-center text-[32px] text-[#4298A9] sm:text-[36px] lg:text-[40px]">
           Choose Your
         </h2>
-        <p className="col-span-full mx-auto -mt-5 w-full text-center text-[44px] font-semibold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
+        <p className="col-span-full mx-auto -mt-12 w-full text-center text-[44px] font-bold text-[#5B9E7D] sm:text-[52px] lg:text-[60px]">
           Pathway
         </p>
         <div className="box-border min-h-[240px] w-full rounded-[20px] bg-sky-100 p-5">
