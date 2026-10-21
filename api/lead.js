@@ -1,7 +1,7 @@
+/* global process */
 import nodemailer from "nodemailer";
-import process from "node:process";
 
-export default async function handler(req, res) {
+  export default async function handler(req, res) {
   const origin = req.headers.origin;  
 
   /* ========= CORS ========= */
@@ -28,30 +28,30 @@ export default async function handler(req, res) {
     }
 
     if (!body || typeof body !== "object" || Array.isArray(body)) {
-      return res.status(400).json({ success: false, message: "Invalid request body" });
+      return res.status(400).json({ success: false, message: "Request body must be a JSON object" });
     }
 
-    const { name, email, phone, visaType, message } = body;
-    const leadSource = body.source || "Website Form";
+    // Map payload from Hero.jsx fields with fallbacks
+    const firstName = String(body.first_name || "");
+    const lastName = String(body.last_name || "");
+    const name = String(body.name || `${firstName} ${lastName}`.trim()).trim();
+    const email = String(body.company_email || body.email || "").trim();
+    const phone = String(body.phone || "");
+    
+    // Extract inquiry and comments
+    const visaType = String(body.visaType || body.inquiry || "General Inquiry");
+    const message = String(body.message || body.requirements || body.comments || "");
+    const leadSource = String(body.source || "Website Form");
 
-    if (typeof name !== "string" || !name.trim() || typeof email !== "string" || !email.trim()) {
+    if (!name || !email) {
       return res.status(400).json({
         success: false,
         message: "Name and Email are required",
       });
     }
 
-    const safeName = name.trim();
-    const safeEmail = email.trim();
-    const safePhone = typeof phone === "string" || typeof phone === "number" ? String(phone) : "";
-    const safeVisaType = typeof visaType === "string" ? visaType : "";
-    const safeMessage = typeof message === "string" ? message : "";
-    const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
-    })[char]);
-
     /* ========= PHONE PARSE ========= */
-    const cleanPhone = safePhone.replace(/\D/g, "");
+    const cleanPhone = phone.replace(/\D/g, "");
     let countryCode = "91";
     let phoneNumber = cleanPhone;
 
@@ -61,29 +61,31 @@ export default async function handler(req, res) {
     }
 
     /* ========= CRM SYNC ========= */
-    console.log("[CRM] Sending data for:", safeEmail);
-    let crmDelivered = false;
+    console.log("[CRM] Sending data for:", email);
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 8000);
+      const timeout = setTimeout(() => controller.abort(), 5000);
 
       let crmResponse;
       try {
-        crmResponse = await fetch("https://case.growmore.one/api/webhooks/website-form", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            Name: safeName,
-            Email: safeEmail,
-            Phone: phoneNumber,
-            Country_Code: countryCode,
-            Inquiries: safeVisaType || "General Inquiry",
-            Source: leadSource,
-            Message: safeMessage,
-          }),
-          signal: controller.signal,
-        });
+        crmResponse = await fetch(
+          "https://case.growmore.one/api/webhooks/website-form",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              Name: name,
+              Email: email,
+              Phone: phoneNumber,
+              Country_Code: countryCode,
+              Inquiries: visaType,
+              Source: leadSource,
+              Message: message,
+            }),
+            signal: controller.signal,
+          }
+        );
       } finally {
         clearTimeout(timeout);
       }
@@ -91,51 +93,50 @@ export default async function handler(req, res) {
       const crmText = await crmResponse.text();
       console.log("[CRM STATUS]:", crmResponse.status);
       console.log("[CRM RESPONSE]:", crmText);
-      crmDelivered = crmResponse.ok;
     } catch (err) {
       console.error("[CRM ERROR FULL]:", err);
     }
 
-    /* ========= EMAIL (OPTIONAL IF CRM ACCEPTED THE LEAD) ========= */
-    let emailDelivered = false;
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      console.error("[EMAIL ERROR] Missing EMAIL_USER or EMAIL_PASS environment variables");
+    /* ========= EMAIL CONFIG CHECK ========= */
+    const emailUser = process.env.EMAIL_USER ? process.env.EMAIL_USER.trim() : "";
+    const emailPass = process.env.EMAIL_PASS ? process.env.EMAIL_PASS.replace(/\s+/g, "") : "";
+
+    if (!emailUser || !emailPass) {
+      console.error("Missing EMAIL env variables");
     } else {
       try {
         const transporter = nodemailer.createTransport({
           host: "smtp.gmail.com",
           port: 465,
           secure: true,
+          connectionTimeout: 5000,
+          greetingTimeout: 5000,
+          socketTimeout: 5000,
           auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
+            user: emailUser,
+            pass: emailPass,
           },
         });
 
-        await transporter.sendMail({
-          from: `"Growmore" <${process.env.EMAIL_USER}>`,
+        const info = await transporter.sendMail({
+          from: `"Growmore Lead" <${emailUser}>`,
           to: ["itgrowmore2@gmail.com"],
-          subject: "New Appointment Booking",
+          replyTo: email,
+          subject: `New Lead: ${name} - ${visaType}`,
           html: `
-            <h3>New Lead Details</h3>
-            <p><b>Name:</b> ${escapeHtml(safeName)}</p>
-            <p><b>Email:</b> ${escapeHtml(safeEmail)}</p>
-            <p><b>Phone:</b> ${escapeHtml(safePhone || "N/A")}</p>
-            <p><b>Visa Type:</b> ${escapeHtml(safeVisaType || "Not specified")}</p>
-            <p><b>Message:</b> ${escapeHtml(safeMessage || "No message")}</p>
+            <h3>New Lead Appointment Details</h3>
+            <p><b>Name:</b> ${name}</p>
+            <p><b>Email:</b> ${email}</p>
+            <p><b>Phone:</b> ${phone || "N/A"}</p>
+            <p><b>Visa Type:</b> ${visaType}</p>
+            <p><b>Message:</b> ${message || "No message"}</p>
           `,
         });
-        emailDelivered = true;
-      } catch (err) {
-        console.error("[EMAIL ERROR FULL]:", err);
-      }
-    }
 
-    if (!crmDelivered && !emailDelivered) {
-      return res.status(502).json({
-        success: false,
-        message: "Unable to deliver your request. Please try again later.",
-      });
+        console.log("[SMTP SUCCESS]: Message ID:", info.messageId);
+      } catch (err) {
+        console.error("[SMTP ERROR]:", err);
+      }
     }
 
     /* ========= SUCCESS ========= */
