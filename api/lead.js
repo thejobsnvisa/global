@@ -114,7 +114,7 @@ export default async function handler(req, res) {
 
         await transporter.sendMail({
           from: `"Growmore" <${process.env.EMAIL_USER}>`,
-          to: ["info@growmore.one"],
+          to: ["itgrowmore2@gmail.com"],
           subject: "New Appointment Booking",
           html: `
             <h3>New Lead Details</h3>
