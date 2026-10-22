@@ -288,7 +288,7 @@ const  StudentvisaGeorgia = () => {
                 xl:leading-[1.6]
               "
                  >
-                Georgia is becoming a popular choice for international students looking for affordable higher education in an international environment. Students can find English-taught programmes in areas such as MBBS and Medicine, Engineering, Business Management, Computer Science and IT, and Hospitality & Tourism, with comparatively affordable tuition fees and living costs. Georgia is especially popular for medical studies, with universities such as Tbilisi State Medical University, European University, David Tvildiani Medical University, Georgian National University SEU and Georgian American University offering medical programmes for international students. 
+                Georgia is becoming a popular choice for international students looking for affordable higher education in an international environment. Students can find English-taught programmes in areas such as MBBS and Medicine, Engineering, Business Management, Computer Science and IT, Hospitality & Tourism , with comparatively affordable tuition fees and living costs. Georgia is especially popular for medical studies, with universities such as Tbilisi State Medical University, European University, David Tvildiani Medical University, Georgian National University SEU and Georgian American University offering medical programmes for international students. 
                 </p>
                </div>
              </div>
