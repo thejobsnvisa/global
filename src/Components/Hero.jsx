@@ -1099,7 +1099,27 @@ const Hero = () => {
                       <option value="New Zealand">
                         New Zealand
                       </option>
-
+                       <option value="Dubai">
+                        Dubai
+                      </option>
+                       <option value="Germany">
+                        Germany
+                      </option>
+                      <option value="USA">
+                        USA
+                      </option>
+                      <option value="Georgia">
+                        Georgia
+                      </option>
+                      <option value="Russia">
+                        Russia
+                      </option>
+                      <option value="France">
+                        France
+                      </option>
+                      <option value="Europe">
+                        Europe
+                      </option>
                       <option value="Singapore">
                         Singapore
                       </option>

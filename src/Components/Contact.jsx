@@ -374,11 +374,45 @@ const Contact = () => {
               className="h-[36px] w-full appearance-none rounded-[9px] border border-[#e0e4e8] bg-white px-4 text-[12px] text-[#026CC0] outline-none focus:border-[#69b99e]"
             >
               <option value="">Country</option>
-              <option value="Australia">Australia</option>
-              <option value="New Zealand">New Zealand</option>
-              <option value="Singapore">Singapore</option>
-              <option value="Canada">Canada</option>
-              <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">
+                        Australia
+                      </option>
+
+                      <option value="New Zealand">
+                        New Zealand
+                      </option>
+                       <option value="Dubai">
+                        Dubai
+                      </option>
+                       <option value="Germany">
+                        Germany
+                      </option>
+                      <option value="USA">
+                        USA
+                      </option>
+                      <option value="Georgia">
+                        Georgia
+                      </option>
+                      <option value="Russia">
+                        Russia
+                      </option>
+                      <option value="France">
+                        France
+                      </option>
+                      <option value="Europe">
+                        Europe
+                      </option>
+                      <option value="Singapore">
+                        Singapore
+                      </option>
+
+                      <option value="Canada">
+                        Canada
+                      </option>
+
+                      <option value="United Kingdom">
+                        United Kingdom
+                      </option>
             </select>
 
             <ChevronDown
