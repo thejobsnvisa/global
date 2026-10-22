@@ -24,7 +24,7 @@ const BlogStep = () => {
   };
 
   return (
-    <section className="bg-white py-20 mb-40 lg:mb-40 md:mb-40 xl:mb-10">
+    <section className="bg-white py-20 mb-40 lg:mb-40 md:mb-40 xl:mb-30">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         {/* Grid */}
         <div className="mx-auto w-full">
