@@ -28,7 +28,7 @@ const destination = [
   {
     name: "UK",
     image: uk,
-    link: "/services/student-visa/uk",
+    link: "/services/student-visa/united-kingdom",
   },
   {
     name: "France",
