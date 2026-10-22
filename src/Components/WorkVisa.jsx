@@ -1,6 +1,118 @@
+
 import img from "../assets/img29.png";
+import { motion, useInView } from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import t1 from "../assets/travel.svg"
+import t2 from "../assets/Group3.png"
+import t3 from "../assets/file.png"
+import t4 from "../assets/language.svg"
+import t5 from "../assets//heart.svg"
+
+// Requirements list formatted with Teal icons
+const requirements = [
+  {
+    id: 0,
+    title: "Valid Passport",
+    description: "A passport with sufficient validity beyond the intended period of stay.",
+    icon:t1,
+  },
+  {
+    id: 1,
+    title: "Relevant Educational Qualifications",
+    description: "Degrees, diplomas, or certifications related to the occupation.",
+    icon: t2,
+  },
+  {
+    id: 2,
+    title: "Job Offer or Employer Sponsorship",
+    description: "Required for employer-sponsored work visas in many countries.",
+    icon: t3,
+  },
+  {
+    id: 3,
+    title: "Language Proficiency",
+    description: "Proof of language skills, such as English proficiency tests, where applicable.",
+    icon: t4,
+  },
+  {
+    id: 4,
+    title: "Health Requirements",
+    description: "Medical examinations as per the destination country’s standards.",
+    icon: t5,
+  },
+];
 
 const WorkVisa = () => {
+  const listSectionRef = useRef(null);
+  const listSectionInView = useInView(listSectionRef, { margin: "-50px" });
+
+  // Key to force reset animation loop across all items
+  const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    if (!listSectionInView) return;
+
+    // Total cycle time = (5 items * 0.4s delay) + 2.5s hold display before restart
+    const totalCycleTime = requirements.length * 400 + 2500;
+
+    const interval = setInterval(() => {
+      setAnimationKey((prev) => prev + 1);
+    }, totalCycleTime);
+
+    return () => clearInterval(interval);
+  }, [listSectionInView]);
+
+  // Icon animation: Drops down along Y axis
+  const iconVariant = {
+    initial: {
+      opacity: 0,
+      y: -25,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: index * 0.4,
+        ease: "easeOut",
+      },
+    }),
+  };
+
+  // Text animation: Slides in along X axis
+  const textVariant = {
+    initial: {
+      opacity: 0,
+      x: 30,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.4,
+        delay: index * 0.4 + 0.1,
+        ease: "easeOut",
+      },
+    }),
+  };
+
+  // Teal Dashed line draw animation
+  const lineVariant = {
+    initial: {
+      scaleY: 0,
+      opacity: 0,
+    },
+    animate: (index) => ({
+      scaleY: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: index * 0.4 + 0.2,
+        ease: "easeInOut",
+      },
+    }),
+  };
+
   return (
     <section
       className="
@@ -173,7 +285,7 @@ const WorkVisa = () => {
             lg:pr-[55px]
           "
         >
-          {/* Intro */}
+          {/* Intro Paragraph */}
           <p
             className="
               mb-6
@@ -186,7 +298,7 @@ const WorkVisa = () => {
               sm:text-[17px]
               md:text-[18px]
               mt-10
-              lg:mb-9
+              lg:mb-6
               lg:text-[22px]
             "
             style={{
@@ -200,88 +312,55 @@ const WorkVisa = () => {
           </p>
 
           {/* =================================================
-              REQUIREMENTS LIST
+              UPDATED TEAL BULLET CARDS
           ================================================== */}
-          <div
-            className="
-              space-y-5
-              text-[13px]
-              leading-[1.45]
-              text-[#52647A]
+          <div ref={listSectionRef} className="w-full">
+            {requirements.map((item, index) => (
+              <div
+                key={`${item.id}-${animationKey}`}
+                className="relative pb-5 last:pb-0 flex items-center gap-[clamp(4rem,4vw,4rem)]"
+              >
+                {/* Teal Connecting Dashed Line */}
+                {index !== requirements.length - 1 && (
+                  <motion.div
+                    custom={index}
+                    variants={lineVariant}
+                    initial="initial"
+                    animate={listSectionInView ? "animate" : "initial"}
+                    style={{ originY: 0 }}
+                    className="absolute left-[28px] top-[56px] w-[2px] h-[24px] border-l-2 border-dashed border-[#0099B8]/50 z-0"
+                  />
+                )}
 
-              sm:text-[14px]
-              xl:space-y-4
-              xl:text-[18px]
-              lg:space-y-1
-              lg:text-[16px]
-            "
-            style={{
-              fontFamily: "Poppins, sans-serif",
-            }}
-          >
-            {/* Passport */}
-            <div className="flex items-start gap-3">
-              <span className="mt-[2px] text-[#52647A] h-6">•</span>
+                {/* Teal Icon Badge */}
+                <motion.div
+                  custom={index}
+                  variants={iconVariant}
+                  initial="initial"
+                  animate={listSectionInView ? "animate" : "initial"}
+                  className="w-[56px] h-[56px] rounded-[6px] bg-white flex items-center justify-center flex-shrink-0 shadow-[0px_0px_15px_2px_rgba(0,153,184,0.18)] z-10"
+                >
+                  <img src={item.icon} alt="" className="h-7 w-7 object-contain" />
+                </motion.div>
 
-              <p>
-                <strong className="font-semibold text-[#43556B]">
-                  Valid Passport
-                </strong>{" "}
-                – A passport with sufficient validity beyond the intended period
-                of stay.
-              </p>
-            </div>
-
-            {/* Education */}
-            <div className="flex items-start gap-3">
-              <span className="mt-[2px] text-[#52647A]">•</span>
-
-              <p>
-                <strong className="font-semibold text-[#43556B]">
-                  Relevant Educational Qualifications
-                </strong>{" "}
-                – Degrees, diplomas, or certifications related to the
-                occupation.
-              </p>
-            </div>
-
-            {/* Job Offer */}
-            <div className="flex items-start gap-3">
-              <span className="mt-[2px] text-[#52647A]">•</span>
-
-              <p>
-                <strong className="font-semibold text-[#43556B]">
-                  Job Offer or Employer Sponsorship
-                </strong>{" "}
-                – Required for employer-sponsored work visas in many countries.
-              </p>
-            </div>
-
-            {/* Language */}
-            <div className="flex items-start gap-3">
-              <span className="mt-[2px] text-[#52647A]">•</span>
-
-              <p>
-                <strong className="font-semibold text-[#43556B]">
-                  Language Proficiency
-                </strong>{" "}
-                – Proof of language skills, such as English proficiency tests,
-                where applicable.
-              </p>
-            </div>
-
-            {/* Health */}
-            <div className="flex items-start gap-3">
-              <span className="mt-[2px] text-[#52647A]">•</span>
-
-              <p>
-                <strong className="font-semibold text-[#43556B]">
-                  Health Requirements
-                </strong>{" "}
-                – Medical examinations as per the destination country’s
-                standards.
-              </p>
-            </div>
+                {/* Title & Description */}
+                <motion.div
+                  custom={index}
+                  variants={textVariant}
+                  initial="initial"
+                  animate={listSectionInView ? "animate" : "initial"}
+                  className="min-w-0"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  <h3 className="text-[16px] sm:text-[18px] font-bold text-emerald-600">
+                    {item.title}
+                  </h3>
+                  <p className="text-[13px] sm:text-[14px] text-[#52647A] mt-0.5 leading-snug">
+                    {item.description}
+                  </p>
+                </motion.div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
