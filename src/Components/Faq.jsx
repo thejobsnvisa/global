@@ -550,7 +550,7 @@ const Faq = () => {
           md:mb-[25px]
           md:px-10
 
-          lg:mb-[30px]
+          lg:mb-[25px]
           lg:mt-9
           lg:px-[35px]
 
