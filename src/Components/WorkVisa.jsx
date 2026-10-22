@@ -124,8 +124,8 @@ const WorkVisa = () => {
 
         sm:py-14
         md:py-16
-
-        lg:h-[691px]
+        lg:h-[796px]
+        xl:h-[691px]
         lg:py-0
       "
     >

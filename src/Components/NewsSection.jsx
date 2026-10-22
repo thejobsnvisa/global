@@ -24,7 +24,7 @@ const NewsSection = () => {
   };
 
   return (
-    <section className="bg-white py-20 mb-20">
+    <section className="bg-white py-20 mb-40 lg:mb-[105px] md:mb-40 xl:mb-30">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         
         {/* BLOG GRID */}

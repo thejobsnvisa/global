@@ -55,7 +55,7 @@ export default function CommentSection() {
   const text = encodeURIComponent("Check this out!");
 
   return (
-    <div className="bg-white flex flex-col items-start px-4 py-10 mb-20">
+    <div className="bg-white flex flex-col items-start px-4 py-10 mb-33">
       <div className="w-full max-w-5xl border-t border-gray-300 pt-8">
         {/* Social Sharing */}
         <div className="flex justify-end gap-6 mb-6 text-gray-600 text-xl">

@@ -71,8 +71,8 @@ const Overseas = () => {
         mt-[20px]
         min-h-[1100px]
         sm:mt-[-100px]
-        md:mt-[-120px]
-        lg:mt-[-140px]
+        md:mt-[-40px]
+        lg:mt-[50px]
         xl:mt-0
         xl:h-[860px]
         lg:h-[950px]
