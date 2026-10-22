@@ -20,7 +20,7 @@ const steps = [
     points:
       "We assess your qualifications, work experience, and occupation to determine your eligibility under country-specific work visa rules.",
     // Distinct styles per breakpoint
-    lgStyle: { top: "60%", left: "11.5%" },
+    lgStyle: { top: "58%", left: "11.5%" },
     xlStyle: { top: "60%", left: "10.5%" },
     "2xlStyle": { top: "73%", left: "8.5%" },
     position: "bottom",
@@ -31,7 +31,7 @@ const steps = [
     title: "Visa Pathway Selection",
     points:
       "Based on your profile, we recommend the most suitable work visa category that goes well with current immigration regulations.",
-    lgStyle: { top: "68%", left: "31%" },
+    lgStyle: { top: "65%", left: "31%" },
     xlStyle: { top: "67%", left: "28.5%" },
     "2xlStyle": { top: "60%", left: "31.5%" },
     position: "top",
@@ -64,7 +64,7 @@ const steps = [
     title: "Post-Submission Support",
     points:
       "We monitor the application, respond to immigration queries, and guide you through the process until a final decision is issued.",
-    lgStyle: { top: "34%", left: "93%" },
+    lgStyle: { top: "37%", left: "93%" },
     // Keep the label inside the section so it is not clipped at the right edge.
     xlStyle: { top: "34.8%", left: "92.5%" },
     "2xlStyle": { top: "31.8%", left: "112.5%" },

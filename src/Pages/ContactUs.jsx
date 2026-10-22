@@ -69,7 +69,7 @@ const ContactUs = () => {
             <p className="text-[24px] leading-tight text-[#4298A9] sm:text-[30px] md:text-[36px]">
               Stay Connected With
             </p>
-            <h2 className="mt-2 text-[30px] font-bold leading-tight text-[#5B9E7D] sm:mt-3 sm:text-[42px] md:text-[52px] lg:text-[60px]">
+            <h2 className=" text-[30px] font-bold leading-tight text-[#5B9E7D] sm:mt-3 sm:text-[42px] md:text-[52px] lg:text-[60px]">
               Growmore Global Visa
             </h2>
           </div>
