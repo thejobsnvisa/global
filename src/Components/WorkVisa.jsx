@@ -6,7 +6,7 @@ import t1 from "../assets/travel.svg"
 import t2 from "../assets/Group3.png"
 import t3 from "../assets/file.png"
 import t4 from "../assets/language.svg"
-import t5 from "../assets//heart.svg"
+import t5 from "../assets/heart.svg"
 
 // Requirements list formatted with Teal icons
 const requirements = [
