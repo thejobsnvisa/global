@@ -166,7 +166,7 @@ const Footer = () => {
                   Useful Links
                 </h3>
                 <ul className="space-y-2 xl:space-y-0 2xl:space-y-2 2xl:text-[27px] 2xl:ml-[30px] xl:left-[20px] text-[16px] 2xl:text-[17px] 2xl:leading-relaxed text-white list-disc">
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Terms &amp; Services</a></li>
+                  <li><a href="terms-services" className="hover:text-teal-100/90 transition-colors">Terms &amp; Services</a></li>
                   <li><a href="#" className="hover:text-teal-100/90 transition-colors">Privacy Policy</a></li>
                   <li><a href="#" className="hover:text-teal-100/90 transition-colors">Code of Conduct</a></li>
                   <li><a href="#" className="hover:text-teal-100/90 transition-colors">Cancellation and Refund Policy</a></li>
