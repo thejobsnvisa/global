@@ -141,7 +141,7 @@ const QualityCommitment = () => {
             mx-auto
             h-auto
             w-full
-            max-w-[1278px]
+            max-w-[1240px]
 
             xl:h-full
           "
@@ -226,7 +226,7 @@ const QualityCommitment = () => {
               lg:left-[50px]
 
               xl:absolute
-              xl:left-[50px]
+              xl:left-0
               xl:top-[210px]
               xl:h-[240px]
               xl:w-[280px]
@@ -300,7 +300,7 @@ const QualityCommitment = () => {
               lg:translate-x-0
 
               xl:absolute
-              xl:left-[390px]
+              xl:left-[370px]
               xl:top-[182px]
               xl:h-[290px]
               xl:w-[500px]
@@ -470,7 +470,7 @@ const QualityCommitment = () => {
               
               lg:left-[690px]
               xl:absolute
-              xl:left-[950px]
+              xl:left-[960px]
               xl:right-auto
               xl:top-[210px]
               xl:h-[240px]

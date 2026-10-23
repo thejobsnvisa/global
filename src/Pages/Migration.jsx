@@ -80,15 +80,7 @@ const Migration = () => {
         "
         />
 
-        {/* Gradient Overlay */}
-        <div
-          className="
-          absolute
-          inset-0
-          bg-[linear-gradient(89.92deg,#FFFFFF_0.06%,rgba(255,255,255,0)_48.4%)]
-        "
-        />
-
+      <div className="absolute inset-0 bg-[linear-gradient(89.92deg,#FFFFFF_0.06%,rgba(255,255,255,0)_88.4%)]" />
         {/* Banner Content */}
         <div
           className="

@@ -753,10 +753,10 @@ const Hero = () => {
                   lg:bg-[#FFFFFFA8]
                   lg:opacity-90
 
-                  xl:left-[275px]
+                  xl:left-[170px]
                   xl:top-20
                   xl:h-[640px]
-                  xl:w-[440px]
+                  xl:w-[400px]
                   xl:px-[24px]
                   xl:py-[25px]
 

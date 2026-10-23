@@ -556,7 +556,7 @@ const Faq = () => {
 
           xl:mb-[34px]
           xl:mt-10
-          xl:ml-35
+          xl:ml-25
           xl:px-0
         "
       >
@@ -573,9 +573,8 @@ const Faq = () => {
             md:text-[34px]
 
             lg:text-[38px]
-
-            xl:text-[40px]
             xl:ml-3
+            xl:text-[40px]
           "
         >
           Frequently

@@ -96,7 +96,7 @@ const Visitor = () => {
                 sm:py-12
                 md:py-14
                 lg:py-16
-              xl:h-[740px]
+              xl:min-h-[740px]
                 xl:py-10
               "
       >
@@ -175,7 +175,7 @@ const Visitor = () => {
           lg:items-start
           lg:gap-[30px]
       
-          xl:gap-[65px]
+                xl:gap-6
         "
           >
             {/* ================= IMAGE ================= */}
@@ -196,7 +196,7 @@ const Visitor = () => {
             lg:max-w-none
             xl:mt-[40px]
             xl:h-[420px]
-            xl:w-[630px]
+            xl:w-[calc(50%-12px)]
           "
             >
               <img
@@ -230,9 +230,9 @@ const Visitor = () => {
             lg:max-w-[550px]
             lg:gap-7
       
-            xl:mr-20
+            xl:mr-0
             xl:mt-[-15px]
-            xl:w-[550px]
+            xl:w-[calc(50%-12px)]
             xl:gap-[15px]
           "
             >
@@ -324,10 +324,10 @@ const Visitor = () => {
 
     sm:py-12
     md:py-14
-    mb-45
+    mb-50
     md:mb-0
     lg:mb-0
-    xl:mb-0
+    xl:mb-20
     md:h-[1600px]
     lg:h-[1250px]
 
@@ -413,7 +413,7 @@ const Visitor = () => {
         lg:gap-[30px]
         lg:ml-[25px]
 
-        xl:gap-[65px]
+        xl:gap-8
       "
     >
       {/* ================= IMAGE ================= */}
@@ -438,7 +438,7 @@ const Visitor = () => {
           lg:max-w-none
 
           xl:h-[480px]
-          xl:w-[613px]
+          xl:w-[calc(50%-16px)]
         "
       >
         <img
@@ -474,8 +474,8 @@ const Visitor = () => {
 
           xl:ml-[10px]
           xl:mt-[20px]
-          xl:w-[550px]
-          xl:gap-[35px]
+          xl:w-[calc(50%-16px)]
+          xl:gap-8
         "
       >
         {/* ================= INTRO ================= */}
@@ -499,9 +499,9 @@ const Visitor = () => {
             lg:text-[16px]
             lg:leading-[1.6]
 
-            xl:ml-[-40px]
-            xl:mt-[-45px]
-            xl:w-[773px]
+            xl:ml-0
+            xl:mt-[-20px]
+            xl:max-w-full
             xl:text-[18px]
             xl:leading-[1.6]
           "
@@ -529,9 +529,8 @@ const Visitor = () => {
 
             lg:text-[18px]
 
-            xl:ml-[-40px]
-            xl:w-[599px]
-            xl:h-[11px]
+            xl:ml-0
+            xl:max-w-full
             xl:text-[18px]
             xl:leading-[1]
           "
@@ -557,10 +556,10 @@ const Visitor = () => {
 
             lg:text-[16px]
 
-            xl:ml-[-40px]
+            xl:ml-0
             xl:mt-[-12px]
-            xl:w-[614px]
-            xl:h-[83px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[16px]
           "
         >
@@ -586,10 +585,10 @@ const Visitor = () => {
 
             lg:text-[18px]
 
-            xl:ml-[-40px]
-            xl:mt-[-20px]
-            xl:w-[599px]
-            xl:h-[11px]
+            xl:ml-0
+            xl:mt-[-10px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[18px]
             xl:leading-[1]
           "
@@ -615,10 +614,10 @@ const Visitor = () => {
 
             lg:text-[16px]
 
-            xl:ml-[-40px]
+            xl:ml-0
             xl:mt-[-12px]
-            xl:w-[614px]
-            xl:h-[83px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[16px]
           "
         >
@@ -643,10 +642,10 @@ const Visitor = () => {
 
             lg:text-[18px]
 
-            xl:ml-[-40px]
-            xl:mt-[-40px]
-            xl:w-[599px]
-            xl:h-[11px]
+            xl:ml-0
+            xl:mt-[-10px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[18px]
             xl:leading-[1]
           "
@@ -672,10 +671,10 @@ const Visitor = () => {
 
             lg:text-[16px]
 
-            xl:ml-[-40px]
+            xl:ml-0
             xl:mt-[-12px]
-            xl:w-[614px]
-            xl:h-[83px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[16px]
           "
         >
@@ -701,10 +700,10 @@ const Visitor = () => {
 
             lg:text-[18px]
 
-            xl:ml-[-40px]
-            xl:mt-[-20px]
-            xl:w-[599px]
-            xl:h-[11px]
+            xl:ml-0
+            xl:mt-[-10px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[18px]
             xl:leading-[1]
           "
@@ -730,10 +729,10 @@ const Visitor = () => {
 
             lg:text-[16px]
 
-            xl:ml-[-40px]
+            xl:ml-0
             xl:mt-[-12px]
-            xl:w-[614px]
-            xl:h-[83px]
+            xl:max-w-full
+            xl:h-auto
             xl:text-[16px]
           "
         >
