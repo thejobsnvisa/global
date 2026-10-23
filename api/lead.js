@@ -31,14 +31,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ success: false, message: "Request body must be a JSON object" });
     }
 
-    // Map payload from Hero.jsx fields with fallbacks
     const firstName = String(body.first_name || "");
     const lastName = String(body.last_name || "");
     const name = String(body.name || `${firstName} ${lastName}`.trim()).trim();
     const email = String(body.company_email || body.email || "").trim();
     const phone = String(body.phone || "");
     
-    // Extract inquiry and comments
     const visaType = String(body.visaType || body.inquiry || "General Inquiry");
     const message = String(body.message || body.requirements || body.comments || "");
     const leadSource = String(body.source || "Website Form");
@@ -61,15 +59,12 @@ export default async function handler(req, res) {
     }
 
     /* ========= CRM SYNC ========= */
-    console.log("[CRM] Sending data for:", email);
-
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 5000);
 
-      let crmResponse;
       try {
-        crmResponse = await fetch(
+        await fetch(
           "https://case.growmore.one/api/webhooks/website-form",
           {
             method: "POST",
@@ -89,10 +84,6 @@ export default async function handler(req, res) {
       } finally {
         clearTimeout(timeout);
       }
-
-      const crmText = await crmResponse.text();
-      console.log("[CRM STATUS]:", crmResponse.status);
-      console.log("[CRM RESPONSE]:", crmText);
     } catch (err) {
       console.error("[CRM ERROR FULL]:", err);
     }
@@ -102,41 +93,53 @@ export default async function handler(req, res) {
     const emailPass = process.env.EMAIL_PASS ? process.env.EMAIL_PASS.replace(/\s+/g, "") : "";
 
     if (!emailUser || !emailPass) {
-      console.error("Missing EMAIL env variables");
-    } else {
-      try {
-        const transporter = nodemailer.createTransport({
-          host: "smtp.gmail.com",
-          port: 465,
-          secure: true,
-          connectionTimeout: 5000,
-          greetingTimeout: 5000,
-          socketTimeout: 5000,
-          auth: {
-            user: emailUser,
-            pass: emailPass,
-          },
-        });
+      return res.status(500).json({
+        success: false,
+        message: "Email configuration error: Missing EMAIL_USER or EMAIL_PASS environment variables.",
+      });
+    }
 
-        const info = await transporter.sendMail({
-          from: `"Growmore Lead" <${emailUser}>`,
-          to: ["itgrowmore2@gmail.com"],
-          replyTo: email,
-          subject: `New Lead: ${name} - ${visaType}`, // Fixed raw newline issue
-          html: `
-            <h3>New Lead Appointment Details</h3>
-            <p><b>Name:</b> ${name}</p>
-            <p><b>Email:</b> ${email}</p>
-            <p><b>Phone:</b> ${phone || "N/A"}</p>
-            <p><b>Visa Type:</b> ${visaType}</p>
-            <p><b>Message:</b> ${message || "No message"}</p>
-          `,
-        });
+    try {
+      const transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
+        connectionTimeout: 10000,
+        greetingTimeout: 10000,
+        socketTimeout: 10000,
+        auth: {
+          user: emailUser,
+          pass: emailPass,
+        },
+        tls: {
+          rejectUnauthorized: false,
+        },
+      });
 
-        console.log("[SMTP SUCCESS]: Message ID:", info.messageId);
-      } catch (err) {
-        console.error("[SMTP ERROR]:", err);
-      }
+      const info = await transporter.sendMail({
+        from: `"Growmore Lead" <${emailUser}>`,
+        to: ["itgrowmore2@gmail.com"],
+        replyTo: email,
+        subject: `New Lead: ${name} - ${visaType}`,
+        html: `
+          <h3>New Lead Appointment Details</h3>
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Phone:</b> ${phone || "N/A"}</p>
+          <p><b>Visa Type:</b> ${visaType}</p>
+          <p><b>Message:</b> ${message || "No message"}</p>
+        `,
+      });
+
+      console.log("[SMTP SUCCESS]: Message ID:", info.messageId);
+    } catch (err) {
+      console.error("[SMTP ERROR FULL]:", err);
+      // Return the exact error to the client for debugging
+      return res.status(500).json({
+        success: false,
+        message: "Failed to send email via SMTP",
+        error: err.message,
+      });
     }
 
     /* ========= SUCCESS ========= */
