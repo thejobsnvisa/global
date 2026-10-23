@@ -39,6 +39,9 @@ import StudentvisaUk from "./Pages/StudentvisaUk.jsx";
 import StudentvisaEurope from "./Pages/StudentvisaEurope.jsx";
 import PointsCalculatorCanada from "./Pages/PointsCalculatorCanada.jsx";
 import Terms from "./Pages/Terms.jsx";
+import Policy from "./Pages/Policy.jsx";
+import Refund from "./Pages/Return.jsx";
+import AI from "./Pages/AI.jsx";
 
 function App() {
   return (
@@ -86,7 +89,10 @@ function App() {
         <Route path="/services/student-visa/united-kingdom" element={<StudentvisaUk/>}/>
         <Route path="/services/student-visa/europe" element={<StudentvisaEurope/>}/>
         <Route path="/migration-assessment/points-calculator-canada" element={<PointsCalculatorCanada/>}/>
-        <Route path="/terms-services" element={<Terms/>}/>
+        <Route path="/services/terms-services" element={<Terms/>}/>
+        <Route path="/services/privacy-policy" element={<Policy/>}/>
+        <Route path="/services/cancellation-and-refund-policy" element={<Refund/>}/>
+        <Route path="/services/aritificial-intelligence-use-policy" element={<AI/>}/>
       </Routes>
       <Footer />
     </Router>
