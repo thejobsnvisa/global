@@ -117,8 +117,8 @@ export default async function handler(req, res) {
       });
 
       const info = await transporter.sendMail({
-        from: `"Growmore Lead" <${emailUser}>`,
-        to: ["itgrowmore2@gmail.com"],
+        from: `"Growmore Global Lead" <${emailUser}>`,
+        to: ["study@growmore.one"],
         replyTo: email,
         subject: `New Lead: ${name} - ${visaType}`,
         html: `
