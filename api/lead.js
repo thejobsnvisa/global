@@ -101,8 +101,8 @@ export default async function handler(req, res) {
 
     try {
       const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
+        host: "smtp.mailtrap.io",
+        port: 2525,
         secure: false,
         connectionTimeout: 10000,
         greetingTimeout: 10000,
@@ -117,10 +117,10 @@ export default async function handler(req, res) {
       });
 
       const info = await transporter.sendMail({
-        from: `"Growmore Global Lead" <${emailUser}>`,
+        from: `"ImmigraSuite" <noreply@immigrasuite.com>`,
         to: ["study@growmore.one"],
         replyTo: email,
-        subject: `New Lead: ${name} - ${visaType}`,
+        subject: `Growmore Global Visa: New Lead: ${name} - ${visaType}`,
         html: `
           <h3>New Lead Appointment Details</h3>
           <p><b>Name:</b> ${name}</p>
@@ -134,7 +134,6 @@ export default async function handler(req, res) {
       console.log("[SMTP SUCCESS]: Message ID:", info.messageId);
     } catch (err) {
       console.error("[SMTP ERROR FULL]:", err);
-      // Return the exact error to the client for debugging
       return res.status(500).json({
         success: false,
         message: "Failed to send email via SMTP",
