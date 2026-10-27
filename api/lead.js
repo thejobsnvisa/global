@@ -65,7 +65,7 @@ export default async function handler(req, res) {
 
       try {
         await fetch(
-          "https://case.growmore.one/api/webhooks/website-form",
+          "https://global.growmore.one/api/webhooks/website-form",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
