@@ -102,8 +102,8 @@ export default async function handler(req, res) {
     try {
       const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465,
-        secure: true,
+        port: 587,
+        secure: false,
         connectionTimeout: 10000,
         greetingTimeout: 10000,
         socketTimeout: 10000,
@@ -111,36 +111,23 @@ export default async function handler(req, res) {
           user: emailUser,
           pass: emailPass,
         },
+        tls: {
+          rejectUnauthorized: false,
+        },
       });
-
-      const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;",
-      })[character]);
 
       const info = await transporter.sendMail({
         from: `"Growmore Global Lead" <${emailUser}>`,
         to: ["study@growmore.one"],
         replyTo: email,
         subject: `New Lead: ${name} - ${visaType}`,
-        text: [
-          "New Lead Appointment Details",
-          `Name: ${name}`,
-          `Email: ${email}`,
-          `Phone: ${phone || "N/A"}`,
-          `Visa Type: ${visaType}`,
-          `Message: ${message || "No message"}`,
-        ].join("\n"),
         html: `
           <h3>New Lead Appointment Details</h3>
-          <p><b>Name:</b> ${escapeHtml(name)}</p>
-          <p><b>Email:</b> ${escapeHtml(email)}</p>
-          <p><b>Phone:</b> ${escapeHtml(phone || "N/A")}</p>
-          <p><b>Visa Type:</b> ${escapeHtml(visaType)}</p>
-          <p><b>Message:</b> ${escapeHtml(message || "No message")}</p>
+          <p><b>Name:</b> ${name}</p>
+          <p><b>Email:</b> ${email}</p>
+          <p><b>Phone:</b> ${phone || "N/A"}</p>
+          <p><b>Visa Type:</b> ${visaType}</p>
+          <p><b>Message:</b> ${message || "No message"}</p>
         `,
       });
 
