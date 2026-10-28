@@ -242,8 +242,7 @@ export default async function handler(req, res) {
 
         replyTo: email,
 
-        subject: `New Lead: ${name}
-${visaType}`,
+       subject: `Growmore Global Visa: New Lead - ${name} (${visaType})`,
 
         html: `
 

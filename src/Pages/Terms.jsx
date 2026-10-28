@@ -29,94 +29,48 @@ const Terms = () =>{
                 </div>
               </section>
           <main className="mx-auto mb-45 w-full max-w-[1256px] px-5 py-8 text-sm leading-relaxed text-[#0085a3] sm:px-8 sm:py-10 sm:text-[15px] md:px-12 md:text-base lg:px-10 lg:text-[17px]">
-            <article className="w-full max-w-full break-words text-justify">
-<p>
-            Website & Social media Terms of Use for Growmore & Associates Pty Ltd (T/a Growmore Immigration, ABN: 58648667574). These website terms of use (Terms) apply to your use of, and access to, the Site.
-
-</p>
-<p className="mt-3">
-Information and availability: The information provided on this website is for general informational purposes only. While we make every effort to ensure that the information on this website is accurate and up to date, we cannot guarantee its completeness, accuracy, reliability, suitability, or availability at any given time. Any reliance you place on such information is therefore strictly at your own risk. Growmore & Associates Pty Ltd (T/a Growmore Immigration) will not be held liable for any inaccuracies, errors, or omissions, or for any claim arising out of or in connection with the use of this website. The Content is subject to change without notice. However, we do not undertake to keep our Platform up-to-date, and we are not liable if any Content is inaccurate or out-of-date.
-</p>
-
-<p className="mt-3">
-If you use this Site, receive any information from us (such as a legal guide or other piece) or download any of our resources, this does not mean that we become Responsible Migration Agent (RMA) for your subjected application or that an RMA-client relationship is created.
-</p>
-<p className="mt-3 font-bold">Warranty and Disclaimer</p>
-<p className="mt-3">
-The information, products, and services provided on this website may include inaccuracies or errors, including pricing errors. Growmore & Associates Pty Ltd (T/a Growmore Immigration) does not guarantee the accuracy of and disclaims all liability for any errors or other inaccuracies relating to the information and description of the content, products, and services. We reserve the right to correct any pricing errors on the website and/or on pending reservations made under an incorrect price.
-</p>
-
-<p className="mt-3">
-Growmore & Associates Pty Ltd (T/a Growmore Immigration) makes no representation about the suitability of the information, software, products, and services contained on this website for any purpose, and the inclusion or offering of any products or services on this website does not constitute any endorsement or recommendation of such products or services. All such information, software, products, and services are provided “AS IS” without warranty of any kind. We disclaim all warranties and conditions that this website, its services, or any email sent from us, are free of viruses or other harmful components. We hereby disclaim all warranties and conditions concerning its, software, products, and services, including all implied warranties and conditions of merchantability, fitness for a particular purpose, title, and no infringement.
-</p>
-
-<p className="mt-3">
-We will not be liable for any direct, indirect, punitive, incidental, special, or consequential damages arising out of, or in any way connected with, access to, display of, or use of this website or with the delay or inability to access, display or use this website (including but not limited to, reliance upon opinions , any computer viruses, information, software, linked websites, products, and services obtained through this website; or otherwise arising out of the access to, display of or use of this website) whether based on a theory of negligence, contract, tort, strict liability, or otherwise, and even if Growmore & Associates Pty Ltd (T/a Growmore Immigration) has been advised of the possibility of such damages. In no event shall we be liable for any delay, cancellation, strike, force majeure or other causes beyond our direct control, and we have no responsibility for any additional expense omission delays or acts of any government or authority.
-</p>
-
-<p className="mt-3">
-Intellectual Property Rights: All content on this website, including but not limited to text, images, logos, and trademarks, is owned or licensed by Growmore & Associates Pty Ltd (T/a Growmore Immigration) and protected by copyright and other intellectual property rights. We authorize you to access and use the website solely for your own personal, non-commercial use and to display, print, and download the content onto your device, provided that you do not remove any copyright notice included in Our Intellectual Property.
-</p>
-
-<p className="mt-3">
-You must not use the website, or any of the content, for your commercial purposes, including, for example, to advertise your own business or for any other revenue generation activity and you must not use the website, including the content, in any way that competes with our business. Any unauthorized use of this content, whether written or in the form of social media posts either verbatim or modified, including but not limited to the reproduction, distribution, display, or other use, without our prior written permission is strictly prohibited and may result in legal consequences.
-</p>
-
-<p className="mt-3">
-Unacceptable conduct: The use of this website for any illegal or unauthorized purposes, or for any conduct that causes or may cause damage pecuniary/defamatory or both to the website and the business i.e Growmore & Associates Pty Ltd or impairment of its availability or accessibility, is strictly prohibited. Any discriminatory, harassing, threatening or defamatory conduct is also strictly prohibited. Any violations of these terms will result in the termination of your access to our digital content and initiation of legal proceedings by applicable laws.
-</p>
-<p className="mt-3">
-Content uploaded by viewers: Any content that you upload or submit to this website or its social media handles, including but not limited to text, images, and videos, will be considered non-confidential and non-proprietary. Growmore & Associates Pty Ltd (T/a Growmore Immigration) have the right to use, copy, distribute, and disclose to third parties any such content for any purpose without any compensation or notification to you.
-</p>
-
-<p className="mt-3">
-Third-party sites: This website may contain links to other websites. We do not endorse or accept any responsibility for the content of such websites and we are not responsible for the availability or the privacy practices of such websites. We strongly advise you to review the terms of use and privacy policy of any third-party website before using it.
-</p>
-
-<p className="mt-3">
-Our limited liability: To the fullest extent permitted by law, Growmore & Associates Pty Ltd (T/a Growmore Immigration) will not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data or other intangible losses arising out of or in connection with the use of this website or the services provided on it. We will not be held liable for any damages whatsoever, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses.
-</p>
-<p className="mt-3">
-  We exclude all liability for any loss or damage of any kind (including consequential loss, indirect loss, loss of profit, loss of benefit, loss of opportunity, or loss of reputation) whether under the statute, contract, equity, tort (including negligence), indemnity or otherwise arising out of or in connection with the website or the Content.
-</p>
-
-<p className="mt-3">
-Customer Due Diligence: You agree and acknowledge that for undertaking any financial transaction through the website, Growmore & Associates Pty Ltd (T/a Growmore Immigration) may undertake client/customer due diligence measures and seek mandatory information required for verification and identification of the user. We may obtain sufficient information to establish, to our satisfaction, the identity of each new customer, and the purpose the intended nature of the immigration service relationship between you and our company. You agree and understand that you shall ensure that any payment towards immigration services is remitted only through your bank account or from a joint bank account in which you are a joint holder. You also agree and understand that by purchasing and paying for a service via this website, you warrant that you are the authorized holder of the credit card used for payment and/or have the express consent of the authorized credit card holder to make the relevant purchase and payment. In the event, payment towards immigration services is remitted through a bank account opened in the name of a third party (i.e. not in your name), you agree and acknowledge that our company can undertake enhanced due diligence measures(including any documentation), to satisfy itself relating to customer due diligence requirements.
-
-</p>
-<p className="mt-3">
-  Any failed payment due to lack of sufficient funds or Bank Accounts associated with money laundering or allied illegal activities will lead to alerting the authorities and Growmore & Associates Pty Ltd will be entitled to pursue legal action to recover dues/ damages or both caused due to hardships arising out of aforementioned activities
-
-</p>
-<p className="mt-3">
-Privacy: We take the protection of your personal data very seriously. Our Privacy Policy, which forms part of these terms, explains how we collect, use and protect your personal data. By using this website, you consent to the collection, use, and sharing of your personal data in accordance with our Privacy Policy.
-</p>
-
-<p className="mt-3">
-Social Media posts/reels/video material: At Growmore Immigration, we are committed to providing accurate and up-to-date information about the migration process to our clients. We understand that the immigration process can be complex and overwhelming, and our goal is to make it as easy as possible for our clients to navigate.
-
-</p>
-<p className="mt-3">Please note that the information provided on our website and through all our social media platforms including Facebook, YouTube, TikTok, WhatsApp, LinkedIn, and Instagram is for general information purposes only and should not be considered specific migration advice. Each individual’s immigration case is unique and may require specific advice that can only be provided by a qualified migration agent or lawyer. We strongly advise all clients to seek independent migration advice before making any decisions regarding their immigration case.
-</p>
-<p className="mt-3">The views and opinions expressed on our website and social media platforms are solely those of our team and do not reflect the official policy or position of any government agency.
-</p>
-<p className="mt-3">By accessing our website or participating in any of our social media platforms, you acknowledge and accept that we are not providing specific migration advice and that any information provided should not be relied upon as a substitute for independent professional advice.
-</p>
-<p className="mt-3">
-If you have any questions or concerns, please feel free to contact us through the contact information provided on our website or send a direct message to our social media accounts. We will be happy to assist you.
-</p>
-<p className="mt-3">
-In event of discontinuing the Site: We may, at any time and without notice, discontinue the Site (in whole or part), or exclude any person from using our Site.
-</p>
-
-<p className="mt-3">
-Jurisdiction: These Terms are governed by the laws of Victoria. Each party irrevocably and unconditionally submits to the exclusive jurisdiction of the courts operating in Victoria and any courts entitled to hear appeals from those courts and waives any right to object to proceedings being brought in those courts.
-</p>
-
-<p className="mt-3">
-Changes to these Terms: We may, at any time and at our discretion, vary these Terms by publishing the varied terms on the Site. We recommend you check the Site regularly to ensure you are aware of our current terms.
-Thank you for choosing Growmore & Associates Pty Ltd (T/a Growmore Immigration).
-</p>
+            <article className="w-full max-w-full break-words text-justify">  
+              <p className="mt-3 font-bold">Terms & Services</p>
+              <p className="mt-3">Website & Social Media Privacy Policy for Grow More Global Immigration Private Limited (CIN: U82990GJ2026PTC174187, GSTIN: 24AAMCG8333M1Z5). This Privacy Policy outlines how we collect, use, store and share personal information when you access our website, interact with our social media platforms or use our immigration and visa-related services.</p>
+              <p className="mt-3">The information you find on our website, in our articles, social media posts, and other digital content is for guidance purposes only. We take care to ensure that the information we publish is relevant and accurate at the time of publication. However, immigration laws, visa requirements, government policies, application fees and processing times may change. So, we cannot guarantee that all information we have shared will always remain complete, accurate or up to date. You should verify the latest requirements with the relevant immigration authority before making any decisions based on information published by us. Grow More Global Immigration Private Limited will not be responsible for decisions you make only on the basis of our digital platforms’ information. </p>
+              <p className="mt-3 font-bold">Immigration Information and Service Disclaimer : </p>
+              <p className="mt-3">The information we publish via our platforms is not for a specific set of circumstances, so do not treat it as personal advice. Each immigration case is unique and depends on the laws, policies, documentation requirements and assessment procedures of the relevant country to be eligible. We strongly recommend that you get professional advice before you act on any visa application or immigration decision. Visiting our website, downloading a resource, sending a message or interacting with our social media accounts does not, by itself, establish a formal client-service relationship with our company. Any engagement for services will be subject to the applicable service agreement and agreed scope of work. </p>
+              <p className="mt-3 font-bold">No Guarantee of Immigration Outcomes : </p>
+              <p className="mt-3 ">We offer visa services, which include student visa assistance, work visa assistance, visitor visa assistance, dependent visa assistance, and any other migration-related service. However, we cannot guarantee a successful visa outcome, permanent residency, job placement, sponsorship, admission to a specific educational institution, or any other result because only the relevant government department, educational institution, employer, or any other authorized agency decides how the application is evaluated. Our successful case studies or testimonials should not serve as an indication that the same outcome will be achieved by other applicants. </p>
+              <p className="mt-3 font-bold">Accuracy of Information Provided by Clients : </p>
+              <p className="mt-3 ">You are required to give genuine, accurate and complete information and verifiable supporting documents to allow us to perform the service that you requested. You must inform us immediately regarding any changes in information that can affect your application, eligibility or inquiry. We do not take responsibility for any problems that are caused by the misleading, incorrect or incomplete information that you have provided. If we are not sure regarding your situation or need further evidence, we reserve the right to ask for an explanation or additional information in each case.</p>
+              <p className="mt-3 font-bold">Service Scope and Engagement : </p>
+              <p className="mt-3 ">The services we offer include immigration pathway evaluations, visa consultation, and assistance with paperwork and the application process. All the details related to our responsibilities, service fees and relevant conditions will be stated in our appropriate service documentation. An inquiry or preliminary conversation with our representative does not automatically mean that we have become responsible for processing your application. In certain situations, we might decline the request for services if it is outside our area of expertise or accepting it would conflict with applicable requirements.</p>
+              <p className="mt-3 font-bold">Fees, Payments and Refunds : </p>
+              <p className="mt-3 ">All fees at Grow More Global Immigration Private Limited will be communicated to you through a relevant quotation, service agreement or other written communication. Before you make any payments, see the fees, payment schedule and applicable conditions. Government charges, visa application fees, skills assessment fees, examination costs, translation expenses and other third-party charges may be payable separately unless expressly included in the agreed service fee. Refund and cancellation requests will be governed by the service contract and the relevant law.</p>
+              <p className="mt-3 font-bold">Customer Verification and Payment Security : </p>
+              <p className="mt-3 ">We may request that you provide some form of identification or documentation to verify your identity, your reason for enquiry, and to meet the financial, legal or regulatory requirements. You must ensure that you are able to process payments using the methods specified by the company. When necessary for verification purposes, we may ask you to provide evidence that your bank account or payment method belongs to you or you have permission to use it.  You may be required to provide further information for the payment, which is processed by a third party. We may suspend or deny your transaction if there are any problems with the data you provided, if your payment cannot be verified, or if we suspect illegal activity.</p>
+              <p className="mt-3 font-bold">Website Use and Prohibited Activities :  </p>
+              <p className="mt-3 ">Using our website and digital platforms responsibly and for lawful objectives is mandatory. You are not entrusted with trying to access restricted networks, disrupt the operation or security of our website, introduce malware, misuse our inquiry forms or produce false information. You must not use our website or platforms to bully, threaten, treat anyone unfairly, or spread false or harmful statements about our company, employees, representatives or other users. If there is any misuse or breach of these terms, we will be allowed to block access to our platforms, delete relevant content, or take any other appropriate actions in accordance with the law.</p>
+              <p className="mt-3 font-bold">Copyright and Ownership of Content : </p>
+              <p className="mt-3 ">All the content and materials that are available on our website and our official digital platforms, which include written content, articles, photographs, videos, graphics, logos, designs and other creative work, belong to Grow More Global Immigration Private Limited or are used with permission from the relevant rights owner. You cannot copy, republish, change, distribute, or sell these materials without legal permission, except when the use is allowed by law. You can use our materials for informative purposes, on the condition that you comply with applicable intellectual property rights. Unauthorised use can lead to legal issues where appropriate. </p>
+              <p className="mt-3 font-bold">Content Shared by Users :  </p>
+              <p className="mt-3 ">If you post a comment, review, photograph, video or other material on our website or social media pages, you remain responsible for the content you submit and must have the necessary rights or permissions to share it. Do not disclose other people's private information, confidential files, or any copyrighted materials without proper authority. By sharing your content, you give us permission to use, display or share it for relevant purposes connected with managing our platforms and services. If separate permission is needed to use the content for promotional use or publication beyond the original context, we will seek the necessary permission.</p>
+              <p className="mt-3 font-bold">Social Media Communication and Public Comments : </p>
+              <p className="mt-3 ">We use our social media platforms, which consist of Facebook, YouTube, WhatsApp, LinkedIn, and Instagram, to share updates on immigration, educational content, general guidance, and any announcements related to the company. Information available through the channels may not be current when you access it. We may moderate or remove content that is inappropriate, misleading, unlawful, unrelated to the discussion or violates the corresponding rules of the platform.</p>
+              <p className="mt-3 font-bold">Third-Party Websites and External Services: : </p>
+              <p className="mt-3 ">On our website and in our digital communications, we might direct you to outside sources such as external sites, government portals, educational institutions, payment services or other third-party platforms. These references are made for you to access potentially relevant information. We do not control their content, availability, security, or data management practices, so make sure to review them before using. Reference to an external source does not mean that we endorse its content or guarantee its accuracy.</p>
+              <p className="mt-3 font-bold">Collection and Use of Personal Information : </p>
+              <p className="mt-3 ">When you contact us or use our services, we can collect details like your name, contact information, identity and passport details, educational records, employment history, visa history, financial evidence and other documents required for immigration procedures. This information will be used to respond to enquiries, understand your circumstances, provide agreed services, communicate with you and maintain appropriate records. We can also process your information for other purposes, such as verification, security, service improvement and compliance with legal obligations.</p>
+              <p className="mt-3 font-bold">Sharing and International Transfer of Information : </p>
+              <p className="mt-3 ">In certain situations, we may share your relevant personal information with immigration authorities, government agencies, educational institutions, employers, sponsors, authorised representatives, professional advisers and service providers involved in the services you request. Considering the fact that our services cover several countries, some data may be transferred to or received by some of the recipients outside India. Such disclosures will be performed in accordance with the applicable legal requirements, and necessary efforts will be taken to secure personal data while disclosing it. </p>
+              <p className="mt-3 font-bold">Relationship with Growmore & Associates Pty Ltd : </p>
+              <p className="mt-3 ">Grow More Global Immigration Private Limited and Growmore & Associates Pty Ltd, trading as Growmore Immigration, are separate legal entities working as sister companies under similar leadership with the same CEO and Director. In some cases, when there is a legitimate business need, we share data between the companies for the purposes of giving answers to inquiries, coordinating services or maintaining appropriate business records. Sharing is done according to the privacy legislation and with any necessary consent or authorisation.</p>
+              <p className="mt-3 font-bold">Marketing and Promotional Communications :  </p>
+              <p className="mt-3 ">We may send immigration updates, educational material, service announcements or promotional communications where permitted by law. If you no longer wish to receive marketing messages, you may opt out using the instructions provided in the communication or contact us directly. Your opting out will not prevent us from sending you important messages about existing inquiries, appointments, payments, and services.</p>
+              <p className="mt-3 font-bold">Children and Dependent Applicants :   </p>
+              <p className="mt-3 ">Some visa and migration services involve paperwork regarding children or dependents. If information regarding a child is required for a particular service, that information must come from a parent, guardian, or another representative with legal authority to share it. We will handle such information in accordance with the requirements of applicable law.</p>
+              <p className="mt-3 font-bold">Website Changes and Discontinuation : </p>
+              <p className="mt-3 ">Some parts of our website, social media, or services might be changed, updated, suspended, or discontinued for numerous reasons, including operational, technical, security or other reasons. We may also restrict access where there is a reasonable basis to believe that these terms have been breached or our platforms have been misused. We will provide notice where appropriate and practicable, but advance notice may not always be possible.</p>
+              <p className="mt-3 font-bold">Changes to These Terms and Privacy Policy : </p>
+              <p className="mt-3 ">We might update these terms along with our Privacy Policy when there is a change in our business practices, technology or legal obligations. The updated version will be published on our website, along with a revised date where appropriate. We encourage you to review the relevant document periodically so you remain informed about the terms governing your use of our website, digital platforms and services.</p>
+              <p className="mt-3">If you have any questions about these terms, our services or the way we handle personal information, you may contact Grow More Global Immigration Private Limited at 417, Block A, ISCON Centre, Shivranjini Cross Roads, Ahmedabad, Gujarat 380015, India. You can email us at study@growmore.one or call +91 90818 99668 or +91 90818 99669.</p>
+              <p className="mt-3">Thank you for choosing Grow More Global Immigration Private Limited. </p>
             </article>
           </main>
         </>

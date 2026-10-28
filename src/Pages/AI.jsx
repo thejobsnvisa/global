@@ -31,92 +31,110 @@ const AI = () =>{
           <main className="mx-auto mb-45 w-full max-w-[1256px] px-5 py-8 text-sm leading-relaxed text-[#0085a3] sm:px-8 sm:py-10 sm:text-[15px] md:px-12 md:text-base lg:px-10 lg:text-[17px]">
             <article className="w-full max-w-full break-words text-justify">
 <p>
-            Website & Social media Terms of Use for Growmore & Associates Pty Ltd (T/a Growmore Immigration, ABN: 58648667574). These website terms of use (Terms) apply to your use of, and access to, the Site.
-
+Grow More Global Immigration Private Limited is committed to using Artificial Intelligence (AI) responsibly, transparently, and ethically in support of business operations while maintaining appropriate human oversight, confidentiality and accountability. 
 </p>
 <p className="mt-3">
-Information and availability: The information provided on this website is for general informational purposes only. While we make every effort to ensure that the information on this website is accurate and up to date, we cannot guarantee its completeness, accuracy, reliability, suitability, or availability at any given time. Any reliance you place on such information is therefore strictly at your own risk. Growmore & Associates Pty Ltd (T/a Growmore Immigration) will not be held liable for any inaccuracies, errors, or omissions, or for any claim arising out of or in connection with the use of this website. The Content is subject to change without notice. However, we do not undertake to keep our Platform up-to-date, and we are not liable if any Content is inaccurate or out-of-date.
-</p>
-
-<p className="mt-3">
-If you use this Site, receive any information from us (such as a legal guide or other piece) or download any of our resources, this does not mean that we become Responsible Migration Agent (RMA) for your subjected application or that an RMA-client relationship is created.
-</p>
-<p className="mt-3 font-bold">Warranty and Disclaimer</p>
-<p className="mt-3">
-The information, products, and services provided on this website may include inaccuracies or errors, including pricing errors. Growmore & Associates Pty Ltd (T/a Growmore Immigration) does not guarantee the accuracy of and disclaims all liability for any errors or other inaccuracies relating to the information and description of the content, products, and services. We reserve the right to correct any pricing errors on the website and/or on pending reservations made under an incorrect price.
-</p>
-
-<p className="mt-3">
-Growmore & Associates Pty Ltd (T/a Growmore Immigration) makes no representation about the suitability of the information, software, products, and services contained on this website for any purpose, and the inclusion or offering of any products or services on this website does not constitute any endorsement or recommendation of such products or services. All such information, software, products, and services are provided “AS IS” without warranty of any kind. We disclaim all warranties and conditions that this website, its services, or any email sent from us, are free of viruses or other harmful components. We hereby disclaim all warranties and conditions concerning its, software, products, and services, including all implied warranties and conditions of merchantability, fitness for a particular purpose, title, and no infringement.
-</p>
-
-<p className="mt-3">
-We will not be liable for any direct, indirect, punitive, incidental, special, or consequential damages arising out of, or in any way connected with, access to, display of, or use of this website or with the delay or inability to access, display or use this website (including but not limited to, reliance upon opinions , any computer viruses, information, software, linked websites, products, and services obtained through this website; or otherwise arising out of the access to, display of or use of this website) whether based on a theory of negligence, contract, tort, strict liability, or otherwise, and even if Growmore & Associates Pty Ltd (T/a Growmore Immigration) has been advised of the possibility of such damages. In no event shall we be liable for any delay, cancellation, strike, force majeure or other causes beyond our direct control, and we have no responsibility for any additional expense omission delays or acts of any government or authority.
-</p>
-
-<p className="mt-3">
-Intellectual Property Rights: All content on this website, including but not limited to text, images, logos, and trademarks, is owned or licensed by Growmore & Associates Pty Ltd (T/a Growmore Immigration) and protected by copyright and other intellectual property rights. We authorize you to access and use the website solely for your own personal, non-commercial use and to display, print, and download the content onto your device, provided that you do not remove any copyright notice included in Our Intellectual Property.
-</p>
-
-<p className="mt-3">
-You must not use the website, or any of the content, for your commercial purposes, including, for example, to advertise your own business or for any other revenue generation activity and you must not use the website, including the content, in any way that competes with our business. Any unauthorized use of this content, whether written or in the form of social media posts either verbatim or modified, including but not limited to the reproduction, distribution, display, or other use, without our prior written permission is strictly prohibited and may result in legal consequences.
-</p>
-
-<p className="mt-3">
-Unacceptable conduct: The use of this website for any illegal or unauthorized purposes, or for any conduct that causes or may cause damage pecuniary/defamatory or both to the website and the business i.e Growmore & Associates Pty Ltd or impairment of its availability or accessibility, is strictly prohibited. Any discriminatory, harassing, threatening or defamatory conduct is also strictly prohibited. Any violations of these terms will result in the termination of your access to our digital content and initiation of legal proceedings by applicable laws.
+This Policy applies to our employees, contractors, consultants and authorised representatives involved in providing global immigration services, including student, dependent, visitor, work and other migration visa services. It should be read alongside our Privacy Policy and Terms of Service. </p>
+<p className="mt-3 font-bold">
+About Artificial Intelligence 
 </p>
 <p className="mt-3">
-Content uploaded by viewers: Any content that you upload or submit to this website or its social media handles, including but not limited to text, images, and videos, will be considered non-confidential and non-proprietary. Growmore & Associates Pty Ltd (T/a Growmore Immigration) have the right to use, copy, distribute, and disclose to third parties any such content for any purpose without any compensation or notification to you.
+Artificial Intelligence (AI) is the technology that is used to develop content, analyze information, and summarise texts, without human engagement. The content produced by AI may contain errors or outdated information. Any material produced with AI must always be checked prior to its use. 
 </p>
-
-<p className="mt-3">
-Third-party sites: This website may contain links to other websites. We do not endorse or accept any responsibility for the content of such websites and we are not responsible for the availability or the privacy practices of such websites. We strongly advise you to review the terms of use and privacy policy of any third-party website before using it.
-</p>
-
-<p className="mt-3">
-Our limited liability: To the fullest extent permitted by law, Growmore & Associates Pty Ltd (T/a Growmore Immigration) will not be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data or other intangible losses arising out of or in connection with the use of this website or the services provided on it. We will not be held liable for any damages whatsoever, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses.
+<p className="mt-3 font-bold">
+Permitted Uses of AI 
 </p>
 <p className="mt-3">
-  We exclude all liability for any loss or damage of any kind (including consequential loss, indirect loss, loss of profit, loss of benefit, loss of opportunity, or loss of reputation) whether under the statute, contract, equity, tort (including negligence), indemnity or otherwise arising out of or in connection with the website or the Content.
+AI can be used for these purposes: 
 </p>
-
-<p className="mt-3">
-Customer Due Diligence: You agree and acknowledge that for undertaking any financial transaction through the website, Growmore & Associates Pty Ltd (T/a Growmore Immigration) may undertake client/customer due diligence measures and seek mandatory information required for verification and identification of the user. We may obtain sufficient information to establish, to our satisfaction, the identity of each new customer, and the purpose the intended nature of the immigration service relationship between you and our company. You agree and understand that you shall ensure that any payment towards immigration services is remitted only through your bank account or from a joint bank account in which you are a joint holder. You also agree and understand that by purchasing and paying for a service via this website, you warrant that you are the authorized holder of the credit card used for payment and/or have the express consent of the authorized credit card holder to make the relevant purchase and payment. In the event, payment towards immigration services is remitted through a bank account opened in the name of a third party (i.e. not in your name), you agree and acknowledge that our company can undertake enhanced due diligence measures(including any documentation), to satisfy itself relating to customer due diligence requirements.
-
+<ul className="mt-3 list-disc space-y-2 pl-6">
+  <li>
+    <span className="font-bold">Performing administrative functions : </span> creating documents,
+    organizing data, and improving internal operations.
+  </li>
+  <li>
+    <span className="font-bold">Communicating with clients : </span> giving answers to basic questions and FAQ.
+  </li>
+  <li>
+    <span className="font-bold">Creating content : </span> helping to develop website content, blogs, social media posts, and educational materials. 
+  </li>
+  <li>
+    <span className="font-bold">Data analysis and trend monitoring : </span> reviewing operational
+    information to identify patterns and improve service delivery.
+  </li>
+  <li>
+    <span className="font-bold">Research and analysis : </span> Summarising information and supporting internal research, subject to independent verification. 
+  </li>
+  <li>
+    <span className="font-bold">Business operations : </span> enhancing reporting and customer relationship management efficiency. 
+  </li>
+</ul>
+<p className="mt-3 ">
+In most cases, we check the content obtained through AI prior to its professional use. 
 </p>
-<p className="mt-3">
-  Any failed payment due to lack of sufficient funds or Bank Accounts associated with money laundering or allied illegal activities will lead to alerting the authorities and Growmore & Associates Pty Ltd will be entitled to pursue legal action to recover dues/ damages or both caused due to hardships arising out of aforementioned activities
-
+<p className="mt-3 font-bold">
+Restrictions on AI Use  
 </p>
-<p className="mt-3">
-Privacy: We take the protection of your personal data very seriously. Our Privacy Policy, which forms part of these terms, explains how we collect, use and protect your personal data. By using this website, you consent to the collection, use, and sharing of your personal data in accordance with our Privacy Policy.
+<p className="mt-3 ">
+The following practices are prohibited : 
 </p>
-
-<p className="mt-3">
-Social Media posts/reels/video material: At Growmore Immigration, we are committed to providing accurate and up-to-date information about the migration process to our clients. We understand that the immigration process can be complex and overwhelming, and our goal is to make it as easy as possible for our clients to navigate.
-
-</p>
-<p className="mt-3">Please note that the information provided on our website and through all our social media platforms including Facebook, YouTube, TikTok, WhatsApp, LinkedIn, and Instagram is for general information purposes only and should not be considered specific migration advice. Each individual’s immigration case is unique and may require specific advice that can only be provided by a qualified migration agent or lawyer. We strongly advise all clients to seek independent migration advice before making any decisions regarding their immigration case.
-</p>
-<p className="mt-3">The views and opinions expressed on our website and social media platforms are solely those of our team and do not reflect the official policy or position of any government agency.
-</p>
-<p className="mt-3">By accessing our website or participating in any of our social media platforms, you acknowledge and accept that we are not providing specific migration advice and that any information provided should not be relied upon as a substitute for independent professional advice.
-</p>
-<p className="mt-3">
-If you have any questions or concerns, please feel free to contact us through the contact information provided on our website or send a direct message to our social media accounts. We will be happy to assist you.
-</p>
-<p className="mt-3">
-In event of discontinuing the Site: We may, at any time and without notice, discontinue the Site (in whole or part), or exclude any person from using our Site.
-</p>
-
-<p className="mt-3">
-Jurisdiction: These Terms are governed by the laws of Victoria. Each party irrevocably and unconditionally submits to the exclusive jurisdiction of the courts operating in Victoria and any courts entitled to hear appeals from those courts and waives any right to object to proceedings being brought in those courts.
-</p>
-
-<p className="mt-3">
-Changes to these Terms: We may, at any time and at our discretion, vary these Terms by publishing the varied terms on the Site. We recommend you check the Site regularly to ensure you are aware of our current terms.
-Thank you for choosing Growmore & Associates Pty Ltd (T/a Growmore Immigration).
-</p>
+<ul className="mt-3 list-disc space-y-2 pl-6">
+  <li>
+   Presenting information generated by AI as credible professional advice without necessary verification; 
+  </li>
+  <li>
+   Making or communicating final conclusions about visa eligibility without appropriate assessment by a qualified expert; 
+  </li>
+  <li>
+   Representing AI-generated content as a substitute for the services of an authorised immigration professional; 
+  </li>
+  <li>
+   Uploading confidential, sensitive or identifiable client information to AI platforms that have not been approved for the intended use; 
+  </li>
+  <li>
+   Using AI technologies to create false claims, misleading visa information, fabricated evidence or deceptive marketing material; 
+  </li>
+  <li>
+   Relying on AI outputs without checking their accuracy when they may affect a client's understanding, decisions or immigration application; 
+  </li>
+  <li>
+   Using AI in ways that breach applicable laws, contractual obligations, privacy requirements or professional standards. 
+  </li>
+</ul>
+<p className="mt-3 font-bold">Human Review and Professional Accountability </p>
+<p className="mt-3">Human supervision continues to be a crucial component of our use of AI. </p>
+<p className="mt-3">Before AI-generated content is put to use in a business operation or shared externally, appropriate staff must review it. </p>
+<p className="mt-3">The level of review must reflect the nature and potential consequences of the material.</p>
+<p className="mt-3">Where a matter involves immigration eligibility, visa conditions, application strategy, legal interpretation or other professional advice, the information must be assessed by a suitably qualified or authorised professional, as required by the relevant jurisdiction.</p>
+<p className="mt-3">AI-generated content does not become reliable or legally valid merely because it has been produced by an advanced tool. Responsibility for the Company's decisions, communications and services remains with the relevant human decision-makers and the Company, as applicable.</p>
+<p className="mt-3 font-bold">Privacy and Protection of Data </p>
+<p className="mt-3">When offering immigration services, we frequently deal with sensitive personal, financial, educational, occupational and family information. For the protection of such information, we take steps to use the AI tools responsibly. </p>
+<p className="mt-3">Before entering any personal or confidential data into an AI system, we always consider several points, including whether it is necessary, if it is safe and if it is lawful to enter such details.</p>
+<p className="mt-3">We follow a number of safety measures to ensure the protection of data, such as the use of certain reliable AI technologies, access to information only by authorized staff, reviewing data handling, and making sure that we comply with privacy legislation. </p>
+<p className="mt-3">Personal information must be handled in accordance with our Privacy Policy and applicable laws. For details on how we collect, use, store and disclose personal information, please refer to our Privacy Policy. </p>
+<p className="mt-3 font-bold">Drawbacks and Dangers of Artificial Intelligence </p>
+<p className="mt-3">AI systems may produce inaccurate, incomplete, outdated or biased information. They may also misunderstand context, overlook important facts or present uncertain information with an unjustified level of confidence. </p>
+<p className="mt-3">AI-generated information must not be treated as an authoritative source of current immigration requirements. Relevant information must be independently checked against appropriate official sources or reviewed by a qualified professional when necessary. </p>
+<p className="mt-3">We do not rely on AI results when making decisions on issues that require professional assessment. </p>
+<p className="mt-3 font-bold">Responsibilities of Employees and Representatives </p>
+<p className="mt-3">All employees, contractors and authorized representatives must use AI tools only for purposes approved in this Policy. </p>
+<p className="mt-3">They are accountable for protecting confidential information as well as for validating applicable results, recognizing possible errors, and escalating matters that require specialist review. </p>
+<p className="mt-3">Artificial intelligence must not be used against established approval processes, the responsibilities of professionals or internal security measures. Any suspected misuse, violation of privacy or serious misleading results produced by AI must be reported through the applicable internal company reporting process. </p>
+<p className="mt-3 font-bold">Policy Review and Updates </p>
+<p className="mt-3">The Policy may be updated and amended when significant changes occur concerning the use of AI, the provision of services by the organization, and relevant technologies and legal and regulatory requirements. </p>
+<p className="mt-3">Where necessary, the Company will communicate significant updates through appropriate channels. All use of AI within the business must comply with the latest version of this Policy. </p>
+<p className="mt-3">For questions concerning this Policy or our use of Artificial Intelligence, please contact: </p>
+           <ul className="mt-3 list-disc space-y-2 pl-6">
+  <li className="font-bold">
+   Grow More Global Immigration Private Limited 
+  </li>
+  <li>
+    Website : <a href="https://growmoreglobalvisa.com" target="_blank" rel="noopener noreferrer"><u>https://growmoreglobalvisa.com</u></a>
+  </li>
+  <li>
+    Email : <a href="mailto:study@growmore.one"><u>study@growmore.one</u></a>
+  </li>
+</ul>
             </article>
           </main>
         </>
