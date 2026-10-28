@@ -635,6 +635,7 @@ const AboutUs = () => {
     h-[1620px]
     md:h-[1230px]
     lg:h-[750px]
+    2xl:h-[850px]
     xl:px-0
     xl:py-16
     2xl:py-20
@@ -675,6 +676,7 @@ const AboutUs = () => {
             xl:ml-12
             2xl:ml-0
             2xl:gap-12
+            2xl:mt-[-20px]
           "
               >
                 {teams.slice(0, 3).map((member, index) => (
