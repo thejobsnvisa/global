@@ -52,7 +52,7 @@ const BlogStep = () => {
                 max-w-[450px]
                 overflow-hidden
                 rounded-[30px]
-                bg-[#ECFFF5]
+                bg-[linear-gradient(69.28deg,_#F4FFF6_4.06%,_#E8FAFF_92.34%)]
                 shadow-[0px_4px_14px_rgba(0,0,0,0.12)]
                 transition-all
                 duration-300
