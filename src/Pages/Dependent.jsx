@@ -598,10 +598,10 @@ const Dependent = () => {
                 compliance, and case accuracy at the time of lodging application
                 over assumptions or shortcuts.
               </p>
-              <p className="w-full text-[16px] font-semibold leading-snug text-cyan-600 sm:text-[18px] ">
+              <p className="w-full text-[16px] font-semibold leading-snug text-cyan-600 sm:text-[18px] 2xl:mt-[-32px]">
                 Things that set us apart include
               </p>
-              <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px]">
+              <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px] mb-30 xl:mt-[-25px] 2xl:mt-[-28px]">
                 <li>  
                   Detailed evaluation of dependent eligibility to ensure
                   approval success
