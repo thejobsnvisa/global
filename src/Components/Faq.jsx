@@ -583,7 +583,8 @@ const Faq = () => {
         <h2
           className="
             m-0
-            font-semibold
+            mt-1
+            font-bold
             leading-[1.05]
             text-[#5B9E7D]
 

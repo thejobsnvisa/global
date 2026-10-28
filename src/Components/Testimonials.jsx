@@ -169,7 +169,7 @@ const Testimonials = () => {
                 md:text-[45px]
                 lg:text-[60px]
                 leading-tight
-                font-semibold
+                font-bold
                 text-[#5B9E7D]
                 mt-[-5px]
               "

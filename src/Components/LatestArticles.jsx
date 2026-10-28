@@ -63,7 +63,7 @@ const LatestArticles = () => {
             <span
               className="
                 text-[42px]
-                font-semibold
+                font-bold
                 text-[#5B9E7D]
                 sm:text-[48px]
                 md:text-[54px]

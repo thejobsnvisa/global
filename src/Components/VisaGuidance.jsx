@@ -124,14 +124,14 @@ const VisaGuidance = () => {
         <div className="flex w-full flex-col items-center justify-between gap-10 lg:flex-row lg:items-center lg:gap-14">
           
           {/* LEFT CONTENT */}
-          <div className="w-full max-w-[390px] flex-shrink-0 lg:max-w-[390px]">
+          <div className="w-full max-w-[390px] flex-shrink-0 lg:max-w-[490px]">
             <div className="mb-2 flex items-center gap-[10px] sm:mb-3">
               <span className="text-[28px] text-[#338292] sm:text-[36px] md:text-[40px] lg:text-[40px]">
                 Personalized{" "}
               </span>
             </div>
             <div className="mt-[-30px]">
-              <span className="text-[32px] font-semibold text-[#5B9E7D] sm:mt-4 sm:text-[40px] md:text-[45px] lg:text-[60px]">
+              <span className="text-[32px] font-bold text-[#5B9E7D] sm:mt-4 sm:text-[40px] md:text-[45px] lg:text-[60px]">
                 Visa Guidance
               </span>
             </div>

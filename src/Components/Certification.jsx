@@ -67,7 +67,7 @@ export default function Certification() {
                 md:text-[45px]
                 xl:text-[60px]
                 leading-tight
-                font-semibold
+                font-bold
                 text-[#5B9E7D]
               "
             >
