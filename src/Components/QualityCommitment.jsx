@@ -96,10 +96,10 @@ const QualityCommitment = () => {
       ====================================================== */}
 
       <style>{`
-        @keyframes slideRightToLeft {
+        @keyframes slideTopToBottom {
           0% {
             opacity: 0;
-            transform: translateX(100px);
+            transform: translateY(-100px);
           }
 
           100% {
@@ -109,7 +109,25 @@ const QualityCommitment = () => {
         }
 
         .slide-right-to-left {
-          animation: slideRightToLeft 0.8s ease-out;
+          animation: slideTopToBottom 0.8s ease-out;
+        }
+
+        @media (min-width: 768px) {
+          @keyframes slideRightToLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          .slide-right-to-left {
+            animation-name: slideRightToLeft;
+          }
         }
       `}</style>
 
@@ -300,11 +318,11 @@ const QualityCommitment = () => {
               lg:translate-x-0
 
               xl:absolute
-              xl:left-[370px]
+              xl:left-1/2
               xl:top-[182px]
               xl:h-[290px]
               xl:w-[500px]
-              xl:translate-x-0
+              xl:-translate-x-1/2
             "
           >
             {/* Fixed Header */}
@@ -470,8 +488,8 @@ const QualityCommitment = () => {
               
               lg:left-[690px]
               xl:absolute
-              xl:left-[960px]
-              xl:right-auto
+              xl:left-auto
+              xl:right-0
               xl:top-[210px]
               xl:h-[240px]
               xl:w-[280px]
