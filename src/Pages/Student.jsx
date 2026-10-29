@@ -77,7 +77,7 @@ const Student = () => {
                 Are you dreaming of studying abroad at a place that offers
                 top-quality education, global career potential, and
                 life-changing experiences? Then, you are at the right place. At
-                Growmore Immigration, we are here to make your international
+                Growmore Global Visa, we are here to make your international
                 education journey smoother, smarter, and completely stress-free
                 by providing the best student visa service.
               </p>
