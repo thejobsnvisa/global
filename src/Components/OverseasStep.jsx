@@ -5,7 +5,7 @@ export default function OverseasStep({ updateScore, nextStep, prevStep }) {
 
   const selectExperience = (value, pts) => {
     setSelected(value);
-    updateScore("overseasExperience", pts);
+    updateScore("overseas", pts);
   };
 
   return (
