@@ -14,7 +14,7 @@ import bg from "../assets/bg.png";
 
 const Footer = () => {
   return (
-    <footer className="relative w-full  text-white pt-16 pb-8 overflow-hidden min-h-[600px] flex flex-col justify-end">
+    <footer className="relative w-full mt-[-302px] text-white pt-16 pb-8 overflow-hidden min-h-[600px] flex flex-col justify-end">
       
       {/* Background Curve Image (Wavy background covering the full area) */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0 ">
@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-8 lg:gap-20 items-start md:pt-30 pt-[-20px] lg:mt-[30px]">
           
           {/* Column 1: Brand Info & Brochure */}
-          <div className="xl:col-span-4 flex flex-col items-start gap-5 mt-[-100px]">
+          <div className="xl:col-span-4 flex flex-col items-start gap-5 lg:mt-[-100px] md:mt-10 mt-38">
             <img
               src={logo}
               alt="Growmore logo"
@@ -56,15 +56,15 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Navigation Links */}
-          <div className="xl:col-span-4 grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-4 pt-0 2xl:pt-30 xl:pt-30 md:pt-30 xl:mt-[-100px] ml-0 lg:mt-[-95px] lg:ml-[-30px] md:ml-[-20px]">
+          <div className="xl:col-span-4 grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-4 pt-0 2xl:pt-35 xl:pt-30 md:pt-16 xl:mt-[-100px] ml-0 lg:mt-[-45px] lg:ml-[-30px] md:ml-[-20px]">
             <div>
               <h3 className="mb-4 text-[18px] lg:text-[20px] 2xl:text-[22px] font-semibold text-teal-100">
                 Services
               </h3>
               <ul className="space-y-2.5 text-[15px] lg:text-[17px] 2xl:text-[18px] text-teal-50">
-                <li><a href="#" className="hover:text-white transition-colors">Study Visa</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Work Visa</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Migration Visa</a></li>
+                <li><a href="/services/student-visa" className="hover:text-white transition-colors">Study Visa</a></li>
+                <li><a href="/services/work-visa" className="hover:text-white transition-colors">Work Visa</a></li>
+                <li><a href="/services/migration-visa" className="hover:text-white transition-colors">Migration Visa</a></li>
               </ul>
             </div>
 
@@ -73,9 +73,9 @@ const Footer = () => {
                 Quick Links
               </h3>
               <ul className="space-y-2.5 text-[15px] lg:lg:text-[17px] 2xl:text-[18px] text-teal-50">
-                <li><a href="#" className="hover:text-white transition-colors">English Test</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Latest Update</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="/english-test" className="hover:text-white transition-colors">English Test</a></li>
+                <li><a href="/latest-update/blogs" className="hover:text-white transition-colors">Latest Update</a></li>
+                <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
