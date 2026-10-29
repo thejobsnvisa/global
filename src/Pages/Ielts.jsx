@@ -1,3 +1,4 @@
+
 import img from "../assets/img11.png";
 import b1 from "../assets/b1.svg";
 import f1 from "../assets/F1.png";
@@ -12,97 +13,40 @@ const Ielts = () => {
   return (
     <>
       {/* ==================== BANNER ==================== */}
-       <section className="relative h-[300px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[370px] lg:h-[400px] xl:h-[420px]">
-                          {/* Banner Image */}
-                          <img
-                            src={img}
-                            alt="Migration"
-                            className="absolute inset-0 h-full w-full object-cover"
-                          />
-                  
-                          {/* Gradient Overlay */}
-                          <div className="absolute inset-0 bg-[linear-gradient(89.92deg,#FFFFFF_0.06%,rgba(255,255,255,0)_48.4%)]" />
-                  
-                          {/* Banner Content */}
-                          <div className="relative z-10 mx-auto flex h-full w-full max-w-[1256px] flex-col justify-center px-5 sm:px-8 md:px-12 lg:px-10">
-                            {/* Breadcrumb */}
-                            <p className="mb-2 text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px]">
-                              <span className="text-sky-500">Home &gt; </span>
-                              <span className="text-sky-500 ">English Test &gt;</span>
-                              <span className="text-cyan-800 font-medium"> IELTS</span>
-                            </p>
-                  
-                            {/* Banner Heading */}
-                            <h1 className="mt-4 text-[38px] font-semibold leading-[1.1] text-[#669980] sm:mt-6 sm:text-[44px] md:mt-8 md:text-[52px] lg:mt-10 lg:text-[60px]">
-                              IELTS
-                            </h1>
-                          </div>
-                        </section>
-      
+      <section className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] w-full overflow-hidden">
+        {/* Banner Image */}
+        <img
+          src={img}
+          alt="Migration"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(89.92deg,#FFFFFF_0.06%,rgba(255,255,255,0)_48.4%)]" />
+        
+        {/* Banner Content */}
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1400px] flex-col justify-center px-6 sm:px-10 lg:px-12">
+          {/* Breadcrumb */}
+          <p className="mb-2 text-[14px] sm:text-[16px]">
+            <span className="text-sky-500">Home &gt; </span>
+            <span className="text-sky-500">English Test &gt;</span>
+            <span className="text-cyan-800 font-medium"> IELTS</span>
+          </p>
+          
+          {/* Banner Heading */}
+          <h1 className="text-[36px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-semibold leading-[1.1] text-[#669980]">
+            IELTS
+          </h1>
+        </div>
+      </section>
 
       {/* ==================== MAIN ==================== */}
-      <div
-        className="
-          w-full
-          min-h-screen
-          bg-white
-          xl:min-h-[2300px]
-          xl:mb-0
-          lg:mb-30
-          md:mb-45
-          mb-45
-        "
-      >
-        <div
-          className="
-            mx-auto
-            flex
-            max-w-[1256px]
-            flex-col
-            items-start
-            gap-8
-            px-5
-            py-8
-            sm:px-8
-            md:px-10
-            lg:flex-row
-            lg:gap-6
-            lg:px-6
-            lg:py-12
-            xl:gap-10
-            xl:px-0
-          "
-        >
+      <div className="w-full bg-white py-12 sm:py-16 lg:py-20 mb-12">
+        <div className="mx-auto flex max-w-[1400px] flex-col lg:flex-row items-start gap-8 lg:gap-12 px-6 sm:px-10 lg:px-12">
+          
           {/* ==================== SIDEBAR ==================== */}
-          <aside
-            className="
-              w-full
-              min-h-auto
-              flex-shrink-0
-              rounded-[30px]
-              bg-sky-50
-              p-5
-              shadow-sm
-              sm:p-6
-
-              lg:w-[330px]
-
-              xl:w-[400px]
-              xl:min-h-[810px]
-            "
-          >
-            <h3
-              className="
-                mx-auto
-                mb-6
-                mt-3
-                text-center
-                text-[20px]
-                font-semibold
-                text-slate-600
-                sm:text-[24px]
-              "
-            >
+          <aside className="w-full lg:w-[360px] xl:w-[400px] flex-shrink-0 rounded-[24px] sm:rounded-[30px] bg-sky-50 p-6 shadow-sm">
+            <h3 className="mb-6 text-center text-[20px] sm:text-[24px] font-semibold text-slate-600">
               Choose A Test
             </h3>
 
@@ -111,8 +55,7 @@ const Ielts = () => {
                 {
                   img: f1,
                   title: "IELTS",
-                  subtitle:
-                    "International English Language Testing System",
+                  subtitle: "International English Language Testing System",
                   path: "/english-test/ielts",
                 },
                 {
@@ -124,8 +67,7 @@ const Ielts = () => {
                 {
                   img: f3,
                   title: "TOEFL",
-                  subtitle:
-                    "Test of English as a Foreign Language",
+                  subtitle: "Test of English as a Foreign Language",
                   path: "/english-test/toefl",
                 },
                 {
@@ -150,315 +92,98 @@ const Ielts = () => {
                 <a
                   key={test.title}
                   href={test.path}
-                  className="
-                    flex
-                    h-[80px]
-                    items-center
-                    rounded-[12px]
-                    bg-white
-                    p-2
-                    shadow-sm
-                    sm:p-0
-                  "
+                  className="flex min-h-[80px] items-center rounded-[12px] bg-white p-3 shadow-sm hover:shadow-md transition-shadow"
                 >
                   <img
                     src={test.img}
                     alt={test.title}
-                    className="
-                      ml-2
-                      h-[50px]
-                      w-[60px]
-                      flex-shrink-0
-                      object-contain
-                      sm:ml-[12px]
-                      sm:h-[60px]
-                      sm:w-[76px]
-                    "
+                    className="h-[50px] w-[60px] sm:h-[60px] sm:w-[76px] flex-shrink-0 object-contain"
                   />
 
-                  <div
-                    className="
-                      ml-3
-                      flex-1
-                      pr-2
-                      sm:ml-[14px]
-                    "
-                  >
-                    <p
-                      className="
-                        text-[14px]
-                        font-bold
-                        leading-tight
-                        text-slate-800
-                        sm:text-[15px]
-                      "
-                    >
+                  <div className="ml-3 flex-1 pr-2">
+                    <p className="text-[14px] sm:text-[15px] font-bold leading-tight text-slate-800">
                       {test.title}
                     </p>
-
-                    <p
-                      className="
-                        line-clamp-2
-                        text-[12px]
-                        leading-4.5
-                        text-slate-500
-                        sm:text-[14px]
-                      "
-                    >
+                    <p className="line-clamp-2 text-[12px] sm:text-[14px] leading-relaxed text-slate-500 mt-0.5">
                       {test.subtitle}
                     </p>
                   </div>
 
-                  <div
-                    className="
-                      ml-auto
-                      mr-2
-                      flex
-                      h-[35px]
-                      w-[35px]
-                      flex-shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-sky-100
-                      sm:mr-4
-                    "
-                  >
-                    <IoIosArrowForward
-                      className="
-                        h-[24px]
-                        w-[24px]
-                        text-teal-600
-                        sm:h-[30px]
-                        sm:w-[30px]
-                      "
-                    />
+                  <div className="ml-auto flex h-[35px] w-[35px] sm:h-[40px] sm:w-[40px] flex-shrink-0 items-center justify-center rounded-full bg-sky-100">
+                    <IoIosArrowForward className="h-[20px] w-[20px] sm:h-[24px] sm:w-[24px] text-teal-600" />
                   </div>
                 </a>
               ))}
             </div>
 
             {/* Contact Box */}
-            <div
-              className="
-                mt-8
-                rounded-[20px]
-                bg-emerald-100
-                px-4
-                py-6
-              "
-            >
-              <p
-                className="
-                  text-center
-                  text-[15px]
-                  font-bold
-                  text-slate-600
-                  sm:text-[16px]
-                "
-              >
+            <div className="mt-8 rounded-[20px] bg-emerald-100 p-6 text-center">
+              <p className="text-[15px] sm:text-[16px] font-bold text-slate-600">
                 Not sure which test is right for you?
               </p>
 
               <a
                 href="/contact"
-                className="
-                  mx-auto
-                  mt-4
-                  flex
-                  h-[34px]
-                  w-[140px]
-                  items-center
-                  justify-center
-                  gap-2
-                  rounded-[30px]
-                  bg-[#84C8AF]
-                  text-[16px]
-                  font-semibold
-                  text-[#27456E]
-                  transition-transform
-                  hover:scale-105
-                "
+                className="mx-auto mt-4 inline-flex h-[40px] w-[150px] items-center justify-center gap-2 rounded-[30px] bg-[#84C8AF] text-[15px] font-semibold text-[#27456E] transition-transform hover:scale-105"
               >
                 Contact Us
-
-                <img
-                  src={b1}
-                  alt="Button Image"
-                  className="h-[20px] w-[20px]"
-                />
+                <img src={b1} alt="" className="h-[18px] w-[18px]" />
               </a>
             </div>
           </aside>
 
           {/* ==================== MAIN CONTENT ==================== */}
-          <section
-            className="
-              w-full
-              min-w-0
-              flex-1
-              py-4
-
-              lg:ml-0
-              lg:py-6
-
-              xl:ml-10
-              xl:py-10
-            "
-          >
+          <div className="w-full min-w-0 flex-1 space-y-12">
+            
             {/* ==================== SECTION 1 ==================== */}
             <div>
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <p
-                  className="
-                    m-0
-                    text-[22px]
-                    leading-[1.15]
-                    text-[#31859A]
-                    sm:text-[26px]
-                    md:text-[28px]
-                    lg:text-[30px]
-                    xl:text-[30px]
-                  "
-                >
+              <div className="mb-6">
+                <p className="text-[20px] sm:text-[24px] lg:text-[28px] leading-tight text-[#31859A]">
                   The Globally Approved Test For
                 </p>
-
-                <h2
-                  className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
+                <h2 className="mt-1 text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB]">
                   Many Visa Pathways
                 </h2>
               </div>
 
-              <div
-                className="
-                  w-full
-                  text-justify
-                  text-[15px]
-                  text-slate-700
-                  sm:text-[16px]
-                  xl:ml-2
-                  xl:mt-[-30px]
-                  xl:w-[666px]
-                "
-              >
-                <div className="space-y-4">
-                  <p>
-                    The IELTS is a major language test that is accepted by over
-                    12,500 organizations worldwide, including many immigration
-                    authorities, universities, and expert firms. It is used as
-                    proof of your English-language proficiency for study and
-                    migration by giving a clear idea of your English
-                    communication skills in both academic and daily life
-                    situations.
-                  </p>
-
-                  <p>
-                    With two available types, IELTS Academic and IELTS General
-                    Training, you can choose the format that matches your
-                    English requirement goals. It remains the most popular
-                    choice for people who want to go to an overseas university,
-                    secure better career opportunities, or even strengthen
-                    their visitor visa application
-                  </p>
-                </div>
+              <div className="space-y-4 text-[16px] sm:text-[17px] leading-relaxed text-slate-700 text-justify">
+                <p>
+                  The IELTS is a major language test that is accepted by over
+                  12,500 organizations worldwide, including many immigration
+                  authorities, universities, and expert firms. It is used as
+                  proof of your English-language proficiency for study and
+                  migration by giving a clear idea of your English
+                  communication skills in both academic and daily life
+                  situations.
+                </p>
+                <p>
+                  With two available types, IELTS Academic and IELTS General
+                  Training, you can choose the format that matches your
+                  English requirement goals. It remains the most popular
+                  choice for people who want to go to an overseas university,
+                  secure better career opportunities, or even strengthen
+                  their visitor visa application.
+                </p>
               </div>
             </div>
 
             {/* ==================== SECTION 2 ==================== */}
-            <section className="mt-10 lg:mt-14">
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <p
-                  className="
-                    m-0
-                    text-[22px]
-                    leading-[1.15]
-                    text-[#31859A]
-                    sm:text-[26px]
-                    md:text-[28px]
-                    lg:text-[30px]
-                    xl:text-[30px]
-                  "
-                >
+            <section>
+              <div className="mb-6">
+                <p className="text-[20px] sm:text-[24px] lg:text-[28px] leading-tight text-[#31859A]">
                   Top Countries
                 </p>
-
-                <h2
-                  className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
+                <h2 className="mt-1 text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB]">
                   Accepting IELTS
                 </h2>
               </div>
 
-              <div
-                className="
-                  w-full
-                  rounded-[24px]
-                  bg-sky-50
-                  p-6
-                  sm:rounded-[34px]
-                  sm:p-8
-                  xl:mt-[-15px]
-                  xl:w-[701px]
-                  xl:rounded-[34px]
-                  xl:pt-[30px]
-                  xl:pr-[30px]
-                  xl:pb-[40px]
-                  xl:pl-[30px]
-                "
-              >
-                <p className="text-[16px] text-sky-600">
+              <div className="rounded-[24px] sm:rounded-[34px] bg-sky-50 p-6 sm:p-8">
+                <p className="text-[16px] sm:text-[17px] text-sky-600 font-medium">
                   The following are the top countries that accept IELTS scores
                 </p>
 
-                <ul
-                  className="
-                    ml-6
-                    mt-4
-                    list-disc
-                    text-[16px]
-                    text-teal-600
-                  "
-                >
+                <ul className="ml-6 mt-4 list-disc text-[16px] sm:text-[17px] text-teal-600 space-y-2">
                   <li>Australia</li>
                   <li>Canada</li>
                   <li>United Kingdom</li>
@@ -471,67 +196,25 @@ const Ielts = () => {
             </section>
 
             {/* ==================== SECTION 3 ==================== */}
-            <section className="mt-10 lg:mt-14">
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <h2
-                  className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
+            <section>
+              <div className="mb-6">
+                <h2 className="text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB]">
                   IELTS Test Format
                 </h2>
               </div>
 
-              <div
-                className="
-                  w-full
-                  min-w-0
-                  rounded-[34px]
-                  bg-white
-                  xl:mt-[-10px]
-                  xl:w-[701px]
-                "
-              >
+              <div className="space-y-8 bg-white">
                 {/* Test Overview */}
-                <ul
-                  className="
-                    ml-6
-                    mt-[-10px]
-                    w-full
-                    pr-4
-                    text-[16px]
-                    list-disc
-                    sm:pr-6
-                  "
-                >
-                  <li className="text-cyan-700">
+                <ul className="ml-6 list-disc text-[16px] sm:text-[17px] text-cyan-700 space-y-2">
+                  <li>
                     IELTS evaluates your English proficiency across four key
                     areas: listening, reading, writing, and speaking.
                   </li>
-
-                  <li className="mt-2 text-cyan-700">
+                  <li>
                     The timing for the entire test section is 2 hours and 45
                     minutes.
                   </li>
-
-                  <li className="mt-2 text-cyan-700">
+                  <li>
                     Listening, reading, and writing happen on the same day
                     without any break, while a speaking test can also be
                     scheduled on the same day or up to a week before or after.
@@ -539,24 +222,11 @@ const Ielts = () => {
                 </ul>
 
                 {/* ==================== LISTENING ==================== */}
-                <div className="mt-8">
-                  <p
-                    className="
-                      m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-sky-600
-                      sm:text-[26px]
-                      md:text-[28px]
-                      lg:text-[30px]
-                      xl:text-[30px]
-                    "
-                  >
+                <div>
+                  <h3 className="pb-3 text-[20px] sm:text-[24px] font-semibold text-sky-600">
                     Listening – 30 minutes*
-                  </p>
-
-                  <ul className="ml-6 list-disc text-slate-600">
+                  </h3>
+                  <ul className="ml-6 list-disc text-[16px] sm:text-[17px] text-slate-600 space-y-2">
                     <li>Divided into 4 parts</li>
                     <li>Includes 40 questions</li>
                     <li>
@@ -568,310 +238,102 @@ const Ielts = () => {
                 </div>
 
                 {/* ==================== READING ==================== */}
-                <div className="mt-8">
-                  <p
-                    className="
-                      m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-sky-600
-                      sm:text-[26px]
-                      md:text-[28px]
-                      lg:text-[30px]
-                      xl:text-[30px]
-                    "
-                  >
+                <div>
+                  <h3 className="pb-3 text-[20px] sm:text-[24px] font-semibold text-sky-600">
                     Reading – 60 minutes*
-                  </p>
-
-                  <ul className="ml-6 text-[18px] list-disc text-emerald-600">
-                    <li>
-                      Format for reading section differs based on test type
-                    </li>
+                  </h3>
+                  <ul className="ml-6 list-disc text-[17px] sm:text-[18px] text-emerald-600">
+                    <li>Format for reading section differs based on test type</li>
                   </ul>
 
                   {/* Academic + General Reading Card */}
-                  <div
-                    className="
-                      mt-4
-                      w-full
-                      min-h-[441px]
-                      rounded-[24px]
-                      bg-slate-100
-                      p-5
-                      sm:p-6
-                      xl:w-[680px]
-                      xl:p-[30px]
-                    "
-                  >
-                    <div
-                      className="
-                        flex
-                        flex-col
-                        gap-8
-                        xl:flex-row
-                        xl:gap-[40px]
-                      "
-                    >
+                  <div className="mt-4 rounded-[24px] bg-slate-100 p-6 sm:p-8">
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
+                      
                       {/* Academic Reading */}
-                      <div
-                        className="
-                          w-full
-                          xl:min-h-[381px]
-                          xl:w-[270px]
-                        "
-                      >
-                        <p className="text-[18px] font-semibold text-emerald-700">
-                          For Academic Reading
-                        </p>
-
-                        <ul
-                          className="
-                            mt-2
-                            text-[17px]
-                            text-cyan-600
-                          "
-                        >
-                          <li className="mt-4">
-                            Three long passages, each followed by tasks.
-                          </li>
-
-                          <li className="mt-4">
-                            Topics are suitable for undergraduate or
-                            postgraduate study.
-                          </li>
-
-                          <li className="mt-4">
-                            Texts may include diagrams, graphs, or
-                            illustrations.
-                          </li>
-
-                          <li className="mt-4">
-                            Sources include books, journals, and newspapers.
-                          </li>
-
-                          <li className="mt-4">
-                            40 questions with mixed question types.
-                          </li>
-                        </ul>
+                      <div className="flex flex-col justify-between">
+                        <div>
+                          <p className="text-[18px] sm:text-[20px] font-semibold text-emerald-700">
+                            For Academic Reading
+                          </p>
+                          <ul className="mt-3 text-[16px] sm:text-[17px] text-cyan-600 space-y-3 list-disc ml-5">
+                            <li>Three long passages, each followed by tasks.</li>
+                            <li>Topics are suitable for undergraduate or postgraduate study.</li>
+                            <li>Texts may include diagrams, graphs, or illustrations.</li>
+                            <li>Sources include books, journals, and newspapers.</li>
+                            <li>40 questions with mixed question types.</li>
+                          </ul>
+                        </div>
                       </div>
 
-                      {/* Vertical Divider */}
-                      <div className="hidden h-[381px] w-px shrink-0 bg-slate-400 xl:block" />
+                      {/* Vertical Divider (Desktop only) */}
+                      <div className="hidden xl:block w-px bg-slate-300 mx-auto self-stretch" />
 
                       {/* General Training Reading */}
-                      <div
-                        className="
-                          w-full
-                          xl:min-h-[381px]
-                          xl:w-[270px]
-                        "
-                      >
-                        <p className="text-[20px] font-semibold text-emerald-700">
-                          For General Training Reading
-                        </p>
-
-                        <ul
-                          className="
-                            mt-2
-                            text-[17px]
-                            text-cyan-600
-                          "
-                        >
-                          <li className="mt-4">
-                            Five to six texts of different lengths, divided
-                            into 3 sections.
-                          </li>
-
-                          <li className="mt-4">
-                            Section 1: Short everyday texts.
-                          </li>
-
-                          <li className="mt-4 xl:mt-16">
-                            Section 2: Work-related, factual texts.
-                          </li>
-
-                          <li className="mt-4">
-                            Section 3: One longer passage on a general-interest
-                            topic.
-                          </li>
-
-                          <li className="mt-5">
-                            40 questions with mixed question types.
-                          </li>
-                        </ul>
+                      <div className="flex flex-col justify-between">
+                        <div>
+                          <p className="text-[18px] sm:text-[20px] font-semibold text-emerald-700">
+                            For General Training Reading
+                          </p>
+                          <ul className="mt-3 text-[16px] sm:text-[17px] text-cyan-600 space-y-3 list-disc ml-5">
+                            <li>Five to six texts of different lengths, divided into 3 sections.</li>
+                            <li>Section 1: Short everyday texts.</li>
+                            <li>Section 2: Work-related, factual texts.</li>
+                            <li>Section 3: One longer passage on a general-interest topic.</li>
+                            <li>40 questions with mixed question types.</li>
+                          </ul>
+                        </div>
                       </div>
+
                     </div>
                   </div>
                 </div>
 
                 {/* ==================== WRITING ==================== */}
-                <div className="mt-8">
-                  <p
-                    className="
-                      m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-sky-600
-                      sm:text-[26px]
-                      md:text-[28px]
-                      lg:text-[30px]
-                      xl:text-[30px]
-                    "
-                  >
+                <div>
+                  <h3 className="pb-3 text-[20px] sm:text-[24px] font-semibold text-sky-600">
                     Writing – 60 minutes*
-                  </p>
-
-                  <p className="text-[16px] text-slate-600">
+                  </h3>
+                  <p className="text-[16px] sm:text-[17px] text-slate-600 mb-2">
                     Divided into 2 Tasks:
                   </p>
-
-                  <ul
-                    className="
-                      ml-6
-                      mt-2
-                      w-full
-                      list-disc
-                      text-[17px]
-                      text-slate-600
-                      xl:w-[582px]
-                    "
-                  >
-                    <li className="mt-2">
-                      Task 1: Need to write at least 150 words in about 20
-                      minutes.
-                    </li>
-
-                    <li>
-                      Task 2: Need to write 250+ words on a viewpoint,
-                      argument, or problem in 40 minutes.
-                    </li>
+                  <ul className="ml-6 list-disc text-[16px] sm:text-[17px] text-slate-600 space-y-2">
+                    <li>Task 1: Need to write at least 150 words in about 20 minutes.</li>
+                    <li>Task 2: Need to write 250+ words on a viewpoint, argument, or problem in 40 minutes.</li>
                   </ul>
                 </div>
 
                 {/* ==================== SPEAKING ==================== */}
-                <div className="mt-8">
-                  <p
-                    className="
-                      m-0
-                      pb-4
-                      text-[22px]
-                      leading-[1.15]
-                      text-sky-600
-                      sm:text-[26px]
-                      md:text-[28px]
-                      lg:text-[30px]
-                      xl:text-[30px]
-                    "
-                  >
+                <div>
+                  <h3 className="pb-3 text-[20px] sm:text-[24px] font-semibold text-sky-600">
                     Speaking – 11-14 minutes*
-                  </p>
-
-                  <p className="text-[16px] text-slate-600">
+                  </h3>
+                  <p className="text-[16px] sm:text-[17px] text-slate-600 mb-2">
                     Divided into 3 Parts:
                   </p>
-
-                  <ul
-                    className="
-                      ml-6
-                      mt-2
-                      list-disc
-                      text-[17px]
-                      text-slate-600
-                    "
-                  >
-                    <li className="mt-2">
-                      Part 1 (4–5 minutes): General questions about yourself
-                      and familiar topics.
-                    </li>
-
-                    <li>
-                      Part 2 (3–4 minutes): Speak for 2 minutes based on a
-                      provided task card.
-                    </li>
-
-                    <li>
-                      Part 3 (4–5 minutes): Discussion of more abstract ideas
-                      related to the topic of Part 2.
-                    </li>
+                  <ul className="ml-6 list-disc text-[16px] sm:text-[17px] text-slate-600 space-y-2">
+                    <li>Part 1 (4–5 minutes): General questions about yourself and familiar topics.</li>
+                    <li>Part 2 (3–4 minutes): Speak for 2 minutes based on a provided task card.</li>
+                    <li>Part 3 (4–5 minutes): Discussion of more abstract ideas related to the topic of Part 2.</li>
                   </ul>
                 </div>
+
               </div>
             </section>
 
             {/* ==================== SECTION 4 ==================== */}
-            <section className="mt-10 lg:mt-14">
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <p
-                  className="
-                    m-0
-                    text-[22px]
-                    leading-[1.15]
-                    text-[#31859A]
-                    sm:text-[26px]
-                    md:text-[28px]
-                    lg:text-[30px]
-                    xl:text-[30px]
-                  "
-                >
+            <section>
+              <div className="mb-6">
+                <p className="text-[20px] sm:text-[24px] lg:text-[28px] leading-tight text-[#31859A]">
                   Step Forward Globally
                 </p>
-
-                <h2
-                  className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
+                <h2 className="mt-1 text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB]">
                   With IELTS
                 </h2>
               </div>
 
-              <div
-                className="
-                  w-full
-                  min-h-[50px]
-                  rounded-[24px]
-                  bg-emerald-50
-                  p-6
-                  sm:rounded-[34px]
-                  sm:p-8
-                  xl:mt-[-15px]
-                  xl:w-[701px]
-                  xl:rounded-[34px]
-                  xl:pt-[25px]
-                  xl:pr-[30px]
-                  xl:pb-[40px]
-                  xl:pl-[30px]
-                "
-              >
-                <p
-                  className="
-                    text-justify
-                    text-[17px]
-                    leading-relaxed
-                    text-emerald-700
-                    sm:text-[17px]
-                  "
-                >
+              <div className="rounded-[24px] sm:rounded-[34px] bg-emerald-50 p-6 sm:p-8">
+                <p className="text-justify text-[16px] sm:text-[17px] leading-relaxed text-emerald-700">
                   IELTS opens doors to study, work, and migration worldwide.
                   With Growmore Global Visa, you get clear guidance on
                   required scores, test formats, and preparation so you can aim
@@ -881,74 +343,34 @@ const Ielts = () => {
             </section>
 
             {/* ==================== IELTS RESULTS ==================== */}
-            <section className="mt-10 lg:mt-14">
-              <div
-                className="
-                  mb-6
-                  sm:mb-8
-                  lg:mb-12
-                  xl:mb-14
-                  xl:mt-[-30px]
-                "
-              >
-                <h2
-                  className="
-                    m-0
-                    mt-1
-                    text-[28px]
-                    font-bold
-                    leading-[1.05]
-                    text-[#8DC8AB]
-                    sm:text-[34px]
-                    md:text-[40px]
-                    lg:text-[46px]
-                    xl:text-[60px]
-                  "
-                >
+            <section>
+              <div className="mb-6">
+                <h2 className="text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB] mb-6">
                   IELTS Results
                 </h2>
 
-                <p
-                  className="
-                    mt-8
-                    min-h-[131px]
-                    w-full
-                    text-[18px]
-                    font-semibold
-                    text-cyan-700
-                    xl:w-[701px]
-                  "
-                >
+                <p className="text-[17px] sm:text-[18px] font-semibold text-cyan-700 leading-relaxed">
                   Your IELTS score is reported on a 9-band scale ranging from
                   1 (non-user) to 9 (expert), and the duration of the result to
                   come depends on the test format:
                 </p>
 
-                <ul
-                  className="
-                    ml-5
-                    mt-4
-                    list-disc
-                    text-[16px]
-                    text-cyan-700
-                    xl:mt-[-60px]
-                  "
-                >
+                <ul className="ml-6 mt-4 list-disc text-[16px] sm:text-[17px] text-cyan-700 space-y-2">
                   <li>
                     <b>IELTS on paper:</b> 13 days after your test
                   </li>
-
                   <li>
                     <b>IELTS on computer:</b> 1–5 days after your test
                   </li>
-
                   <li>
                     <b>IELTS Online:</b> 6–8 days after your test
                   </li>
                 </ul>
               </div>
             </section>
-          </section>
+
+          </div>
+
         </div>
       </div>
     </>

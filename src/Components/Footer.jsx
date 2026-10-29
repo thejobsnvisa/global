@@ -1,5 +1,4 @@
 import cover from "../assets/curve.svg";
-import bg from "../assets/bg.png";
 import call from "../assets/Phone.svg";
 import email from "../assets/email.svg";
 import location from "../assets/Location.svg";
@@ -10,177 +9,154 @@ import youtube from "../assets/Youtube.svg";
 import { CiLinkedin } from "react-icons/ci";
 import logo from "../assets/LOGO.png";
 import { FaFileArrowDown } from "react-icons/fa6";
-import card from "../assets/mara-card.png";
+import bg from "../assets/bg.png";
+
 
 const Footer = () => {
   return (
-    <footer className="relative w-full -mt-[200px] lg:-mt-[160px] xl:-mt-[260px] 2xl:-mt-[310px] overflow-hidden bg-[#0a3f44] shrink-0 md:pt-16 2xl:min-h-[1020px]  2xl:min-h-[1020px] xl:bg-transparent min-h-[1280px]:h-[900px]">
-      <div className="relative w-full min-h-0  2xl:min-h-[920px]">
-        
-        {/* Background Curve (Desktop only 1280px+) */}
+    <footer className="relative w-full  text-white pt-16 pb-8 overflow-hidden min-h-[600px] flex flex-col justify-end">
+      
+      {/* Background Curve Image (Wavy background covering the full area) */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0 ">
         <img 
           src={cover} 
-          alt="Footer curve" 
-          className="hidden xl:block w-full h-auto pointer-events-none" 
+          alt="" 
+          aria-hidden="true"
+          className="w-full h-full object-cover object-top opacity-100" 
         />
+      </div>
 
-        {/* Content Container: Flex/Grid on Mobile, 768px & 1024px | Absolute on 1280px+ */}
-        <div className="max-w-6xl mx-auto px-6 pb-12 xl:max-w-none xl:p-0 xl:static flex flex-col xl:block gap-10">
+      {/* Main Content Container */}
+      <div className="relative max-w-[1400px] w-full mx-auto px-6 sm:px-10 lg:px-12 xl:px-2 z-2 flex flex-col gap-12 ">
+        
+        {/* Top Section Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-8 lg:gap-20 items-start md:pt-30 pt-[-20px] lg:mt-[30px]">
+          
+          {/* Column 1: Brand Info & Brochure */}
+          <div className="xl:col-span-4 flex flex-col items-start gap-5 mt-[-100px]">
+            <img
+              src={logo}
+              alt="Growmore logo"
+              className="w-[260px] sm:w-[320px] 2xl:w-[380px] h-auto object-contain"
+            />
 
-          {/* Top Row for 768px & 1024px: Brand & Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:block gap-8 items-start">
-            
-            {/* Brand Section */}
-            <div className="flex flex-col xl:block">
-              <img
-                src={logo}
-                alt="logo"
-                className="w-[280px] sm:w-[320px] xl:w-[391px] h-auto xl:h-[113px] xl:absolute xl:top-[80px] xl:left-[95px] 2xl:w-[469px] 2xl:h-[136px] 2xl:top-[120px] 2xl:left-[114px] opacity-100 rotate-0"
-              />
+            <p className="text-[15px] lg:text-[20px] sm:lg:text-[17px] 2xl:text-[20px] font-semibold leading-relaxed text-teal-200  max-w-md">
+              We guide clients globally through student, work, visitor, dependent,
+              and migration visa applications with trusted expertise.
+            </p>
 
-              <p className="mt-4 xl:mt-0 xl:absolute xl:top-[200px] xl:left-[101px] xl:w-[362px] xl:h-[72px] xl:rounded-[18px] xl:p-4 2xl:top-[260px] 2xl:left-[121px] 2xl:w-[434px] 2xl:h-[86px] text-[15px] xl:text-[16px] 2xl:text-[28px] font-semibold leading-[140%] xl:leading-[130%] text-teal-200 font-[Poppins]">
-                We guide clients globally through student, work, visitor, dependent,
-                and migration visa applications with trusted expertise.
-              </p>
-
-              <a
-                href="/brochures"
-                aria-label="Download Brochures"
-                className="mt-6 xl:mt-[-20px] xl:absolute xl:top-[325px] xl:left-[115px] 2xl:top-[470px] 2xl:left-[138px] 2xl:w-[286px] 2xl:h-[48px] w-[180px] h-[40px] flex items-center justify-center gap-2 text-[14px] 2xl:text-[16px] font-semibold leading-[125%] text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors duration-300 px-3"
-              >
-                <span className="2xl:text-[20px]">Download Brochures</span>
-                <FaFileArrowDown className="w-4 h-4" />
-              </a>
-
-              <img
-                src={card}
-                alt="Mara card"
-                className="mt-6 xl:mt-[-25px] xl:absolute w-[200px] h-[160px] rotate-0 opacity-100 xl:top-[390px] xl:left-[115px] 2xl:top-[568px] 2xl:left-[138px] 2xl:w-[280px] 2xl:h-[242px] object-contain"
-              />
-            </div>
-
-            {/* Support & Contact Card (Positioned neatly for 768px & 1024px) */}
-            <div className="relative xl:static">
-              {/* Desktop Decorative BG Image */}
-              <img
-                src={bg}
-                alt="Footer background"
-                className="hidden xl:block absolute w-[640px] h-[350px] rotate-0 opacity-100 top-[140px] right-0 2xl:top-[218px] 2xl:w-[768px] 2xl:h-[420px] object-cover pointer-events-none"
-              />
-
-              <div className="w-full xl:w-[320px] lg:w-[350px] xl:h-[130px] xl:absolute xl:right-[65px] xl:bottom-32 xl:top-[319px] 2xl:w-[524px] 2xl:h-[280px] 2xl:right-[78px] 2xl:top-[443px] bg-[#0F727B54] backdrop-blur-[6px] rounded-[16px] p-5 xl:p-4 text-white opacity-[0.85] z-10">
-                <p className="text-white text-[16px] 2xl:text-[28px] font-semibold xl:h-[54px] leading-[27px] mb-4 xl:mb-0">
-                  Looking for Professional Visa Support?
-                </p>
-                
-                {/* Action Icons */}
-                <div className="flex items-center justify-start xl:justify-between gap-2 2xl:gap-4">
-                  <a
-                    href="tel:+1234567890"
-                    className="flex items-center justify-center rounded-full bg-[#8FE7F266] opacity-90 p-3 xl:p-0 xl:mt-[-8px] xl:ml-2 w-[54px] h-[54px] 2xl:w-[72px] 2xl:h-[72px] shrink-0 hover:bg-[#8FE7F2] transition-colors"
-                  >
-                    <img
-                      src={call}
-                      alt="phone"
-                      className="w-6 h-6 2xl:w-8 2xl:h-8 filter brightness-0 invert"
-                    />
-                  </a>
-                  <a
-                    href="mailto:info@example.com"
-                    className="flex items-center justify-center rounded-full bg-[#8FE7F266] opacity-90 p-3 xl:p-0 xl:mt-[-8px] xl:ml-2 w-[54px] h-[54px] 2xl:w-[72px] 2xl:h-[72px] shrink-0 hover:bg-[#8FE7F2] transition-colors"
-                  >
-                    <img
-                      src={email}
-                      alt="email"
-                      className="w-6 h-6 2xl:w-8 2xl:h-8 filter brightness-0 invert"
-                    />
-                  </a>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Growmore+Global+Visa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="View Growmore Global Visa on Google Maps"
-                    className="flex items-center justify-center rounded-full bg-[#8FE7F266] opacity-90 p-3 xl:p-0 xl:mt-[-8px] xl:ml-2 w-[54px] h-[54px] 2xl:w-[72px] 2xl:h-[72px] shrink-0"
-                  >
-                    <img
-                      src={location}
-                      alt="location"
-                      className="w-6 h-6 2xl:w-8 2xl:h-8 filter brightness-0 invert"
-                    />
-                  </a>
-                </div>
-
-                {/* Social Media Links */}
-                <div className="flex items-center justify-between mt-6 xl:mt-7 2xl:mt-9 w-full px-2 gap-2 sm:gap-4 ml-1">
-                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[45px] h-[45px] 2xl:w-[56px] 2xl:h-[56px] bg-[rgba(143,231,242,0.4)] rounded-[12px] opacity-90 backdrop-blur-[6px] hover:bg-[rgba(143,231,242,0.8)] transition-colors">
-                    <img src={facebook} alt="Facebook" className="w-[24px] h-[24px] 2xl:w-[30px] 2xl:h-[30px] object-contain filter brightness-0 invert" />
-                  </a>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[45px] h-[45px] 2xl:w-[56px] 2xl:h-[56px] bg-[rgba(143,231,242,0.4)] rounded-[12px] opacity-90 backdrop-blur-[6px] hover:bg-[rgba(143,231,242,0.8)] transition-colors">
-                    <CiLinkedin className="w-[24px] h-[24px] 2xl:w-[30px] 2xl:h-[30px] object-contain filter brightness-0 invert text-white" />
-                  </a>
-                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[45px] h-[45px] 2xl:w-[56px] 2xl:h-[56px] bg-[rgba(143,231,242,0.4)] rounded-[12px] opacity-90 backdrop-blur-[6px] hover:bg-[rgba(143,231,242,0.8)] transition-colors">
-                    <img src={youtube} alt="YouTube" className="w-[24px] h-[24px] 2xl:w-[30px] 2xl:h-[30px] object-contain filter brightness-0 invert" />
-                  </a>
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[45px] h-[45px] 2xl:w-[56px] 2xl:h-[56px] bg-[rgba(143,231,242,0.4)] rounded-[12px] opacity-90 backdrop-blur-[6px] hover:bg-[rgba(143,231,242,0.8)] transition-colors">
-                    <img src={instagram} alt="Instagram" className="w-[24px] h-[24px] 2xl:w-[30px] 2xl:h-[30px] object-contain filter brightness-0 invert" />
-                  </a>
-                  <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-[45px] h-[45px] 2xl:w-[56px] 2xl:h-[56px] bg-[rgba(143,231,242,0.4)] rounded-[12px] opacity-90 backdrop-blur-[6px] hover:bg-[rgba(143,231,242,0.8)] transition-colors">
-                    <img src={twitter} alt="X / Twitter" className="w-[24px] h-[24px] 2xl:w-[30px] 2xl:h-[30px] object-contain filter brightness-0 invert" />
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            <a
+              href="/brochures"
+              aria-label="Download Brochures"
+              className="inline-flex items-center justify-center gap-2 h-[44px] 2xl:h-[50px] px-6 text-[14px] sm:text-[15px] 2xl:text-[18px] font-semibold text-[#265257] font-[Poppins] rounded-[12px] bg-teal-300 hover:bg-teal-400 transition-colors shadow-md mt-4"
+            >
+              <span className="text-[17px]">Download Brochures</span>
+              <FaFileArrowDown className="w-4 h-4 2xl:w-5 2xl:h-5" />
+            </a>
           </div>
 
-          {/* Links Section (Fluid Grid for 768px & 1024px) */}
-          <div className="xl:absolute xl:top-[310px] xl:left-[330px] xl:w-[680px] xl:h-[126px] 2xl:top-[408px] 2xl:left-1/2 2xl:-translate-x-1/2 2xl:w-[640px] 2xl:min-h-[340px] opacity-100 xl:rounded-[14px] xl:px-6 xl:py-3 z-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-[0.8fr_0.8fr_1.4fr] gap-6 xl:gap-1 text-white">
-              {/* Services */}
-              <div>
-                <h3 className="mb-3 xl:mb-4  text-[18px] 2xl:text-[35px] 2xl:ml-[-230px] font-semibold text-teal-100">
-                  Services
-                </h3>
-                <ul className="space-y-2 text-[16px] 2xl:text-[27px] 2xl:ml-[-230px] 2xl:leading-relaxed text-white">
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Study Visa</a></li>
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Work Visa</a></li>
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Migration Visa</a></li>
-                </ul>
-              </div>
+          {/* Column 2: Navigation Links */}
+          <div className="xl:col-span-4 grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-4 pt-0 2xl:pt-30 xl:pt-30 md:pt-30 xl:mt-[-100px] ml-0 lg:mt-[-95px] lg:ml-[-30px] md:ml-[-20px]">
+            <div>
+              <h3 className="mb-4 text-[18px] lg:text-[20px] 2xl:text-[22px] font-semibold text-teal-100">
+                Services
+              </h3>
+              <ul className="space-y-2.5 text-[15px] lg:text-[17px] 2xl:text-[18px] text-teal-50">
+                <li><a href="#" className="hover:text-white transition-colors">Study Visa</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Work Visa</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Migration Visa</a></li>
+              </ul>
+            </div>
 
-              {/* Quick Links */}
-              <div>
-                <h3 className="mb-3 xl:mb-4 text-[18px] 2xl:text-[35px] 2xl:ml-[-100px] font-semibold text-teal-100">
-                  Quick Links
-                </h3>
-                <ul className="space-y-2 text-[16px] 2xl:text-[27px] 2xl:ml-[-100px] 2xl:leading-relaxed text-white">
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">English Test</a></li>
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Latest Update</a></li>
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Contact Us</a></li>
-                </ul>
-              </div>
+            <div>
+              <h3 className="mb-4 text-[18px] lg:text-[20px] 2xl:text-[22px] font-semibold text-teal-100">
+                Quick Links
+              </h3>
+              <ul className="space-y-2.5 text-[15px] lg:lg:text-[17px] 2xl:text-[18px] text-teal-50">
+                <li><a href="#" className="hover:text-white transition-colors">English Test</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Latest Update</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
 
-              {/* Useful Links */}
-              <div>
-                <h3 className="mb-3 xl:mb-4 text-[18px] 2xl:text-[35px] 2xl:ml-[18px] font-semibold text-teal-100">
-                  Useful Links
-                </h3>
-                <ul className="space-y-2 xl:space-y-0 2xl:space-y-2 2xl:text-[27px] 2xl:ml-[30px] xl:left-[20px] text-[16px] 2xl:text-[17px] 2xl:leading-relaxed text-white list-disc">
-                  <li><a href="terms-services" className="hover:text-teal-100/90 transition-colors">Terms &amp; Services</a></li>
-                  <li><a href="privacy-policy" className="hover:text-teal-100/90 transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-teal-100/90 transition-colors">Code of Conduct</a></li>
-                  <li><a href="cancellation-and-refund-policy" className="hover:text-teal-100/90 transition-colors">Cancellation and Refund Policy</a></li>
-                  <li><a href="aritificial-intelligence-use-policy" className="hover:text-teal-100/90 transition-colors">Artificial Intelligence Use Policy</a></li>
-                </ul>
+            <div className="col-span-2 sm:col-span-1">
+              <h3 className="mb-4 text-[18px] lg:text-[20px] 2xl:text-[22px] font-semibold text-teal-100">
+                Useful Links
+              </h3>
+              <ul className="space-y-2.5 text-[15px] lg:lg:text-[17px] 2xl:text-[18px] text-teal-50">
+                <li><a href="/terms-services" className="hover:text-white transition-colors">Terms &amp; Services</a></li>
+                <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Code of Conduct</a></li>
+                <li><a href="/cancellation-and-refund-policy" className="hover:text-white transition-colors">Cancellation &amp; Refund</a></li>
+                <li><a href="/aritificial-intelligence-use-policy" className="hover:text-white transition-colors">AI Use Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Column 3: Contact & Support Box */}
+          <div className="xl:col-span-4 flex flex-col  md:pt-[-20px] 2xl:pt-[45px]">
+            <img
+src={bg}
+alt="Footer background"
+className="hidden xl:block absolute w-[540px] h-[350px] rotate-0 opacity-100 top-[100px] right-[-90px] 2xl:w-[600px] 2xl:h-[390px] 2xl:top-[170px] 2xl:right-[-130px] object-cover pointer-events-none"
+/>
+            <div className="w-[350px] bg-[#0F727B54] h-[170px] 2xl:h-[180px] xl:mt-13 xl:h-[140px] xl:w-[390px] backdrop-blur-[2px] rounded-[20px] p-6 2xl:p-8 border border-teal-500/20 shadow-xl">
+              <p className="text-[18px] 2xl:mt-[-12px] 2xl:text-[24px] font-semibold leading-snug mb-6">
+                Looking for Professional Visa Support?
+              </p>
+              
+              {/* Contact Buttons */}
+              <div className="flex items-center gap-16 2xl:mt-[-15px] flex-wrap">
+                <a
+                  href="tel:+1234567890"
+                  aria-label="Call us"
+                  className="flex items-center justify-center rounded-full bg-[#8FE7F266] w-[50px] h-[50px] 2xl:w-[60px] 2xl:h-[60px] hover:bg-[#8FE7F2] transition-colors"
+                >
+                  <img src={call} alt="" className="w-5 h-5 2xl:w-7 2xl:h-7 filter brightness-0 invert" />
+                </a>
+                <a
+                  href="mailto:info@example.com"
+                  aria-label="Email us"
+                  className="flex items-center justify-center rounded-full bg-[#8FE7F266] w-[50px] h-[50px] 2xl:w-[60px] 2xl:h-[60px] hover:bg-[#8FE7F2] transition-colors"
+                >
+                  <img src={email} alt="" className="w-5 h-5 2xl:w-7 2xl:h-7 filter brightness-0 invert" />
+                </a>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Growmore+Global+Visa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="View on Google Maps"
+                  className="flex items-center justify-center rounded-full bg-[#8FE7F266] w-[50px] h-[50px] 2xl:w-[60px] 2xl:h-[60px] hover:bg-[#8FE7F2] transition-colors"
+                >
+                  <img src={location} alt="" className="w-5 h-5 2xl:w-7 2xl:h-7 filter brightness-0 invert" />
+                </a>
               </div>
             </div>
+               {/* Social Icons */}
+              <div className="relative z-10 flex items-center justify-between 2xl:mt-[-10px] xl:ml-[-12px] pt-6 gap-2 ml-[-90px] rounded-b-[20px] px-24 xl:px-6 pb-5">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center justify-center w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] rounded-[12px] transition-colors hover:brightness-125" style={{ backgroundColor: "rgba(143, 231, 242, 0.3)" }}>
+                  <img src={facebook} alt="" className="w-5 h-5 filter brightness-0 invert" />
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="flex items-center justify-center w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] rounded-[12px] transition-colors hover:brightness-125" style={{ backgroundColor: "rgba(143, 231, 242, 0.3)" }}>
+                  <CiLinkedin className="w-5 h-5 text-white" />
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="flex items-center justify-center w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] rounded-[12px] transition-colors hover:brightness-125" style={{ backgroundColor: "rgba(143, 231, 242, 0.3)" }}>
+                  <img src={youtube} alt="" className="w-5 h-5 filter brightness-0 invert" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center justify-center w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] rounded-[12px] transition-colors hover:brightness-125" style={{ backgroundColor: "rgba(143, 231, 242, 0.3)" }}>
+                  <img src={instagram} alt="" className="w-5 h-5 filter brightness-0 invert" />
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" className="flex items-center justify-center w-[40px] h-[40px] 2xl:w-[48px] 2xl:h-[48px] rounded-[12px] transition-colors hover:brightness-125" style={{ backgroundColor: "rgba(143, 231, 242, 0.3)" }}>
+                  <img src={twitter} alt="" className="w-5 h-5 filter brightness-0 invert" />
+                </a>
+              </div>
           </div>
 
         </div>
 
-        {/* Copyright Bar */}
-        <div className="w-full mt-3 xl:mt-2 xl:absolute xl:top-[535px] 2xl:top-[860px] border-t border-[#2E6773] py-4 xl:py-0">
-          <p className="text-center text-white text-[16px] 2xl:text-[28px] xl:mt-1 2xl:mt-10">
+        {/* Bottom Bar */}
+        <div className="relative left-1/2 w-screen -translate-x-1/2 border-t border-[#2E6773] lg:pt-6">
+          <p className="text-center text-teal-100/80 text-[14px] sm:lg:text-[17px] 2xl:text-[18px] pt-3">
             © Growmore 2026 | All rights reserved.
           </p>
         </div>
