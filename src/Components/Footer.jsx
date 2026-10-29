@@ -86,7 +86,6 @@ const Footer = () => {
               <ul className="space-y-2.5 text-[15px] lg:lg:text-[17px] 2xl:text-[18px] text-teal-50">
                 <li><a href="/terms-services" className="hover:text-white transition-colors">Terms &amp; Services</a></li>
                 <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Code of Conduct</a></li>
                 <li><a href="/cancellation-and-refund-policy" className="hover:text-white transition-colors">Cancellation &amp; Refund</a></li>
                 <li><a href="/aritificial-intelligence-use-policy" className="hover:text-white transition-colors">AI Use Policy</a></li>
               </ul>

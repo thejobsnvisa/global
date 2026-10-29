@@ -72,7 +72,7 @@ const Videos = () => {
 
   return (
     <>
-      <section className="relative h-[280px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[380px] lg:h-[520px]">
+      <section className="relative h-[280px] w-full overflow-hidden 2xl:h-[580px] sm:h-[340px] md:h-[380px] lg:h-[520px] mb-30">
         <img
           src={img}
           alt="Student Visa Banner"

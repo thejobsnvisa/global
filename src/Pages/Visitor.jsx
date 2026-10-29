@@ -335,6 +335,9 @@ const Visitor = () => {
 
     xl:h-[1050px]
     xl:py-10
+    mb-50
+    lg:mb-20
+    xl:mb-40
   "
 >
   <div

@@ -431,6 +431,9 @@ const Dependent = () => {
           md:py-14
           lg:py-16
           xl:py-10
+           md:mb-10
+    lg:mb-20
+    xl:mb-40
         "
       >
         <div
@@ -569,6 +572,7 @@ const Dependent = () => {
       xl:mt-[15px]
       xl:w-full
       xl:gap-[35px]
+      
     "
             >
               {/* Paragraph 1 */}
@@ -590,6 +594,7 @@ const Dependent = () => {
 
         xl:text-[18px]
         xl:leading-[1.6]
+        
       "
               >
                 Choosing a suitable visa consultant is very important for the
@@ -598,10 +603,10 @@ const Dependent = () => {
                 compliance, and case accuracy at the time of lodging application
                 over assumptions or shortcuts.
               </p>
-              <p className="w-full text-[16px] font-semibold leading-snug text-cyan-600 sm:text-[18px] 2xl:mt-[-32px]">
+              <p className="w-full text-[16px] font-semibold leading-snug text-cyan-600 sm:text-[18px]  ">
                 Things that set us apart include
               </p>
-              <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px] mb-30 xl:mt-[-25px] 2xl:mt-[-28px]">
+              <ul className="w-full list-disc space-y-1 pl-5 text-[14px] leading-5.5 text-teal-800 sm:text-[15px] md:text-[16px] ">
                 <li>  
                   Detailed evaluation of dependent eligibility to ensure
                   approval success

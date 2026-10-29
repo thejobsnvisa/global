@@ -639,6 +639,7 @@ const AboutUs = () => {
     xl:px-0
     xl:py-16
     2xl:py-20
+    mb-25
   "
       >
         <div

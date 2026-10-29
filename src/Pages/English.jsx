@@ -318,7 +318,7 @@ const English = () => {
 
               lg:ml-0
               lg:py-6
-
+              mb-20
               xl:ml-10
               xl:py-10
             "

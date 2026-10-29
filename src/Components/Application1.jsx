@@ -6,6 +6,7 @@ import d3 from "../assets/d2.png";
 import d4 from "../assets/Frame 327.png";
 import d5 from "../assets/d5.png";
 
+
 import c4 from "../assets/Vector 2876.svg";
 
 import img1 from "../assets/1.png";
@@ -21,9 +22,9 @@ const steps = [
     points:
       "Understand your goals and eligibility",
     // Distinct styles per breakpoint
-    lgStyle: { top: "58%", left: "11.5%" },
+    lgStyle: { top: "60%", left: "10.5%" },
     xlStyle: { top: "54%", left: "10.5%" },
-    "2xlStyle": { top: "59%", left: "8.5%" },
+    xxlStyle: { top: "58%", left: "8.5%" },
     position: "bottom",
     image: img1,
   },
@@ -32,9 +33,9 @@ const steps = [
     title: "University & Course Matchmaking",
     points:
       "Tailored guidance based on your profile and university requirements",
-    lgStyle: { top: "64%", left: "31%" },
+    lgStyle: { top: "67%", left: "31%" },
     xlStyle: { top: "62%", left: "30.5%" },
-    "2xlStyle": { top: "49%", left: "34.5%" },
+    xxlStyle: { top: "49%", left: "34.5%" },
     position: "top",
     image: img2,
   },
@@ -45,7 +46,7 @@ const steps = [
       "Handling paperwork and deadline",
     lgStyle: { top: "47%", left: "54%" },
     xlStyle: { top: "42%", left: "53%" },
-    "2xlStyle": { top: "32%", left: "60%" },
+    xxlStyle: { top: "32%", left: "60%" },
     position: "bottom",
     image: img3,
   },
@@ -54,9 +55,9 @@ const steps = [
     title: "Visa Filing & Support",
     points:
       "Assistance with financials, documents, and embassy processes.",
-    lgStyle: { top: "52%", left: "72%" },
+    lgStyle: { top: "54%", left: "72%" },
     xlStyle: { top: "48%", left: "72%" },
-    "2xlStyle": { top: "41%", left: "88%" },
+    xxlStyle: { top: "40%", left: "82%" },
     position: "top",
     image: img4,
   },
@@ -65,9 +66,9 @@ const steps = [
     title: "Pre-Departure Support",
     points:
       "Orientation on travel, accommodation, and life abroad.",
-    lgStyle: { top: "36%", left: "91%" },
+    lgStyle: { top: "35%", left: "92%" },
     xlStyle: { top: "28.8%", left: "93%" },
-    "2xlStyle": { top: "21.8%", left: "116.5%" },
+    xxlStyle: { top: "36.8%", left: "100%" },
     position: "bottom",
     image: img5,
   },
@@ -75,7 +76,7 @@ const steps = [
 
 const Application1 = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:h-[600px] lg:min-h-0 lg:py-0 xl:h-[680px] 2xl:h-[880px]">
+    <section className="relative min-h-screen mb-30 w-full overflow-hidden bg-white py-10 sm:py-12 md:py-14 lg:h-[600px] lg:min-h-0 lg:py-0 xl:h-[680px] 2xl:h-[880px]">
       <div className="relative mx-auto h-full w-full max-w-[1440px] px-5 sm:px-8 md:px-10 lg:px-6 xl:px-[54px]">
         {/* Header Section */}
         <div className="relative z-30 lg:absolute lg:left-6 lg:top-4 xl:left-[54px] xl:top-[30px]">
@@ -126,7 +127,7 @@ const Application1 = () => {
               {/* 2XL View Node */}
               <div
                 className="absolute z-20 hidden -translate-x-1/2 -translate-y-1/2 2xl:block"
-                style={item["2xlStyle"]}
+                style={item.xxlStyle}
               >
                 <StepContent item={item} isXl={true} />
               </div>

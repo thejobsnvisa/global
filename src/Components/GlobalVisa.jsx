@@ -36,10 +36,10 @@ const GlobalVisa = () => {
       opacity: [0, 1, 1, 0],
       x: [80, 0, 0, -40],
       transition: {
-        duration: 3.5,
+        duration: 2,
         ease: [0.16, 1, 0.3, 1],
         repeat: Infinity,
-        repeatDelay: 2.5,
+        repeatDelay: 1.5,
         delay: index * 0.3, // Staggers the initial start of each bullet point
         times: [0, 0.25, 0.85, 1], // Timeline keyframes for smooth fade-in, hold, and fade-out
       },
@@ -48,7 +48,7 @@ const GlobalVisa = () => {
 
   return (
     <div
-      className="w-full mt-10 min-h-[940px] bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-10  md:px-8 md:py-12 md:min-h-[980px] lg:px-10 lg:py-16 lg:min-h-[880px] overflow-hidden"
+      className="w-full mt-10 min-h-[940px] bg-cover bg-center bg-no-repeat px-4 py-10 sm:px-6 sm:py-10  md:px-8 md:py-12 md:min-h-[980px] lg:px-10 lg:py-16 lg:min-h-[880px] mb-30 lg:mb-24 xl:mb-30 2xl:mb-27 overflow-hidden"
       style={{
         backgroundImage: `linear-gradient(#70CBDB99, #70CBDB99), url(${bgImage})`,
       }}

@@ -522,7 +522,10 @@ const Faq = () => {
       className="
         w-full
         bg-white
-        lg:mb-100
+        mb-50
+        md:mb-80
+        lg:mb-160
+        xl:mb-100
         h-auto
       "
     >

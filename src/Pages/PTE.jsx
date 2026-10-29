@@ -720,7 +720,7 @@ const PTE = () => {
             </section>
 
             {/* ==================== SECTION 4 ==================== */}
-            <section className="mt-10 lg:mt-14">
+            <section className="mt-10 lg:mt-14 mb-5 md:mb-15 lg:mb-18 xl:mb-42">
               <div
                 className="
                   mb-6

@@ -13,7 +13,7 @@ const Ielts = () => {
   return (
     <>
       {/* ==================== BANNER ==================== */}
-      <section className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] w-full overflow-hidden">
+      <section className="relative h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] w-full overflow-hidden ">
         {/* Banner Image */}
         <img
           src={img}
@@ -41,7 +41,7 @@ const Ielts = () => {
       </section>
 
       {/* ==================== MAIN ==================== */}
-      <div className="w-full bg-white py-12 sm:py-16 lg:py-20 mb-12">
+      <div className="w-full bg-white py-12 sm:py-16 lg:py-20x">
         <div className="mx-auto flex max-w-[1400px] flex-col lg:flex-row items-start gap-8 lg:gap-12 px-6 sm:px-10 lg:px-12">
           
           {/* ==================== SIDEBAR ==================== */}
@@ -344,7 +344,7 @@ const Ielts = () => {
 
             {/* ==================== IELTS RESULTS ==================== */}
             <section>
-              <div className="mb-6">
+              <div className=" mb-35 md:mb-50 lg:mb-48 xl:mb-50">
                 <h2 className="text-[32px] sm:text-[42px] lg:text-[54px] font-bold leading-tight text-[#8DC8AB] mb-6">
                   IELTS Results
                 </h2>

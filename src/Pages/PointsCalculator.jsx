@@ -191,7 +191,7 @@ const PointsCalculator = () => {
         </div>
       </div>
       
-        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px] 2xl:h-[780px] xl:h-[740px]">
+        <div className="calculator-container mx-auto w-full 2xl:max-w-[1440px] 2xl:h-[780px] xl:h-[740px] md:mb-25 lg:mb-38 xl:mb-42">
           {/* LEFT FORM */}
           <div className="form-panel w-full max-w-full">
             {step === 1 && (
@@ -288,7 +288,7 @@ const PointsCalculator = () => {
           <ScorePanel
             scores={scores}
             total={totalScore}
-            className="ml-0 h-auto w-full xl:ml-[200px] xl:h-[1000px]"
+            className="ml-0 h-auto w-full xl:ml-[200px] xl:h-[1000px] lg:mb-50"
           />
         </div>
     </>
