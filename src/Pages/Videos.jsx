@@ -193,7 +193,7 @@ const Videos = () => {
                 Past Live Sessions
               </h3>
 
-              <div className="grid grid-cols-1 gap-8 rounded-[12px]  p-4 md:grid-cols-2 lg:grid-cols-3 mb-30">
+              <div className="grid grid-cols-1 gap-8 rounded-[12px]  p-4 md:grid-cols-2 lg:grid-cols-3 mb-30 mt-10">
                 {latestVideos.map((video) => (
                   <div key={video.id.videoId} className="overflow-hidden rounded-xl  shadow-md">
                     <div className="relative aspect-video overflow-hidden">
