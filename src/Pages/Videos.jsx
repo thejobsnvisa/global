@@ -122,7 +122,7 @@ const Videos = () => {
 
         {!loading && !error && liveStreams.length > 0 && (
           <section className="mx-auto max-w-7xl px-6 pb-16 md:px-16">
-            <h3 className="mb-8 text-center text-[30px] text-teal-600 pl-4 text-2xl font-semibold text-[#28535B]">
+            <h3 className="mb-6 text-center text-[30px] text-teal-600 pl-4 text-2xl font-semibold text-[#28535B]">
               Latest Uploads
             </h3>
 
