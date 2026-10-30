@@ -187,9 +187,9 @@ const Videos = () => {
         )}
 
         {!loading && !error && latestVideos.length > 0 && (
-          <section className="py-16">
+          <section className="py-16 mb-30">
             <div className="mx-auto max-w-7xl px-6 md:px-16">
-              <h3 className="mb-20 text-center text-[30px] font-semibold text-cyan-600">
+              <h3 className=" text-center text-[30px] font-semibold text-cyan-600">
                 Past Live Sessions
               </h3>
 
