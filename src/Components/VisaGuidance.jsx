@@ -120,31 +120,31 @@ const VisaGuidance = () => {
 
   return (
     <section className="w-full overflow-hidden bg-white">
-      <div className="mx-auto flex min-h-[450px] w-full max-w-[1440px] items-center px-5 py-[50px] sm:px-6 sm:py-[55px] lg:px-[70px] lg:py-[60px] xl:px-[100px]">
-        <div className="flex w-full flex-col items-center justify-between gap-10 lg:flex-row lg:items-center lg:gap-14">
+      <div className="mx-auto flex min-h-[450px] w-full max-w-[1440px] items-center px-4 py-10 sm:px-6 sm:py-[55px] lg:px-10 lg:py-[60px] xl:px-16 2xl:px-[100px]">
+        <div className="flex w-full flex-col items-center justify-between gap-8 sm:gap-10 xl:flex-row xl:items-center xl:gap-8 2xl:gap-14">
           
           {/* LEFT CONTENT */}
-          <div className="w-full max-w-[390px] flex-shrink-0 lg:max-w-[490px]">
+          <div className="w-full min-w-0 max-w-[490px] flex-shrink-0">
             <div className="mb-2 flex items-center gap-[10px] sm:mb-3">
-              <span className="text-[28px] text-[#338292] sm:text-[36px] md:text-[40px] lg:text-[40px]">
+              <span className="text-[27px] leading-tight text-[#338292] sm:text-[34px] md:text-[38px] lg:text-[40px]">
                 Personalized{" "}
               </span>
             </div>
             <div className="mt-[-30px]">
-              <span className="text-[32px] font-bold text-[#5B9E7D] sm:mt-4 sm:text-[40px] md:text-[45px] lg:text-[60px]">
+              <span className="text-[32px] font-bold leading-tight text-[#5B9E7D] sm:text-[40px] md:text-[48px] lg:text-[56px]">
                 Visa Guidance
               </span>
             </div>
 
             {/* Description */}
-            <p className="mt-6 text-[20px] font-semibold leading-[1.45] text-[#4695BD] sm:text-[20px] lg:mt-2 lg:text-[21px]">
+            <p className="mt-5 text-[16px] font-semibold leading-[1.45] text-[#4695BD] sm:mt-6 sm:text-[18px] lg:mt-2 lg:text-[20px]">
               Interactive{" "}
-              <span className="text-[24px] font-bold text-[#12648E]">Live</span>{" "}
-              <span className="text-[24px] font-bold text-[#12648E]">
+              <span className="text-[19px] font-bold text-[#12648E] sm:text-[22px]">Live</span>{" "}
+              <span className="text-[19px] font-bold text-[#12648E] sm:text-[22px]">
                 Sessions{" "}
               </span>{" "}
               with{" "}
-              <span className="text-[24px] font-bold text-teal-600">
+              <span className="text-[19px] font-bold text-teal-600 sm:text-[22px]">
                 Krunal Nayak{" "}
               </span>
               Explore essential immigration and
@@ -152,7 +152,7 @@ const VisaGuidance = () => {
             </p>
 
             {/* THUMBNAILS */}
-            <div className="scrollbar-hide mt-6 flex w-full gap-3 overflow-x-auto pb-2 sm:mt-7 lg:overflow-visible lg:pb-0">
+            <div className="scrollbar-hide mt-6 flex w-full gap-3 overflow-x-auto pb-2 sm:mt-7 xl:overflow-visible xl:pb-0">
               {loading ? (
                 <>
                   {[1, 2, 3].map((item) => (
@@ -169,7 +169,7 @@ const VisaGuidance = () => {
                     type="button"
                     onClick={() => playVideo(video)}
                     aria-label={`Play ${video.title}`}
-                    className="group relative h-[100px] w-[150px] flex-shrink-0 overflow-hidden rounded-[15px] sm:h-[120px] sm:w-[165px] lg:h-[120px] lg:w-[130px] xl:h-[150px] xl:w-[180px]"
+                    className="group relative h-[100px] w-[150px] flex-shrink-0 overflow-hidden rounded-[15px] sm:h-[120px] sm:w-[165px] xl:h-[120px] xl:w-[130px] 2xl:h-[150px] 2xl:w-[180px]"
                   >
                     {/* Thumbnail */}
                     <img
@@ -211,14 +211,14 @@ const VisaGuidance = () => {
           </div>
 
           {/* RIGHT VIDEO PLAYER */}
-          <div className="flex w-full flex-1 justify-center lg:justify-end">
-            <div className="relative aspect-video w-full max-w-[650px] overflow-hidden rounded-[22px] bg-black sm:rounded-[25px] xl:h-[418px] xl:max-w-[650px]">
+          <div className="flex w-full min-w-0 flex-1 justify-center xl:justify-end">
+            <div className="relative aspect-video w-full max-w-[650px] overflow-hidden rounded-[22px] bg-black sm:rounded-[25px]">
               {selectedVideo ? (
                 <iframe
                   key={selectedVideo.id}
                   src={`https://www.youtube.com/embed/${selectedVideo.id}?autoplay=1&rel=0`}
                   title={selectedVideo.title}
-                  className="h-full w-full"
+                  className="h-full w-full border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 />
