@@ -206,7 +206,7 @@ const Work = () => {
             <span className="mx-1.5 text-gray-400 sm:mx-2">&gt;</span>
             <span>Services</span>
             <span className="mx-1.5 text-gray-400 sm:mx-2">&gt;</span>
-            <span>Work Visa</span>
+            <span className="text-cyan-800">Work Visa</span>
           </p>
 
           {/* Heading */}
